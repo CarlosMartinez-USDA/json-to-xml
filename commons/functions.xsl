@@ -5,7 +5,7 @@
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns:f="http://functions"
     xmlns:isodates="http://iso"
-    xmlns:fsresearch="http://fsresearch"
+    xmlns:usfs="http://usfsresearch"
     exclude-result-prefixes="xs xd f isodates"
     version="2.0">
     <xd:doc scope="stylesheet">
@@ -114,15 +114,13 @@
             <xd:p><xd:b>Function: </xd:b>f:abbrvToName</xd:p>
             <xd:p><xd:b>Usage: </xd:b>f:abbrvToName(fs station code)</xd:p>
         </xd:desc>
-        <xd:param name="stationFullName"/>    
+        <xd:param name="abbrv"/>
     </xd:doc>
     <xsl:function name="f:abbrvToName" as="xs:string">
-        <xsl:param name="stationFullName"/>
+        <xsl:param name="abbrv" />
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./stationCodes.xml')"/>
         </xsl:variable>
-        <xsl:sequence
-            select="$nodes/fsresearch:FSResearchCodes/fsresearch:stationCodes/fsresearch:stationCode[fsresearch:stationName=$stationFullName]/fsresearch:abbrv[1]"/>
+        <xsl:sequence select="$nodes/usfs:research/usfs:stationCodes/usfs:stationCode[usfs:abbrv = $abbrv]/usfs:stationName"/>
     </xsl:function>
-    
 </xsl:stylesheet>
