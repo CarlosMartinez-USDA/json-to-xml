@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://usfsresearch" xmlns:usfs="http://usfsresearch">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+  targetNamespace="http://usfsresearch" xmlns:usfs="http://usfsresearch">
   <xs:element name="research">
     <xs:complexType>
       <xs:sequence>

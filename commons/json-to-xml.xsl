@@ -7,7 +7,7 @@
     <xsl:output indent="yes" method="xml"/>
 
     <xsl:include href="../commons/functions.xsl"/>
-    <xsl:include href="../commons/params.xsl"/>
+        <xsl:include href="../commons/params.xsl"/>
 
     <xsl:strip-space elements="*"/>
 
@@ -15,9 +15,16 @@
         <xd:desc/>
     </xd:doc>
     <xsl:template match="root">
+        <root>
+            <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" href="{$originalFilename}_{position()}.json">
+             <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
+            </xsl:result-document>
+        </root>
+        <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" href="{$workingDir}N-{$archiveFile}_{position()}.xml">
         <mods version="3.7">
             <xsl:apply-templates select="json-to-xml(.)"/>
         </mods>
+        </xsl:result-document>
     </xsl:template>
 
 
@@ -25,11 +32,11 @@
         <xd:desc> template for the first tag </xd:desc>
     </xd:doc>
     <xsl:template match="map" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-
-        <!-- select a sub-node structure  -->
+                <!-- select a sub-node structure  -->
         <xsl:apply-templates select="./string[@key = 'title']"/>
-        <xsl:apply-templates select="./array[@key='pub_authors'] | fn:map/fn:array[@key='primary_station']"/>
-            
+        <xsl:apply-templates
+            select="./array[@key = 'pub_authors'] | ./array[@key = 'primary_station']"/>
+
 
         <!--default values-->
         <typeOfResource>text</typeOfResource>
@@ -54,7 +61,9 @@
             accordingly. If processing the first author in the group, assign an attribute of
                 <xd:b>usage</xd:b> with a value of "primary."</xd:desc>
     </xd:doc>
-    <xsl:template match="fn:map/fn:array[@key='pub_authors'] | fn:map/fn:array[@key='primary_station']" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <xsl:template
+        match="fn:map/fn:array[@key = 'pub_authors'] | fn:map/fn:array[@key = 'primary_station']"
+        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:choose>
             <xsl:when test="map/string[@key = 'primary_station']">
                 <name type="corporate">
@@ -65,10 +74,11 @@
             </xsl:when>
             <xsl:otherwise>
                 <name type="personal">
-                    <xsl:if test="position() = 1 and count(map/preceding-sibling::string[@key = 'name']) = 0">
+                    <xsl:if
+                        test="position() = 1 and count(map/preceding-sibling::string[@key = 'name']) = 0">
                         <xsl:attribute name="usage">primary</xsl:attribute>
                     </xsl:if>
-                   <xsl:call-template name="name-info"/>
+                    <xsl:call-template name="name-info"/>
                 </name>
             </xsl:otherwise>
         </xsl:choose>
@@ -77,27 +87,31 @@
 
     <xd:doc>
         <xd:desc/>
-       <xd:param name="abbrv"/>
+
     </xd:doc>
     <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <xsl:param name="abbrv" as="xs:string">
-            <xsl:sequence select="subsequence(map/string[@key = 'station_id'],1,position())"/>
-        </xsl:param> 
-          <xsl:for-each select="map/string[@key='name']">
-            <namePart type="given">
-                <xsl:value-of select="substring-after(normalize-space(.), ', ')"/>
-            </namePart>
-            <namePart type="family">
-                <xsl:value-of select="substring-before(normalize-space(.), ', ')"/>
-            </namePart>
-            <displayName>
-                <xsl:value-of select="."/>
-            </displayName>
-            <affiliation>
-                <xsl:if test="string-length($abbrv) >= 3 and position()">
-                    <xsl:value-of select="f:abbrvToName($abbrv)"/>
-                </xsl:if>
-            </affiliation>
+        <xsl:for-each select="map[position()]">
+            <xsl:if test="./string[@key = 'name']">
+                <namePart type="given">
+                    <xsl:value-of
+                        select="substring-after(normalize-space(./string[@key = 'name']), ', ')"/>
+                </namePart>
+                <namePart type="family">
+                    <xsl:value-of
+                        select="substring-before(normalize-space(./string[@key = 'name']), ', ')"/>
+                </namePart>
+                <displayName>
+                    <xsl:value-of select="./string[@key = 'name']"/>
+                </displayName>
+            </xsl:if>
+            <xsl:if test="./string[@key = 'station_id'] != ''">
+                <affiliation>
+                    <xsl:value-of select="f:abbrvToName(string[@key = 'station_id'])"/>
+                    <!--<xsl:if test="./string[@key='unit_id']!=''">
+                    <xsl:value-of select="./string[@key='unit_id']"/>
+                </xsl:if>-->
+                </affiliation>
+            </xsl:if>
             <role>
                 <roleTerm type="text">author</roleTerm>
             </role>
@@ -105,7 +119,11 @@
     </xsl:template>
     <!-- Get author's ORCID -->
 
-
+    <!-- <xsl:template name="abbrv" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:for-each select="fn:array[@key='pub_authors']/map/string[2]">
+            <xsl:value-of select="f:abbrvToName(.)"/>
+        </xsl:for-each>
+    </xsl:template>-->
 
     <xd:doc>
         <xd:desc/>
