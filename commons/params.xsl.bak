@@ -65,9 +65,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:param name="vendorName"/>  
-    <xsl:param name="filePath" select="base-uri()"/>
-    <xsl:param name="fileName_ext" select="tokenize(base-uri(), '/')[last()]"/>
-    <xsl:param name="fileName" select="replace(tokenize(base-uri(), '/')[last()],'(.*)(\.xml|.json)', '$1')"/>
-    <xsl:param name="workingDir" select="substring-before($filePath,$fileName)"/>
-    <xsl:variable name="originalFilename"/>
+    <xsl:param name="archiveFile" select="replace(tokenize(base-uri(), '/')[last()],'(.*)(\.xml|.json)', '$1')"/>
+    <xsl:param name="originalFilename" select="base-uri()"/>
+    <xsl:param name="workingDir" select="substring-before($originalFilename, $archiveFile)"/>
 </xsl:stylesheet>

@@ -1,13 +1,15 @@
 <?xml version="1.0"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
     xmlns:f="http://functions" xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:math="http://www.w3.org/2005/xpath-functions/math"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:saxon="http://saxon.sf.net/"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    exclude-result-prefixes="f fn math xd xs">
-    <xsl:output indent="yes" method="xml"/>
+    exclude-result-prefixes="f fn math xd xs saxon">
+    
+    <xsl:output indent="yes" method="xml" encoding="UTF-8" name="archive"/>
+    <xsl:output indent="yes" method="xml" encoding="UTF-8" name="original" saxon:next-in-chain="fix_characters.xsl"/>
 
     <xsl:include href="../commons/functions.xsl"/>
-        <xsl:include href="../commons/params.xsl"/>
+    <xsl:include href="../commons/params.xsl"/>
 
     <xsl:strip-space elements="*"/>
 
@@ -16,11 +18,15 @@
     </xd:doc>
     <xsl:template match="root">
         <root>
-            <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" href="{$originalFilename}_{position()}.json">
+            <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" 
+                href="{$workingDir}A-{$archiveFile}_{position()}.json"
+                format="archive">
              <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
             </xsl:result-document>
         </root>
-        <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" href="{$workingDir}N-{$archiveFile}_{position()}.xml">
+        <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" 
+            href="{$workingDir}N-{$archiveFile}_{position()}.xml"
+            format="original">
         <mods version="3.7">
             <xsl:apply-templates select="json-to-xml(.)"/>
         </mods>
@@ -49,11 +55,11 @@
     </xd:doc>
     <xsl:template match="map/string[@key = 'title']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <title>
         <titleInfo>
-            <title>
-                <xsl:value-of select="."/>
-            </title>
+             <xsl:value-of select="."/>    
         </titleInfo>
+        </title>
     </xsl:template>
 
     <xd:doc scope="component" id="contrib">
