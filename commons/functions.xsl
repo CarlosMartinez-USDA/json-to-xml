@@ -7,7 +7,9 @@
     <xd:doc scope="stylesheet">
         <xd:desc>
             <xd:p><xd:b>Created on:</xd:b> Jun 28, 2017</xd:p>
-            <xd:p><xd:b>Author:</xd:b> rdonahue</xd:p>
+            <xd:p><xd:b>Author:</xd:b>Rachel Donahoe</xd:p>
+            <xd:p><xd:b>Edited on:</xd:b>Sept. 15, 2021</xd:p>
+            <xd:p><xd:b>Edited by:</xd:b>Carlos Martinez III</xd:p>
         </xd:desc>
     </xd:doc>
 
@@ -134,46 +136,34 @@
         <xsl:sequence select="$nodes/usfs:research/usfs:stationCodes/usfs:stationCode[usfs:abbrv = $abbrv]/usfs:stationName"
         />
     </xsl:function>
+    <xd:doc scope="component" id="f:abbrvToAddresss">
+        <xd:desc>
+            <xd:p><xd:b>Function: </xd:b>f:abbrvToName</xd:p>
+            <xd:p><xd:b>Usage: </xd:b>f:abbrvToAddress(usfs station code)</xd:p>
+        </xd:desc>
+        <xd:param name="abbrv"/>
+    </xd:doc>
+    <xsl:function name="f:abbrvToAddress">
+        <xsl:param name="abbrv"/>
+        <xsl:if test="$abbrv != ''"/>
+        <xsl:variable name="nodes">
+            <xsl:copy-of select="document('./usfsResearchStations.xml')"/>
+        </xsl:variable>
+        <xsl:sequence select="$nodes/usfs:research/usfs:stationCodes/usfs:stationCode[usfs:abbrv = $abbrv]/usfs:stationAddress"
+        />
+    </xsl:function>
     
+    <xd:doc>
+        <xd:desc/>
+        <xd:param name="unit_num"/>
+    </xd:doc>
     <xsl:function name="f:unitNumToName">
         <xsl:param name="unit_num"/>
         <xsl:if test="$unit_num != ''"/>
         <xsl:variable name="nodes">
-            <xsl:copy-of select="document('./stationCodes.xml')"/>
+            <xsl:copy-of select="document('./usfsResearchStations.xml')"/>
         </xsl:variable>
-        <xsl:sequence
-            select="$nodes/usfs:research/usfs:stationCodes/usfs:stationCode/usfs:researchUnits/usfs:researchUnit/usfs:unitNumber = $unit_num/usfs:unitName"
-        />
+        <xsl:sequence select="$nodes/usfs:research/usfs:stationCodes/usfs:stationCode/usfs:researchUnits/usfs:researchUnit[usfs:unitNumber = $unit_num]/usfs:unitName"/>
     </xsl:function>    
-    <!--intends to match the FPL unit_number with it's appropriate name -->
-   
-    <xd:doc>
-        <xd:desc></xd:desc>
-        <xd:param name="nodes"/>
-    </xd:doc>
-    <xsl:function name="f:distinct-nodes" as="node()*">
-        <xsl:param name="nodes" as="node()*"/>
-        <xsl:sequence select="
-            for $seq in (1 to count($nodes))
-            return $nodes[$seq][not(f:is-node-in-sequence(
-            .,$nodes[position() &lt; $seq]))]
-            "/>
-    </xsl:function>
-      
-    
-    <xd:doc>
-            <xd:desc/>
-            <xd:param name="node"/>
-            <xd:param name="seq"/>
-        </xd:doc>
-        <xsl:function name="f:is-node-in-sequence" as="xs:boolean">
-            <xsl:param name="node" as="node()?"/>
-            <xsl:param name="seq" as="node()*"/>
-            
-            <xsl:sequence select="
-                some $nodeInSeq in $seq satisfies $nodeInSeq is $node
-                "/>
-            
-        </xsl:function>
-   
+
 </xsl:stylesheet>
