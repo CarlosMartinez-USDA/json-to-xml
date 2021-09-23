@@ -114,6 +114,8 @@
     
     <!--Forest Service research station naming functions-->
     
+    <!--new functions-->
+    
     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>Function: </xd:b>f:acronymToName</xd:p>
@@ -122,7 +124,7 @@
         </xd:desc>
         <xd:param name="acronym">three-letter</xd:param>
     </xd:doc>      
-    <xsl:function name="f:acronymToName" as="xs:string" xmlns:f="http://functions">
+    <xsl:function name="usfs:acronymToName" as="xs:string">
         <xsl:param name="acronym"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
@@ -138,7 +140,7 @@
         </xd:desc>
         <xd:param name="acronym">three-letter language code to match against</xd:param>
     </xd:doc>      
-    <xsl:function name="f:acronymToAddress" as="xs:string" xmlns:f="http://functions">
+    <xsl:function name="usfs:acronymToAddress" as="xs:string">
         <xsl:param name="acronym"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
@@ -155,14 +157,12 @@
         </xd:desc>
         <xd:param name="unitNum">four-digit number code to match against</xd:param>
     </xd:doc>      
-    <xsl:function name="f:unitNumToName" as="xs:string" xmlns:f="http://functions">
+    <xsl:function name="usfs:unitNumToName" as="xs:string">
         <xsl:param name="unitNum"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
         </xsl:variable>
-        <xsl:sequence> 
-            <xsl:copy-of select="$nodes/usfs:research/usfs:stations/usfs:station/usfs:researchUnits/usfs:researchUnit[usfs:unitNumber=$unitNum]/usfs:unitName"/> 
-        </xsl:sequence>
+        <xsl:sequence select="$nodes/usfs:research/usfs:stations/usfs:station/usfs:researchUnits/usfs:researchUnit[usfs:acronym=$unitNum]/usfs:unitName"/>
     </xsl:function>
     
     
