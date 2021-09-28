@@ -26,6 +26,7 @@
         </xd:desc>
         <xd:param name="month-name">string which starts with the month name</xd:param>
     </xd:doc>
+   
     <xsl:variable name="months" as="xs:string*" select="'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'"/>
     <xd:doc>
         <xd:desc/>
@@ -114,8 +115,6 @@
     
     <!--Forest Service research station naming functions-->
     
-    <!--new functions-->
-    
     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>Function: </xd:b>f:acronymToName</xd:p>
@@ -124,7 +123,7 @@
         </xd:desc>
         <xd:param name="acronym">three-letter</xd:param>
     </xd:doc>      
-    <xsl:function name="usfs:acronymToName" as="xs:string">
+    <xsl:function name="f:acronymToName" as="xs:string" xmlns:f="http://functions">
         <xsl:param name="acronym"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
@@ -140,7 +139,7 @@
         </xd:desc>
         <xd:param name="acronym">three-letter language code to match against</xd:param>
     </xd:doc>      
-    <xsl:function name="usfs:acronymToAddress" as="xs:string">
+    <xsl:function name="f:acronymToAddress" as="xs:string" xmlns:f="http://functions">
         <xsl:param name="acronym"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
@@ -148,6 +147,8 @@
         <xsl:sequence select="$nodes/usfs:research/usfs:stations/usfs:station[usfs:acronym = $acronym]/usfs:address"/>
     </xsl:function>
     
+    
+
     
     <xd:doc scope="component">
         <xd:desc>
@@ -157,13 +158,31 @@
         </xd:desc>
         <xd:param name="unitNum">four-digit number code to match against</xd:param>
     </xd:doc>      
-    <xsl:function name="usfs:unitNumToName" as="xs:string">
+    <xsl:function name="f:unitNumToName" as="xs:string" xmlns:f="http://functions">
         <xsl:param name="unitNum"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
         </xsl:variable>
-        <xsl:sequence select="$nodes/usfs:research/usfs:stations/usfs:station/usfs:researchUnits/usfs:researchUnit[usfs:acronym=$unitNum]/usfs:unitName"/>
+        <xsl:sequence> 
+            <xsl:copy-of select="$nodes/usfs:research/usfs:stations/usfs:station/usfs:researchUnits/usfs:researchUnit[usfs:unitNumber=$unitNum]/usfs:unitName"/> 
+        </xsl:sequence>
     </xsl:function>
     
-    
+    <xd:doc scope="component">
+        <xd:desc>
+            <xd:p><xd:b>Function: </xd:b>f:seriesToAbbrv</xd:p>
+            <xd:p><xd:b>Usage: </xd:b>f:seriesToAbbrv(:unitNumToName(string[@key = 'unit_id'])</xd:p>
+            <xd:p><xd:b>Purpose: </xd:b>Convert ISO 639-2b three-letter codes into ISO 639-1 two-letter codes.</xd:p>            
+        </xd:desc>
+       <xd:param name="seriesTitle"/>
+    </xd:doc>      
+    <xsl:function name="f:seriesToAbbrv" as="xs:string" xmlns:f="http://functions">
+        <xsl:param name="seriesTitle"/>
+        <xsl:variable name="nodes">
+            <xsl:copy-of select="document('./USFS_Research.xml')"/>
+        </xsl:variable>
+        <xsl:sequence> 
+            <xsl:copy-of select="$nodes/usfs:research/usfs:treeSeries/usfs:seriesPub[usfs:treePub = $seriesTitle]/usfs:abbrv"/> 
+        </xsl:sequence>
+    </xsl:function>
 </xsl:stylesheet>

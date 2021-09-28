@@ -1,48 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE transform [
+          <!ENTITY % predefined PUBLIC
+         "-//W3C//ENTITIES Predefined XML//EN///XML"
+         "C:/Users/carlos.martinez/Desktop/json-to-xml/ent/predefined.ent"
+       >
+       %predefined;
+]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
-    xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3"
-    xmlns:f="http://functions" xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    xmlns:mods="http://www.loc.gov/mods/v3" xmlns:f="http://functions"
+    xmlns:fn="http://www.w3.org/2005/xpath-functions"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:saxon="http://saxon.sf.net/"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    exclude-result-prefixes="f fn math mods saxon xd xs">
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfsreseaerch"
+    exclude-result-prefixes="f fn math mods saxon usfs xd xs xsi">
 
     <xsl:output method="json" indent="yes" encoding="UTF-8" name="archive"/>
-    <xsl:output method="xml"  indent="yes" encoding="UTF-8" name="original" saxon:next-in-chain="fix_characters.xsl"/>
+    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
+    <!-- saxon:next-in-chain="fix_characters.xsl"/>-->
 
+    <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
     <xsl:include href="commons/params.xsl"/>
 
     <xsl:strip-space elements="*"/>
 
-    
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template match="root">
-        <root>
+    <xsl:template match="data">
         <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8"
-            href="{$workingDir}{$fileName}_{position()}.json" format="archive">
-            <xsl:copy-of select="unparsed-text(resolve-uri($filePath))"/>
+            href="{$workingDir}A-{replace($originalFilename, '(.*/)(.*)(\.json}','$2')}_{position()}.json" format="archive">
+            <xsl:copy-of select="."/>
         </xsl:result-document>
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
-            href="{$workingDir}N-{$fileName}_{position()}.xml" format="original">
+            href="{$workingDir}N-{replace($originalFilename, '(.*/)(.*)(\.json)','$2')}_{position()}.xml" format="original">
             <mods version="3.7">
+                <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
+                <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
+                <xsl:attribute name="xsi:schemaLocation"
+                    select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
+                <xsl:attribute name="version">3.7</xsl:attribute>
                 <xsl:apply-templates select="json-to-xml(.)"/>
             </mods>
         </xsl:result-document>
-        </root>
     </xsl:template>
 
 
     <xd:doc>
-        <xd:desc> template for the first tag </xd:desc>
+        <xd:desc>
+            <xd:p/>
+        </xd:desc>
     </xd:doc>
     <xsl:template match="map" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <!-- select a sub-node structure  -->
+        <!-- titleInfo/title and author tags  -->
         <xsl:apply-templates select="./string[@key = 'title']"/>
         <xsl:apply-templates
             select="./array[@key = 'pub_authors'] | ./array[@key = 'primary_station']"/>
-
 
         <!--default values-->
         <typeOfResource>text</typeOfResource>
@@ -62,24 +75,28 @@
         <xsl:call-template name="keywords"/>
 
         <!--relatedItem-->
-        <relatedItem type="host">
-            <xsl:apply-templates select="./string[@key = 'pub_type_desc']"/>
-            <xsl:apply-templates select="./string[@key = 'pub_publication']"/>
-            <xsl:apply-templates select="./string[@key = 'issn_id']"/>
-            <xsl:call-template name="part"/>
-        </relatedItem>
-        
-       <!--identifiers--> 
-        <xsl:apply-templates select="./string[@key='doi']"/>        
+        <xsl:apply-templates select="./string[@key = 'pub_type_desc']"/>
+        <xsl:apply-templates select="./string[@key = 'pub_publication']"/>
+        <xsl:apply-templates select="./string[@key = 'issn_id']"/>
+        <xsl:call-template name="part"/>
+
+
+        <!--identifiers-->
+        <xsl:apply-templates select="./string[@key = 'doi']"/>
         <xsl:call-template name="usfs_identifiers"/>
-       
+
         <!--extension-->
         <xsl:call-template name="extension"/>
     </xsl:template>
 
 
-    <xd:doc>
-        <xd:desc> template to output a string value </xd:desc>
+    <xd:doc scope="component" id="main_title">
+        <xd:desc>
+            <xd:p>
+                <xd:b>JSON to MODS title/titleInfo transformation</xd:b>
+            </xd:p>
+            <xd:p><xd:b>output:</xd:b>A string value containing the main title of an article.</xd:p>
+        </xd:desc>
     </xd:doc>
     <xsl:template match="map/string[@key = 'title']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
@@ -90,18 +107,23 @@
         </title>
     </xsl:template>
 
-    <xd:doc scope="component" id="contrib">
-        <xd:desc>If the contributor is a collaborator rather than an individual, format output
-            accordingly. If processing the first author in the group, assign an attribute of
-                <xd:b>usage</xd:b> with a value of "primary."</xd:desc>
+    <xd:doc scope="component" id="author-name-info">
+        <xd:desc>
+            <xd:p>If the contributor is a collaborator rather than an individual, format output
+                accordingly. If processing the first author in the group, assign an attribute
+                of</xd:p>
+            <xd:p><xd:b>usage</xd:b> with a value of "primary."</xd:p>
+        </xd:desc>
     </xd:doc>
-    <xsl:template match="map/array[@key = 'pub_authors']"
+    <xsl:template match="map/array[@key = 'pub_authors'] | map/array[@key = 'primary_station']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:choose>
-            <xsl:when test="map/array[@key = 'pub_authors'] = 0">
+            <xsl:when test="map/string[@key = 'primary_station']">
                 <name type="corporate">
                     <namePart>
-                        <xsl:value-of select="map/string[@key = 'primary_station']"/>
+                        <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
+                        <xsl:value-of select="f:acronymToName(.)"/>
+                        <xsl:value-of select="f:acronymToAddress(.)"/>
                     </namePart>
                 </name>
             </xsl:when>
@@ -120,9 +142,13 @@
 
     <xd:doc>
         <xd:desc/>
-
+        <xd:param name="acronym"/>
+        <xd:param name="unitNum"/>
     </xd:doc>
     <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:param name="acronym" select="map[position()]/string[@key = 'station_id']"/>
+        <xsl:param name="unitNum" select="map[position()]/string[@key = 'unit_id']"/>
+        <!--author given and family names-->
         <xsl:for-each select="map[position()]">
             <xsl:if test="./string[@key = 'name']">
                 <namePart type="given">
@@ -137,69 +163,65 @@
                     <xsl:value-of select="./string[@key = 'name']"/>
                 </displayName>
             </xsl:if>
-            <!--affiliaton-->
-            <xsl:choose>
-                <xsl:when test=" and (./string[@key = 'station_id'] != '')">
-                    <xsl:variable name="addUnitName">
-                    <xsl:value-of select="f:abbrvToAddress(string[@key ='station_id'])"/>
-                    </xsl:variable>
-                    <xsl:variable name="unitName">
-                        <xsl:value-of select="f:unitNumToName(./string[@key='unit_id'])"/>
-                   </xsl:variable>
-                   <xsl:analyze-string regex="^(U.S. Department of Agriculture, Forest Service,\s)(.*?)(\,)(.*)$" select="./string[@key = 'station_id']">
-                        <affiliation>
-                        <xsl:matching-substring>
-                            <xsl:value-of select="regex-group(1)"/>
-                            <xsl:text>,</xsl:text>
-                            <xsl:number value="string-join(regex-group(2)(', '$unitName))"/>
-                            <xsl:text>,</xsl:text>
-                            <xsl:number value="regex-group(3)"/>
-                         </xsl:matching-substring>
-                         <xsl:non-matching-substring>
-                            <xsl:value-of select="$addUnitName"/>    
-                         </xsl:non-matching-substring>
-                        </affiliation>
-                   </xsl:analyze-string>
-                </xsl:when>
-                <xsl:when test="(./string[@key = 'station_id'] != '') and (./string[@key='unit_id']='')">
-                    <affiliation>
-                        <xsl:value-of select="$addUnitName"/>                        
-                    </affiliation>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:if test="(./string[@key = 'station_id']= '') and (./string[@key='unit_id']='')"/>
-                </xsl:otherwise>
-            </xsl:choose>
+            <!--affiliation-->
+            <xsl:if test="./string[@key = 'station_id'] != ''">
+                <affiliation>
+                    <xsl:text>United States Department of Agriculture, </xsl:text>
+                    <xsl:text>Forest Service, </xsl:text>
+                    <xsl:value-of select="f:acronymToName($acronym)"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:if test="./string[@key = 'unit_id'] != ''">
+                        <xsl:value-of select="f:unitNumToName($unitNum)"/>
+                        <xsl:text>, </xsl:text>
+                    </xsl:if>
+                    <xsl:value-of select="f:acronymToAddress($acronym)"/>
+                </affiliation>
+            </xsl:if>
             <role>
                 <roleTerm type="text">author</roleTerm>
             </role>
         </xsl:for-each>
     </xsl:template>
 
-
-
-    <!-- Get author's ORCID -->
-
     <xd:doc>
-        <xd:desc/>
+        <xd:des>to match and creaete apply-templates for corporate body</xd:des>
     </xd:doc>
-    <xsl:template match="map/string[@key = 'primary_station']"
-        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <xsl:template match="map/string[@key = 'primary_station']">
         <name type="corporate">
-            <namePart>United States</namePart>
-            <namePart>Forest Service</namePart>
             <namePart>
-                <xsl:value-of select="f:abbrvToName(.)"/>
+                <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
+                <xsl:value-of select="f:acronymToName(.)"/>
+                <xsl:value-of select="f:acronymToAddress(.)"/>
             </namePart>
         </name>
     </xsl:template>
 
+    <xd:doc>
+        <xd:desc>Transforms, in order of preference, the publication-related date metadata</xd:desc>
+    </xd:doc>
+    <xsl:template name="dateIssued" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:choose>
+            <xsl:when test="map/string[@key = 'modified_on']">
+                <xsl:apply-templates select="map/string[@key = 'modified_on']"/>
+            </xsl:when>
+            <xsl:when test="map/string[@key = 'created_on']">
+                <xsl:apply-templates select="map/string[@key = 'created_on']"/>
+            </xsl:when>
+            <xsl:otherwise>
+                <originInfo>
+                    <dateIssued encoding="w3cdtf" keyDate="yes">
+                        <xsl:value-of select="map/string[@key = 'product_year']"/>
+                    </dateIssued>
+                </originInfo>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
 
     <xd:doc>
         <xd:desc/>
         <xd:param name="input"/>
     </xd:doc>
-    <xsl:template match="map/string[@key = 'modified_on']"
+    <xsl:template match="map/string[@key = 'modified_on'] | map/string[@key = 'created_on']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="origin">
         <xsl:param name="input" select="."/>
         <originInfo>
@@ -208,8 +230,8 @@
                 <xsl:variable name="months"
                     select="('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC')"/>
                 <!-- Define regex to match input date format -->
-                <xsl:analyze-string regex="^([0-9]{{1,2}})\-([A-Z]{{3}})\-([0-9]{{4}})(.*)$"
-                    select="$input">
+                <xsl:analyze-string select="$input"
+                    regex="^([0-9]{{1,2}})\-([A-Z]{{3}})\-([0-9]{{4}})(.*)$">
                     <xsl:matching-substring>
                         <xsl:number value="regex-group(3)" format="0001"/>
                         <xsl:text>-</xsl:text>
@@ -247,6 +269,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
+
     <xd:doc>
         <xd:desc>The national research taxonomy elements are the preferred controlled vocabulary
             chosen for inclusion in subject/topic MODS metadata. </xd:desc>
@@ -263,6 +286,7 @@
             </xsl:if>
         </xsl:for-each>
     </xsl:template>
+
     <xd:doc>
         <xd:desc>When the array for national research taxonomy elements is not present, the keywords
             listed are used for the subject/topic</xd:desc>
@@ -277,100 +301,85 @@
             </subject>
         </xsl:for-each>
     </xsl:template>
+  
 
+    <!--add host and conditonal here-->
     <xd:doc>
-        <xd:desc>Journal Title</xd:desc>
+        <xd:desc>relatedItem/title</xd:desc>
+        <xd:param name="pub_series"/>
     </xd:doc>
     <xsl:template match="map/string[@key = 'pub_type_desc']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:param name="pub_series"/>
+        <xsl:variable name="publications">
+            <xsl:sequence
+                select="string(concat('Forest Insect &amp; Disease Leaflet', 'General Technical Report', 'General Technical Report - Proceedings', 'Information Forestry', 'Proceeding Rocky Mountain Research Station Publications', 'Resource Bulletin', 'Research Map', 'Research Note', 'Research Paper', 'Miscellaneous Publication'))" />
+        </xsl:variable>
+        <xsl:variable name="publication" select="tokenize($publications, ',')"/>
         <xsl:variable name="primary_station" select="map/array[@key = 'primary_station']"/>
-        <title>
-            <titleInfo type="series">
-                <xsl:value-of select="."/>
-                <xsl:value-of select="$primary_station"/>
-            </titleInfo>
-        </title>
+
+        <relatedItem>
+            <xsl:choose>
+                <xsl:when test="matches($pub_series, $publication)">
+                    <xsl:attribute name="type">series</xsl:attribute>
+                    <titleInfo>
+                        <xsl:attribute name="type">abbreviated</xsl:attribute>
+                        <title>
+                            <xsl:value-of select="f:seriesToAbbrv(.)"/>
+                        </title>
+                    </titleInfo>
+                </xsl:when>
+                <!--<xsl:when test="(document('commons/USFS_Research.xml')//(usfs:research/usfs:treeSeries/usfs:seriesPub/usfs:treePub) = ('Miscellaneous Publication' or 'Scientific Journal &lpar;JRNL&rpar;')) ">-->
+                <xsl:when test="contains(., document('USFS_Research.xml')/usfs:research/usfs:treeSeries/usfs:seriesPub/usfs:treePub)">
+                    <xsl:attribute name="type">host</xsl:attribute>
+                    <titleInfo>
+                        <title>
+                            <xsl:attribute name="type">alternative</xsl:attribute>
+                            <xsl:value-of select="substring($publication, position(), last())"/>
+                        </title>
+                    </titleInfo>
+
+                </xsl:when>
+                <xsl:otherwise>
+                    <titleInfo>
+                        <title> </title>
+                    </titleInfo>
+                </xsl:otherwise>
+
+            </xsl:choose>
+        </relatedItem>
     </xsl:template>
 
     <xd:doc>
         <xd:desc/>
-    </xd:doc>
-    <!--  <xsl:template name="relatedItem" xpath-default-namespace="http://www.w3.org/2005/xpath-functions"> 
-      <xsl:apply-templates select="map/string[@key ='pub_type_desc']"/>
-      <xsl:apply-templates select="map/string[@key='pub_publication']" mode="relItem_title_pub"/>   
-  </xsl:template>
-    -->
-    <!--<xsl:variable name="GenTechRep" select="string-join(subsequence(tokenize(., '(\.*\.)'), 1,4),'.')"/>
-    <xsl:variable name="ResNote" select="string-join(subsequence(tokenize(., '(\.*\.)'), 1,3),'.')"/>
-    -->
-    <xd:doc>
-        <xd:desc/>
 
-        <xd:param name="publication"/>
+        <xd:param name="pub_series"/>
     </xd:doc>
     <xsl:template match="map/string[@key = 'pub_publication']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
- <xsl:param name="publication" as="xs:string" select="."/>
-        <xsl:analyze-string select="map/string[@key='pub_publication']" regex="
-            <xsl:matching-substring>
-                <xsl:choose>
-                    <xsl:when test="string[@key='General Technical Report'], text())">
-                        <xsl:value-of select="regex-group(2)"/>
-                    </xsl:when>
-                    <xsl:when test="contains('Research Note', text())">
-                        <xsl:value-of select="regex-group(3)"/>
-                    </xsl:when>
-                    <xsl:when test="contains('Miscellaneous Publication', text())">
-                        <xsl:value-of select="regex-group(4)"/>
-                    </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:value-of select="regex-group(1)"/>
-                    </xsl:otherwise>
-                </xsl:choose>
-            </xsl:matching-substring>
-            <xsl:non-matching-substring>
-                <xsl:value-of select="."/>
-            </xsl:non-matching-substring>
-        </xsl:analyze-string>
+        <xsl:param name="pub_series" as="xs:string"/>
+        <xsl:variable name="publications">
+            <xsl:sequence
+                select="string(concat('Forest Insect &amp; Disease Leaflet', 'General Technical Report, General Technical Report - Proceedings, Information Forestry, Proceeding Rocky Mountain Research Station Publications, Resource Bulletin, Research Map, Research Note, Research Paper, Miscellaneous Publication'))"
+            />
+        </xsl:variable>
+        <xsl:variable name="publication" select="tokenize($publications, ',')"/>
+        <xsl:variable name="nodes">
+            <xsl:copy-of select="document('./USFS_Research.xml')"/>
+        </xsl:variable>
+        <xsl:if test="contains($pub_series, $publication)">
+            <titleInfo>
+                <title>
+                    <xsl:value-of select="$publication"/>
+                </title>
+            </titleInfo>
+        </xsl:if>
         <xsl:choose>
-            <xsl:when test="contains(.,$publication)">
+            <xsl:when test="contains(., $publication)">
                 <title>
                     <titleInfo>
                         <xsl:attribute name="type">alternative</xsl:attribute>
-                          <xsl:value-of select="substring-before(.,$publication)"/>
-                    </titleInfo>
-                </title>
-            </xsl:when>
-            <xsl:when test="matches(.,'Gen. Tech. Rep.')">
-                <title>
-                    <titleInfo>
-                        <xsl:attribute name="type">abbreviated</xsl:attribute>
-                        <xsl:value-of select="'Gen. Tech. Rep.'"/>
-                        <xsl:if
-                            test="map/string[@key = 'pub_type_desc'][text() = 'General Technical Report (GTR)']">
-                            <xsl:value-of select="'Gen. Tech. Rep.'"/>
-                        </xsl:if>
-                    </titleInfo>
-                </title>
-            </xsl:when>
-            
-            <xsl:when test="matches(., 'Gen. Tech. Rep.')">
-                <title>
-                    <titleInfo>
-                        <xsl:attribute name="type">abbreviated</xsl:attribute>
-                        <xsl:value-of select="'Gen. Tech. Rep.'"/>
-                        <xsl:if
-                            test="map/string[@key = 'pub_type_desc'][text() = 'General Technical Report (GTR)']">
-                            <xsl:value-of select="'Gen. Tech. Rep.'"/>
-                        </xsl:if>
-                    </titleInfo>
-                </title>
-            </xsl:when>
-            <xsl:when test="matches(., 'Res. Note')">
-                <title>
-                    <titleInfo>
-                        <xsl:attribute name="type">abbreviated</xsl:attribute>
-                        <xsl:value-of select="'Res. Note'"/>
+                        <xsl:value-of select="$publication"/>
                     </titleInfo>
                 </title>
             </xsl:when>
@@ -384,11 +393,7 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-   <!-- <xsl:template match="map/string[@key = 'pub_publication']">
-        
-        <xsl:analyze-string select="." regex="'(^(\w+\W)*)
-    </xsl:template>-->
+
 
     <xd:doc>
         <xd:desc/>
@@ -431,15 +436,7 @@
                 <xsl:apply-templates select="/fn:map/fn:string[@key = 'modified_on']" mode="part"/>
             </xsl:if>
             <extent unit="pages">
-                    <xsl:call-template name="pages">
-                        <xsl:with-param name="start_page"/>
-                    </xsl:call-template>
-                    <xsl:call-template name="pages">
-                        <xsl:with-param name="end_page"/>
-                    </xsl:call-template>
-                    <xsl:call-template name="pages">
-                        <xsl:with-param name="total_pages"/>
-                    </xsl:call-template>
+                <xsl:call-template name="pages"/>
             </extent>
         </part>
 
@@ -454,32 +451,36 @@
     </xd:doc>
     <xsl:template name="pages" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:param name="start_page" select="/fn:map/fn:string[@key = 'pub_page_start']"/>
-         <xsl:param name="end_page" select="/fn:map/fn:string[@key = 'pub_page_end']"/>
+        <xsl:param name="end_page" select="/fn:map/fn:string[@key = 'pub_page_end']"/>
         <xsl:param name="total_pages" select="f:calculateTotalPgs($start_page, $end_page)"/>
-        <xsl:sequence>
-        <start>
-                <xsl:value-of select="$start_page"/>
-            </start>
-            <end>
-                <xsl:value-of select="$end_page"/>
-            </end>
-            <total>
-                <xsl:value-of select="$total_pages"/>
-           </total>
-        </xsl:sequence>
+        <xsl:choose>
+            <xsl:when test="$start_page and $end_page">
+                <xsl:sequence>
+                    <start>
+                        <xsl:value-of select="$start_page"/>
+                    </start>
+                    <end>
+                        <xsl:value-of select="$end_page"/>
+                    </end>
+                    <total>
+                        <xsl:value-of select="$total_pages"/>
+                    </total>
+                </xsl:sequence>
+            </xsl:when>
+        </xsl:choose>
     </xsl:template>
     <xd:doc>
         <xd:desc/>
         <xd:param name="input"/>
     </xd:doc>
-    <xsl:template match="map/string[@key = 'modified_on']"
+    <xsl:template match="map/string[@key = 'modified_on'] | map/string[@key = 'created_on']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="part">
         <xsl:param name="input" select="."/>
         <!-- Define array of months -->
         <xsl:variable name="months"
             select="('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC')"/>
         <!-- Define regex to match input date format -->
-        <xsl:analyze-string regex="^([0-9]{{1,2}})\-([A-Z]{{3}})\-([0-9]{{4}})(.*)$" select="$input">
+        <xsl:analyze-string select="$input" regex="^([0-9]{{1,2}})\-([A-Z]{{3}})\-([0-9]{{4}})(.*)$">
             <xsl:matching-substring>
                 <text type="year">
                     <xsl:number value="regex-group(3)" format="0001"/>
@@ -499,63 +500,56 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template name="usfs_identifiers" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-    <identifier>
-        <xsl:choose>
-            <xsl:when test="map/string[@key = 'url_binary_file']">
-                <xsl:attribute name="type">
-                    <xsl:value-of select="@key"/>
-                </xsl:attribute>
-                <xsl:value-of select="translate(upper-case(substring-before(tokenize(.,'/')[last()],'.')),'_', ' ')"/>
-                <location>
-                    <url>
-                        <xsl:attribute name="access" select="translate(@key,'_',' ')"/>
-                        <xsl:value-of select="normalize-space(string[@key=('url_binary-file')])"/>
-                    </url>
-                </location>
-            </xsl:when>
-            <xsl:when test="map/string[@key = 'url_landing_page']">
-                <identifier>
-                </identifier>
-                <location>
-                    <url>
-                        <xsl:attribute name="access" select="translate(@key,'_',' ')"/>
-                        <xsl:value-of select="normalize-space(string[@key=('url_landing_page')])"/>
-                    </url>
-                </location>
-            </xsl:when>
-        </xsl:choose>
-    </identifier>
-</xsl:template>
-           
+    <xsl:template match="map/string[@key = 'doi']"
+        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:if test="@key = 'doi'">
+            <identifier type="doi">
+                <xsl:value-of select="."/>
+            </identifier>
+            <location>
+                <url>
+                    <xsl:text>http://dx.doi.org/</xsl:text>
+                    <xsl:value-of select="normalize-space(.)"/>
+                </url>
+            </location>
+        </xsl:if>
 
+    </xsl:template>
 
     <xd:doc>
-        <xd:desc> &lt;xsl:otherwise&gt;
-            &lt;!-\- &lt;xsl:when test="local-name() = 'ELocationID'"&gt;-\-&gt;
-            &lt;xsl:attribute name="type"&gt;
-            &lt;xsl:value-of select="@EIdType"/&gt;
-            &lt;/xsl:attribute&gt;
-            &lt;!-\-&lt;/xsl:when&gt;-\-&gt;
-            &lt;/xsl:otherwise&gt;
-            &lt;/xsl:choose&gt;
-            &lt;xsl:value-of select="."/&gt;
-            &lt;/identifier&gt;</xd:desc>
+        <xd:desc/>
     </xd:doc>
-    <xsl:template match="map/string[@key='doi']" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-    <xsl:if test="@key='doi'">
-        <identifier type="doi">
-        <xsl:value-of select="."/>
+    <xsl:template name="usfs_identifiers"
+        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <identifier>
+            <xsl:choose>
+                <xsl:when test="map/string[@key = 'url_binary_file']">
+                    <xsl:attribute name="type">
+                        <xsl:value-of select="@key"/>
+                    </xsl:attribute>
+                    <xsl:value-of
+                        select="translate(upper-case(substring-before(tokenize(., '/')[last()], '.')), '_', ' ')"/>
+                    <location>
+                        <url access="raw object">
+                            <xsl:attribute name="note" select="translate(@key, '_', ' ')"/>
+                            <xsl:value-of
+                                select="normalize-space(string[@key = ('url_binary_file')])"/>
+                        </url>
+                    </location>
+                </xsl:when>
+                <xsl:when test="map/string[@key = 'url_landing_page']">
+                    <identifier> </identifier>
+                    <location>
+                        <url access="object in context">
+                            <xsl:attribute name="note" select="translate(@key, '_', ' ')"/>
+                            <xsl:value-of
+                                select="normalize-space(string[@key = ('url_landing_page')])"/>
+                        </url>
+                    </location>
+                </xsl:when>
+            </xsl:choose>
         </identifier>
-        <location>
-            <url>
-                <xsl:text>http://dx.doi.org/</xsl:text>
-                <xsl:value-of select="normalize-space(.)"/>
-            </url>
-        </location>
-    </xsl:if>
-    <xsl:value-of select="."/>
-</xsl:template>
+    </xsl:template>
 
     <xd:doc scope="component">
         <xd:desc>
@@ -574,41 +568,19 @@
             <vendorName>
                 <xsl:value-of select="$vendorName"/>
             </vendorName>
-            <fileName_ext>
-                <xsl:value-of select="$fileName_ext"/>
-            </fileName_ext>
-            <fileName>
-                <xsl:value-of select="$fileName"/>
-            </fileName>
+            <archiveFile>
+                <xsl:value-of select="$archiveFile"/>
+            </archiveFile>
+            <originalFile>
+                <xsl:value-of select="$originalFilename"/>
+            </originalFile>
             <workingDirectory>
                 <xsl:value-of select="$workingDir"/>
             </workingDirectory>
-            <filePath>
-                <xsl:value-of select="$filePath"/>
-            </filePath>
         </extension>
     </xsl:template>
 
 
-    <!-- <identifier type="issn-p">0005-7959</identifier>
-        <identifier type="vendor">BEH</identifier>
-        <part>
-            <detail type="volume">
-                <number>158</number>
-                <caption>v.</caption>
-            </detail>
-            <detail type="issue">
-                <number>11</number>
-                <caption>no.</caption>
-            </detail>
-            <text type="year">2021</text>
-            <text type="month">06</text>
-            <text type="day">16</text>
-            <extent unit="pages">
-                <start>945</start>
-                <end>969</end>
-                <total>25</total>
-            </extent>
-        </part>-->
+
 
 </xsl:stylesheet>

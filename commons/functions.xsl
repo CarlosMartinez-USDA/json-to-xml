@@ -26,6 +26,7 @@
         </xd:desc>
         <xd:param name="month-name">string which starts with the month name</xd:param>
     </xd:doc>
+   
     <xsl:variable name="months" as="xs:string*" select="'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'"/>
     <xd:doc>
         <xd:desc/>
@@ -147,6 +148,8 @@
     </xsl:function>
     
     
+
+    
     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>Function: </xd:b>usfs:unitNumToName</xd:p>
@@ -165,5 +168,22 @@
         </xsl:sequence>
     </xsl:function>
     
-    
+    <xd:doc scope="component">
+        <xd:desc>
+            <xd:p><xd:b>Function: </xd:b>f:seriesToAbbrv</xd:p>
+            <xd:p><xd:b>Usage: </xd:b>f:seriesToAbbrv(:unitNumToName(string[@key = 'unit_id'])</xd:p>
+            <xd:p><xd:b>Purpose: </xd:b>Convert ISO 639-2b three-letter codes into ISO 639-1 two-letter codes.</xd:p>            
+        </xd:desc>
+       <xd:param name="seriesTitle"/>
+    </xd:doc>      
+    <xsl:function name="f:seriesToAbbrv" as="xs:string?" xmlns:f="http://functions">
+        <xsl:param name="seriesTitle"/>
+       <xsl:if test="$seriesTitle != ''"/>
+        <xsl:variable name="nodes">
+            <xsl:copy-of select="document('./USFS_Research.xml')"/>
+        </xsl:variable>
+        <xsl:sequence> 
+            <xsl:copy-of select="$nodes/usfs:research/usfs:treeSeries/usfs:seriesPub[usfs:treePub = $seriesTitle]/usfs:abbrv"/> 
+        </xsl:sequence>
+    </xsl:function>
 </xsl:stylesheet>
