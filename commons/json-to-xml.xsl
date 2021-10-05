@@ -6,7 +6,7 @@
     exclude-result-prefixes="f fn math xd xs saxon">
     
     <xsl:output indent="yes" method="xml" encoding="UTF-8" name="archive"/>
-    <xsl:output indent="yes" method="xml" encoding="UTF-8" name="original" saxon:next-in-chain="fix_characters.xsl"/>
+    <xsl:output indent="yes" method="xml" encoding="UTF-8" name="original"/> <!--saxon:next-in-chain="fix_characters.xsl"/>-->
 
     <xsl:include href="../commons/functions.xsl"/>
     <xsl:include href="../commons/params.xsl"/>
@@ -16,14 +16,12 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template match="root">
-        <root>
-            <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" 
+    <xsl:template match="/data">
+              <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" 
                 href="{$workingDir}A-{$archiveFile}_{position()}.json"
                 format="archive">
              <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
             </xsl:result-document>
-        </root>
         <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" 
             href="{$workingDir}N-{$archiveFile}_{position()}.xml"
             format="original">
@@ -112,7 +110,7 @@
             </xsl:if>
             <xsl:if test="./string[@key = 'station_id'] != ''">
                 <affiliation>
-                    <xsl:value-of select="f:abbrvToName(string[@key = 'station_id'])"/>
+                    <xsl:value-of select="f:acronymToName(string[@key = 'station_id'])"/>
                     <!--<xsl:if test="./string[@key='unit_id']!=''">
                     <xsl:value-of select="./string[@key='unit_id']"/>
                 </xsl:if>-->
@@ -125,9 +123,9 @@
     </xsl:template>
     <!-- Get author's ORCID -->
 
-    <!-- <xsl:template name="abbrv" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <!-- <xsl:template name="acronym" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:for-each select="fn:array[@key='pub_authors']/map/string[2]">
-            <xsl:value-of select="f:abbrvToName(.)"/>
+            <xsl:value-of select="f:acronymToName(.)"/>
         </xsl:for-each>
     </xsl:template>-->
 
@@ -140,7 +138,7 @@
             <namePart>United States</namePart>
             <namePart>Forest Service</namePart>
             <namePart>
-                <xsl:value-of select="f:abbrvToName(.)"/>
+                <xsl:value-of select="f:acronymToName(.)"/>
             </namePart>
         </name>
     </xsl:template>
