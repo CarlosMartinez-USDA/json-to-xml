@@ -29,6 +29,15 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="acronym">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:NCName">
+          <xs:attribute name="type" use="required" type="xs:NCName"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="agency" type="xs:string"/>
   <xs:element name="name" type="xs:string"/>
   <xs:element name="researchUnits">
@@ -64,20 +73,11 @@
   </xs:element>
   <xs:element name="abbrv" type="xs:string"/>
   <xs:element name="treePub" type="xs:string"/>
-  <xs:element name="acronym">
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:anyURI">
-          <xs:attribute name="type" type="xs:NCName"/>
-        </xs:extension>
-      </xs:simpleContent>
-    </xs:complexType>
-  </xs:element>
   <xs:element name="researchUnit">
     <xs:complexType>
       <xs:sequence>
         <xs:choice maxOccurs="unbounded">
-          <xs:element ref="usfs:acronym"/>
+          <xs:element ref="usfs:unitAcronym"/>
           <xs:element ref="usfs:unitName"/>
           <xs:element ref="usfs:unitNumber"/>
         </xs:choice>
@@ -86,7 +86,17 @@
           <xs:element ref="usfs:unitAddress"/>
         </xs:choice>
       </xs:sequence>
-      <xs:attribute name="acronym" use="required" type="xs:NCName"/>
+      <xs:attribute name="acronym" type="xs:NCName"/>
+      <xs:attribute name="unitAcronym" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="unitAcronym">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="type" type="xs:NCName"/>
+        </xs:extension>
+      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   <xs:element name="unitName" type="xs:string"/>

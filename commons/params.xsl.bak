@@ -17,14 +17,12 @@
             <xd:p>Name of source vendor and filename being processed.</xd:p>
         </xd:desc>
     </xd:doc>
+ <!--   <xsl:param name="vendorName"/>
+    <xsl:param name="archiveFile"/>
+    <xsl:param name="originalFilename" select="saxon:system-id()"/>
+    <xsl:param name="workingDir"/> -->
     <xsl:param name="vendorName"/>
-    <xsl:param name="archiveFile"/>
-<!--    <xsl:param name="archiveFile" select="replace(tokenize(base-uri(), '/')[last()],'(.*/)(.*)(\.\w{3,4})', '$2')"/>-->
+    <xsl:param name="archiveFile" select="replace(tokenize(base-uri(), '/')[last()],'(.*/)(.*)(\.\w{3,4})', '$2')"/>
     <xsl:param name="originalFilename" select="saxon:system-id()"/>
-    <xsl:param name="workingDir"/> 
-<!--    <xsl:param name="workingDirect" select="substring-before(base-uri(), tokenize(document-uri(.), '/')[last()])"/>-->
-<!--    <xsl:param name="vendorName"/>
-    <xsl:param name="archiveFile"/>
-    <xsl:param name="originalFilename" select="saxon:system-id()"/>
-    <xsl:param name="workingDir"/>-->
+    <xsl:param name="workingDir" select="substring-before(base-uri(), tokenize(document-uri(.), '/')[last()])"/>
 </xsl:stylesheet>
