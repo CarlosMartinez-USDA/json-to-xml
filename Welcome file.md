@@ -1,5 +1,6 @@
 # JSON-to-MODS Transformation
-Received [Treesearch](https://www.fs.usda.gov/treesearch/) metadata from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
+
+Materials:  JSON files from the [Treesearch](https://www.fs.usda.gov/treesearch/) metadata from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 ## Transformation
 
 
@@ -143,5 +144,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MzA2NDk3NTRdfQ==
+eyJoaXN0b3J5IjpbLTg2NDIwNzI4MV19
 -->
