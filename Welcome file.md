@@ -1,6 +1,9 @@
 # JSON-to-MODS Transformation
 
-Materials:  JSON files from the [Treesearch](https://www.fs.usda.gov/treesearch/) metadata from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
+**Materials**:  JSON files from the [Treesearch](https://www.fs.usda.gov/treesearch/) metadata from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
+
+Task: Transform Treesearch JSON files to MODS XML records for 
+
 ## Transformation
 
 
@@ -144,5 +147,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2NDIwNzI4MV19
+eyJoaXN0b3J5IjpbLTE4NDQzMjUzOTcsLTg2NDIwNzI4MV19
 -->
