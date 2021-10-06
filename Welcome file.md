@@ -4,8 +4,9 @@
 
 ## Transformation
 XSLT 3.0
-XPath 3
-
+XPath 3.1 
+MODS 3.7
+JSON
 
 # Files
 
@@ -146,6 +147,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NTg5NTMwLDE5NzA4NTM1OTksLTg2ND
-IwNzI4MV19
+eyJoaXN0b3J5IjpbLTY0ODA4MzczOCwxOTcwODUzNTk5LC04Nj
+QyMDcyODFdfQ==
 -->
