@@ -1,6 +1,5 @@
-# JSON-to-MODS.xml
-The task of transforming Treesearch me [json-to-mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl) transforms [
-The task was to transform [Treesearch](https://www.fs.usda.gov/treesearch/) metadata received from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/)
+# JSON-to-MODS Transformation
+Received [Treesearch](https://www.fs.usda.gov/treesearch/) metadata from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 ## Transformation
 
 
@@ -144,5 +143,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NDg4ODk0OV19
+eyJoaXN0b3J5IjpbLTE3MzA2NDk3NTRdfQ==
 -->
