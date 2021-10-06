@@ -1,5 +1,5 @@
 # JSON-to-MODS.xml
-The JSON-to-MODS.xsl transforms Treesearch metadata  
+The json-to-mods.xsl transforms [Treesearch](https://www.fs.usda.gov/treesearch/) metadata
 ## Transformation
 
 
@@ -143,5 +143,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUyMTA3ODEzXX0=
+eyJoaXN0b3J5IjpbLTEzNTMyMjQ4MDBdfQ==
 -->
