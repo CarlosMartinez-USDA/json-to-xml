@@ -176,8 +176,9 @@
         </xd:desc>
        <xd:param name="seriesTitle"/>
     </xd:doc>      
-    <xsl:function name="f:seriesToAbbrv" as="xs:string" xmlns:f="http://functions">
+    <xsl:function name="f:seriesToAbbrv" as="xs:string?" xmlns:f="http://functions">
         <xsl:param name="seriesTitle"/>
+       <xsl:if test="$seriesTitle != ''"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
         </xsl:variable>

@@ -15,8 +15,8 @@
     exclude-result-prefixes="f fn math mods saxon usfs xd xs xsi">
 
     <xsl:output method="json" indent="no" encoding="UTF-8" name="archive"/>
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"
-    saxon:next-in-chain="fix_characters.xsl"/>
+    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
+    <!--saxon:next-in-chain="fix_characters.xsl"/>-->
 
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
@@ -105,15 +105,14 @@
         <!--relatedItem-->
         <relatedItem>
             <xsl:apply-templates select="./string[@key = 'pub_type_desc']" mode="pub_type_desc"/>
-          <!--  <xsl:apply-templates select="./string[@key = 'pub_publication']"/>
-          -->  <xsl:apply-templates select="./string[@key = 'issn_id']"/>
+            <xsl:apply-templates select="./string[@key = 'pub_publication']"/>
+            <xsl:apply-templates select="./string[@key = 'issn_id']"/>
             <xsl:call-template name="part"/>
         </relatedItem>
 
         <!--identifiers-->
         <xsl:apply-templates select="./string[@key = 'doi']"/>
-<!--        <xsl:apply-templates select="./string[@key = 'url_landing_page'] | ./string[@key = 'url_binary_file']"/>-->
-        <xsl:call-template name="usfs_identifiers"/>
+        <xsl:apply-templates select="./string[@key = 'url_landing_page'] | ./string[@key = 'url_binary_file']"/>
        
         <!--extension-->
         <xsl:call-template name="extension"/>
@@ -541,42 +540,14 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template name="usfs_identifiers" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <identifier>
-            <xsl:choose>
-                <xsl:when test="map/string[@key = 'url_binary_file']">
-                    <xsl:attribute name="type">
-                        <xsl:value-of select="@key"/>
-                    </xsl:attribute>
-                    <xsl:value-of select="translate(upper-case(substring-before(tokenize(.,'/')[last()],'.')),'_', ' ')"/>
-                    <location>
-                        <url>
-                            <xsl:attribute name="access" select="translate(@key,'_',' ')"/>
-                            <xsl:value-of select="normalize-space(string[@key=('url_binary-file')])"/>
-                        </url>
-                    </location>
-                </xsl:when>
-                <xsl:when test="map/string[@key = 'url_landing_page']">
-                    <identifier>
-                    </identifier>
-                    <location>
-                        <url>
-                            <xsl:attribute name="access" select="translate(@key,'_',' ')"/>
-                            <xsl:value-of select="normalize-space(string[@key=('url_landing_page')])"/>
-                        </url>
-                    </location>
-                </xsl:when>
-            </xsl:choose>
-        </identifier>
-    </xsl:template>
-  <!--  <xsl:template match="map/string[@key = 'url_landing_page'] | map/string[@key = 'url_binary_file']"
+    <xsl:template match="map/string[@key = 'url_landing_page'] | map/string[@key = 'url_binary_file']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:if test="./string[@key = 'url_landing_page']">
             <identifier>
                 <xsl:attribute name="type">
                     <xsl:value-of select="translate(@key, '_', ' ')"/>
                 </xsl:attribute>
-                <!-\-         <xsl:value-of select="translate(upper-case(substring-before(tokenize(., '/')[last()], '.')), '_', ' ')"/>  -\->
+                <!--         <xsl:value-of select="translate(upper-case(substring-before(tokenize(., '/')[last()], '.')), '_', ' ')"/>  -->
                 <xsl:value-of select="."/>
             </identifier>
             <location>
@@ -601,7 +572,7 @@
             </location>
         </xsl:if>
     </xsl:template>
--->
+
     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>vendorName</xd:b>Metadata supplier name (e.g., Brill, Springer,

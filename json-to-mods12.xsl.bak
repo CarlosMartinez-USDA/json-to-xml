@@ -7,7 +7,8 @@
        %predefined;
 ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
-    xmlns:mods="http://www.loc.gov/mods/v3" xmlns:f="http://functions"
+    xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3"
+    xmlns:f="http://functions"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:saxon="http://saxon.sf.net/"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
@@ -15,8 +16,7 @@
     exclude-result-prefixes="f fn math mods saxon usfs xd xs xsi">
 
     <xsl:output method="json" indent="no" encoding="UTF-8" name="archive"/>
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"
-    saxon:next-in-chain="fix_characters.xsl"/>
+    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original" saxon:next-in-chain="fix_characters.xsl"/>
 
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
@@ -105,15 +105,14 @@
         <!--relatedItem-->
         <relatedItem>
             <xsl:apply-templates select="./string[@key = 'pub_type_desc']" mode="pub_type_desc"/>
-          <!--  <xsl:apply-templates select="./string[@key = 'pub_publication']"/>
-          -->  <xsl:apply-templates select="./string[@key = 'issn_id']"/>
+            <xsl:apply-templates select="./string[@key = 'pub_publication']" mode="pub_type_desc"/>
+            <xsl:apply-templates select="./string[@key = 'issn_id']"/>
             <xsl:call-template name="part"/>
         </relatedItem>
 
         <!--identifiers-->
         <xsl:apply-templates select="./string[@key = 'doi']"/>
-<!--        <xsl:apply-templates select="./string[@key = 'url_landing_page'] | ./string[@key = 'url_binary_file']"/>-->
-        <xsl:call-template name="usfs_identifiers"/>
+        <xsl:apply-templates select="./string[@key = 'url_landing_page'] | ./string[@key = 'url_binary_file']"/>
        
         <!--extension-->
         <xsl:call-template name="extension"/>
@@ -332,8 +331,7 @@
         </xsl:for-each>
     </xsl:template>
 
-   
-
+  
     <xd:doc>
         <xd:desc/>
         <xd:param name="p_series"/>
@@ -342,20 +340,20 @@
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="pub_type_desc">
         <xsl:param name="p_series">
             <xsl:value-of
-                select="concat('Forest Insect &amp; Disease Leaflet',
-                'General Technical Report (GTR)',
-                'General Technical Report - Proceedings',
-                'Information Forestry',
-                'Proceeding (Rocky Mountain Research Station Publications)',
-                'Resource Bulletin (RB)',
-                'Research Map (RMAP)',
-                'Research Note (RN)',
-                'Research Paper (RP)',
-                'Resource Update (RU)')"
+                select="normalize-space(string-join('Forest Insect &amp; Disease Leaflet,
+                General Technical Report (GTR),
+                General Technical Report - Proceedings,
+                Information Forestry,
+                Proceeding (Rocky Mountain Research Station Publications),
+                Resource Bulletin (RB),
+                Research Map (RMAP),
+                Research Note (RN),
+                Research Paper (RP),
+                Resource Update (RU)', ','))"
             />
         </xsl:param>
-        <xsl:variable name="pub_type" select="./string[@key = 'pub_type_desc']"/>
-        <xsl:variable name="pub_publication" select="./string[@key = 'pub_publication']"/>
+        <xsl:variable name="pub_type" select="map/string[@key = 'pub_type_desc']"/>
+        <xsl:variable name="pub_publication" select="map/string[@key = 'pub_publication']"/>
         <xsl:choose>
             <xsl:when test="compare($p_series, $pub_type) != 0">
                 <relatedItem type="series">
@@ -365,12 +363,12 @@
                         </title>
                     </titleInfo>
                 </relatedItem>
-            </xsl:when>
+            </xsl:when>h
             <xsl:otherwise>
                 <relatedItem type="host">
                     <titleInfo>
                         <title>
-                            <xsl:value-of select="$pub_publication"/>
+                            <xsl:copy-of select="($pub_publication)"/>
                         </title>
                     </titleInfo>
                 </relatedItem>
@@ -523,8 +521,7 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template match="map/string[@key = 'doi']"
-        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <xsl:template match="map/string[@key = 'doi']" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:if test="@key = 'doi'">
             <identifier type="doi">
                 <xsl:value-of select="."/>
@@ -541,42 +538,14 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template name="usfs_identifiers" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <identifier>
-            <xsl:choose>
-                <xsl:when test="map/string[@key = 'url_binary_file']">
-                    <xsl:attribute name="type">
-                        <xsl:value-of select="@key"/>
-                    </xsl:attribute>
-                    <xsl:value-of select="translate(upper-case(substring-before(tokenize(.,'/')[last()],'.')),'_', ' ')"/>
-                    <location>
-                        <url>
-                            <xsl:attribute name="access" select="translate(@key,'_',' ')"/>
-                            <xsl:value-of select="normalize-space(string[@key=('url_binary-file')])"/>
-                        </url>
-                    </location>
-                </xsl:when>
-                <xsl:when test="map/string[@key = 'url_landing_page']">
-                    <identifier>
-                    </identifier>
-                    <location>
-                        <url>
-                            <xsl:attribute name="access" select="translate(@key,'_',' ')"/>
-                            <xsl:value-of select="normalize-space(string[@key=('url_landing_page')])"/>
-                        </url>
-                    </location>
-                </xsl:when>
-            </xsl:choose>
-        </identifier>
-    </xsl:template>
-  <!--  <xsl:template match="map/string[@key = 'url_landing_page'] | map/string[@key = 'url_binary_file']"
+    <xsl:template match="map/string[@key = 'url_landing_page'] | map/string[@key = 'url_binary_file']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <xsl:if test="./string[@key = 'url_landing_page']">
+        <xsl:if test="@key = 'url_landing_page'">
             <identifier>
                 <xsl:attribute name="type">
                     <xsl:value-of select="translate(@key, '_', ' ')"/>
                 </xsl:attribute>
-                <!-\-         <xsl:value-of select="translate(upper-case(substring-before(tokenize(., '/')[last()], '.')), '_', ' ')"/>  -\->
+                <!--         <xsl:value-of select="translate(upper-case(substring-before(tokenize(., '/')[last()], '.')), '_', ' ')"/>  -->
                 <xsl:value-of select="."/>
             </identifier>
             <location>
@@ -585,23 +554,22 @@
                     <xsl:value-of select="normalize-space(string[@key = 'url_landing_page'])"/>
                 </url>
             </location>
-            <xsl:if test="map/string[@key = 'url_binary_file']">
+            <xsl:if test="@key = 'url_binary_file'">
                 <identifier>
                     <xsl:attribute name="type">
-                        <xsl:value-of select="translate(@key, '_', ' ')"/>
+                        <xsl:value-of select="translate(text(), '_', ' ')"/>
                     </xsl:attribute>
-                    <xsl:value-of
-                        select="tokenize(map/string[@key = 'url_binary_file'], '/')[last()]"/>
+                    <xsl:value-of select="tokenize(string[@key = 'url_binary_file'], '/')[last()]"/>
                 </identifier>
             </xsl:if>
             <location>
                 <url access="raw object">
-                    <xsl:value-of select="map/string[@key = 'url_binary_file']"/>
+                    <xsl:value-of select="@key = 'url_binary_file'"/>
                 </url>
             </location>
         </xsl:if>
     </xsl:template>
--->
+
     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>vendorName</xd:b>Metadata supplier name (e.g., Brill, Springer,

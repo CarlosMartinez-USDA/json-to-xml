@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://usfsresearch" xmlns:usfs="http://usfsresearch">
+  <xs:element name="research">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="usfs:stationCodes"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stationCodes">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="usfs:stationCode"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="stationCode">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="usfs:abbrv"/>
+        <xs:element ref="usfs:stationName"/>
+        <xs:element ref="usfs:stationAddress"/>
+        <xs:element minOccurs="0" ref="usfs:researchUnits"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="abbrv" type="xs:NCName"/>
+  <xs:element name="stationName" type="xs:string"/>
+  <xs:element name="stationAddress" type="xs:string"/>
+  <xs:element name="researchUnits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="usfs:researchUnit"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="researchUnit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="usfs:unitNumber"/>
+        <xs:element ref="usfs:unitName"/>
+        <xs:sequence minOccurs="0">
+          <xs:element ref="usfs:acronym"/>
+          <xs:element ref="usfs:projectLeader"/>
+        </xs:sequence>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="unitNumber" type="xs:integer"/>
+  <xs:element name="unitName" type="xs:string"/>
+  <xs:element name="acronym" type="xs:anyURI"/>
+  <xs:element name="projectLeader" type="xs:string"/>
+</xs:schema>
