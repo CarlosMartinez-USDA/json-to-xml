@@ -63,7 +63,7 @@
     </xsl:template>
 
     <xd:doc scope="component" id="contrib">
-        <xd:desc>If the contributor is a collaborator rather than an individual, format output
+        <xd:desc>If the contributor is a collaboratbbor rather than an individual, format output
             accordingly. If processing the first author in the group, assign an attribute of
                 <xd:b>usage</xd:b> with a value of "primary."</xd:desc>
     </xd:doc>
@@ -112,7 +112,7 @@
             </xsl:if>
             <xsl:if test="./string[@key = 'station_id'] != ''">
                 <affiliation>
-                    <xsl:value-of select="f:ToName(string[@key = 'station_id'])"/>
+                    <xsl:value-of select="f:acronymToName(string[@key = 'station_id'])"/>
                     <!--<xsl:if test="./string[@key='unit_id']!=''">
                     <xsl:value-of select="./string[@key='unit_id']"/>
                 </xsl:if>-->
@@ -140,11 +140,11 @@
             <namePart>United States</namePart>
             <namePart>Forest Service</namePart>
             <namePart>
-                <xsl:value-of select="f:abbrvToName(.)"/>
+                <xsl:value-of select="f:acronymToName(.)"/>
             </namePart>
         </name>
     </xsl:template>
-    <!--<!-\-Xpath uses the id aattribute and the current() function to the appropriate author (xref/@rid) -\->
+    <!--Xpath uses the id aattribute and the current() function to the appropriate author (xref/@rid) 
        <xsl:for-each select="/article/front/article-meta/contrib-group/aff[@id = current()/xref/@rid]">
            <xsl:variable name="this">
                <xsl:apply-templates mode="affiliation"/>

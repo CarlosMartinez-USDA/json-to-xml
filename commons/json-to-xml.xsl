@@ -16,14 +16,14 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template match="root">
-        <root>
+    <xsl:template match="data">
+<!--        <data>-->
             <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" 
                 href="{$workingDir}A-{$archiveFile}_{position()}.json"
                 format="archive">
              <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
             </xsl:result-document>
-        </root>
+        <!--</data>-->
         <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8" 
             href="{$workingDir}N-{$archiveFile}_{position()}.xml"
             format="original">
@@ -31,6 +31,7 @@
             <xsl:apply-templates select="json-to-xml(.)"/>
         </mods>
         </xsl:result-document>
+        
     </xsl:template>
 
 

@@ -33,7 +33,7 @@
          end creates C:\$workingDir\$archiveFile_position.xml</xd:p>
 </xd:doc>
     <xsl:param name="vendorName"/>
-    <xsl:param name="archiveFile" select="replace(tokenize(base-uri(), '/')[last()],'(.*)(\.xml)', '$1')"/>
+    <xsl:param name="archiveFile" select="replace(tokenize(base-uri(), '/')[last()],'(.*/)(.*)(\.xml)', '$1')"/>
     <xsl:param name="originalFilename" select="base-uri()"/>
-    <xsl:param name="workingDir" select="substring-before(base-uri(), replace(tokenize(base-uri(), '/')[last()],'(.*)(\.xml)', '$1'))"/>
+    <xsl:param name="workingDir" select="substring-before(base-uri(), tokenize(base-uri(), '/')[last()])"/>
 </xsl:stylesheet>

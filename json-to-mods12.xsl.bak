@@ -363,7 +363,7 @@
                         </title>
                     </titleInfo>
                 </relatedItem>
-            </xsl:when>h
+            </xsl:when>
             <xsl:otherwise>
                 <relatedItem type="host">
                     <titleInfo>
@@ -448,17 +448,14 @@
         <xd:desc/>
         <xd:param name="start_page"/>
         <xd:param name="end_page"/>
-        <xd:param name="total_pages"/>
         <xd:param name="pub_publication"/>
-        <xd:param name="Pages"/>
+        <xd:param name="pages"/>
     </xd:doc>
     <xsl:template name="pages" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:param name="start_page" select="/fn:map/fn:string[@key = 'pub_page_start']"/>
         <xsl:param name="end_page" select="/fn:map/fn:string[@key = 'pub_page_end']"/>
-        <xsl:param name="total_pages" select="f:calculateTotalPgs($start_page, $end_page)"/>
         <xsl:param name="pub_publication" select="/fn:map/fn:string[@key = 'pub_publication']"/>
-        <xsl:param name="Pages"
-            select="substring-before(substring-after(./string[@key = 'pub_publication'], '\:'), '\.&quot;,')"/>
+        <xsl:param name="pages" select="replace(tokenize($pub_publication, '\:')[last()],'(.*)([\:,.-][p\.][pages])(\S{{{1,}})|\S{{2,4}}-\S{{2,4}})', '$3')"/>
         <xsl:choose>
             <xsl:when test="$start_page and $end_page">
                 <xsl:sequence>
@@ -469,7 +466,7 @@
                         <xsl:value-of select="$end_page"/>
                     </end>
                     <total>
-                        <xsl:value-of select="$total_pages"/>
+                        <xsl:value-of select="f:calculateTotalPgs($start_page, $end_page)"/>
                     </total>
                 </xsl:sequence>
             </xsl:when>
@@ -572,10 +569,8 @@
 
     <xd:doc scope="component">
         <xd:desc>
-            <xd:p><xd:b>vendorName</xd:b>Metadata supplier name (e.g., Brill, Springer,
-                Elsevier)</xd:p>
-            <xd:p><xd:b>filename_ext</xd:b>Filename from source metadata (eg. filename.xml,
-                filename.json or filename.zip)</xd:p>
+            <xd:p><xd:b>vendorName</xd:b>Metadata supplier name (e.g., Brill, Springer, Elsevier)</xd:p>
+            <xd:p><xd:b>filename_ext</xd:b>Filename from source metadata (eg. filename.xml, filename.json or filename.zip)</xd:p>
             <xd:p><xd:b>filename</xd:b>filename w/o the extension (i.e., xml, json or zip)</xd:p>
             <xd:p><xd:b>workingDirectory</xd:b>Directory the source file is transformed</xd:p>
             <xd:p><xd:b>filePath</xd:b>The full file path of the source file to assist with

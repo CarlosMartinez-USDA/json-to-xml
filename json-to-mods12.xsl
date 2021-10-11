@@ -16,9 +16,8 @@
     exclude-result-prefixes="f fn math mods saxon usfs xd xs xsi">
 
     <xsl:output method="json" indent="no" encoding="UTF-8" name="archive"/>
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
-    <!-- saxon:next-in-chain="fix_characters.xsl"/>-->
-    
+    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original" saxon:next-in-chain="fix_characters.xsl"/>
+
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
     <xsl:include href="commons/new_params.xsl"/>
@@ -61,7 +60,7 @@
             <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
         </xsl:result-document>
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
-            href="{$workingDir}N-{$archiveFile}.xml"
+            href="{$workingDir}N-{$archiveFile}_{position()}.xml"
             format="original">
             <mods>
                 <xsl:namespace name="mods">http://www.loc.gov/mods/v3</xsl:namespace>
@@ -73,7 +72,7 @@
             </mods>
         </xsl:result-document>
     </xsl:template>
-    
+
 
     <xd:doc>
         <xd:desc>
@@ -451,15 +450,16 @@
         <xd:param name="end_page"/>
         <xd:param name="total_pages"/>
         <xd:param name="pub_publication"/>
-        <xd:param name="pages"/>
+        <xd:param name="Pages"/>
     </xd:doc>
     <xsl:template name="pages" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:param name="start_page" select="/fn:map/fn:string[@key = 'pub_page_start']"/>
         <xsl:param name="end_page" select="/fn:map/fn:string[@key = 'pub_page_end']"/>
         <xsl:param name="total_pages" select="f:calculateTotalPgs($start_page, $end_page)"/>
         <xsl:param name="pub_publication" select="/fn:map/fn:string[@key = 'pub_publication']"/>
-        <xsl:param name="pages" select="tokenize(./string[@key = 'pub_publication'], '-')[last()]"/>
-        <xsl:choose>   
+        <xsl:param name="Pages"
+            select="substring-before(substring-after(./string[@key = 'pub_publication'], '\:'), '\.&quot;,')"/>
+        <xsl:choose>
             <xsl:when test="$start_page and $end_page">
                 <xsl:sequence>
                     <start>
@@ -475,13 +475,15 @@
             </xsl:when>
             <xsl:otherwise>
                 <start>
-                    <xsl:copy-of select="substring-before($pages, '-')"/>
+                    <xsl:value-of select="substring-before(tokenize(./string[@key = 'pub_publication'], '\-')[last()], '\-')"/>
+                    <!--replace($pub_publication,'(.)','(?&lt;!\d):[^\s\r\n]*$')"/>-->
                 </start>
                 <end>
-                    <xsl:copy-of select="substring-after($pages, '-')"/>
+                    <xsl:value-of select="substring-after(tokenize(./string[@key = 'pub_publication'], '\-')[last()], '\-')"/>
                 </end>
                 <total>
-                    <xsl:value-of select="f:calculateTotalPgs(substring-before($pages, '-'), substring-after($pages, '-'))"/>
+                    <xsl:value-of select="f:calculateTotalPgs(substring-before(tokenize(./string[@key = 'pub_publication'], '\-')[last()], '\-'), 
+                        substring-after(tokenize(./string[@key = 'pub_publication'], '\-')[last()], '\-'))"/>
                 </total>
             </xsl:otherwise>
         </xsl:choose>
@@ -538,7 +540,7 @@
     </xd:doc>
     <xsl:template match="map/string[@key = 'url_landing_page'] | map/string[@key = 'url_binary_file']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <xsl:if test="./string[@key = 'url_landing_page']">
+        <xsl:if test="@key = 'url_landing_page'">
             <identifier>
                 <xsl:attribute name="type">
                     <xsl:value-of select="translate(@key, '_', ' ')"/>
@@ -552,18 +554,17 @@
                     <xsl:value-of select="normalize-space(string[@key = 'url_landing_page'])"/>
                 </url>
             </location>
-            <xsl:if test="map/string[@key = 'url_binary_file']">
+            <xsl:if test="@key = 'url_binary_file'">
                 <identifier>
                     <xsl:attribute name="type">
-                        <xsl:value-of select="translate(@key, '_', ' ')"/>
+                        <xsl:value-of select="translate(text(), '_', ' ')"/>
                     </xsl:attribute>
-                    <xsl:value-of
-                        select="tokenize(map/string[@key = 'url_binary_file'], '/')[last()]"/>
+                    <xsl:value-of select="tokenize(string[@key = 'url_binary_file'], '/')[last()]"/>
                 </identifier>
             </xsl:if>
             <location>
                 <url access="raw object">
-                    <xsl:value-of select="map/string[@key = 'url_binary_file']"/>
+                    <xsl:value-of select="@key = 'url_binary_file'"/>
                 </url>
             </location>
         </xsl:if>
@@ -571,10 +572,14 @@
 
     <xd:doc scope="component">
         <xd:desc>
-            <xd:p><xd:b>vendorName:</xd:b>Metadata supplier name (e.g., Brill, Springer, Elsevier)</xd:p>
-            <xd:p><xd:b>filename_ext:</xd:b>Filename from source metadata (eg. filename.xml, filename.json or filename.zip)</xd:p>
-            <xd:p><xd:b>filename:</xd:b>filename w/o the extension (i.e., xml, json or zip)</xd:p>
-            <xd:p><xd:b>workingDirectory:</xd:b>directory the source file is transformed debugging</xd:p>
+            <xd:p><xd:b>vendorName</xd:b>Metadata supplier name (e.g., Brill, Springer,
+                Elsevier)</xd:p>
+            <xd:p><xd:b>filename_ext</xd:b>Filename from source metadata (eg. filename.xml,
+                filename.json or filename.zip)</xd:p>
+            <xd:p><xd:b>filename</xd:b>filename w/o the extension (i.e., xml, json or zip)</xd:p>
+            <xd:p><xd:b>workingDirectory</xd:b>Directory the source file is transformed</xd:p>
+            <xd:p><xd:b>filePath</xd:b>The full file path of the source file to assist with
+                debugging</xd:p>
         </xd:desc>
     </xd:doc>
     <xsl:template name="extension" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
