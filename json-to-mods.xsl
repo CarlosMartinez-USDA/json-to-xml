@@ -21,7 +21,7 @@
     
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/new_params.xsl"/>
+    <xsl:include href="commons/params.xsl"/>
 
     <xsl:strip-space elements="*"/>
     <xd:doc>
@@ -29,7 +29,7 @@
     </xd:doc>
    
 
-    <!-- <xd:doc>
+     <xd:doc>
         <xd:desc/>
     </xd:doc>
     <xsl:template match="data">
@@ -48,11 +48,11 @@
             </mods>
         </xsl:result-document>
     </xsl:template>
--->
 
 
 
-    <xd:doc>
+
+<!--    <xd:doc>
         <xd:desc/>
     </xd:doc>
     <xsl:template match="/data">
@@ -74,7 +74,7 @@
             </mods>
         </xsl:result-document>
     </xsl:template>
-    
+    -->
 
     <xd:doc>
         <xd:desc>
@@ -178,19 +178,17 @@
             </namePart>
         </name>
     </xsl:template>
-    <xd:doc>
-        <xd:desc/>
-        <xd:param name="addUnitName"/>
-        <xd:param name="unitName"/>
-    </xd:doc>
+    
     <xd:doc>
         <xd:desc/>
         <xd:param name="acronym"/>
         <xd:param name="unitNum"/>
+        <xd:param name="unitAcronym"/>
     </xd:doc>
     <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:param name="acronym" select="map[position()]/string[@key = 'station_id']"/>
         <xsl:param name="unitNum" select="map[position()]/string[@key = 'unit_id']"/>
+        <xsl:param name="unitAcronym" select="map[position()]/string[@key = 'unit_id']"/>
         <!--author given and family names-->
         <xsl:for-each select="map[position()]">
             <xsl:if test="./string[@key = 'name']">
@@ -206,25 +204,32 @@
                     <xsl:value-of select="./string[@key = 'name']"/>
                 </displayForm>
             </xsl:if>
-            <!--affiliation-->
-            <xsl:if test="./string[@key = 'station_id'] != ''">
-                <affiliation>
-                    <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
-                    <xsl:value-of select="f:acronymToName($acronym)"/>
-                    <xsl:text>, </xsl:text>
-                    <xsl:if test="./string[@key = 'unit_id'] != ''">
-                        <xsl:value-of select="f:unitNumToName($unitNum)"/>
-                        <xsl:text>, </xsl:text>
-                    </xsl:if>
-                    <xsl:value-of select="f:acronymToAddress($acronym)"/>
-                </affiliation>
-            </xsl:if>
+            <!--affiliation-->           
+            
+                <xsl:if test="count($acronym) > 0">  
+                    <affiliation>
+                        <xsl:text>United States Department of Agriculture,</xsl:text>
+                        <xsl:text>Forest Service,</xsl:text>
+                        <xsl:value-of select="f:acronymToName($acronym)"/>
+                        <xsl:choose>
+                            <xsl:when test="matches($unitNum,'{d/{{2,4}}')">
+                           <xsl:text>,</xsl:text>
+                           <xsl:value-of select="f:unitNumToName($unitNum[current()]/text())"/>                          
+                       </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:text>,</xsl:text>
+                            <xsl:value-of select="f:unitAcronymToName($unitAcronym)"/>                           
+                        </xsl:otherwise>
+                        </xsl:choose>
+                        <xsl:text>,</xsl:text>
+                        <xsl:value-of select="f:acronymToAddress($acronym)"/>   
+                    </affiliation>
+                </xsl:if>
             <role>
                 <roleTerm type="text">author</roleTerm>
             </role>
         </xsl:for-each>
     </xsl:template>
-
 
 
     <xd:doc>
@@ -490,15 +495,18 @@
             <xsl:when test="string[@key='pub_page'] except *[($start_page) or ($end_page)]">
                 <xsl:if test="contains(string[@key='pub_page'],'-')">
                     <start>
+                        <test0>test0</test0>
                         <xsl:value-of select="substring-before(string[@key='pub_page'],'-')"/>    
                     </start>
                     <end>
-                        <xsl:value-of select="substring-after(string[@key='pub_page'],'-')"/> 
+                        <xsl:value-of select="substring-after(string[@key='pub_page'],'-')"/>
+                        <test0>test0</test0>
                     </end>
                    <xsl:if test="contains(string[@key='pub_page'], 's')"/>
                     <xsl:variable name="translated_total" select="translate(string[@key='pub_page'], '[s]','')"/>
                 <total>
                     <xsl:value-of select="f:calculateTotalPgs(substring-before($translated_total,'-'), substring-after($translated_total, '-'))"/>
+                    <test0>test0</test0>
                 </total>
                 </xsl:if>
             </xsl:when>
@@ -506,41 +514,50 @@
                 <xsl:sequence>
                     <start>
                         <xsl:value-of select="$start_page"/>
+                        <test2>test1</test2>
                     </start>
                     <end>
                         <xsl:value-of select="$end_page"/>
+                        <test2>test1</test2>
                     </end>
                     <total>
                         <xsl:value-of select="f:calculateTotalPgs($start_page, $end_page)"/>
+                        <test2>test1</test2>
                     </total>
                 </xsl:sequence>
             </xsl:when>
             <xsl:when test="$pages">
                 <xsl:analyze-string select="$pages" regex="(\d{{1,4}})(\s\w{{1,4}})|(\S{{1,4}})\-\S{{1,4}}">
                     <xsl:matching-substring>
-                        <xsl:if test="contains(string(), '-')">
+<!--                        <xsl:if test="contains(string(), '-')">-->
                             <start>
                                 <xsl:value-of select="substring-before($pages, '-')"/>
+                              <test2>test2</test2>
                             </start>
                             <end>
                                 <xsl:value-of select="substring-after($pages, '-')"/>
+                                <test2>test2</test2>
                             </end>
                             <total>
                                 <xsl:value-of select="f:calculateTotalPgs(substring-before($pages, '-'), substring-after($pages, '-'))"/>
+                                <test2>test2</test2>
                             </total>
-                        </xsl:if>
+                        <!--</xsl:if>-->
                         
 
                     </xsl:matching-substring>
                     <xsl:non-matching-substring>
                         <start>
-                            <xsl:value-of select="substring-before($pub_publication,'-'[last()])"/>
+                            <xsl:value-of select="substring-before(tokenize($pub_publication,'-')[last()], '-')"/>
+                            <test3>test3</test3>                
                         </start>
                         <end>
-                            <xsl:value-of select="substring-after($pub_publication, '-'[last()])"/>
+                            <xsl:value-of select="substring-before(tokenize($pub_publication,'-')[last()], '-')"/>
+                            <test3>test3</test3>                                            
                         </end>
                         <total>
-                            <xsl:value-of select="f:calculateTotalPgs(substring-before($pub_publication, '-'[last()]), substring-after($pub_publication,'-'[last()]))"/>
+                            <xsl:value-of select="f:calculateTotalPgs(substring-before($pub_publication, '-')[last()], substring-after($pub_publication,'-')[last()])"/>
+                            <test3>test3</test3>                                        
                         </total>
                 
                         
@@ -552,17 +569,19 @@
                     <xsl:for-each select="$pages"> 
                     <start>
                         <xsl:value-of select="substring-before($pub_publication, '-'[last()])"/>
+                        <test4>test4</test4>
                 </start>
                 <end>
                     <xsl:copy-of select="substring-after($pub_publication, '-'[last()])"/>
+                    <test4>test4</test4>
                 </end>
                 <total>
                     <xsl:value-of select="f:calculateTotalPgs(substring-before($pub_publication, '-'[last()]), substring-before($pub_publication, '-'[last()]))"/>
+                    <test4>test4</test4>
                 </total>
                     </xsl:for-each>
                 </xsl:if>
-            </xsl:otherwise>
-            
+            </xsl:otherwise>            
         </xsl:choose>
     </xsl:template>
 

@@ -39,7 +39,7 @@
             Resource Update (RU)', ','))"/>
     </xsl:param>
 
-    <!-- <xd:doc>
+     <xd:doc>
         <xd:desc/>
     </xd:doc>
     <xsl:template match="data">
@@ -58,14 +58,14 @@
             </mods>
         </xsl:result-document>
     </xsl:template>
--->
+
 
 
 
     <xd:doc>
-        <xd:desc/>
+        <xd:desc>Test root in order to </xd:desc>
     </xd:doc>
-    <xsl:template match="/data">
+  <!--  <xsl:template match="/data">
         <xsl:result-document omit-xml-declaration="yes" indent="no" method="json"
             href="{$workingDir}{$archiveFile}_{position()}.json" format="archive">
             <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
@@ -81,7 +81,7 @@
                 <xsl:apply-templates select="json-to-xml(.)"/>
             </mods>
         </xsl:result-document>
-    </xsl:template>
+    </xsl:template>-->
 
 
     <xd:doc>

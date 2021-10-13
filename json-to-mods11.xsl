@@ -15,8 +15,8 @@
     exclude-result-prefixes="f fn math mods saxon usfs xd xs xsi">
 
     <xsl:output method="json" indent="no" encoding="UTF-8" name="archive"/>
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"
-    saxon:next-in-chain="fix_characters.xsl"/>
+    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
+    <!--saxon:next-in-chain="fix_characters.xsl"/>-->
 
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>

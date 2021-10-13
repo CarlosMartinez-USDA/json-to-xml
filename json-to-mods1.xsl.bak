@@ -8,8 +8,7 @@
 ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
     xmlns="http://www.loc.gov/mods/v3" xmlns:mods="http://www.loc.gov/mods/v3"
-    xmlns:f="http://functions"
-    xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    xmlns:f="http://functions" xmlns:fn="http://www.w3.org/2005/xpath-functions"
     xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:saxon="http://saxon.sf.net/"
     xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfsreseaerch"
@@ -18,7 +17,7 @@
     <xsl:output method="json" indent="no" encoding="UTF-8" name="archive"/>
     <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
     <!-- saxon:next-in-chain="fix_characters.xsl"/>-->
-    
+
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
     <xsl:include href="commons/new_params.xsl"/>
@@ -28,8 +27,7 @@
         <xd:desc/>
     </xd:doc>
     <xsl:param name="p_series" as="xs:string">
-        <xsl:value-of
-            select="normalize-space(string-join('Forest Insect &amp; Disease Leaflet,
+        <xsl:value-of select="normalize-space(string-join('Forest Insect &amp; Disease Leaflet,
             General Technical Report (GTR),
             General Technical Report - Proceedings,
             Information Forestry,
@@ -38,8 +36,7 @@
             Research Map (RMAP),
             Research Note (RN),
             Research Paper (RP),
-            Resource Update (RU)', ','))"
-        />
+            Resource Update (RU)', ','))"/>
     </xsl:param>
 
     <!-- <xd:doc>
@@ -70,13 +67,11 @@
     </xd:doc>
     <xsl:template match="/data">
         <xsl:result-document omit-xml-declaration="yes" indent="no" method="json"
-            href="{$workingDir}{$archiveFile}_{position()}.json"
-            format="archive">
+            href="{$workingDir}{$archiveFile}_{position()}.json" format="archive">
             <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
         </xsl:result-document>
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
-            href="{$workingDir}N-{$archiveFile}.xml"
-            format="original">
+            href="{$workingDir}N-{$archiveFile}.xml" format="original">
             <mods>
                 <xsl:namespace name="mods">http://www.loc.gov/mods/v3</xsl:namespace>
                 <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
@@ -87,7 +82,7 @@
             </mods>
         </xsl:result-document>
     </xsl:template>
-    
+
 
     <xd:doc>
         <xd:desc>
@@ -127,8 +122,9 @@
 
         <!--identifiers-->
         <xsl:apply-templates select="./string[@key = 'doi']"/>
-        <xsl:apply-templates select="./string[@key = 'url_landing_page'] | ./string[@key = 'url_binary_file']"/>
-       
+        <xsl:apply-templates
+            select="./string[@key = 'url_landing_page'] | ./string[@key = 'url_binary_file']"/>
+
         <!--extension-->
         <xsl:call-template name="extension"/>
     </xsl:template>
@@ -346,7 +342,7 @@
         </xsl:for-each>
     </xsl:template>
 
-  
+
     <xd:doc>
         <xd:desc/>
         <xd:param name="p_series"/>
@@ -354,8 +350,7 @@
     <xsl:template match="map/string[@key = 'pub_type_desc'] | map/string[@key = 'pub_publication']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="pub_type_desc">
         <xsl:param name="p_series">
-            <xsl:value-of
-                select="normalize-space(string-join('Forest Insect &amp; Disease Leaflet,
+            <xsl:value-of select="normalize-space(string-join('Forest Insect &amp; Disease Leaflet,
                 General Technical Report (GTR),
                 General Technical Report - Proceedings,
                 Information Forestry,
@@ -364,8 +359,7 @@
                 Research Map (RMAP),
                 Research Note (RN),
                 Research Paper (RP),
-                Resource Update (RU)', ','))"
-            />
+                Resource Update (RU)', ','))"/>
         </xsl:param>
         <xsl:variable name="pub_type" select="map/string[@key = 'pub_type_desc']"/>
         <xsl:variable name="pub_publication" select="map/string[@key = 'pub_publication']"/>
@@ -402,33 +396,33 @@
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="relatedItem_title">
         <xsl:value-of select="map/string[@key = 'pub_type_desc']"/>
     </xsl:template>
-        <xd:doc>
-                <xd:desc>
-                    <xd:p>pub_type_desc as a string to be parsed</xd:p>
-                    <xd:p>Journal host info: base doi, origin, agency, sub-agency, research station,
-                        research unit, page numbers</xd:p>
-                </xd:desc>
-            </xd:doc>
-            <xsl:template match="map/string[@key = 'pub_publication']"
-                xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="relatedItem_title">   
-                <xsl:value-of select="map/string[@key = 'pub_publication']"/>
-            </xsl:template>
-  
+    <xd:doc>
+        <xd:desc>
+            <xd:p>pub_type_desc as a string to be parsed</xd:p>
+            <xd:p>Journal host info: base doi, origin, agency, sub-agency, research station,
+                research unit, page numbers</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template match="map/string[@key = 'pub_publication']"
+        xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="relatedItem_title">
+        <xsl:value-of select="map/string[@key = 'pub_publication']"/>
+    </xsl:template>
+
     <xd:doc>
         <xd:desc/>
-        
+
     </xd:doc>
-    <xsl:template match="map/string[@key = ('pub_type_desc','pub_publication')]"
+    <xsl:template match="map/string[@key = ('pub_type_desc', 'pub_publication')]"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="pub_type_desc">
         <xsl:variable name="pub_type" select="map/string[@key = 'pub_type_desc']"/>
         <xsl:variable name="pub_publication" select="map/string[@key = 'pub_publication']"/>
         <xsl:choose>
-            <xsl:when test="contains($pub_type, text()) ">
+            <xsl:when test="contains($pub_type, text())">
                 <relatedItem type="series">
                     <titleInfo type="abbreviated">
-                       <title>
-                           <xsl:apply-templates select="./text()" mode="relatedItem_title"/>
-                       </title>
+                        <title>
+                            <xsl:apply-templates select="./text()" mode="relatedItem_title"/>
+                        </title>
                     </titleInfo>
                 </relatedItem>
             </xsl:when>
@@ -441,20 +435,20 @@
                     </titleInfo>
                 </relatedItem>
             </xsl:when>
-      
+
             <xsl:otherwise>
-                    <relatedItem type="host">
-                        <titleInfo>
-                            <title>
-                                <xsl:apply-templates select="./text()" mode="relatedItem_title"/>
-                            </title>
-                        </titleInfo>
-                    </relatedItem>
-             </xsl:otherwise>
+                <relatedItem type="host">
+                    <titleInfo>
+                        <title>
+                            <xsl:apply-templates select="./text()" mode="relatedItem_title"/>
+                        </title>
+                    </titleInfo>
+                </relatedItem>
+            </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
 
- 
+
 
 
     <xd:doc>
@@ -509,18 +503,16 @@
     <xd:doc>
         <xd:desc/>
         <xd:param name="start_page"/>
-        <xd:param name="end_page"/>
-        <xd:param name="total_pages"/>
+        <xd:param name="end_page"/>        
         <xd:param name="pub_publication"/>
-        <xd:param name="pages"/>
+        
     </xd:doc>
     <xsl:template name="pages" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:param name="start_page" select="/fn:map/fn:string[@key = 'pub_page_start']"/>
-        <xsl:param name="end_page" select="/fn:map/fn:string[@key = 'pub_page_end']"/>
-        <xsl:param name="total_pages" select="f:calculateTotalPgs($start_page, $end_page)"/>
-        <xsl:param name="pub_publication" select="/fn:map/fn:string[@key = 'pub_publication']"/>
-        <xsl:param name="pages" select="tokenize(./string[@key = 'pub_publication'], '-')[last()]"/>
-        <xsl:choose>   
+        <xsl:param name="end_page" select="/fn:map/fn:string[@key = 'pub_page_end']"/>    
+        <xsl:param name="pages" select="/fn:map/fn:string[@key = 'pub_publication']"/>
+        
+        <xsl:choose>
             <xsl:when test="$start_page and $end_page">
                 <xsl:sequence>
                     <start>
@@ -530,39 +522,44 @@
                         <xsl:value-of select="$end_page"/>
                     </end>
                     <total>
-                        <xsl:value-of select="$total_pages"/>
+                        <xsl:value-of select="f:calculateTotalPgs($start_page, $end_page)"/>
                     </total>
                 </xsl:sequence>
             </xsl:when>
-            <xsl:otherwise>
-                <xsl:analyze-string select="$pages" regex="(\d{{1,4}})(\s\w{{1,4}})|(\S{{1,4}})\-\S{{1,4}}">
-                    <xsl:non-matching-substring>
+        <!--    <xsl:when test="$pages">
+                <xsl:analyze-string select="$pages"
+                    regex="(\d{{1,4}})(\s\w{{1,4}})|(\S{{1,4}})\-\S{{1,4}}">
+                    <xsl:matching-substring>
                         <start>
-                            <xsl:value-of select="substring-before($pages, '-')"/>
+                            <xsl:value-of select="$pages"/>
                         </start>
                         <end>
                             <xsl:value-of select="substring-after($pages, '-')"/>
                         </end>
                         <total>
-                            <xsl:value-of select="f:calculateTotalPgs(substring-before($pages, '-'), substring-after($pages, '-'))"/>
+                            <xsl:value-of
+                                select="f:calculateTotalPgs(substring-before($pages, '-'), substring-after($pages, '-'))"
+                            />
                         </total>
-                
-                        
-                    </xsl:non-matching-substring>
+                    </xsl:matching-substring>
                 </xsl:analyze-string>
+            </xsl:when>
+        -->    
+            <xsl:otherwise>
+                <xsl:variable name="pages" select="replace($pages.  )"/>
                 <xsl:for-each select="$pages">
-                <start>
-                    <xsl:value-of select="$pages"/>
-                </start>
-                <end>
-                    <xsl:copy-of select="substring-after($pages, '.'[last()])"/>
-                </end>
-                <total>
-                    <xsl:value-of select="f:calculateTotalPgs($pages, substring-after($pages, '-'))"/>
-                </total>
+                    <start>
+                        <xsl:value-of select="$start_page"/>
+                    </start>
+                    <end>
+                        <xsl:copy-of select="substring-after($pages, '.'[last()])"/>
+                    </end>
+                    <total>
+                        <xsl:value-of
+                            select="f:calculateTotalPgs($pages, substring-after($pages, '-'))"/>
+                    </total>
                 </xsl:for-each>
             </xsl:otherwise>
-            
         </xsl:choose>
     </xsl:template>
 
@@ -598,7 +595,8 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template match="map/string[@key = 'doi']" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <xsl:template match="map/string[@key = 'doi']"
+        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:if test="@key = 'doi'">
             <identifier type="doi">
                 <xsl:value-of select="."/>
@@ -615,7 +613,8 @@
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template match="map/string[@key = 'url_landing_page'] | map/string[@key = 'url_binary_file']"
+    <xsl:template
+        match="map/string[@key = 'url_landing_page'] | map/string[@key = 'url_binary_file']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:if test="./string[@key = 'url_landing_page']">
             <identifier>
@@ -649,10 +648,13 @@
 
     <xd:doc scope="component">
         <xd:desc>
-            <xd:p><xd:b>vendorName:</xd:b>Metadata supplier name (e.g., Brill, Springer, Elsevier)</xd:p>
-            <xd:p><xd:b>filename_ext:</xd:b>Filename from source metadata (eg. filename.xml, filename.json or filename.zip)</xd:p>
+            <xd:p><xd:b>vendorName:</xd:b>Metadata supplier name (e.g., Brill, Springer,
+                Elsevier)</xd:p>
+            <xd:p><xd:b>filename_ext:</xd:b>Filename from source metadata (eg. filename.xml,
+                filename.json or filename.zip)</xd:p>
             <xd:p><xd:b>filename:</xd:b>filename w/o the extension (i.e., xml, json or zip)</xd:p>
-            <xd:p><xd:b>workingDirectory:</xd:b>directory the source file is transformed debugging</xd:p>
+            <xd:p><xd:b>workingDirectory:</xd:b>directory the source file is transformed
+                debugging</xd:p>
         </xd:desc>
     </xd:doc>
     <xsl:template name="extension" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
