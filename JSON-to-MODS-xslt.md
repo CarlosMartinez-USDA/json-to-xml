@@ -3,11 +3,11 @@
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 
 ## Transformation
-
-JSON
-XSLT 3.0
-XPath 3.1 
-MODS 3.7
+#### Data t
+ - JSON
+- XSLT 3.0
+- XPath 3.1 
+- MODS 3.7
 
 # Files
 
@@ -148,5 +148,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwODAyOTI3NDRdfQ==
+eyJoaXN0b3J5IjpbLTE0MTgzMzc4NTQsLTEwODAyOTI3NDRdfQ
+==
 -->
