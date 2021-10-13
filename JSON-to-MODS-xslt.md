@@ -5,8 +5,8 @@
 ## Transformation
 #### Languages used: 
  - JSON
-- XPath 3.1 
-- XSLT 3.0
+- [XPath 3.1](https://www.w3.org/TR/xpath-31/)
+- [XSLT 3.0](https://www.w3.org/TR/xslt-30/)
 - MODS 3.7
 
 # Files
@@ -148,5 +148,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyMjE4ODE1MiwtMTA4MDI5Mjc0NF19
+eyJoaXN0b3J5IjpbLTE2ODU0NjE2MzEsLTEwODAyOTI3NDRdfQ
+==
 -->
