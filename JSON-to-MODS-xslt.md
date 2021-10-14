@@ -7,6 +7,15 @@
 - [XPath 3.1](https://www.w3.org/TR/xpath-31/)
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/)
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd)
+And this will produce a flow chart:
+
+```mermaid
+graph LR
+A[Square Rect] -- Link text --> B((Circle))
+A --> C(Round Rect)
+B --> D{Rhombus}
+C --> D
+```
 
 # Files
 
@@ -147,5 +156,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTM3OTU1OTk1LC0xMDgwMjkyNzQ0XX0=
+eyJoaXN0b3J5IjpbLTEyMTE4MDE0OSw5Mzc5NTU5OTUsLTEwOD
+AyOTI3NDRdfQ==
 -->
