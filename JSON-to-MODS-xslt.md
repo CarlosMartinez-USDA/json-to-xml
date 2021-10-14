@@ -12,9 +12,9 @@
 
 ```mermaid
 graph LR
-A[JSON] --> B((XPath 3.1))
-A --> C(XSLT 3.0)
-B --transformation--> D{MODS 3.7}
+A[JSON] --> B(()
+B --> B(XSLT 3.0)
+B --transformation--> C{MODS 3.7}
 C --> D
 ```
 
@@ -157,6 +157,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY3NzY4OTE5LDkzNzk1NTk5NSwtMTA4MD
-I5Mjc0NF19
+eyJoaXN0b3J5IjpbMTY4MTYzMzM4OCw5Mzc5NTU5OTUsLTEwOD
+AyOTI3NDRdfQ==
 -->
