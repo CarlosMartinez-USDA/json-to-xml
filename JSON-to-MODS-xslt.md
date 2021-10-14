@@ -7,12 +7,13 @@
 - [XPath 3.1](https://www.w3.org/TR/xpath-31/)
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/)
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd)
-And this will produce a flow chart:
+
+### And this will produce a flow chart:
 
 ```mermaid
 graph LR
-A[Square Rect] -- Link text --> B((Circle))
-A --> C(Round Rect)
+A[JSON] ----> B((XPath))
+A --> C(XSLT 3)
 B --> D{Rhombus}
 C --> D
 ```
@@ -156,6 +157,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTE4MDE0OSw5Mzc5NTU5OTUsLTEwOD
+eyJoaXN0b3J5IjpbLTc5NTQ2MzIyNSw5Mzc5NTU5OTUsLTEwOD
 AyOTI3NDRdfQ==
 -->
