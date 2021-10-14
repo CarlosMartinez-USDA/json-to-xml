@@ -15,7 +15,7 @@ graph LR
 A[JSON] --> B((XSLT3.0))
 B-->B.1((XPath 3.1))-->C
 B --transformation--> C{XML}
-C --> D{MODS 3.7}
+C --map-> D[MODS 3.7]
 ```
 
 # Files
@@ -157,6 +157,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4ODM5MTk1OCwtMTk4NjI1NjEwNyw5Mz
+eyJoaXN0b3J5IjpbLTIyODg3OTI1NywtMTk4NjI1NjEwNyw5Mz
 c5NTU5OTUsLTEwODAyOTI3NDRdfQ==
 -->
