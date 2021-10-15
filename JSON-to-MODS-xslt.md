@@ -2,7 +2,7 @@
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for  ingest into Unified Repository. 
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 
-### Transo
+**_Transformation uses the following formats and schema to transform and map JSON key  values  into MODS elements and attributes_**
  - [JSON](https://www.json.org/json-en.html)
 - [XPath 3.1](https://www.w3.org/TR/xpath-31/)
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/)
@@ -159,6 +159,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk5OTU3MjIwMSwtMTcyOTI2MDkyOCwtMT
-k4NjI1NjEwNyw5Mzc5NTU5OTUsLTEwODAyOTI3NDRdfQ==
+eyJoaXN0b3J5IjpbLTIxMDg0NTA4NjcsLTE3MjkyNjA5MjgsLT
+E5ODYyNTYxMDcsOTM3OTU1OTk1LC0xMDgwMjkyNzQ0XX0=
 -->
