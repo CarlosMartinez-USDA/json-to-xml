@@ -8,7 +8,7 @@
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/)
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd)
 
-### And this will produce a flow chart:
+### Each transformation produce a flow chart:
 
 ```mermaid
 graph LR
@@ -157,6 +157,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MjkyNjA5MjgsLTE5ODYyNTYxMDcsOT
-M3OTU1OTk1LC0xMDgwMjkyNzQ0XX0=
+eyJoaXN0b3J5IjpbLTE4NTc5NzU3NDcsLTE3MjkyNjA5MjgsLT
+E5ODYyNTYxMDcsOTM3OTU1OTk1LC0xMDgwMjkyNzQ0XX0=
 -->
