@@ -2,13 +2,13 @@
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for  ingest into Unified Repository. 
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 
-### Formats and Schemas used for Transformation
+- Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element. 
  - [JSON](https://www.json.org/json-en.html)
 - [XPath 3.1](https://www.w3.org/TR/xpath-31/)
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/)
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd)
 
-### Each transformation produce a flow chart:
+### This flowchart illustrates the workflow of the transformation
 
 ```mermaid
 graph LR
@@ -157,6 +157,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTc5NzU3NDcsLTE3MjkyNjA5MjgsLT
+eyJoaXN0b3J5IjpbLTEzODEzNzg3OTgsLTE3MjkyNjA5MjgsLT
 E5ODYyNTYxMDcsOTM3OTU1OTk1LC0xMDgwMjkyNzQ0XX0=
 -->
