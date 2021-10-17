@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>A method countries can use to estimate changes in carbon stored in harvested wood products and the uncertainty of such estimates</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Kenneth E.</namePart>
+      <namePart type="family">Skog</namePart>
+      <displayForm>Skog, Kenneth E.</displayForm>
+      <affiliaton>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliaton>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Kim</namePart>
+      <namePart type="family">Pingoud</namePart>
+      <displayForm>Pingoud, Kim</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">James E.</namePart>
+      <namePart type="family">Smith</namePart>
+      <displayForm>Smith, James E.</displayForm>
+      <affiliaton>United States Department of Agriculture, Forest Service, Northern Research Station, , One Gifford Pinchot Drive, Madison, WI 53726</affiliaton>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2019-09-24</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>A method is suggested for estimating additions to carbon stored in harvested wood products (HWP) and for evaluating uncertainty. The method uses data on HWP production and trade from several decades and tracks annual additions to pools of HWP in use, removals from use, additions to solid waste disposal sites (SWDS), and decay from SWDS. The method is consistent with IPCC guidance for estimating emissions from SWDS. Uncertainty is postulated in the form of probability density functions for 14 variables, using Monte Carlo simulation.</abstract>
+   <subject>
+      <topic>carbon sequestration</topic>
+   </subject>
+   <subject>
+      <topic>harvested wood products</topic>
+   </subject>
+   <subject>
+      <topic>estimation methods</topic>
+   </subject>
+   <relatedItem>
+      <part>
+         <detail type="volume">
+            <number>33</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2019</text>
+         <text type="month">09</text>
+         <text type="day">24</text>
+         <extent unit="pages">
+            <start>s65</start>
+            <end>s73</end>
+            <total>8</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sampleFiles/sample_files/A-13977.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\result-files\</workingDirectory>
+   </extension>
+</mods>

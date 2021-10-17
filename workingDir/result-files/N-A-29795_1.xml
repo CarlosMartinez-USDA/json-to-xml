@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Measurements of moisture transport in wood-based materials under isothermal and nonisothermal conditions</title>
+   </titleInfo>FPL<name type="personal">
+      <namePart type="given">Samuel V.</namePart>
+      <namePart type="family">Glass</namePart>
+      <displayName>Glass, Samuel V.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , Building and Fire Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-11-19</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <relatedItem>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">11</text>
+         <text type="day">19</text>
+         <extent unit="pages"/>
+      </part>
+   </relatedItem>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/workingDir/A-29795.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\result-files\</workingDirectory>
+   </extension>
+</mods>

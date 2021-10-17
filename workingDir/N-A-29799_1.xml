@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Effect of tree-growth rate on papermaking fiber properties</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Junyong</namePart>
+      <namePart type="family">Zhu</namePart>
+      <displayName>Zhu, Junyong</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David W.</namePart>
+      <namePart type="family">Vahey</namePart>
+      <displayName>Vahey, David W.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">C. Tim</namePart>
+      <namePart type="family">Scott</namePart>
+      <displayName>Scott, C. Tim</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Gary C.</namePart>
+      <namePart type="family">Myers</namePart>
+      <displayName>Myers, Gary C.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-16</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Measurements of wood density and anatomical properties of wood disks were conducted by SilviScan (CSIRO Australia) and a new imaging technique. The disks included red pine obtained from a never-thinned experimental forest with five different plantation densities and Douglas-fir and lodgepole pine (one normal growth and the other suppressed growth) both supplied by a sawmill. The results indicated that the effect of tree-growing conditions can be effectively characterized by radial annual growth rate. Growth suppression produced wood with less distinction in wood density, tracheid radial diameter, and wall thickness between earlywood and latewood.</abstract>
+   <subject>
+      <topic>Pulping</topic>
+   </subject>
+   <subject>
+      <topic>red pine</topic>
+   </subject>
+   <subject>
+      <topic>wood anatomy</topic>
+   </subject>
+   <subject>
+      <topic>wood density</topic>
+   </subject>
+   <subject>
+      <topic>papermaking</topic>
+   </subject>
+   <subject>
+      <topic>fibers</topic>
+   </subject>
+   <subject>
+      <topic>Douglas fir</topic>
+   </subject>
+   <subject>
+      <topic>tree-rings</topic>
+   </subject>
+   <subject>
+      <topic>tree farms</topic>
+   </subject>
+   <subject>
+      <topic>stand density</topic>
+   </subject>
+   <subject>
+      <topic>thinnings</topic>
+   </subject>
+   <subject>
+      <topic>ring profiler</topic>
+   </subject>
+   <subject>
+      <topic>small-diameter timber</topic>
+   </subject>
+   <subject>
+      <topic>smallwood</topic>
+   </subject>
+   <subject>
+      <topic>smallwood</topic>
+   </subject>
+   <subject>
+      <topic>small timbers</topic>
+   </subject>
+   <subject>
+      <topic>SilviScan</topic>
+   </subject>
+   <subject>
+      <topic>tracheids</topic>
+   </subject>
+   <subject>
+      <topic>lodgepole pine</topic>
+   </subject>
+   <subject>
+      <topic>wood fibers</topic>
+   </subject>
+   <subject>
+      <topic>red pine</topic>
+   </subject>
+   <subject>
+      <topic>suppressed growth</topic>
+   </subject>
+   <relatedItem>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">16</text>
+         <extent unit="pages">
+            <start/>
+            <end>9 May 2007 : proceedings</end>
+            <total/>
+         </extent>
+      </part>
+   </relatedItem>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/workingDir/A-29799.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\</workingDirectory>
+   </extension>
+</mods>

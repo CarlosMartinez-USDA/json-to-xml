@@ -1,0 +1,1 @@
+cat *.json > "merged-file_`date +%Y-%m-%d-%H-%M-%S`.json"

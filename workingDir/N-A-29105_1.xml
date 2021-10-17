@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Infrared spectroscopic monitoring of urea addition to oriented strandboard resins</title>
+   </titleInfo>SRS<name type="personal">
+      <namePart type="given">Chi-Leung</namePart>
+      <namePart type="family">So</namePart>
+      <displayName>So, Chi-Leung</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Thomas L.</namePart>
+      <namePart type="family">Eberhardt</namePart>
+      <displayName>Eberhardt, Thomas L.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, , , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Ernest</namePart>
+      <namePart type="family">Hsu</namePart>
+      <displayName>Hsu, Ernest</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Brian K.</namePart>
+      <namePart type="family">Via</namePart>
+      <displayName>Via, Brian K.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Chung Y.</namePart>
+      <namePart type="family">Hse</namePart>
+      <displayName>Hse, Chung Y.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, , , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-12-10</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>One of the variables in phenol formaldehyde adhesive resin formulation is the addition of urea, which allows the resin manufacturer to manipulate both product functionality and cost. Nitrogen content can be used as a measure of the level of urea addition because most of the nitrogen present is derived from urea added at the end of the preparation process. Nitrogen analyses of a set of commercial oriented strandboard resins were first determined by combustion analysis. IR spectroscopic data were then collected and used along with the values for nitrogen content to generate predictive models. First, principal component analysis demonstrated the ability to separate resin mixtures from low to high nitrogen content. Partial least squares regression was then performed and gave excellent correlations between the measured and predicted nitrogen contents for a set of unrelated (test) resins and a set of mixtures prepared through combinations of resins with known nitrogen contents. Similar results were obtained on both a wet and dry mass basis. Given the flexibility of this instrumentation, such analyses could be placed in-line for real time monitoring of resin applied during panel manufacturing</abstract>
+   <subject>
+      <topic>infrared spectroscopy</topic>
+   </subject>
+   <subject>
+      <topic>adhesives</topic>
+   </subject>
+   <subject>
+      <topic>oriented strandboard</topic>
+   </subject>
+   <subject>
+      <topic>phenol formaldehyde</topic>
+   </subject>
+   <subject>
+      <topic>resins</topic>
+   </subject>
+   <subject>
+      <topic>urea</topic>
+   </subject>
+   <relatedItem>
+      <part>
+         <text type="year">2007</text>
+         <text type="month">12</text>
+         <text type="day">10</text>
+         <extent unit="pages">
+            <start/>
+            <end/>
+            <total/>
+         </extent>
+      </part>
+   </relatedItem>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/workingDir/A-29105.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\</workingDirectory>
+   </extension>
+</mods>

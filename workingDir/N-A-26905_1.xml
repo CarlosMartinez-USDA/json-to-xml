@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>The 2005 RPA timber assessment update.</title>
+   </titleInfo>PNW<name type="personal">
+      <namePart type="given">Richard W.</namePart>
+      <namePart type="family">Haynes</namePart>
+      <displayName>Haynes, Richard W.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, , , 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Darius M.</namePart>
+      <namePart type="family">Adams</namePart>
+      <displayName>Adams, Darius M.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Ralph J.</namePart>
+      <namePart type="family">Alig</namePart>
+      <displayName>Alig, Ralph J.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, , , 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Peter J.</namePart>
+      <namePart type="family">Ince</namePart>
+      <displayName>Ince, Peter J.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">John R.</namePart>
+      <namePart type="family">Mills</namePart>
+      <displayName>Mills, John R.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, , , 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Xiaoping</namePart>
+      <namePart type="family">Zhou</namePart>
+      <displayName>Zhou, Xiaoping</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2016-10-11</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This update reports changes in the Nation's timber resource since the Analysis of the Timber Situation in the United States was completed in 2003. Prospective trends in demands for and supplies of timber, and the factors that affect these trends are examined. These trends include changes in the U.S. economy, increased salvage of British Columbia beetle-killed timber, and a stronger U.S. dollar. Other prospective trends that might alter the future timber situation are discussed including changes in U.S. timberland area, reductions in southern pine plantation establishment, impacts of climate change on forest productivity, increased restoration thinning on Western public lands, and the impact of programs to increase carbon sequestration through afforestation. Various management implications such as the influence of prices on forest management, concerns about changes in forest area, the emerging open space issue, forests as a set of commons, seeking to find greater compatibility in forest management, and the stewardship agenda are discussed.</abstract>
+   <subject>
+      <topic>Carbon</topic>
+   </subject>
+   <subject>
+      <topic>Assessments</topic>
+   </subject>
+   <subject>
+      <topic>Forest management</topic>
+   </subject>
+   <subject>
+      <topic>Restoration</topic>
+   </subject>
+   <subject>
+      <topic>Timber</topic>
+   </subject>
+   <relatedItem>
+      <part>
+         <detail type="volume">
+            <number>699</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2016</text>
+         <text type="month">10</text>
+         <text type="day">11</text>
+         <extent unit="pages">
+            <start/>
+            <end>GTR-699</end>
+            <total/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/PNW-GTR-699</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/PNW-GTR-699</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/workingDir/A-26905.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\</workingDirectory>
+   </extension>
+</mods>

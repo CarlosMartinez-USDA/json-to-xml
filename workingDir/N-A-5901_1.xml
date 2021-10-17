@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Nonlinear programming models to optimize uneven-aged loblolly pine management</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Benedict J.</namePart>
+      <namePart type="family">Schulte</namePart>
+      <displayName>Schulte, Benedict J.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Joseph</namePart>
+      <namePart type="family">Buongiorno</namePart>
+      <displayName>Buongiorno, Joseph</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Kenneth</namePart>
+      <namePart type="family">Skog</namePart>
+      <displayName>Skog, Kenneth</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2016-01-28</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Nonlinear programming models of uneven-aged loblolly pine (Pinus taeda L.) management were developed to identify sustainable management regimes which optimize: 1) soil expectation value (SEV), 2) tree diversity, or 3) annual sawtimber yields. The models use the equations of SouthPro, a site- and density-dependent, multi-species matrix growth and yield model that recognizes three species groups (loblolly pine and other softwoods, soft hardwoods, and hard hardwoods) and 13 P-inch diameter-at-breast-height size classes. The regimes for optimal diversity almost obtain their theoretical maximum Shannon diversity indices, but have low SEVas. The optimal economic and production regimes each involve a guiding maximum diameter for softwoods and complete hardwood control, with the optimal maximum diameter a function of site productivity. Constrained optimizations in which SEV is maximized subject to increasing constraints on diversity show the tradeoffs between economic return and diversity objectives.</abstract>
+   <subject>
+      <topic>Pinus taeda</topic>
+   </subject>
+   <subject>
+      <topic>Forest management</topic>
+   </subject>
+   <subject>
+      <topic>Mathematical models</topic>
+   </subject>
+   <subject>
+      <topic>Growth yield relationship</topic>
+   </subject>
+   <subject>
+      <topic>Species diversity</topic>
+   </subject>
+   <subject>
+      <topic>Stand structure</topic>
+   </subject>
+   <subject>
+      <topic>Equations</topic>
+   </subject>
+   <subject>
+      <topic>Biomass production</topic>
+   </subject>
+   <subject>
+      <topic>Optimization methods</topic>
+   </subject>
+   <subject>
+      <topic>Sawnwood</topic>
+   </subject>
+   <subject>
+      <topic>Stumpage value</topic>
+   </subject>
+   <subject>
+      <topic>Nonlinear programming</topic>
+   </subject>
+   <relatedItem>
+      <part>
+         <detail type="volume">
+            <number>30</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2016</text>
+         <text type="month">01</text>
+         <text type="day">28</text>
+         <extent unit="pages">s <start>381</start>
+            <end>387</end>
+            <total>6</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-GTR-30</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-GTR-30</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/workingDir/A-5901.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\</workingDirectory>
+   </extension>
+</mods>

@@ -10,7 +10,7 @@
     
    
     <xsl:template match="data">
-        <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8"
+        <xsl:result-document indent="yes" encoding="UTF-8"
             href="{$workingDir}{replace($originalFilename, '(.*/)(.*)(\.json)', '$2')}_{position()}.xml"
             format="archive">
             <xsl:copy-of select="json-to-xml(.)"/>
