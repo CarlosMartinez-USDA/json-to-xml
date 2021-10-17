@@ -4,9 +4,9 @@
 
 ## Transformation process
 The **_[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl) transforms utilizes the following formats and schema_**:
- - [JSON](https://www.json.org/json-en.html) : (JavaScript Object Notation)
-- [XPath 3.1](https://www.w3.org/TR/xpath-31/) : 
-- [XSLT 3.0](https://www.w3.org/TR/xslt-30/) :
+ - [JSON](https://www.json.org/json-en.html): (JavaScript Object Notation)
+- [XPath 3.1](https://www.w3.org/TR/xpath-31/): (XML Path Language)
+- [XSLT 3.0](https://www.w3.org/TR/xslt-30/):  
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd) :
  ######  *Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element. 
 
@@ -160,7 +160,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzkxMjEzNjEsNTI4NDk4NzY1LC0xNz
-I5MjYwOTI4LC0xOTg2MjU2MTA3LDkzNzk1NTk5NSwtMTA4MDI5
-Mjc0NF19
+eyJoaXN0b3J5IjpbNTk2ODg0MDc4LDUyODQ5ODc2NSwtMTcyOT
+I2MDkyOCwtMTk4NjI1NjEwNyw5Mzc5NTU5OTUsLTEwODAyOTI3
+NDRdfQ==
 -->
