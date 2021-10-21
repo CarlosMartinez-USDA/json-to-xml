@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usfs:research xmlns:usfs="http://usfsresearch" xmlns="http://usfsresearch"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<?xml-model href="USFS_reserach.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<usfs:research  xmlns="http://usfsresearch" xmlns:usfs="http://usfsresearch" 
+    xsi:schemaLocation="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/usfs_research.xsd"> 
     <stations>
+        <!--Northern Research Station-->
         <station>
             <acronym type="research_station">NRS</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
-            <name>Northern Research Station</name>   
+            <name>Northern Research Station</name>
             <researchUnits>
                 <researchUnit acronym="NRS">
                     <unitAcronym type="station_unit">EESAFEG</unitAcronym>
@@ -51,7 +53,8 @@
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">PTESSSNRM</unitAcronym>
                     <unitNumber>9</unitNumber>
-                    <unitName>People and Their Environments: Social Science Supporting Natural Resource Management and Policy</unitName>
+                    <unitName>People and Their Environments: Social Science Supporting Natural
+                        Resource Management and Policy</unitName>
                     <projectLeader>Robert G. Haight</projectLeader>
                 </researchUnit>
                 <researchUnit unitAcronym="NRS">
@@ -75,18 +78,19 @@
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">SFG</unitAcronym>
                     <unitNumber>15</unitNumber>
-                    <unitName>The Strategic Foresight Group</unitName>                   
+                    <unitName>The Strategic Foresight Group</unitName>
                     <projectLeader>Robert G. Haight</projectLeader>
                 </researchUnit>
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">RCRUF</unitAcronym>
                     <unitNumber>16</unitNumber>
-                    <unitName>Restoration and Conservation of Rural and Urban Forests</unitName>                  
+                    <unitName>Restoration and Conservation of Rural and Urban Forests</unitName>
                     <projectLeader>Daniel Lindner</projectLeader>
                 </researchUnit>
             </researchUnits>
-            <address>One Gifford Pinchot Drive, Madison, WI 53726</address>   
+            <address>One Gifford Pinchot Drive, Madison, WI 53726</address>
         </station>
+        <!--Pacific Northwest Research Station-->
         <station>
             <acronym type="research_station">PNW</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
@@ -94,8 +98,7 @@
             <reserachUnits>
                 <researchUnit unitAcronym="PNW">
                     <unitNumber>1</unitNumber>
-                    <unitName>Alaska Wood Utilization Research and Development Center</unitName>
-                    <unitAcronym>AWURDC</unitAcronym>
+                    <unitName>Alaska Wood Utilization Research and Development Center</unitName>                    <unitAcronym>AWURDC</unitAcronym>
                     <unitAddress>11175 Auke Lake Way, Juneau, AK, 99801, US</unitAddress>
                 </researchUnit>
                 <researchUnit unitAcronym="PNW">
@@ -114,7 +117,8 @@
                     <unitNumber>4</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Anchorage)</unitName>
                     <unitAcronym>FSL (Anchorage)</unitAcronym>
-                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501, US</unitAddress>
+                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501,
+                        US</unitAddress>
                 </researchUnit>
                 <researchUnit unitAcronym="PNW">
                     <unitNumber>5</unitNumber>
@@ -141,7 +145,7 @@
                     <unitAddress>620 SW Main Street, Suite 502, Portland, OR, 97205, US</unitAddress>
                 </researchUnit>
                 <researchUnit unitAcronym="PNW">
-                    <unitNumber>9</unitNumber>
+                    <unitNumber>9</unitNumber,
                     <unitName>Forestry Sciences Laboratory (Wenatchee)</unitName>
                     <unitAcronym>FSL (Wenatchee)</unitAcronym>
                     <unitAddress>1133 N Western Avenue, Wenatchee, WA, 98801, US</unitAddress>
@@ -161,24 +165,28 @@
             </reserachUnits>
             <address>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </address>
         </station>
+        <!--Pacific Southwest Research Station-->
         <station>
             <acronym type="research_station">PSW</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>Pacific Southwest Research Station</name>
-            <address>800 Buchanan Street, Albany, CA 94710-0011</address>            
+            <address>800 Buchanan Street, Albany, CA 94710-0011</address>
         </station>
+        <!--Rocky Mountain Research Station-->
         <station>
             <acronym type="research_station">RMRS</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>Rocky Mountain Research Station</name>
             <address>240 West Prospect,Fort Collins, CO 80526</address>
         </station>
+        <!--Southern Research Station-->
         <station>
             <acronym type="research_station">SRS</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>Southern Research Station</name>
             <address>200 W.T. Weaver Blvd. Asheville, NC 28804-3454</address>
         </station>
+        <!--Forest Products Laboratory-->
         <station>
             <acronym type="research_station">FPL</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
@@ -202,7 +210,8 @@
                 </researchUnit>
                 <researchUnit acronym="FPL">
                     <unitNumber>4714</unitNumber>
-                    <unitName>Engineering Properties of Wood, Wood based Materials and Structures</unitName>
+                    <unitName>Engineering Properties of Wood, Wood based Materials and
+                        Structures</unitName>
                 </researchUnit>
                 <researchUnit acronym="FPL">
                     <unitNumber>4709</unitNumber>
@@ -219,6 +228,7 @@
             </researchUnits>
             <address>One Gifford Pinchot Drive, Madison, WI 53726</address>
         </station>
+        <!--International Institute of Tropical Forestry -->
         <station>
             <acronym type="research_station">IITF</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
@@ -226,9 +236,10 @@
             <address>1201 Calle Ceiba, Jardín Botánico Sur, San Juan, PR 00926-1119</address>
         </station>
     </stations>
+    <!--series publications-->
     <seriesPublications>
         <seriesPub type="series">
-            <abbrv>For. Insec. &amp; Dis. Leaf.</abbrv>
+            <abbrv>FIDL</abbrv>
             <treePub>Forest Insect &amp; Disease Leaflet</treePub>
         </seriesPub>
         <seriesPub type="series">
@@ -263,6 +274,7 @@
             <abbrv>Res. Pape</abbrv>
             <treePub>Research Paper</treePub>
         </seriesPub>
+        <!--host publications-->
         <seriesPub type="host">
             <abbrv>Sci. Journal</abbrv>
             <treePub>Scientific Journal (JRNL)"</treePub>
@@ -271,6 +283,9 @@
             <abbrv>Misc. Pub.</abbrv>
             <treePub>Miscellaneous Publication</treePub>
         </seriesPub>
+        <seriesPub type="host">
+            <abbrv>Other</abbrv>
+            <treePub>Other</treePub>
+        </seriesPub>
     </seriesPublications>
 </usfs:research>
-

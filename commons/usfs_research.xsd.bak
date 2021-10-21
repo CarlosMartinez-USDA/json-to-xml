@@ -151,4 +151,3 @@ Part 1:  Research Stations: Structural Declarations and Definitions
   <xs:element name="unitNumber" type="xs:integer"/>
   <xs:element name="projectLeader" type="xs:string"/>
   <xs:element name="unitAddress" type="xs:string"/>
-</xs:schema>

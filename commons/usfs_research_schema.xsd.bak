@@ -1,52 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- 
-  United States Forest Service: Treesearch Metadata Schema. 
-  See https://www.fs.usda.gov/../xsd/usfs_research.xsd
-
-******************************************************************
-*                                                                *                  
-*                           FSTMS 0.1                            *
-*                       October 18, 2021                         * 
-*                  Authored by: Carlos Martinez III              *
-*                  National Agricultural Library                 *                
-*                                                                *
-******************************************************************
-
-
-
-Changes in version 0.1 (example list)
-1.	Capability added....
-2.	Controlled-list ....
-3.	Capability added....
-4.	Capability added....
-
-***************************************************
-***************************************************
-
-
-
-*************************************
-Organization of this schema
-*************************************
-
-The schema has two parts:
-
-1.   Research Stations 
-2.   Series Publications
- 
-
-***********************************************************************
-***********************************************************************
-Part 1:  Research Stations: Structural Declarations and Definitions  
-***********************************************************************
-***********************************************************************
-- UFSS station Definition of a single research station.   
-- usfs stations Selected and named regionally, a listing of six research stations. 
-
-***********************************************************************
-**      Definition of single research station record
-**********************************************************************
--->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://usfsresearch" xmlns:usfs="http://usfsresearch">
   <xs:element name="research">
     <xs:complexType>
@@ -75,15 +27,6 @@ Part 1:  Research Stations: Structural Declarations and Definitions
         </xs:choice>
         <xs:element ref="usfs:address"/>
       </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="acronym">
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:NCName">
-          <xs:attribute name="type" use="required" type="xs:NCName"/>
-        </xs:extension>
-      </xs:simpleContent>
     </xs:complexType>
   </xs:element>
   <xs:element name="agency" type="xs:string"/>
@@ -121,11 +64,20 @@ Part 1:  Research Stations: Structural Declarations and Definitions
   </xs:element>
   <xs:element name="abbrv" type="xs:string"/>
   <xs:element name="treePub" type="xs:string"/>
+  <xs:element name="acronym">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:anyURI">
+          <xs:attribute name="type" type="xs:NCName"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="researchUnit">
     <xs:complexType>
       <xs:sequence>
         <xs:choice maxOccurs="unbounded">
-          <xs:element ref="usfs:unitAcronym"/>
+          <xs:element ref="usfs:acronym"/>
           <xs:element ref="usfs:unitName"/>
           <xs:element ref="usfs:unitNumber"/>
         </xs:choice>
@@ -134,17 +86,7 @@ Part 1:  Research Stations: Structural Declarations and Definitions
           <xs:element ref="usfs:unitAddress"/>
         </xs:choice>
       </xs:sequence>
-      <xs:attribute name="acronym" type="xs:NCName"/>
-      <xs:attribute name="unitAcronym" type="xs:NCName"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="unitAcronym">
-    <xs:complexType>
-      <xs:simpleContent>
-        <xs:extension base="xs:anyURI">
-          <xs:attribute name="type" type="xs:NCName"/>
-        </xs:extension>
-      </xs:simpleContent>
+      <xs:attribute name="acronym" use="required" type="xs:NCName"/>
     </xs:complexType>
   </xs:element>
   <xs:element name="unitName" type="xs:string"/>

@@ -1,21 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="USFS_reserach.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<usfs:research xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns="http://usfsresearch" xmlns:usfs="http://usfsresearch" 
-    xsi:schemaLocation="http://usfsresearch/../USFS-Reserach.xsd"> 
- 
-    <stations>
-        <!--NRS-->
+<usfs:treesearch xmlns="http://usfsresearch" xmlns:usfs="http://usfsresearch" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:schemaLocation="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/usfs_treesearch.xsd">
+    <researchStations>
         <station>
             <acronym type="research_station">NRS</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
-            <name>Northern Research Station</name>
+            <name>Northern Research Station</name>   
             <researchUnits>
                 <researchUnit acronym="NRS">
                     <unitAcronym type="station_unit">EESAFEG</unitAcronym>
-                    <unitName>Ecological and Economic Sustainability of the Appalachian Forest in an
-                        Era of Globalization</unitName>
+                    <unitName>Ecological and Economic Sustainability of the Appalachian Forest in an Era of Globalization</unitName>
                     <projectLeader>Janice (Jan) Wiedenbeck</projectLeader>
                 </researchUnit>
                 <researchUnit acronym="NRS">
@@ -27,8 +22,7 @@
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">EMISFE</unitAcronym>
                     <unitNumber>3</unitNumber>
-                    <unitName>Ecology and Management of Invasive Species and Forest
-                        Ecosystems</unitName>
+                    <unitName>Ecology and Management of Invasive Species and Forest Ecosystems</unitName>
                     <projectLeader>Therese Poland</projectLeader>
                 </researchUnit>
                 <researchUnit unitAcronym="NRS">
@@ -58,22 +52,19 @@
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">PTESSSNRM</unitAcronym>
                     <unitNumber>9</unitNumber>
-                    <unitName>People and Their Environments: Social Science Supporting Natural
-                        Resource Management and Policy</unitName>
+                    <unitName>People and Their Environments: Social Science Supporting Natural Resource Management and Policy</unitName>
                     <projectLeader>Robert G. Haight</projectLeader>
                 </researchUnit>
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">SMCHEL</unitAcronym>
                     <unitNumber>11</unitNumber>
-                    <unitName>Sustainable Management of Central Hardwood Ecosystems and
-                        Landscapes</unitName>
+                    <unitName>Sustainable Management of Central Hardwood Ecosystems and Landscapes</unitName>
                     <projectLeader>Daniel Dey</projectLeader>
                 </researchUnit>
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">IAES:TASSF</unitAcronym>
                     <unitNumber>13</unitNumber>
-                    <unitName>Institute for Applied Ecosystem Studies: Theory and Application of
-                        Scaling Science in Forestry</unitName>
+                    <unitName>Institute for Applied Ecosystem Studies: Theory and Application of Scaling Science in Forestry</unitName>
                     <projectLeader>Deahn Donner</projectLeader>
                 </researchUnit>
                 <researchUnit unitAcronym="NRS">
@@ -85,19 +76,18 @@
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">SFG</unitAcronym>
                     <unitNumber>15</unitNumber>
-                    <unitName>The Strategic Foresight Group</unitName>
+                    <unitName>The Strategic Foresight Group</unitName>                   
                     <projectLeader>Robert G. Haight</projectLeader>
                 </researchUnit>
                 <researchUnit unitAcronym="NRS">
                     <unitAcronym type="station_unit">RCRUF</unitAcronym>
                     <unitNumber>16</unitNumber>
-                    <unitName>Restoration and Conservation of Rural and Urban Forests</unitName>
+                    <unitName>Restoration and Conservation of Rural and Urban Forests</unitName>                  
                     <projectLeader>Daniel Lindner</projectLeader>
                 </researchUnit>
             </researchUnits>
-            <address>One Gifford Pinchot Drive, Madison, WI 53726</address>
+            <address>One Gifford Pinchot Drive, Madison, WI 53726</address>   
         </station>
-        <!--pnw-->
         <station>
             <acronym type="research_station">PNW</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
@@ -113,8 +103,7 @@
                     <unitNumber>2</unitNumber>
                     <unitName>Boreal Ecology Cooperative Research Unit</unitName>
                     <unitAcronym>BECRU</unitAcronym>
-                    <unitAddress>University of Alaska Fairbanks, P.O. Box 756780, Fairbanks, AK,
-                        99775-6780, US</unitAddress>
+                    <unitAddress>University of Alaska Fairbanks, P.O. Box 756780, Fairbanks, AK, 99775-6780, US</unitAddress>
                 </researchUnit>
                 <researchUnit unitAcronym="PNW">
                     <unitNumber>3</unitNumber>
@@ -126,8 +115,7 @@
                     <unitNumber>4</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Anchorage)</unitName>
                     <unitAcronym>FSL (Anchorage)</unitAcronym>
-                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501,
-                        US</unitAddress>
+                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501, US</unitAddress>
                 </researchUnit>
                 <researchUnit unitAcronym="PNW">
                     <unitNumber>5</unitNumber>
@@ -151,8 +139,7 @@
                     <unitNumber>8</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Portland)</unitName>
                     <unitAcronym>FSL (Portland)</unitAcronym>
-                    <unitAddress>620 SW Main Street, Suite 502, Portland, OR, 97205,
-                        US</unitAddress>
+                    <unitAddress>620 SW Main Street, Suite 502, Portland, OR, 97205, US</unitAddress>
                 </researchUnit>
                 <researchUnit unitAcronym="PNW">
                     <unitNumber>9</unitNumber>
@@ -170,34 +157,29 @@
                     <unitNumber>11</unitNumber>
                     <unitName>Western Wildland Environmental Threat Assessment Center</unitName>
                     <unitAcronym>WETAC</unitAcronym>
-                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754,
-                        US</unitAddress>
+                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754, US</unitAddress>
                 </researchUnit>
             </reserachUnits>
             <address>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </address>
         </station>
-        <!--PSW-->
         <station>
             <acronym type="research_station">PSW</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>Pacific Southwest Research Station</name>
-            <address>800 Buchanan Street, Albany, CA 94710-0011</address>
+            <address>800 Buchanan Street, Albany, CA 94710-0011</address>            
         </station>
-        <!--RMRS-->
         <station>
             <acronym type="research_station">RMRS</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>Rocky Mountain Research Station</name>
             <address>240 West Prospect,Fort Collins, CO 80526</address>
         </station>
-        <!--SRS-->
         <station>
             <acronym type="research_station">SRS</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>Southern Research Station</name>
-            <address>200 W.T. Weaver Blvd. Asheville, NC 28804-3454</address>
+         <address>200 W.T. Weaver Blvd. Asheville, NC 28804-3454</address>
         </station>
-        <!--FPL-->
         <station>
             <acronym type="research_station">FPL</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
@@ -221,8 +203,7 @@
                 </researchUnit>
                 <researchUnit acronym="FPL">
                     <unitNumber>4714</unitNumber>
-                    <unitName>Engineering Properties of Wood, Wood based Materials and
-                        Structures</unitName>
+                    <unitName>Engineering Properties of Wood, Wood based Materials and Structures</unitName>
                 </researchUnit>
                 <researchUnit acronym="FPL">
                     <unitNumber>4709</unitNumber>
@@ -239,64 +220,62 @@
             </researchUnits>
             <address>One Gifford Pinchot Drive, Madison, WI 53726</address>
         </station>
-        <!--ITIF -->
         <station>
             <acronym type="research_station">IITF</acronym>
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>International Institute of Tropical Forestry</name>
             <address>1201 Calle Ceiba, Jardín Botánico Sur, San Juan, PR 00926-1119</address>
         </station>
-    </stations>
-    <!--series publications-->
-    <seriesPublications>
-        <seriesPub type="series">
+    </researchStations>
+    <treesearchPublications>
+        <treePub type="series">
             <abbrv>FIDL</abbrv>
-            <treePub>Forest Insect &amp; Disease Leaflet</treePub>
-        </seriesPub>
-        <seriesPub type="series">
+            <pubTitle>Forest Insect &amp; Disease Leaflet</pubTitle>
+        </treePub>
+        <treePub type="series">
             <abbrv>Gen. Tech Rep.</abbrv>
-            <treePub>General Technical Report (GTR)</treePub>
-        </seriesPub>
-        <seriesPub type="series">
+            <pubTitle>General Technical Report (GTR)</pubTitle>
+        </treePub>
+        <treePub type="series">
             <abbrv>Gen. Tech. Rep. -P</abbrv>
-            <treePub>General Technical Report - Proceedings</treePub>
-        </seriesPub>
-        <seriesPub type="series">
+            <pubTitle>General Technical Report - Proceedings</pubTitle>
+        </treePub>
+        <treePub type="series">
             <abbrv>Info. For. </abbrv>
-            <treePub>Information Forestry</treePub>
-        </seriesPub>
-        <seriesPub type="series">
+            <pubTitle>Information Forestry</pubTitle>
+        </treePub>
+        <treePub type="series">
             <abbrv>RMRS-P</abbrv>
-            <treePub>Proceeding Rocky Mountain Research Station Publications</treePub>
-        </seriesPub>
-        <seriesPub type="series">
+            <pubTitle>Proceeding Rocky Mountain Research Station Publications</pubTitle>
+        </treePub>
+        <treePub type="series">
             <abbrv>Res. Bull. </abbrv>
-            <treePub>Resource Bulletin</treePub>
-        </seriesPub>
-        <seriesPub type="series">
+            <pubTitle>Resource Bulletin</pubTitle>
+        </treePub>
+        <treePub type="series">
             <abbrv>Res. Map</abbrv>
-            <treePub>Research Map</treePub>
-        </seriesPub>
-        <seriesPub type="series">
+            <pubTitle>Research Map</pubTitle>
+        </treePub>
+        <treePub type="series">
             <abbrv>Res. Note </abbrv>
-            <treePub>Research Note</treePub>
-        </seriesPub>
-        <seriesPub type="series">
-            <abbrv>Res. Pape</abbrv>
-            <treePub>Research Paper</treePub>
-        </seriesPub>
-        <!--host publications-->
-        <seriesPub type="host">
-            <abbrv>Sci. Journal</abbrv>
-            <treePub>Scientific Journal (JRNL)"</treePub>
-        </seriesPub>
-        <seriesPub type="host">
+            <pubTitle>Research Note</pubTitle>
+        </treePub>
+        <treePub type="series">
+            <abbrv>Res. Paper</abbrv>
+            <pubTitle>Research Paper</pubTitle>
+        </treePub>
+        <treePub type="host">
             <abbrv>Misc. Pub.</abbrv>
-            <treePub>Miscellaneous Publication</treePub>
-        </seriesPub>
-        <seriesPub type="host">
+            <pubTitle>Miscellaneous Publication</pubTitle>
+        </treePub>
+        <treePub type="host">
+            <abbrv>Sci. Journal</abbrv>
+            <pubTitle>Scientific Journal (JRNL)"</pubTitle>
+        </treePub>
+        <treePub type="host">
             <abbrv>Other</abbrv>
-            <treePub>Other</treePub>
-        </seriesPub>
-    </seriesPublications>
-</usfs:research>
+            <pubTitle>Other</pubTitle>
+        </treePub>
+    </treesearchPublications>
+</usfs:treesearch>
+
