@@ -1,9 +1,10 @@
 # JSON-to-MODS XSLT Transformation
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for  ingest into Unified Repository. 
+
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 
 ## Transformation process
-The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl)_ utilizes the following formats and schema to p
+The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl)_ utilizes the following formats and schema to transform the JSON format into MODS.
  - [JSON](https://www.json.org/json-en.html): (JavaScript Object Notation)
 - [XPath 3.1](https://www.w3.org/TR/xpath-31/): (XML Path Language)
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/):  (Extensible Stylesheet Language Transformations)
@@ -160,6 +161,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MDE3MzAwNCw1MTAxODE0MTUsMTM1NT
-IzMTQyXX0=
+eyJoaXN0b3J5IjpbODg4MDg3NzE3LDUxMDE4MTQxNSwxMzU1Mj
+MxNDJdfQ==
 -->
