@@ -10,7 +10,7 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/):  (Extensible Stylesheet Language Transformations)
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd) : (Metadata Object Description Schema)
  ######  *Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element. 
-
+####  THe 
 
 ### This flowchart illustrates the workflow of the transformation
 
@@ -161,6 +161,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg4MDg3NzE3LDUxMDE4MTQxNSwxMzU1Mj
-MxNDJdfQ==
+eyJoaXN0b3J5IjpbMTA5ODMzNDM5MCw4ODgwODc3MTcsNTEwMT
+gxNDE1LDEzNTUyMzE0Ml19
 -->
