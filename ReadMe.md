@@ -3,7 +3,7 @@
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 
 ## Transformation process
-The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl)_ transforms utilizes the following formats and schema_:
+The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl)_ utilizes the following formats and schema to p
  - [JSON](https://www.json.org/json-en.html): (JavaScript Object Notation)
 - [XPath 3.1](https://www.w3.org/TR/xpath-31/): (XML Path Language)
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/):  (Extensible Stylesheet Language Transformations)
@@ -160,5 +160,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTEwMTgxNDE1LDEzNTUyMzE0Ml19
+eyJoaXN0b3J5IjpbLTU5MDE3MzAwNCw1MTAxODE0MTUsMTM1NT
+IzMTQyXX0=
 -->
