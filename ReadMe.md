@@ -13,11 +13,12 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 ####  Te 
 
 ### This flowchart illustrates the workflow of the transformation
-	mermaid
+```mermaid
 flowchart LR 
 id1(Start)-->id2(Stop) 
-style id1 fill:#f9f,stroke:#333,stroke-width:4px style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
-
+style id1 fill:#f9f,stroke:#333,stroke-width:4px 
+style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
 ```mermaid
 graph LR
 A[JSON] --> B((XSLT3.0))
@@ -165,6 +166,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4NTc3NTA2MSwxMzMwODc5NjkyLDg4OD
+eyJoaXN0b3J5IjpbMTIzMTUyNjYzMSwxMzMwODc5NjkyLDg4OD
 A4NzcxNyw1MTAxODE0MTUsMTM1NTIzMTQyXX0=
 -->
