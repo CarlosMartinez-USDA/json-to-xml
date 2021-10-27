@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" version="3.7">
+   <title>
+      <titleInfo>An assessment of residual stand conditions following shelterwood-with-reserves cuts in Appalachian hardwoods</titleInfo>
+   </title>
+   <name type="personal" usage="primary">
+      <namePart type="given">James E.</namePart>
+      <namePart type="family">Johnson</namePart>
+      <displayName>Johnson, James E.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Gary W.</namePart>
+      <namePart type="family">Miller</namePart>
+      <displayName>Miller, Gary W.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">John E.</namePart>
+      <namePart type="family">Baumgras</namePart>
+      <displayName>Baumgras, John E.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Cynthia D.</namePart>
+      <namePart type="family">West</namePart>
+      <displayName>West, Cynthia D.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-17</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>In recent years foresters managing hardwoods in the Southern Appalachians have been investigating a variety of regeneration methods that lead to the development of a two-aged stand. The reserved trees that make up the older age class usually meet a variety of objectives such as timber, wildlife food and cover, and aesthetic values. A series of 20 operational cuts in Appalachian hardwood stands was evaluated 2 to 5 years post-logging. Residual stand characteristics such as species composition, density, volume, grade, and damage were investigated to determine the early fate of the reserve trees. Residual stand density across the 20 stands averaged 39 plat, the number of residual trees per acre averaged 47, and the residual stand volume averaged 3,210 bd. ft./ac (Int. 1/4"). Most of the residual stands were classified as low-risk (69 percent), and only 8 percent of the trees per ac were either standing dead or blown down 2 to 5 years following the harvest.</abstract>
+   <subject>
+      <topic>Timber</topic>
+   </subject>
+   <relatedItem type="host">
+      <title>
+         <titleInfo type="series">Other</titleInfo>
+      </title>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">17</text>
+      </part>
+   </relatedItem>
+   <extension>
+      <fileName_ext>A-14209.json</fileName_ext>
+      <fileName>A-14209</fileName>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/json-to-xsl_expriment/workingDir/</workingDirectory>
+      <filePath>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/json-to-xsl_expriment/workingDir/A-14209.json</filePath>
+   </extension>
+</mods>

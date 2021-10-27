@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3" version="3.7">
+   <title>
+      <titleInfo>Dynamics of Connecticut hemlock stands</titleInfo>
+   </title>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <relatedItem type="host">
+      <part>
+         <detail type="volume">
+            <number>267</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">06</text>
+         <text type="day">25</text>
+      </part>
+   </relatedItem>
+   <extension>
+      <archiveFile>A-14638.json</archiveFile>
+      <originaFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/A-14638.json</originaFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/</workingDirectory>
+   </extension>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <relatedItem type="host">
+      <part>
+         <detail type="volume">
+            <number>267</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">06</text>
+         <text type="day">25</text>
+      </part>
+   </relatedItem>
+   <extension>
+      <archiveFile>A-14638.json</archiveFile>
+      <originaFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/A-14638.json</originaFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/</workingDirectory>
+   </extension>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-06-25</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The stand dynamics and production of two one-acre plots of eastern hemlock (Tsuga canadensis L) in Connecticut have been followed for more than six decades. Data were recorded for all individual trees. One plot (Saltonstall) was established in 1924 after the removal of a hardwood overstory. This stand had a nearly pure, almost fully closed understory of hemlock that was subjected to partial cuttings in 1936, 1954, and 1956. The stand was lost to the hemlock woolly adelgid (Adelges tsugae) in 1993. The other plot (Perry) was established in 1931 in a nearly pure hemlock stand that had arisen on an abandoned pasture around 1850. This plot had a crop-tree release cutting in 1931 and has not been infested with hemlock woolly adelgid.</abstract>
+   <relatedItem type="host">
+      <title>
+         <titleInfo type="series">General Technical Report (GTR)</titleInfo>
+      </title>
+      <part>
+         <detail type="volume">
+            <number>267</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">06</text>
+         <text type="day">25</text>
+      </part>
+   </relatedItem>
+   <extension>
+      <archiveFile>A-14638.json</archiveFile>
+      <originaFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/A-14638.json</originaFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/</workingDirectory>
+   </extension>
+</mods>

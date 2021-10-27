@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+    <map xmlns="http://www.w3.org/2005/xpath-functions">
+        <string key="product_id">1287</string>
+        <string key="ac22_approved_for_public">1</string>
+        <string key="primary_station">PNW</string>
+        <string key="historical_station">PNW</string>
+        <string key="entrystatus">Published to Web</string>
+        <string key="product_type_id">1</string>
+        <string key="product_type_desc">Publication</string>
+        <null key="product_subtype_id"/>
+        <null key="product_subtype_desc"/>
+        <string key="referee_status_id">2</string>
+        <string key="status_name">Informally Refereed (Peer-Reviewed)</string>
+        <string key="pub_type_id">8</string>
+        <string key="pub_type_desc">Research Note (RN)</string>
+        <string key="title">Incidence of decay fungi in stumps of two thinned western larch stands in northeastern Oregon.</string>
+        <string key="product_year"> 1987</string>
+        <string key="abstract">Incidence of decay fungi was measured in stumps from two thinned western larch (Larix occidentalis Nutt.) stands (9 and 15 years after thinning), one precommercially thinned and one commercially thinned, in northeastern Oregon. Ten species of decay fungi were positively identified from 180 stumps. Two root pathogenic species, Heterobasidion annosum (Fr.) Bref. and Armillaria obscura (Pers.) Herink Roll-Hansen, were found at relatively low frequencies. Most of the decay in the stumps was caused by either Fomitopsis pinicola (Swartz ex Fr.) Karst. or Trichaptum abietinum (Dicks, ex Fr.) Ryv., which normally are saprophytic wood decomposers.</string>
+        <string key="citation">Filip, Gregory M.; Parks, Catherine A.; Seidel, Kenneth W.; Lombard, Frances F. 1987. Incidence of decay fungi in stumps of two thinned western larch stands in northeastern Oregon.  Res. Note PNW-RN-468. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 6 p</string>
+        <string key="keywords">Decay fungi, thinning, western larch, Oregon</string>
+        <string key="doi">10.2737/PNW-RN-468</string>
+        <string key="url_binary_file">https://www.fs.fed.us/pnw/pubs/pnw_rn468.pdf</string>
+        <string key="binary_filesize">223 KB</string>
+        <string key="url_landing_page">https://www.fs.usda.gov/treesearch/pubs/25081</string>
+        <string key="treesearch_pub_id">25081</string>
+        <null key="pub_parent_id"/>
+        <null key="pub_child_number"/>
+        <string key="pub_parent_ind">0</string>
+        <string key="pub_publication">Res. Note PNW-RN-468. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 6 p</string>
+        <string key="proceedings_ind">0</string>
+        <string key="pub_volume">468</string>
+        <null key="pub_issue"/>
+        <null key="pub_page"/>
+        <null key="pub_page_start"/>
+        <null key="pub_page_end"/>
+        <string key="pub_source">T</string>
+        <null key="geographic_terms"/>
+        <null key="issn_id"/>
+        <string key="is_early_release">0</string>
+        <string key="created_on">29-NOV-2006 19:21:05</string>
+        <string key="modified_on">05-JUL-2012 10:22:22</string>
+        <string key="send_to_reviewer_ind">A</string>
+        <string key="publish_to_web_ind">Y</string>
+        <string key="send_to_reviewer">05-JUL-2012 10:20:00</string>
+        <string key="child_publications"/>
+        <array key="national_research_taxonomy_elements">
+            <map>
+                <string key="nrt_id">23</string>
+                <string key="nrt_title">Mycology</string>
+            </map>
+            <map>
+                <string key="nrt_id">25</string>
+                <string key="nrt_title">Plant diseases</string>
+            </map>
+        </array>
+        <array key="pub_authors">
+            <map>
+                <string key="name">Filip, Gregory M.</string>
+                <string key="station_id"/>
+                <string key="unit_id"/>
+                <string key="team_id"/>
+                <string key="alias"/>
+                <string key="user_id"/>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">0</string>
+                <string key="author_order">1</string>
+            </map>
+            <map>
+                <string key="name">Parks, Catherine A.</string>
+                <string key="station_id">PNW</string>
+                <string key="unit_id">4577</string>
+                <string key="team_id"/>
+                <string key="alias">cparks01</string>
+                <string key="user_id">964</string>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">1</string>
+                <string key="author_order">2</string>
+            </map>
+            <map>
+                <string key="name">Seidel, Kenneth W.</string>
+                <string key="station_id"/>
+                <string key="unit_id"/>
+                <string key="team_id"/>
+                <string key="alias"/>
+                <string key="user_id"/>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">0</string>
+                <string key="author_order">3</string>
+            </map>
+            <map>
+                <string key="name">Lombard, Frances F.</string>
+                <string key="station_id">FPL</string>
+                <string key="unit_id"/>
+                <string key="team_id"/>
+                <string key="alias"/>
+                <string key="user_id"/>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">0</string>
+                <string key="author_order">4</string>
+            </map>
+        </array>
+        <array key="current_organizational_memberships">
+            <map>
+                <string key="name">Filip, Gregory M.</string>
+                <string key="station_id"/>
+                <string key="unit_id"/>
+                <string key="team_id"/>
+                <string key="alias"/>
+                <string key="user_id"/>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">0</string>
+                <string key="author_order">1</string>
+            </map>
+            <map>
+                <string key="name">Parks, Catherine A.</string>
+                <string key="station_id">PNW</string>
+                <string key="unit_id">2677</string>
+                <string key="team_id"/>
+                <string key="alias">cparks01</string>
+                <string key="user_id">964</string>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">1</string>
+                <string key="author_order">2</string>
+            </map>
+            <map>
+                <string key="name">Seidel, Kenneth W.</string>
+                <string key="station_id"/>
+                <string key="unit_id"/>
+                <string key="team_id"/>
+                <string key="alias"/>
+                <string key="user_id"/>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">0</string>
+                <string key="author_order">3</string>
+            </map>
+            <map>
+                <string key="name">Lombard, Frances F.</string>
+                <string key="station_id">FPL</string>
+                <string key="unit_id"/>
+                <string key="team_id"/>
+                <string key="alias"/>
+                <string key="user_id"/>
+                <string key="is_employee_active">0</string>
+                <string key="is_researcher">0</string>
+                <string key="author_order">4</string>
+            </map>
+        </array>
+        <string key="strategic_program_areas"/>
+        <string key="cris_projects"/>
+        <string key="experimental_forests"/>
+        <string key="eco_regions"/>
+        <string key="latlongs"/>
+        <string key="usnatforests"/>
+        <string key="countystates"/>
+    </map>
+
+

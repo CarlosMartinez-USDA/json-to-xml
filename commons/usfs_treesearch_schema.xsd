@@ -13,19 +13,7 @@
   <xs:element name="researchStations">
     <xs:complexType>
       <xs:sequence>
-        <xs:element ref="usfs:Station"/>
         <xs:element maxOccurs="unbounded" ref="usfs:station"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="Station">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="usfs:acronym"/>
-        <xs:element ref="usfs:agency"/>
-        <xs:element ref="usfs:name"/>
-        <xs:element ref="usfs:researchUnits"/>
-        <xs:element ref="usfs:address"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -43,31 +31,6 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
-  <xs:element name="reserachUnits">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element maxOccurs="unbounded" ref="usfs:researchUnit"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="treesearchPublications">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element maxOccurs="unbounded" ref="usfs:treePub"/>
-      </xs:sequence>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="treePub">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="usfs:abbrv"/>
-        <xs:element ref="usfs:pubTitle"/>
-      </xs:sequence>
-      <xs:attribute name="type" use="required" type="xs:NCName"/>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="abbrv" type="xs:string"/>
-  <xs:element name="pubTitle" type="xs:string"/>
   <xs:element name="acronym">
     <xs:complexType>
       <xs:simpleContent>
@@ -86,7 +49,32 @@
       </xs:sequence>
     </xs:complexType>
   </xs:element>
+  <xs:element name="reserachUnits">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="usfs:researchUnit"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
   <xs:element name="address" type="xs:string"/>
+  <xs:element name="treesearchPublications">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element maxOccurs="unbounded" ref="usfs:treePub"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="treePub">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="usfs:abbrv"/>
+        <xs:element ref="usfs:pubTitle"/>
+      </xs:sequence>
+      <xs:attribute name="type" use="required" type="xs:NCName"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="abbrv" type="xs:string"/>
+  <xs:element name="pubTitle" type="xs:string"/>
   <xs:element name="researchUnit">
     <xs:complexType>
       <xs:sequence>

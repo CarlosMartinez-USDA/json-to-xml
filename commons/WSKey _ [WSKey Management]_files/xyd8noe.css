@@ -1,0 +1,52 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * ff-meta-web-pro:
+ *   - http://typekit.com/eulas/0000000000000000000175c2
+ *   - http://typekit.com/eulas/0000000000000000000175c8
+ *   - http://typekit.com/eulas/0000000000000000000175c1
+ * museo-slab:
+ *   - http://typekit.com/eulas/000000000000000000012043
+ *   - http://typekit.com/eulas/000000000000000000011aff
+ *
+ * © 2009-2021 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2016-08-19 17:51:01 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=xyd8noe&ht=tk&f=4648.4649.4650.2030.2032&a=537854&app=typekit&e=css");
+
+@font-face {
+font-family:"ff-meta-web-pro";
+src:url("https://use.typekit.net/af/3643c6/0000000000000000000175c2/27/l?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/3643c6/0000000000000000000175c2/27/d?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/3643c6/0000000000000000000175c2/27/a?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+font-family:"ff-meta-web-pro";
+src:url("https://use.typekit.net/af/c8a60e/0000000000000000000175c8/27/l?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/c8a60e/0000000000000000000175c8/27/d?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/c8a60e/0000000000000000000175c8/27/a?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"ff-meta-web-pro";
+src:url("https://use.typekit.net/af/8d5889/0000000000000000000175c1/27/l?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/8d5889/0000000000000000000175c1/27/d?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/8d5889/0000000000000000000175c1/27/a?primer=000fe99467e933f23dabb4b5b17abb5987a036fc168ebc5ebf0446cac7b7ee01&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"museo-slab";
+src:url("https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/l?subset_id=2&fvd=n5&v=3") format("woff2"),url("https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/d?subset_id=2&fvd=n5&v=3") format("woff"),url("https://use.typekit.net/af/aa4f4e/000000000000000000012043/27/a?subset_id=2&fvd=n5&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:500;
+}
+
+@font-face {
+font-family:"museo-slab";
+src:url("https://use.typekit.net/af/c225e2/000000000000000000011aff/27/l?subset_id=2&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/c225e2/000000000000000000011aff/27/d?subset_id=2&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/c225e2/000000000000000000011aff/27/a?subset_id=2&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+.tk-ff-meta-web-pro { font-family: "ff-meta-web-pro",sans-serif; }
+.tk-museo-slab { font-family: "museo-slab",serif; }

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/1999/XSL/Transform" xmlns:usfs="http://usfsresearch" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xs:import namespace="http://usfsresearch" schemaLocation="USFS_Research.xsd"/>
+  <xs:element name="value-of">
+    <xs:complexType>
+      <xs:attribute name="select" use="required"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

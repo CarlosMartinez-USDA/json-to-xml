@@ -1,0 +1,84 @@
+<researchUnits>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4353</unitNum>
+        <unitName>Center for Forest Watershed Research 
+        <subUnit>Coweeta Hydrologic Laboratory </subUnit>
+        <subUnit>Center for Forested Wetlands Research </subUnit>
+        <subUnit>Coldwater Streams and Trout Habitat </subUnit>
+        <subUnit>Center for Aquatic Technology Transfer </subUnit>
+        </unitName>
+         <isPartOf>Forest Assessment and Synthesis</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4804</unitNum>
+        <unitName>Forest Economics and Policy </unitName>
+        <isPartOf>Forest Assessment and Synthesis</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4854</unitNum>
+        <unitName>Eastern Forest Environmental Threat Assessment Center </unitName>
+        <isPartOf>Forest Assessment and Synthesis</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4855</unitNum>
+        <unitName>Center for Integrated Forest Science </unitName>
+        <isPartOf>Forest Assessment and Synthesis</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4952</unitNum>
+        <unitName>Integrating Human and Natural Systems </unitName>
+        <subUnit>Urban Forestry South </subUnit>
+        <subUnit>InterfaceSouth </subUnit>
+        <isPartOf>Forest Assessment and Synthesis</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4156</unitNum>
+        <unitName>Center for Forest Disturbance Science </unitName>
+        <isPartOf>Forest Health</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4160</unitNum>
+        <unitName>Forest Genetics and Ecosystems Biology </unitName>
+        <isPartOf>Forest Health</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4552</unitNum>
+        <unitName>Insects, Diseases and Invasive Plants of Southern Forests </unitName>
+    </researchUnit>
+    <isPartOf>Forest Health</isPartOf>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4801</unitNum>
+        <unitName>Forest Inventory and Analysis </unitName>
+        <isPartOf>Forest Inventory and Analysis</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4155</unitNum>
+        <unitName>Center for Bottomland Hardwoods Research </unitName>
+        <isPartOf>Forest Health</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4157</unitNum>
+        <unitName>Upland Hardwood Ecology and Management </unitName>
+        <isPartOf>Forest Restoration and Management</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4158</unitNum>
+        <unitName>Restoring and Managing Longleaf Pine Ecosystems </unitName>
+        <isPartOf>Forest Restoration and Management</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4159</unitNum>
+        <unitName>Southern Pine Ecology and Management </unitName>
+        <isPartOf>Forest Restoration and Management</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4703</unitNum>
+        <unitName>Forest Operations </unitName>
+        <isPartOf>Forest Restoration and Management</isPartOf>
+    </researchUnit>
+    <researchUnit stationAcronym="SRS">
+        <unitNum>4704</unitNum>
+        <unitName>Utilization of Southern Forest Resources </unitName>
+        <isPartOf>Forest Restoration and Management</isPartOf>
+    </researchUnit>
+</researchUnits>

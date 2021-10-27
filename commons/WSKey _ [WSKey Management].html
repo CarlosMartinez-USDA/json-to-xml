@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<!-- saved from url=(0128)https://platform.worldcat.org/wskey/keys/manage/29fs3uAhIiKOCOb1rgfKkeBvdDnAsu1bxFwpgPlG4MLBh7L04reX7qkUaFFKU85OII6oKZ79A4osAbPU -->
+<html class="yui3-js-enabled"><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style data-merge-styles="true"></style>
+    
+    <link rel="shortcut icon" href="https://platform.worldcat.org/wskey/favicon.ico">
+
+    <script src="./WSKey _ [WSKey Management]_files/jquery.min.js.download"></script>
+    <script src="./WSKey _ [WSKey Management]_files/jquery.dataTables.min.js.download"></script>
+
+    <title>WSKey : [WSKey Management]</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="">
+    <meta name="description" content="OCLC Developer Network">
+
+    <!-- Style sheets -->
+    <link rel="stylesheet" href="./WSKey _ [WSKey Management]_files/combo" type="text/css">
+    <link rel="stylesheet" href="./WSKey _ [WSKey Management]_files/xyd8noe.css">
+
+    <script>
+        var YUI_config = {
+            filter : 'min',
+            base : "https://static1.worldcat.org/yui/3.17.2/build/",
+            comboBase : 'https://static1.worldcat.org/yui/combo?',
+            combine : true,
+            ignore : ['cssbutton'],
+            groups: {
+                gallery: {
+                    combine : true,
+                    base : "https://static1.worldcat.org/yui/gallery-2014.05.29-15-46/build/",
+                    root : "gallery-2014.05.29-15-46/build/",
+                    comboBase : "https://static1.worldcat.org/yui/combo?",
+                    patterns : {
+                        "gallery-" : {},
+                        "gallerycss-" :  { type : "css" }
+                    }
+                },
+
+                yui2 : {
+                    base : "https://static1.worldcat.org/yui/2in3.4/2.9.0/build/",
+                    comboBase : 'https://static1.worldcat.org/yui/combo?',
+                    root : "2in3.4/2.9.0/build/",
+                    combine : true,
+                    patterns : {
+                        'yui2-' : {
+                            configFn : function (me) {
+                                if (/-skin|reset|fonts|grids|base/.test(me.name)) {
+                                    me.type = 'css';
+                                    me.path = me.path.replace(/\.js/, '.css');
+                                    // this makes skins in builds earlier than
+                                    // 2.6.0 work as long as combine is false
+                                    me.path = me.path.replace(/\/yui2-skin/, '/assets/skins/sam/yui2-skin');
+                                }
+                            }
+                        }
+                    }
+                },
+
+                platform: {
+                    filter : 'min',
+                    base: '/wskey/assets/20210828/platform-ui-widgets/',
+                    combine : true,
+                    comboBase : '/wskey/combo?',
+                    root : '20210828/platform-ui-widgets/',
+                    modules : {
+  "cop-modelsync-extension": {"requires":   [
+    "model-sync-rest",
+    "event-custom"
+  ]},
+  "cop-notify":   {
+    "skinnable": true,
+    "requires":     [
+      "base",
+      "anim",
+      "substitute",
+      "widget",
+      "widget-parent",
+      "widget-child",
+      "gallery-timer",
+      "event-mouseenter",
+      "transition",
+      "alert"
+    ]
+  },
+  "alert": {"type": "css"},
+  "cop-handlebars-helpers": {"requires":   [
+    "handlebars",
+    "datatype-date"
+  ]},
+  "cop-authz-user-actions": {"requires":   [
+    "base",
+    "io",
+    "json-parse"
+  ]},
+  "skin": {"type": "css"},
+  "cop-tooltip":   {
+    "skinnable": true,
+    "requires":     [
+      "selector-css3",
+      "overlay",
+      "transition",
+      "event-mouseenter"
+    ]
+  },
+  "breadcrumb-base": {"requires":   [
+    "widget",
+    "widget-parent",
+    "widget-child",
+    "base",
+    "event-custom",
+    "breadcrumb"
+  ]},
+  "property-list": {"type": "css"},
+  "gallery-prettify": {"skinnable": true},
+  "breadcrumb": {"type": "css"},
+  "pure-extensions": {"type": "css"},
+  "cop-base-view": {"requires":   [
+    "view",
+    "handlebars",
+    "alert-plugin"
+  ]},
+  "app-breadcrumbs":   {
+    "skinnable": false,
+    "requires":     [
+      "breadcrumb-base",
+      "plugin"
+    ]
+  },
+  "waiting-overlay":   {
+    "skinnable": true,
+    "requires":     [
+      "gallery-overlay-extras",
+      "event-key"
+    ]
+  },
+  "alert-plugin":   {
+    "skinnable": true,
+    "requires":     [
+      "plugin",
+      "alert",
+      "classnamemanager",
+      "cop-notify"
+    ]
+  }
+}
+                },
+
+                
+                ui: {
+                    filter : 'min',
+                    base: '/wskey/assets/20210828/js/ui/',
+                    combine : true,
+                    comboBase : '/wskey/combo?',
+                    root : '20210828/js/ui/',
+                    modules:  {
+  "show-request-view":   {
+    "skinnable": true,
+    "lang": [""],
+    "requires":     [
+      "base-view",
+      "wskeyrequest-model",
+      "wskeyservice-model"
+    ]
+  },
+  "wskey-app":   {
+    "skinnable": true,
+    "lang": [""],
+    "requires":     [
+      "app-base",
+      "handlebars",
+      "intl",
+      "request-wskey-view",
+      "show-requests-view",
+      "show-request-view",
+      "manage-wskeys-view",
+      "manage-wskey-view",
+      "config-model",
+      "wskeyservice-model",
+      "wskeyrequest-model",
+      "wskeyinfo-model",
+      "wskey-model",
+      "waiting-overlay",
+      "user-inst-model",
+      "userinfo-model",
+      "institution-model",
+      "blockwskey-model",
+      "activatewskey-model"
+    ]
+  },
+  "wskeysecret-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "cop-modelsync-extension"
+    ]
+  },
+  "wskeyrequest-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "model-list",
+      "cop-modelsync-extension"
+    ]
+  },
+  "wskeyinfo-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "model-list",
+      "cop-modelsync-extension"
+    ]
+  },
+  "show-requests-view":   {
+    "skinnable": true,
+    "lang": [""],
+    "requires":     [
+      "base-view",
+      "datatable",
+      "datatable-sort",
+      "datatype-date",
+      "wskeyrequest-model",
+      "wskeyservice-model"
+    ]
+  },
+  "manage-wskey-view":   {
+    "skinnable": true,
+    "lang": [""],
+    "requires":     [
+      "base-view",
+      "datatype-date",
+      "wskeyinfo-model",
+      "wskeysecret-model",
+      "wskeyservice-model",
+      "wskeyrequest-model"
+    ]
+  },
+  "blockwskey-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "cop-modelsync-extension"
+    ]
+  },
+  "manage-wskeys-view":   {
+    "skinnable": true,
+    "lang": [""],
+    "requires":     [
+      "base-view",
+      "datatable",
+      "datatable-sort",
+      "datatype-date",
+      "panel",
+      "io",
+      "node",
+      "wskey-model",
+      "wskeysecret-model",
+      "wskeyservice-model"
+    ]
+  },
+  "request-wskey-view":   {
+    "skinnable": true,
+    "lang": [""],
+    "requires":     [
+      "base-view",
+      "datatable-scroll",
+      "datatable-sort",
+      "wskeyrequest-model",
+      "wskeyservice-model",
+      "substitute"
+    ]
+  },
+  "wskeyservice-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "model-list",
+      "cop-modelsync-extension"
+    ]
+  },
+  "base-view":   {
+    "skinnable": false,
+    "requires":     [
+      "cop-base-view",
+      "intl",
+      "wskey-templates"
+    ]
+  },
+  "wskey-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "model-list",
+      "cop-modelsync-extension"
+    ]
+  },
+  "config-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "cop-modelsync-extension"
+    ]
+  },
+  "activatewskey-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "cop-modelsync-extension"
+    ]
+  },
+  "user-inst-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "model-list",
+      "cop-modelsync-extension"
+    ]
+  },
+  "userinfo-model":   {
+    "skinnable": false,
+    "requires":     [
+      "model",
+      "model-list",
+      "cop-modelsync-extension"
+    ]
+  }
+}
+                }
+                
+            }
+        };
+    </script>
+    <script src="./WSKey _ [WSKey Management]_files/yui-min.js.download"></script>
+    <link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1632348495209_2" href="./WSKey _ [WSKey Management]_files/combo(1)"><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1632348495209_3" href="./WSKey _ [WSKey Management]_files/combo(2)"><script charset="utf-8" id="yui_3_17_2_1_1632348495209_5" src="./WSKey _ [WSKey Management]_files/templates" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1632348495209_6" src="./WSKey _ [WSKey Management]_files/combo(3)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1632348495209_7" src="./WSKey _ [WSKey Management]_files/combo(4)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1632348495209_8" src="./WSKey _ [WSKey Management]_files/combo(5)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1632348495209_9" src="./WSKey _ [WSKey Management]_files/combo(6)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1632348495209_10" src="./WSKey _ [WSKey Management]_files/combo(7)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1632348495209_11" src="./WSKey _ [WSKey Management]_files/combo(8)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1632348495209_12" src="./WSKey _ [WSKey Management]_files/combo(9)" async=""></script><link charset="utf-8" rel="stylesheet" id="yui_3_17_2_1_1632348495209_13" href="./WSKey _ [WSKey Management]_files/combo(10)"><script charset="utf-8" id="yui_3_17_2_1_1632348495209_14" src="./WSKey _ [WSKey Management]_files/combo(11)" async=""></script></head>
+<body class="yui3-skin-sam yui-skin-sam pure-devnet-skin  yui3-app" id="yui_3_17_2_1_1632348495209_621">
+
+<div id="dn-wrapper">
+<header id="dn-micro-bar" class="micro-bar">
+    <div class="pure-g mod" id="sitebar-contents">
+        <div id="oclc-return" class="pure-u-5-24">
+            <a href="https://oclc.org/" title="Home">OCLC.org</a>
+        </div>
+        <div class="pure-u-19-24">
+            <ul class="micro-links">
+                <li>Carlos&nbsp;Martinez</li>
+                <li><a title="(Sign Out)" href="https://platform.worldcat.org/wskey/logout">(Sign Out)</a></li> <!-- the path /logout is assumed by Spring's logout filter. -->
+                </ul></div>
+    </div>
+</header>
+<header id="dn-banner" class="pure-g">
+    <div class="pure-u-1-2">
+        <a href="https://oclc.org/developer">
+            <img src="./WSKey _ [WSKey Management]_files/devnet-logo.png" border="0" height="40" width="300" title="OCLC Developer Network home" class="oclc-logo">
+        </a>
+    </div>
+    <div class="pure-u-1-2" align="right">
+        <div id="dn-app-title">WSKey Management</div>
+    </div>
+</header>
+<div id="dn-main">
+<div id="dn-breadcrumb-container"></div>
+<div id="dn-nav-container"><nav class="pure-menu pure-menu-open pure-menu-sidebar">
+    <a class="pure-menu-heading">WSKey Management</a>
+    <ul>
+        <li><a href="https://platform.worldcat.org/#/keys/manage">WSKeys</a></li>
+        <li><a href="https://platform.worldcat.org/#/requests/show">Requests</a></li>
+        <li><a href="https://platform.worldcat.org/#/keys/requestProd">Request a Production WSKey</a></li>
+        <li><a href="https://platform.worldcat.org/#/keys/requestSbox">Request a Sandbox WSKey</a></li>
+    </ul>
+</nav>
+</div>
+<div id="dn-content-container">
+
+
+
+
+
+
+<div id="wskey-app" class="yui3-app-views waiting-overlay-node"><div class="yui3-overlay-mask" style="position: fixed; width: 100%; height: 100%; top: 0px; left: 0px; display: none; z-index: 1000; opacity: 0;"></div><div id="yui_3_17_2_1_1632348495209_73" class="yui3-widget yui3-overlay yui3-waiting-overlay yui3-widget-positioned yui3-widget-stacked yui3-overlay-modal yui3-waiting-overlay-hidden" style="width: 150px; left: 634.993px; top: 307.921px; z-index: 1000; visibility: hidden;" tabindex="-1"><div id="yui_3_17_2_1_1632348495209_75" class="yui3-waiting-overlay-content yui3-widget-stdmod"><div class="yui3-widget-bd"><div class="yui3-waiting-overlay-spinner"></div></div></div></div><div class="yui3-alert-plugin-container yui3-manage-wskey-view-container" id="yui_3_17_2_1_1632348495209_564"><h1>WSKey</h1><div class="yui3-alert-plugin-global"><div id="yui_3_17_2_1_1632348495209_512" class="yui3-widget yui3-notify"><ul id="yui_3_17_2_1_1632348495209_514" class="yui3-notify-content"></ul></div></div><form class="pure-form pure-form-aligned pureg-g details" id="yui_3_17_2_1_1632348495209_620">
+
+    <div class="errors"></div>
+
+    <fieldset id="yui_3_17_2_1_1632348495209_619">
+
+        <div class="pure-control-group">
+            <label for="name">Name</label>
+            <input id="name" style="width: 200px" value="NAL_Production_for_MARCEdit" spellcheck="false" data-ms-editor="true">
+        <editor-squiggler><style>
+  @media print {
+    .ms-editor-squiggles-container {
+      display:none !important;
+    }
+  }
+  .ms-editor-squiggles-container {
+    all: initial;
+  }</style><div class="ms-editor-squiggles-container"></div></editor-squiggler></div>
+
+        <div class="pure-control-group">
+            <label for="key">Key</label>
+            <span id="key" class="key" title="Click on key to select it for copy">29fs3uAhIiKOCOb1rgfKkeBvdDnAsu1bxFwpgPlG4MLBh7L04reX7qkUaFFKU85OII6oKZ79A4osAbPU</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="secret">Secret</label>
+            <span id="secret" class="secret" title="Click on secret to select it for copy">JANRhzn5DZUrqVeJjJAJqEreWXIwxlBs</span>
+            <button type="button" class="resetSecret-btn">ResetSecret</button>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="status">Status</label>
+            <span id="status">ACTIVE</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="environment">Environment</label>
+            <span id="environment">Production</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="expirationDate">Expiration Date</label>
+            <span id="expirationDate">01/01/9999</span>
+        </div>
+
+        <div class="pure-control-group" id="yui_3_17_2_1_1632348495209_618">
+            <label for="registryId">Registry ID</label>
+            <span id="registryId">32272</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="oclcSymbol">OCLC Symbol</label>
+            <span id="oclcSymbol">AGL</span>
+        </div>
+
+        <div class="pure-control-group">
+            <label for="overrideInstitutions">Override Institutions</label>
+            <span id="overrideInstitutions"></span>
+        </div>
+
+        <div class="pure-control-group" id="redirectUris">
+            <!-- Redirect URIs are added dynamically -->
+        <div id="redirectUri1div"><label for="redirectUri1">Redirect URI 1</label><input type="button" value="Add" id="add"></div></div>
+
+        <div class="pure-control-group">
+            <label for="services">Services</label>
+            <span id="services" class="services pure-u-1-2"><span class="servicename">WorldCat Registry / Configuration Platform Service (configPlatform)</span><a class="serviceitem" href="http://www.oclc.org/developer/services" target="_blank">View API Documentation</a><span class="servicename">WorldCat Search API (wcapi)</span><a class="serviceitem" href="http://www.oclc.org/developer/develop/web-services/worldcat-search-api.en.html" target="_blank">View API Documentation</a><span class="serviceitem">Sandbox Info: Requests limited to 100/day</span><span class="serviceitem">Actions: ALL_ACTIONS</span><span class="servicename">WorldCat Metadata API (WorldCatMetadataAPI)</span><a class="serviceitem" href="https://www.oclc.org/developer/develop/web-services/worldcat-metadata-api.en.html" target="_blank">View API Documentation</a></span>
+        </div>
+
+        <div class="pure-control-group" id="corsDomains">
+            <!-- CorsDomains are added dynamically -->
+        <div id="corsDomain1div"><label for="corsDomain1">CORS Domains 1</label><input type="button" value="Add" id="add"></div></div>
+
+    </fieldset>
+
+    <div class="pure-controls">
+        <button type="button" class="save-btn">Save</button>
+        <button type="button" class="blockWskey-btn">Block WSKey</button>
+        <button type="button" class="activateWskey-btn" hidden="">Re-enable WSKey</button>
+    </div>
+</form></div></div>
+
+
+<script type="text/javascript">
+    (function() {
+        YUI.applyConfig( {'groups' : {
+                'platform-wskey-management-ui-static' : {
+                    modules: {
+                        'wskey-templates' : {
+                            fullpath : '/wskey/templates',
+                            requires : ['handlebars-base']
+                        }
+                    }
+                }
+
+            }});
+    })();
+
+    YUI().use('wskey-app', function (Y) {
+        var app = new Y.WKM.App({
+            transitions : true,
+            viewContainer : '#wskey-app',
+            root : "/wskey",
+            linkSelector : "#dn-main a"
+        });
+        app.render();
+    });
+</script>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+<footer id="dn-footer">
+    <div id="fat-footer" class="pure-g">
+        <div class="pure-u-1 pure-u-md-1-5 footer-logo"></div>
+        <div class="pure-u-1 pure-u-md-1-5">
+            <section itemtype="http://schema.org/LocalBusiness" itemscope="" class="region-contact">
+                <h4><span itemprop="name">OCLC Headquarters</span></h4>
+
+                <div itemtype="http://schema.org/PostalAddress" itemscope="" itemprop="address">
+                    <p>
+                        <span itemprop="streetAddress">6565 Kilgour Place</span><br>
+                        <span itemprop="addressLocality">Dublin</span>,
+                        <span itemprop="addressRegion">Ohio</span>
+                        <span itemprop="postalCode">43017-3395</span>
+                        <span itemprop="addressCountry">US</span>
+                    </p>
+                </div>
+                <div itemtype="http://schema.org/ContactPoint" itemscope="" itemprop="contactPoint">
+                    <p>
+                        <span itemprop="email"><a href="mailto:oclc@oclc.org" title="oclc@oclc.org">oclc@oclc.org</a></span><br>
+                        <span itemprop="telephone">614-764-6000</span><br>
+                        <span itemprop="telephone">800-848-5878</span>
+                        <span class="region-contact-tollrestrict">(USA / Canada only)</span><br>
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-5">
+            <h4>Find Information for</h4>
+            <ul>
+                <li>
+                    <a href="https://oclc.org/developer/get-started/build.en.html">Developers</a>
+                </li>
+                <li>
+                    <a href="https://oclc.org/developer/get-started/learn.en.html">Librarians</a>
+                </li>
+                <li>
+                    <a href="https://oclc.org/developer/get-started/integrate.en.html">Partners</a>
+                </li>
+            </ul>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-5">
+            <h4>Visit Related Sites</h4>
+            <ul>
+                <li><a href="https://oclc.org/">OCLC.org</a></li>
+                <li><a href="https://oclc.org/research">OCLC Research</a></li>
+                <li><a href="https://oclc.org/support">Support &amp; Training</a></li>
+                <li><a href="https://oclc.org/support/systemalerts.en.html">OCLC System Alerts</a></li>
+            </ul>
+        </div>
+        <div class="pure-u-1 pure-u-md-1-5">
+            <ul>
+                <li>
+                    <strong><a href="https://oclc.org/developer/forms/contact-us.en.html">Contact the Developer Network</a></strong>
+                </li>
+                <li>
+                    <strong><a href="https://platform.worldcat.org/api-explorer">Browse the API Explorer</a></strong>
+                </li>
+                <li>
+                    <strong><a href="https://platform.worldcat.org/wskey">Request a web service key</a></strong>
+                </li>
+                <li>
+                    <strong><a href="https://oclc.org/email/subscribe/discussion-lists.html">Subscribe to WC-DEVNET-L</a></strong>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div style="clear: both"></div>
+
+    <div class="connect-bar mod pure-g">
+
+<div class="pure-u-3-5">
+    <!-- Media Links -->
+    <ul class="media-links">
+        <li>
+            <a href="https://oclc.org/developer/get-started.en.html">Get started</a>
+        </li>
+        <li>
+            <a href="https://oclc.org/developer/develop.en.html">Develop</a>
+        </li>
+        <li>
+            <a href="https://oclc.org/developer/collaborate.en.html">Collaborate</a>
+        </li>
+        <li>
+            <a href="https://oclc.org/developer/gallery.en.html">Gallery</a>
+        </li>
+        <li>
+            <a href="https://oclc.org/developer/news.en.html">News</a>
+        </li>
+        <li>
+            <a href="https://oclc.org/developer/events.en.html">Events</a>
+        </li>
+
+    </ul>
+</div>
+
+<div class="pure-u-2-5">
+<!-- Follow Links -->
+<section class="follow-links">
+    <p>Follow the OCLC Developer Network:</p>
+    <ul>
+        <li>
+            <a href="http://twitter.com/oclcdevnet" title="Follow us on Twitter" class="follow-twitter">Twitter</a>
+        </li>
+        <li>
+            <a href="http://www.youtube.com/results?search_query=oclc+mashathon" title="Watch our videos on YouTube" class="follow-youtube">YouTube</a>
+        </li>
+        <li>
+            <a href="http://www.flickr.com/search/?q=oclc+mashathon" title="View our pictures on Flickr" class="follow-flickr">Flickr</a>
+        </li>
+    </ul>
+</section>
+</div>
+</div>
+<!-- Copyright -->
+    <div class="copyright">
+        <p><a href="https://oclc.org/policies/copyright.en.html" title="Read the OCLC copyright policy">©
+            2021&nbsp;
+            OCLC</a>
+        </p>
+
+        <p><a href="https://oclc.org/content/dam/oclc/about/styleguide/trademarks.pdf" title="View the OCLC and Affiliate Trademarks and Service Marks PDF" target="_blank">Domestic and international trademarks and/or service marks of OCLC Online Computer Library Center, Inc. and its affiliates</a>
+        </p>
+
+        <p>This site uses cookies. By continuing to browse the site, you are agreeing to our use of cookies.&nbsp;
+            <a href="https://oclc.org/policies/cookies.en.html">Find out more.</a>
+        </p>
+        <ul>
+            <li><a target="_blank" href="https://oclc.org/content/forms/worldwide/en/contact-us.html">Feedback</a></li>
+            <li><a href="https://oclc.org/policies/privacy.en.html">Privacy policy</a></li>
+            <li><a href="https://oclc.org/policies/iso.en.html">ISO 9001 Certificate</a></li>
+        </ul>
+    </div>
+</footer>
+
+
+
+</body><editor-card style="position:absolute;top:0px;left:0px;z-index:auto;display: block !important"><div dir="ltr" style="all: initial;"><div style="color: initial; font: initial; font-feature-settings: initial; font-kerning: initial; font-optical-sizing: initial; font-variation-settings: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-size: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; offset: initial; opacity: initial; order: initial; origin-trial-test-property: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; ruby-position: initial; rx: initial; ry: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; user-select: initial; vector-effect: initial; vertical-align: initial; visibility: initial; -webkit-app-region: initial; border-spacing: initial; -webkit-border-image: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-hyphenate-character: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-perspective-origin-x: initial; -webkit-perspective-origin-y: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-emphasis: initial; -webkit-text-emphasis-position: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-transform-origin-x: initial; -webkit-transform-origin-y: initial; -webkit-transform-origin-z: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; white-space: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://hokifickgkhplphjiodbggjmoafhignh/fonts/fabric-icons.css"></div><div style="color: initial; font: initial; font-feature-settings: initial; font-kerning: initial; font-optical-sizing: initial; font-variation-settings: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-size: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; offset: initial; opacity: initial; order: initial; origin-trial-test-property: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; ruby-position: initial; rx: initial; ry: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; user-select: initial; vector-effect: initial; vertical-align: initial; visibility: initial; -webkit-app-region: initial; border-spacing: initial; -webkit-border-image: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-hyphenate-character: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-perspective-origin-x: initial; -webkit-perspective-origin-y: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-emphasis: initial; -webkit-text-emphasis-position: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-transform-origin-x: initial; -webkit-transform-origin-y: initial; -webkit-transform-origin-z: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; white-space: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://hokifickgkhplphjiodbggjmoafhignh/fonts/fabric-icons.css"></div><div style="color: initial; font: initial; font-feature-settings: initial; font-kerning: initial; font-optical-sizing: initial; font-variation-settings: initial; forced-color-adjust: initial; text-orientation: initial; text-rendering: initial; -webkit-font-smoothing: initial; -webkit-locale: initial; -webkit-text-orientation: initial; -webkit-writing-mode: initial; writing-mode: initial; zoom: initial; accent-color: initial; place-content: initial; place-items: initial; place-self: initial; alignment-baseline: initial; animation: initial; appearance: initial; aspect-ratio: initial; backdrop-filter: initial; backface-visibility: initial; background: initial; background-blend-mode: initial; baseline-shift: initial; block-size: initial; border-block: initial; border: initial; border-radius: initial; border-collapse: initial; border-end-end-radius: initial; border-end-start-radius: initial; border-inline: initial; border-start-end-radius: initial; border-start-start-radius: initial; inset: initial; box-shadow: initial; box-sizing: initial; break-after: initial; break-before: initial; break-inside: initial; buffered-rendering: initial; caption-side: initial; caret-color: initial; clear: initial; clip: initial; clip-path: initial; clip-rule: initial; color-interpolation: initial; color-interpolation-filters: initial; color-rendering: initial; color-scheme: initial; columns: initial; column-fill: initial; gap: initial; column-rule: initial; column-span: initial; contain: initial; contain-intrinsic-size: initial; content: initial; content-visibility: initial; counter-increment: initial; counter-reset: initial; counter-set: initial; cursor: initial; cx: initial; cy: initial; d: initial; display: initial; dominant-baseline: initial; empty-cells: initial; fill: initial; fill-opacity: initial; fill-rule: initial; filter: initial; flex: initial; flex-flow: initial; float: initial; flood-color: initial; flood-opacity: initial; grid: initial; grid-area: initial; height: initial; hyphens: initial; image-orientation: initial; image-rendering: initial; inline-size: initial; inset-block: initial; inset-inline: initial; isolation: initial; letter-spacing: initial; lighting-color: initial; line-break: initial; list-style: initial; margin-block: initial; margin: initial; margin-inline: initial; marker: initial; mask: initial; mask-type: initial; max-block-size: initial; max-height: initial; max-inline-size: initial; max-width: initial; min-block-size: initial; min-height: initial; min-inline-size: initial; min-width: initial; mix-blend-mode: initial; object-fit: initial; object-position: initial; offset: initial; opacity: initial; order: initial; origin-trial-test-property: initial; orphans: initial; outline: initial; outline-offset: initial; overflow-anchor: initial; overflow-clip-margin: initial; overflow-wrap: initial; overflow: initial; overscroll-behavior-block: initial; overscroll-behavior-inline: initial; overscroll-behavior: initial; padding-block: initial; padding: initial; padding-inline: initial; page: initial; page-orientation: initial; paint-order: initial; perspective: initial; perspective-origin: initial; pointer-events: initial; position: absolute; quotes: initial; r: initial; resize: initial; ruby-position: initial; rx: initial; ry: initial; scroll-behavior: initial; scroll-margin-block: initial; scroll-margin: initial; scroll-margin-inline: initial; scroll-padding-block: initial; scroll-padding: initial; scroll-padding-inline: initial; scroll-snap-align: initial; scroll-snap-stop: initial; scroll-snap-type: initial; shape-image-threshold: initial; shape-margin: initial; shape-outside: initial; shape-rendering: initial; size: initial; speak: initial; stop-color: initial; stop-opacity: initial; stroke: initial; stroke-dasharray: initial; stroke-dashoffset: initial; stroke-linecap: initial; stroke-linejoin: initial; stroke-miterlimit: initial; stroke-opacity: initial; stroke-width: initial; tab-size: initial; table-layout: initial; text-align: initial; text-align-last: initial; text-anchor: initial; text-combine-upright: initial; text-decoration: initial; text-decoration-skip-ink: initial; text-indent: initial; text-overflow: initial; text-shadow: initial; text-size-adjust: initial; text-transform: initial; text-underline-offset: initial; text-underline-position: initial; touch-action: initial; transform: initial; transform-box: initial; transform-origin: initial; transform-style: initial; transition: initial; user-select: initial; vector-effect: initial; vertical-align: initial; visibility: initial; -webkit-app-region: initial; border-spacing: initial; -webkit-border-image: initial; -webkit-box-align: initial; -webkit-box-decoration-break: initial; -webkit-box-direction: initial; -webkit-box-flex: initial; -webkit-box-ordinal-group: initial; -webkit-box-orient: initial; -webkit-box-pack: initial; -webkit-box-reflect: initial; -webkit-highlight: initial; -webkit-hyphenate-character: initial; -webkit-line-break: initial; -webkit-line-clamp: initial; -webkit-mask-box-image: initial; -webkit-mask: initial; -webkit-mask-composite: initial; -webkit-perspective-origin-x: initial; -webkit-perspective-origin-y: initial; -webkit-print-color-adjust: initial; -webkit-rtl-ordering: initial; -webkit-ruby-position: initial; -webkit-tap-highlight-color: initial; -webkit-text-combine: initial; -webkit-text-decorations-in-effect: initial; -webkit-text-emphasis: initial; -webkit-text-emphasis-position: initial; -webkit-text-fill-color: initial; -webkit-text-security: initial; -webkit-text-stroke: initial; -webkit-transform-origin-x: initial; -webkit-transform-origin-y: initial; -webkit-transform-origin-z: initial; -webkit-user-drag: initial; -webkit-user-modify: initial; white-space: initial; widows: initial; width: initial; will-change: initial; word-break: initial; word-spacing: initial; x: initial; y: initial; z-index: 2147483647;"><link rel="stylesheet" href="chrome-extension://hokifickgkhplphjiodbggjmoafhignh/fonts/fabric-icons.css"><div style="all: initial;"></div></div></div></editor-card></html>

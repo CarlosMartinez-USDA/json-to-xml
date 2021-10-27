@@ -17,6 +17,11 @@
         </xd:desc>
     </xd:doc>    
     
+    
+    <xsl:param name="seriesTitle" select="text()=('Forest Insect &amp; Disease Leaflet', 'General Technical Report (GTR)', 'General Technical Report - Proceedings', 'Information Forestry', 'Prsoceeding (Rocky Mountain Research Station Publications)',
+        'Resource Bulleti (RB)', 'Research Map (RMAP)', 'Research Note (RN)', 'Research Paper (RP)', 'Resource Update (RU)')"/>
+
+    
     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>Function: </xd:b>f:monthNumFromName</xd:p>
@@ -194,30 +199,20 @@
         </xd:desc>
        <xd:param name="seriesTitle"/>
         <xd:param name="typeOfTitle"/>
-    </xd:doc>      
-    <xsl:function name="f:seriesToAbbrv" as="xs:string?" xmlns:f="http://functions">
+    </xd:doc>
+    <xsl:function name="f:seriesToAbbrv" as="xs:string" xmlns:f="http://functions">
         <xsl:param name="typeOfTitle"/>
-        <xsl:variable name="seriesTitle">
-            <xsl:value-of select="text()= ('Forest Insect &amp; Disease Leaflet',
-                'General Technical Report (GTR)',
-                'General Technical Report - Proceedings',
-                'Information Forestry',
-                'Proceeding (Rocky Mountain Research Station Publications)',
-                'Resource Bulletin (RB)',
-                'Research Map (RMAP)',
-                'Research Note (RN)',
-                'Research Paper (RP)',
-                'Resource Update (RU)')"/>
-        </xsl:variable>
-        
-        <xsl:if test="contains($seriesTitle, $typeOfTitle) and .!= ''"/>
+        <xsl:param name="seriesTitle"/>
+        <xsl:if test="$typeOfTitle != ''"/>
+       <xsl:if test="$seriesTitle != ''"/>
         <xsl:variable name="nodes">
             <xsl:copy-of select="document('./USFS_Research.xml')"/>
         </xsl:variable>
-        <xsl:value-of select="if $nodes/usfs:research/../usfs:seriesPub[usfs:treePub = $typeOfTitle]/usfs:abbrv  
-            then $nodes/usfs:research/../usfs:seriesPub[usfs:treePub = $typeoTitle]/usfs:treePub          
-            else $typeOfTitle"/>
+        <xsl:value-of select="if ($nodes/usfs:research/../usfs:seriesPub[usfs:treePub = $typeOfTitle]/usfs:abbrv)  
+            then ($nodes/usfs:research/../usfs:seriesPub[usfs:treePub = $typeOfTitle])          
+            else ($typeOfTitle)"/>
     </xsl:function>
+       
                       
         
    
@@ -229,7 +224,7 @@
         </xd:desc>
         <xd:param name="pub_title"/>
     </xd:doc>      
-    <xsl:function name="f:pub_type_desc" as="xs:string?" xmlns:f="http://functions">
+    <xsl:function name="f:pub_type_desc" as="xs:string" xmlns:f="http://functions">
         <xsl:param name="pub_title"/>
         <xsl:if test="$pub_title != ''"/>
         <xsl:variable name="nodes" as="node()*">

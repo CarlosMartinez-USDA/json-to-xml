@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<stationCode xmlns:nrs="http://nrsresearch" xmlns="http://nrsresearch">
+    <abbrv>NRS</abbrv>
+    <stationName>Northern Research Station</stationName>
+    <reserachUnits>
+        <researchUnit>
+            <unitNumber>1</unitNumber>
+            <unitName>Ecological and Economic Sustainability of the Appalachian Forest in an Era of
+                Globalization</unitName>
+            <acronym>EESAFEG</acronym>
+            <projectLeader>Janice (Jan) Wiedenbeck</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>2</unitNumber>
+            <unitName>Sustaining Forests in a Changing Environment</unitName>
+            <acronym>SFCE</acronym>
+            <projectLeader>Janice (Jan) Wiedenbeck</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>3</unitNumber>
+            <unitName>Ecology and Management of Invasive Species and Forest Ecosystems</unitName>
+            <acronym>EMISFE</acronym>
+            <projectLeader>Therese Poland</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>5</unitNumber>
+            <unitName>Forest Inventory and Analysis</unitName>
+            <acronym>FIA</acronym>
+            <projectLeader>Charles H. (Hobie) Perry</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>6</unitNumber>
+            <unitName>Climate, Fire, and Carbon Cycle Sciences</unitName>
+            <acronym>CFCCS</acronym>
+            <projectLeader>Chris Swanston</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>7</unitNumber>
+            <unitName>Northern Forest Science and Applications</unitName>
+            <acronym>NFSA</acronym>
+            <projectLeader>Randy Kolka</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>8</unitNumber>
+            <unitName>Communities and Landscapes of the Urban Northeast</unitName>
+            <acronym>CLUN</acronym>
+            <projectLeader>Keith Nislow</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>9</unitNumber>
+            <unitName>People and Their Environments: Social Science Supporting Natural Resource
+                Management and Policy</unitName>
+            <acronym>PTESSSNRM</acronym>
+            <projectLeader>Robert G. Haight</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>11</unitNumber>
+            <unitName>Sustainable Management of Central Hardwood Ecosystems and
+                Landscapes</unitName>
+            <acronym>SMCHEL</acronym>
+            <projectLeader>Daniel Dey</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>13</unitNumber>
+            <unitName>Institute for Applied Ecosystem Studies: Theory and Application of Scaling
+                Science in Forestry</unitName>
+            <acronym>IAES:TASSF</acronym>
+            <projectLeader>Deahn Donner</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>14</unitNumber>
+            <unitName>Hardwood Tree Improvement and Regeneration Center</unitName>
+            <acronym>HTIRC</acronym>
+            <projectLeader>Keith Woeste</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>15</unitNumber>
+            <unitName>The Strategic Foresight Group</unitName>
+            <acronym>(the)SFG</acronym>
+            <projectLeader>Robert G. Haight</projectLeader>
+        </researchUnit>
+        <researchUnit>
+            <unitNumber>16</unitNumber>
+            <unitName>Restoration and Conservation of Rural and Urban Forests</unitName>
+            <acronym>RCRUF</acronym>
+            <projectLeader>Daniel Lindner</projectLeader>
+        </researchUnit>
+    </reserachUnits>
+</stationCode>

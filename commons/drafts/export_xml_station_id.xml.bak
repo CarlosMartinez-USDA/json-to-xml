@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<traceList>
+  <trace attributes="(name=&quot;archiveFile&quot;) (select=&quot;replace(tokenize(base-uri(), '/')[last()], '(.*)(\.\w{3,4})', '$1')&quot;)" entering="yes" line="66" name="xsl:param"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;replace&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;tokenize&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;base-uri&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;base-uri&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;tokenize&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="yes" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;last&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;replace&quot;)" entering="no" line="66" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;archiveFile&quot;) (select=&quot;replace(tokenize(base-uri(), '/')[last()], '(.*)(\.\w{3,4})', '$1')&quot;)" entering="no" line="66" name="xsl:param"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;originalFilename&quot;) (select=&quot;base-uri()&quot;)" entering="yes" line="67" name="xsl:param"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace attributes="(name=&quot;originalFilename&quot;) (select=&quot;base-uri()&quot;)" entering="no" line="67" name="xsl:param"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/params.xsl"/>
+  <trace entering="yes" line="1" name="root" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/A-14218.json"/>
+  <trace attributes="(match=&quot;root&quot;)" entering="yes" line="12" name="template" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(version=&quot;3.7&quot;)" entering="yes" line="13" name="mods" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;version&quot;)" entering="yes" line="13" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;version&quot;)" entering="no" line="13" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;json-to-xml(.)&quot;)" entering="yes" line="14" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(match=&quot;map&quot;) (xpath-default-namespace=&quot;http://www.w3.org/2005/xpath-functions&quot;)" entering="yes" line="19" name="template"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;/map/string[@key = 'title']&quot;)" entering="yes" line="22" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(key=&quot;title&quot;)" entering="yes" line="-1" name="string" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(match=&quot;/map/string[@key = 'title']&quot;) (xpath-default-namespace=&quot;http://www.w3.org/2005/xpath-functions&quot;)" entering="yes" line="30" name="template"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="31" name="titleInfo" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="32" name="title" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="yes" line="33" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="no" line="33" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="32" name="title" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="31" name="titleInfo" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(match=&quot;/map/string[@key = 'title']&quot;) (xpath-default-namespace=&quot;http://www.w3.org/2005/xpath-functions&quot;)" entering="no" line="30" name="template"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(key=&quot;title&quot;)" entering="no" line="-1" name="string" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;/map/string[@key = 'title']&quot;)" entering="no" line="22" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;name&quot;)" entering="yes" line="23" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(key=&quot;pub_authors&quot;)" entering="yes" line="-1" name="array" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(match=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;name&quot;) (xpath-default-namespace=&quot;http://www.w3.org/2005/xpath-functions&quot;)" entering="yes" line="43"
+    name="template" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;map[string[@key]]&quot;)" entering="yes" line="44" name="xsl:for-each"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="yes" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="yes" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="yes" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="no" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="no" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="no" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="yes" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="yes" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="yes" line="49" name="function-call"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="no" line="49" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="no" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="no" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="yes" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="no" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="yes" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="no" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="yes" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="no" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="yes" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="yes" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="yes" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="no" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="no" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="no" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="yes" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="yes" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="yes" line="49" name="function-call"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="no" line="49" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="no" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="no" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="yes" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="no" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="yes" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="no" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="yes" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="no" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="yes" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="yes" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="yes" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="no" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="no" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="no" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="yes" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="yes" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="yes" line="49" name="function-call"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="no" line="49" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="no" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="no" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="yes" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="no" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="yes" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="no" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="yes" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="no" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="yes" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="yes" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="yes" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="no" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="no" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="no" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="yes" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="yes" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="yes" line="49" name="function-call"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="no" line="49" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="no" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="no" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="yes" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="no" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="yes" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="no" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="yes" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="no" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="yes" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="45" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="yes" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="yes" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-after&quot;)" entering="no" line="46" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-after(., ', ')&quot;)" entering="no" line="46" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;given&quot;)" entering="no" line="45" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="yes" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="48" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="yes" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="yes" line="49" name="function-call"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;substring-before&quot;)" entering="no" line="49" name="function-call" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;substring-before(., ', ')&quot;)" entering="no" line="49" name="xsl:value-of"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;family&quot;)" entering="no" line="48" name="namePart" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="yes" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;.&quot;)" entering="no" line="52" name="xsl:value-of" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="51" name="displayName" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="yes" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;station_id&quot;)" entering="no" line="55" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="54" name="affiliation" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="yes" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="yes" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(name=&quot;type&quot;)" entering="no" line="58" name="attribute" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="yes" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="58" name="text" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(type=&quot;text&quot;)" entering="no" line="58" name="roleTerm" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="57" name="role" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;map[string[@key]]&quot;)" entering="no" line="44" name="xsl:for-each"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(match=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;name&quot;) (xpath-default-namespace=&quot;http://www.w3.org/2005/xpath-functions&quot;)" entering="no" line="43"
+    name="template" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(key=&quot;pub_authors&quot;)" entering="no" line="-1" name="array" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;array[@key = 'pub_authors']&quot;) (mode=&quot;name&quot;)" entering="no" line="23" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(match=&quot;map&quot;) (xpath-default-namespace=&quot;http://www.w3.org/2005/xpath-functions&quot;)" entering="no" line="19" name="template"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="-1" name="map" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(select=&quot;json-to-xml(.)&quot;)" entering="no" line="14" name="xsl:apply-templates"
+    resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(version=&quot;3.7&quot;)" entering="no" line="13" name="mods" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace attributes="(match=&quot;root&quot;)" entering="no" line="12" name="template" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/json-to-xml.xsl"/>
+  <trace entering="no" line="1" name="root" resource="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/A-14218.json"/>
+</traceList>

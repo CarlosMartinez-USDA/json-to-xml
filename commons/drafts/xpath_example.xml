@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map xmlns="http://www.w3.org/2005/xpath-functions">
+    <string key="product_id">341</string>
+    <string key="ac22_approved_for_public">1</string>
+    <string key="primary_station">FPL</string>
+    <string key="historical_station">NRS</string>
+    <string key="entrystatus">Published to Web</string>
+    <string key="product_type_id">1</string>
+    <string key="product_type_desc">Publication</string>
+    <null key="product_subtype_id"/>
+    <null key="product_subtype_desc"/>
+    <string key="referee_status_id">2</string>
+    <string key="status_name">Informally Refereed (Peer-Reviewed)</string>
+    <string key="pub_type_id">1</string>
+    <string key="pub_type_desc">Scientific Journal (JRNL)</string>
+    <string key="title">A method countries can use to estimate changes in carbon stored in harvested
+        wood products and the uncertainty of such estimates</string>
+    <string key="product_year"> 2004</string>
+    <string key="abstract">A method is suggested for estimating additions to carbon stored in
+        harvested wood products (HWP) and for evaluating uncertainty. The method uses data on HWP
+        production and trade from several decades and tracks annual additions to pools of HWP in
+        use, removals from use, additions to solid waste disposal sites (SWDS), and decay from SWDS.
+        The method is consistent with IPCC guidance for estimating emissions from SWDS. Uncertainty
+        is postulated in the form of probability density functions for 14 variables, using Monte
+        Carlo simulation.</string>
+    <string key="citation">Skog, Kenneth E.; Pingoud, Kim; Smith, James E. 2004. A method countries
+        can use to estimate changes in carbon stored in harvested wood products and the uncertainty
+        of such estimates. Environmental Management. 33(Supplement 1): S65-S73.</string>
+    <string key="keywords">carbon sequestration, harvested wood products, estimation
+        methods</string>
+    <null key="doi"/>
+    <string key="url_binary_file"
+        >https://www.nrs.fs.fed.us/pubs/jrnl/2004/ne_2004_skog_001.pdf</string>
+    <string key="binary_filesize">371.0 KB</string>
+    <string key="url_landing_page">https://www.fs.usda.gov/treesearch/pubs/13977</string>
+    <string key="treesearch_pub_id">13977</string>
+    <null key="pub_parent_id"/>
+    <null key="pub_child_number"/>
+    <string key="pub_parent_ind">0</string>
+    <string key="pub_publication">Environmental Management. 33(Supplement 1): S65-S73.</string>
+    <string key="proceedings_ind">0</string>
+    <string key="pub_volume">33</string>
+    <null key="pub_issue"/>
+    <string key="pub_page">s65-s73</string>
+    <null key="pub_page_start"/>
+    <null key="pub_page_end"/>
+    <string key="pub_source">T</string>
+    <null key="geographic_terms"/>
+    <null key="issn_id"/>
+    <string key="is_early_release">0</string>
+    <string key="created_on">01-APR-2008 00:00:00</string>
+    <string key="modified_on">24-SEP-2019 11:14:38</string>
+    <string key="send_to_reviewer_ind">A</string>
+    <string key="publish_to_web_ind">Y</string>
+    <null key="send_to_reviewer"/>
+    <string key="child_publications"/>
+    <string key="national_research_taxonomy_elements"/>
+    <array key="pub_authors">
+        <map>
+            <string key="name">Skog, Kenneth E.</string>
+            <string key="station_id">FPL</string>
+            <string key="unit_id">4851</string>
+            <string key="team_id"/>
+            <string key="alias">kskog</string>
+            <string key="user_id">33</string>
+            <string key="is_employee_active">0</string>
+            <string key="is_researcher">1</string>
+            <string key="author_order">1</string>
+        </map>
+        <map>
+            <string key="name">Pingoud, Kim</string>
+            <string key="station_id"/>
+            <string key="unit_id"/>
+            <string key="team_id"/>
+            <string key="alias"/>
+            <string key="user_id"/>
+            <string key="is_employee_active">0</string>
+            <string key="is_researcher">0</string>
+            <string key="author_order">2</string>
+        </map>
+        <map>
+            <string key="name">Smith, James E.</string>
+            <string key="station_id">NRS</string>
+            <string key="unit_id">FIA</string>
+            <string key="team_id"/>
+            <string key="alias">jsmith11</string>
+            <string key="user_id">582</string>
+            <string key="is_employee_active">1</string>
+            <string key="is_researcher">1</string>
+            <string key="author_order">3</string>
+        </map>
+    </array>
+    <array key="current_organizational_memberships">
+        <map>
+            <string key="name">Skog, Kenneth E.</string>
+            <string key="station_id">FPL</string>
+            <string key="unit_id">4851</string>
+            <string key="team_id"/>
+            <string key="alias">kskog</string>
+            <string key="user_id">33</string>
+            <string key="is_employee_active">0</string>
+            <string key="is_researcher">1</string>
+            <string key="author_order">1</string>
+        </map>
+        <map>
+            <string key="name">Pingoud, Kim</string>
+            <string key="station_id"/>
+            <string key="unit_id"/>
+            <string key="team_id"/>
+            <string key="alias"/>
+            <string key="user_id"/>
+            <string key="is_employee_active">0</string>
+            <string key="is_researcher">0</string>
+            <string key="author_order">2</string>
+        </map>
+        <map>
+            <string key="name">Smith, James E.</string>
+            <string key="station_id">NRS</string>
+            <string key="unit_id">FIA</string>
+            <string key="team_id"/>
+            <string key="alias">jsmith11</string>
+            <string key="user_id">582</string>
+            <string key="is_employee_active">1</string>
+            <string key="is_researcher">1</string>
+            <string key="author_order">3</string>
+        </map>
+    </array>
+    <string key="strategic_program_areas"/>
+    <string key="cris_projects"/>
+    <string key="experimental_forests"/>
+    <string key="eco_regions"/>
+    <string key="latlongs"/>
+    <string key="usnatforests"/>
+    <string key="countystates"/>
+</map>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo xmlns="">USDA Forest Service Global Change Research Program Highlights: 1991-1995</titleInfo>
+   <namePart xmlns="" type="given">Richard</namePart>
+   <namePart xmlns="" type="family">Birdsey</namePart>
+   <displayName xmlns="">Birdsey, Richard </displayName>
+   <affiliation xmlns="">United States Department of Agriculture, Forest Service, Northern Research Station, The Strategic Foresight Group, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+   <role xmlns="">
+      <roleTerm type="text">author</roleTerm>
+   </role>
+   <namePart xmlns="" type="given">Robert</namePart>
+   <namePart xmlns="" type="family">Mickler</namePart>
+   <displayName xmlns="">Mickler, Robert </displayName>
+   <role xmlns="">
+      <roleTerm type="text">author</roleTerm>
+   </role>
+   <namePart xmlns="" type="given">David</namePart>
+   <namePart xmlns="" type="family">Sandberg</namePart>
+   <displayName xmlns="">Sandberg, David </displayName>
+   <role xmlns="">
+      <roleTerm type="text">author</roleTerm>
+   </role>
+   <namePart xmlns="" type="given">Richard</namePart>
+   <namePart xmlns="" type="family">Tinus</namePart>
+   <displayName xmlns="">Tinus, Richard </displayName>
+   <role xmlns="">
+      <roleTerm type="text">author</roleTerm>
+   </role>
+   <namePart xmlns="" type="given">John</namePart>
+   <namePart xmlns="" type="family">Zerbe</namePart>
+   <displayName xmlns="">Zerbe, John </displayName>
+   <role xmlns="">
+      <roleTerm type="text">author</roleTerm>
+   </role>
+   <namePart xmlns="" type="given">Kelly eds.</namePart>
+   <namePart xmlns="" type="family">O'Brian</namePart>
+   <displayName xmlns="">O'Brian, Kelly  eds.</displayName>
+   <role xmlns="">
+      <roleTerm type="text">author</roleTerm>
+   </role>textarticle<dateIssued xmlns="" encoding="w3cdtf" keyDate="yes">2019-06-25</dateIssued>
+   <languageTerm xmlns="" type="code" authority="iso639-2b">eng</languageTerm>
+   <languageTerm xmlns="" type="text">English</languageTerm>Summarizes research findings of the USDA Forest Service's Global Change Research Program. Research highlights are presented at national and regional scales within the following topic areas: atmosphere/biosphere gas and energy exchange; ecosystem dynamics; disturbance ecology; and human activities and natural resource interactions. Selected topics are reviewed in depth with individual papers covering the global carbon cycle, climate scenarios, multiple stress studies, changes in vegetation distribution, the United States carbon budget, and the human dimensions of global change. Also included is a progress report on development of an integrated national model of the effects of global change on forests and people.<title xmlns=""/>
+   <title xmlns=""/>
+   <detail xmlns="" type="volume">
+      <number>237</number>
+      <caption>v.</caption>
+   </detail>
+   <text xmlns="" type="year">2019</text>
+   <text xmlns="" type="month">06</text>
+   <text xmlns="" type="day">25</text>
+   <extent xmlns="" unit="pages">
+      <start>1</start>
+      <end>122</end>
+      <total>122</total>
+   </extent>10.2737/NE-GTR-237<url xmlns="">http://dx.doi.org/10.2737/NE-GTR-237</url>
+   <vendorName xmlns=""/>
+   <archiveFile xmlns="">A-4431.json</archiveFile>
+   <originalFile xmlns="">file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-4431.json</originalFile>
+   <workingDirectory xmlns="">file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+</mods>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <title xmlns="">
+      <titleInfo>USDA Forest Service Global Change Research Program Highlights: 1991-1995</titleInfo>
+   </title>
+   <name xmlns="" type="personal" usage="primary">
+      <namePart type="given">Richard</namePart>
+      <namePart type="family">Birdsey</namePart>
+      <displayName>Birdsey, Richard </displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, The Strategic Foresight Group, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Robert</namePart>
+      <namePart type="family">Mickler</namePart>
+      <displayName>Mickler, Robert </displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David</namePart>
+      <namePart type="family">Sandberg</namePart>
+      <displayName>Sandberg, David </displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Richard</namePart>
+      <namePart type="family">Tinus</namePart>
+      <displayName>Tinus, Richard </displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">John</namePart>
+      <namePart type="family">Zerbe</namePart>
+      <displayName>Zerbe, John </displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Kelly eds.</namePart>
+      <namePart type="family">O'Brian</namePart>
+      <displayName>O'Brian, Kelly  eds.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource xmlns="">text</typeOfResource>
+   <genre xmlns="">article</genre>
+   <originInfo xmlns="">
+      <dateIssued encoding="w3cdtf" keyDate="yes">2019-06-25</dateIssued>
+   </originInfo>
+   <language xmlns="">
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract xmlns="">Summarizes research findings of the USDA Forest Service's Global Change Research Program. Research highlights are presented at national and regional scales within the following topic areas: atmosphere/biosphere gas and energy exchange; ecosystem dynamics; disturbance ecology; and human activities and natural resource interactions. Selected topics are reviewed in depth with individual papers covering the global carbon cycle, climate scenarios, multiple stress studies, changes in vegetation distribution, the United States carbon budget, and the human dimensions of global change. Also included is a progress report on development of an integrated national model of the effects of global change on forests and people.</abstract>
+   <titleInfo xmlns="" type="abbreviated"/>
+   <titleInfo xmlns="" type="alternative"/>Gen. Tech. Rep. NE-237. Radnor, PA: U.S. Department of Agriculture, Forest Service, Northeastern Forest Experiment Station. 122 p.<part xmlns="">
+      <detail type="volume">
+         <number>237</number>
+         <caption>v.</caption>
+      </detail>
+      <text type="year">2019</text>
+      <text type="month">06</text>
+      <text type="day">25</text>
+      <extent unit="pages">
+         <start>1</start>
+         <end>122</end>
+         <total>122</total>
+      </extent>
+   </part>
+   <identifier xmlns="" type="doi">10.2737/NE-GTR-237</identifier>
+   <location xmlns="">
+      <url>http://dx.doi.org/10.2737/NE-GTR-237</url>
+   </location>
+   <identifier xmlns=""/>
+   <extension xmlns="">
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-4431.json</originalFile>
+      <workingDirectory>C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/results/</workingDirectory>
+   </extension>
+</mods>
