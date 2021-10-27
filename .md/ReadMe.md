@@ -1,24 +1,32 @@
 # JSON-to-MODS XSLT Transformation
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for  ingest into Unified Repository. 
+
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service  (USFS)](https://www.fs.usda.gov/).
 
 ## Transformation process
-The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl) transforms utilizes the following formats and schema_:
+The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl)_ utilizes the following formats and schema to transform the JSON format into MODS.
  - [JSON](https://www.json.org/json-en.html): (JavaScript Object Notation)
 - [XPath 3.1](https://www.w3.org/TR/xpath-31/): (XML Path Language)
 - [XSLT 3.0](https://www.w3.org/TR/xslt-30/):  (Extensible Stylesheet Language Transformations)
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd) : (Metadata Object Description Schema)
  ######  *Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element. 
-
+####  Te 
 
 ### This flowchart illustrates the workflow of the transformation
-
+```mermaid
+flowchart LR 
+id1(Start)-->id2(Stop) 
+style id1 fill:#f9f,stroke:#333,stroke-width:4px 
+style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+```
 ```mermaid
 graph LR
 A[JSON] --> B((XSLT3.0))
 B-->B.1((XPath 3.1))-->C
 B --transforms_to--> C{XML}
 C --maps to--> D[MODS 3.7]
+style A fill:#f9f,stroke:#333,stroke-width:4px 
+style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 ```
 
 # Files
@@ -160,5 +168,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1NTIzMTQyXX0=
+eyJoaXN0b3J5IjpbMTAzNjU4MzUwNiwxMTg2MzkxMTY3LDEzMz
+A4Nzk2OTIsODg4MDg3NzE3LDUxMDE4MTQxNSwxMzU1MjMxNDJd
+fQ==
 -->
