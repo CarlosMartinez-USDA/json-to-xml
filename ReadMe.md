@@ -25,7 +25,7 @@ A[JSON] --> B((XSLT3.0))
 B-->B.1((XPath 3.1))-->C
 B --transforms_to--> C{XML}
 C --maps to--> D[MODS 3.7]
-style A D fill:#f9f,stroke:#333,stroke-width:4px 
+style A fill:#f9f,stroke:#333,stroke-width:4px 
 ```
 
 # Files
@@ -167,6 +167,6 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTQwMTc1NSwxMzMwODc5NjkyLDg4OD
+eyJoaXN0b3J5IjpbMTE4NjM5MTE2NywxMzMwODc5NjkyLDg4OD
 A4NzcxNyw1MTAxODE0MTUsMTM1NTIzMTQyXX0=
 -->
