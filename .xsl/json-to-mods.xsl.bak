@@ -19,9 +19,9 @@
     <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
     <!-- saxon:next-in-chain="fix_characters.xsl"/>-->
     
-    <xsl:include href="commons/common.xsl"/>
-    <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/new_params.xsl"/>
+    <xsl:include href="../commons/common.xsl"/>
+    <xsl:include href="../commons/functions.xsl"/>
+    <xsl:include href="../commons/params-cm.xsl"/>
 
     <xsl:strip-space elements="*"/>
     <xd:doc>
@@ -64,14 +64,14 @@
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
             href="{$workingDir}N-{$archiveFile}.xml"
             format="original">
-            <mods>
-                <xsl:namespace name="mods">http://www.loc.gov/mods/v3<nk</xsl/xsl:namespace>
-                <xsl:namespace name="xlink">http://www.w3.org/1999/xli:namespace>
+            <mods xmlns="http://www.loc.gov/mods/v3">
+                <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
                 <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
                 <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
                 <xsl:attribute name="version">3.7</xsl:attribute>
                 <xsl:apply-templates select="json-to-xml(.)"/>
             </mods>
+            
         </xsl:result-document>
     </xsl:template>
     
@@ -415,7 +415,7 @@
            <xsl:attribute name="host">
                     <titleInfo>
                         <title>
-                            <xsl:apply-templates select="substring-before(./text(),'.')" mode="relatedItem_title"/>
+                            <xsl:apply-templates select="substring-before(./text(),'.')" mode="relatedItem<!--_-->title"/>
                         </title>
                     </titleInfo>
            </xsl:attribute>

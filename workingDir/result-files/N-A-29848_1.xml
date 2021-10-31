@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Feasibility of producing value-added wood products from reclaimed hemlock lumber</title>
+   </titleInfo>FPL<name type="personal">
+      <namePart type="given">John J.</namePart>
+      <namePart type="family">Janowiak</namePart>
+      <displayName>Janowiak, John J.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Robert H.</namePart>
+      <namePart type="family">Falk</namePart>
+      <displayName>Falk, Robert H.</displayName>
+      <affiliation>United States Department of Agriculture, Forest Service, , , , </affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Jeffery D.</namePart>
+      <namePart type="family">Kimmel</namePart>
+      <displayName>Kimmel, Jeffery D.</displayName>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-25</dateIssued>
+   </originInfo>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This study evaluated the feasibility of producing value-added wood products from hemlock lumber salvaged from building deconstruction. About 6,000 board feet of lumber, ranging in size from 3 in. by 8 in. to 3 in. by 12 in., was remilled into four products including log cabin siding, V-groove paneling, beadboard (wainscoting), and tongue and groove flooring. The general quality of the products produced was high and little loss was found after processing, although checks, ringshake, and face-nail holes were found in some pieces. The yield of value-added products was rather low (about 33%) and was constant over lumber size and product type. The authors believe yield could be increased with better on-site trimming.</abstract>
+   <subject>
+      <topic>Deconstruction</topic>
+   </subject>
+   <subject>
+      <topic>re-milling</topic>
+   </subject>
+   <subject>
+      <topic>salvage</topic>
+   </subject>
+   <subject>
+      <topic>lumber</topic>
+   </subject>
+   <subject>
+      <topic>wood</topic>
+   </subject>
+   <subject>
+      <topic>timber</topic>
+   </subject>
+   <subject>
+      <topic>reclaimed</topic>
+   </subject>
+   <subject>
+      <topic>recycling</topic>
+   </subject>
+   <subject>
+      <topic>reuse</topic>
+   </subject>
+   <subject>
+      <topic>recycled products</topic>
+   </subject>
+   <subject>
+      <topic>value added</topic>
+   </subject>
+   <subject>
+      <topic>feasibility studies</topic>
+   </subject>
+   <subject>
+      <topic>buildings</topic>
+   </subject>
+   <subject>
+      <topic>eastern hemlock</topic>
+   </subject>
+   <subject>
+      <topic>recycling</topic>
+   </subject>
+   <subject>
+      <topic>Tsuga canadensis</topic>
+   </subject>
+   <relatedItem>
+      <part>
+         <detail type="volume">
+            <number>645</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">25</text>
+         <extent unit="pages">
+            <start/>
+            <end>RP-645</end>
+            <total/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RP-645</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RP-645</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile>A-29848.json</archiveFile>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29848.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\result-files\</workingDirectory>
+   </extension>
+</mods>

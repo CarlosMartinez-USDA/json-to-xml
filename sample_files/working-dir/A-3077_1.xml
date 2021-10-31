@@ -1,0 +1,126 @@
+<map xmlns="http://www.w3.org/2005/xpath-functions">
+   <string key="product_id">873</string>
+   <string key="ac22_approved_for_public">1</string>
+   <string key="primary_station">PNW</string>
+   <string key="historical_station">PNW</string>
+   <string key="entrystatus">Published to Web</string>
+   <string key="product_type_id">1</string>
+   <string key="product_type_desc">Publication</string>
+   <null key="product_subtype_id"/>
+   <null key="product_subtype_desc"/>
+   <string key="referee_status_id">2</string>
+   <string key="status_name">Informally Refereed (Peer-Reviewed)</string>
+   <string key="pub_type_id">3</string>
+   <string key="pub_type_desc">General Technical Report (GTR)</string>
+   <string key="title">Proceedings: linking healthy forests and communities through Alaska value-added forest products.</string>
+   <string key="product_year"> 2000</string>
+   <string key="abstract">The Alaska forest products industry is experiencing significant changes in its structure due to economic, ecological, and social pressures. Papers presented at this workshop brought together technical specialists and exhibitors from forest products industry, associations, universities, and private, state, and federal land management agencies. Topics included: policy and management shifts necessary to link healthy forests, communities, and industries; silvicultural concerns for future forest potential; enhancing value in lumber, engineered timber products, processing of finished wood products, and special (craft and nontimber) forest products; and assessment of Alaska forest products industry’s competitive position within state, national, and in Pacific Rim markets. As the first technology transfer event of the Wood Utilization Research and Development Center, the Alaska Value-Added Forest Products Workshop set the stage for developing a strong research and development program for the new center. The center’s mission includes working with community partners to identify and evaluate the opportunities for small businesses and examining how small businesses benefit the local economy. The Alaska Wood Utilization Research and Development Center opened in Sitka in January 1999. Congress directed its creation to identify and evaluate "value-added" activities that may provide a durable mix of employment, profits, and forest products industry in Alaska. The Center is a part of the USDA Forest Service Pacific Northwest Research Station.</string>
+   <string key="citation">Laufenberg, Theodore L.; Brady, Bridget K., eds. 2000. Proceedings: linking healthy forests and communities through Alaska value-added forest products.  Gen. Tech. Rep. PNW-GTR-500. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 341 p</string>
+   <string key="keywords">forest products, Alaska, wood, timber, logs, economics, forest management, silviculture, land use, engineered products, lumber, special forest products, nontimber forest products, markets, international, secondary processing, value added, forest health, Sitka spruce, yellow-cedar, western redcedar, hemlock, white spruce, red alder, small business, community development, research needs, industry capacity</string>
+   <string key="doi">10.2737/PNW-GTR-500</string>
+   <string key="url_binary_file">https://www.fs.fed.us/pnw/pubs/pnw_gtr500.pdf</string>
+   <string key="binary_filesize">1.0 MB</string>
+   <string key="url_landing_page">https://www.fs.usda.gov/treesearch/pubs/3077</string>
+   <string key="treesearch_pub_id">3077</string>
+   <null key="pub_parent_id"/>
+   <null key="pub_child_number"/>
+   <string key="pub_parent_ind">0</string>
+   <string key="pub_publication">Gen. Tech. Rep. PNW-GTR-500. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 341 p</string>
+   <string key="proceedings_ind">0</string>
+   <string key="pub_volume">500</string>
+   <null key="pub_issue"/>
+   <null key="pub_page"/>
+   <null key="pub_page_start"/>
+   <null key="pub_page_end"/>
+   <string key="pub_source">T</string>
+   <null key="geographic_terms"/>
+   <null key="issn_id"/>
+   <string key="is_early_release">0</string>
+   <null key="created_on"/>
+   <string key="modified_on">18-OCT-2016 15:55:27</string>
+   <string key="send_to_reviewer_ind">A</string>
+   <string key="publish_to_web_ind">Y</string>
+   <null key="send_to_reviewer"/>
+   <string key="child_publications"/>
+   <array key="national_research_taxonomy_elements">
+      <map>
+         <string key="nrt_id">53</string>
+         <string key="nrt_title">Economics</string>
+      </map>
+      <map>
+         <string key="nrt_id">56</string>
+         <string key="nrt_title">Forest management</string>
+      </map>
+      <map>
+         <string key="nrt_id">62</string>
+         <string key="nrt_title">Timber</string>
+      </map>
+      <map>
+         <string key="nrt_id">67</string>
+         <string key="nrt_title">Community development</string>
+      </map>
+      <map>
+         <string key="nrt_id">79</string>
+         <string key="nrt_title">Forest products industry</string>
+      </map>
+      <map>
+         <string key="nrt_id">88</string>
+         <string key="nrt_title">Wood utilization</string>
+      </map>
+   </array>
+   <array key="pub_authors">
+      <map>
+         <string key="name">Laufenberg, Theodore L.</string>
+         <string key="station_id">FPL</string>
+         <string key="unit_id">4706</string>
+         <string key="team_id"/>
+         <string key="alias">tlaufenberg</string>
+         <string key="user_id">101</string>
+         <string key="is_employee_active">0</string>
+         <string key="is_researcher">0</string>
+         <string key="author_order">1</string>
+      </map>
+      <map>
+         <string key="name">Brady, Bridget K. eds.</string>
+         <string key="station_id"/>
+         <string key="unit_id"/>
+         <string key="team_id"/>
+         <string key="alias"/>
+         <string key="user_id"/>
+         <string key="is_employee_active">0</string>
+         <string key="is_researcher">0</string>
+         <string key="author_order">2</string>
+      </map>
+   </array>
+   <array key="current_organizational_memberships">
+      <map>
+         <string key="name">Laufenberg, Theodore L.</string>
+         <string key="station_id">FPL</string>
+         <string key="unit_id">4706</string>
+         <string key="team_id"/>
+         <string key="alias">tlaufenberg</string>
+         <string key="user_id">101</string>
+         <string key="is_employee_active">0</string>
+         <string key="is_researcher">0</string>
+         <string key="author_order">1</string>
+      </map>
+      <map>
+         <string key="name">Brady, Bridget K. eds.</string>
+         <string key="station_id"/>
+         <string key="unit_id"/>
+         <string key="team_id"/>
+         <string key="alias"/>
+         <string key="user_id"/>
+         <string key="is_employee_active">0</string>
+         <string key="is_researcher">0</string>
+         <string key="author_order">2</string>
+      </map>
+   </array>
+   <string key="strategic_program_areas"/>
+   <string key="cris_projects"/>
+   <string key="experimental_forests"/>
+   <string key="eco_regions"/>
+   <string key="latlongs"/>
+   <string key="usnatforests"/>
+   <string key="countystates"/>
+</map>

@@ -9,26 +9,28 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
     xmlns:mods="http://www.loc.gov/mods/v3" xmlns:f="http://functions"
     xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:saxon="http://saxon.sf.net/"
-    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfsreseaerch"
-    exclude-result-prefixes="f fn math mods saxon usfs xd xs xsi">
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:local="http://local_functions" 
+    xmlns:saxon="http://saxon.sf.net/" xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfs_treeresearch"
+    exclude-result-prefixes="f fn local math mods saxon usfs xd xs xsi">
 
-    <xsl:output method="json" indent="no" encoding="UTF-8" name="archive"/>
+    <xsl:output method="json" name="archive"/>
     <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original" />
         <!--saxon:next-in-chain="fix_characters.xsl"/>-->
         
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/params.xsl"/>
-
+    <xsl:include href="commons/usfs_naming_functions.xsl"/>
+    <xsl:include href="commons/params-cm.xsl"/>
     <xsl:strip-space elements="*"/>
     <xd:doc>
         <xd:desc/>
     </xd:doc>
 
-    <!-- <xd:doc>
-        <xd:desc/>
+ <!-- <xd:doc>
+        <xd:desc>
+            <xd:p><xd:b>For Development and Production</xd:b>uncommment this template when testing on the server or putting into production</xd:p>            
+        </xd:desc>
     </xd:doc>
     <xsl:template match="data">
         <xsl:result-document omit-xml-declaration="yes" indent="yes" encoding="UTF-8"
@@ -51,19 +53,19 @@
 
 
     <xd:doc>
-        <xd:desc/>
+        <xd:desc><xd:p><xd:b>For local testing in Oxygen</xd:b>Comment this template or remove it entirely before putting into prodcution</xd:p></xd:desc>
     </xd:doc>
     <xsl:template match="data">
-        <xsl:result-document omit-xml-declaration="yes" indent="no" method="json" 
-            href="{$workingDire}A-{$archiveFile}_{position()}.json"
+        <xsl:result-document  method="json" omit-xml-declaration="yes" 
+            href="{$working_dir}{$original_filename}_{position()}.json"
             format="archive">
-            <xsl:copy-of select="unparsed-text(resolve-uri($originalFilename))"/>
+            <xsl:copy-of select="."/>
         </xsl:result-document>
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
-            href="{$workingDire}N-{$archiveFile}_{position()}.json"
+            href="{$working_dir}N-{$original_filename}_{position()}.json"
             format="original">            
-        <mods xmlns="http://www.loc.gov/mods/v3">
-                <xsl:namespace name="mods">http://www.loc.gov/mods/v3</xsl:namespace>
+            <mods xpath-default-namespace="http://www.loc.gov/mods/v3">
+                <xsl:namespace name="mods" >http://www.loc.gov/mods/v3</xsl:namespace>
                 <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
                 <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
                 <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
@@ -111,9 +113,9 @@
         </relatedItem>
 
         <!--identifiers-->
-        <xsl:apply-templates select="./string[@key = 'doi']"/>
+       <!-- <xsl:apply-templates select="./string[@key = 'doi']"/>-->
         <xsl:apply-templates select="./string[@key = 'url_landing_page'] | ./string[@key = 'url_binary_file']"/>
-       
+        <xsl:call-template name="identifiers"/>
         <!--extension-->
         <xsl:call-template name="extension"/>
     </xsl:template>
@@ -154,8 +156,7 @@
             </xsl:when>
             <xsl:otherwise>
                 <name type="personal">
-                    <xsl:if
-                        test="position() = 1 and count(map/preceding-sibling::string[@key = 'name']) = 0">
+                    <xsl:if test="position() = 1 and count(map/preceding-sibling::string[@key = 'name']) = 0">
                         <xsl:attribute name="usage">primary</xsl:attribute>
                     </xsl:if>
                     <xsl:call-template name="name-info"/>
@@ -171,24 +172,22 @@
         <name type="corporate">
             <namePart>
                 <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
-                <xsl:value-of select="f:acronymToName(map/string[@key = 'primary_station'])"/>
-                <xsl:value-of select="f:acronymToAddress(map/string[@key = 'primary_station'])"/>
+                <xsl:value-of select="local:acronymToName(map/string[@key = 'primary_station'])"/>
+                <xsl:value-of select="local:acronymToAddress(map/string[@key = 'primary_station'])"/>
             </namePart>
         </name>
     </xsl:template>
-    <xd:doc>
-        <xd:desc/>
-        <xd:param name="addUnitName"/>
-        <xd:param name="unitName"/>
-    </xd:doc>
+    
     <xd:doc>
         <xd:desc/>
         <xd:param name="acronym"/>
         <xd:param name="unitNum"/>
+        <xd:param name="unitAcronym"/>
     </xd:doc>
     <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <xsl:param name="acronym" select="map[position()]/string[@key = 'station_id']"/>
         <xsl:param name="unitNum" select="map[position()]/string[@key = 'unit_id']"/>
+        <xsl:param name="unitAcronym" select="map[position()]/string[@key = 'unit_id']"/>
         <!--author given and family names-->
         <xsl:for-each select="map[position()]">
             <xsl:if test="./string[@key = 'name']">
@@ -205,16 +204,16 @@
                 </displayForm>
             </xsl:if>
             <!--affiliation-->
-            <xsl:if test="./string[@key = 'station_id'] != ''">
+            <xsl:if test="./string[@key = 'station_id'] !=''">
                 <affiliation>
                     <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
-                    <xsl:value-of select="f:acronymToName($acronym)"/>
+                    <xsl:value-of select="local:acronymToName(./string[@key = 'station_id'])"/>
                     <xsl:text>, </xsl:text>
-                    <xsl:if test="./string[@key = 'unit_id'] != ''">
-                        <xsl:value-of select="f:unitNumToName($unitNum)"/>
+                    <xsl:if test="number(./string[@key = 'unit_id']) > 0">
+                        <xsl:value-of select="local:unitNumToName(./string[@key = 'unit_id'])"/>
                         <xsl:text>, </xsl:text>
                     </xsl:if>
-                    <xsl:value-of select="f:acronymToAddress($acronym)"/>
+                    <xsl:value-of select="local:acronymToAddress(./string[@key = 'station_id'])"/>
                 </affiliation>
             </xsl:if>
             <role>
@@ -360,9 +359,9 @@
                 <relatedItem type="series">
                     <titleInfo type="abbreviated">
                         <title>
-                            <xsl:value-of select="f:seriesToAbbrv($pub_type)"/>
+                            <xsl:value-of select="local:seriesToAbbrv($pub_type)"/>
                         </title>
-$                    </titleInfo>
+                   </titleInfo>
                     <xsl:call-template name="part"/>
                 </relatedItem>
             </xsl:when>
@@ -406,7 +405,7 @@ $                    </titleInfo>
         <relatedItem type="host">
             <titleInfo>
                 <title>
-                    <xsl:value-of select="f:seriesToAbbrv(.)"/>
+                    <xsl:value-of select="local:seriesToAbbrv(.)"/>
                 </title>
             </titleInfo>
         </relatedItem>
@@ -535,7 +534,7 @@ $                    </titleInfo>
             </xsl:matching-substring>
         </xsl:analyze-string>
     </xsl:template>
-
+<!--
     <xd:doc>
         <xd:desc/>
     </xd:doc>
@@ -553,6 +552,45 @@ $                    </titleInfo>
             </location>
         </xsl:if>
     </xsl:template>
+-->
+
+<xd:doc>
+    <xd:desc>
+        <xd:p></xd:p>
+    </xd:desc>
+    <xd:param>
+        <xd:p></xd:p>
+    </xd:param>
+    <xd:return>
+        <xd:p></xd:p>
+    </xd:return>
+</xd:doc>
+    <xsl:template name="identifiers" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <!--    <xsl:if test="/map/string[@key = 'doi']">-->
+            <identifier type="doi">
+                <xsl:value-of select="/map/string[@key = 'doi']"/>
+            </identifier>
+            <location>
+                <url>
+                    <xsl:text>http://dx.doi.org/</xsl:text>
+                    <xsl:value-of select="normalize-space(/map/string[@key = 'doi'])"/>
+                </url>
+            </location>
+        <!--</xsl:if>-->
+        <identifier type="treesearch">
+         <xsl:value-of select="/map/string[@key='product_id']"/>         
+     </identifier>
+        <identifer type="treesearch-pub">
+            <xsl:value-of select="/map/string[@key='treesearch_pub_id']"/>   
+        </identifer>
+        <location>
+            <url access="object in context">           
+                    <xsl:text>https://www.fs.usda.gov/treesearch/pubs/</xsl:text>
+                <xsl:value-of select="normalize-space(/map/string[@key='treesearch_pub_id'])"/>                
+            </url>
+        </location>               
+    </xsl:template>
+    
 
     <xd:doc>
         <xd:desc/>
@@ -568,12 +606,6 @@ $                    </titleInfo>
                 <xsl:value-of select="./string[@key = 'url_landing_page']"/>
             </identifier>
          
-            <location>
-                <url access="object in context">
-                    <xsl:attribute name="note" select="translate(./text(), '_', ' ')"/>
-                    <xsl:value-of select="normalize-space(./text()[@key = 'url_landing_page'])"/>
-                </url>
-            </location>
             <xsl:if test="map/string[@key = 'url_binary_file']">
                 <identifier>
                     <xsl:attribute name="type">
@@ -611,6 +643,13 @@ $                    </titleInfo>
             </originalFile>
             <workingDirectory>
                 <xsl:value-of select="$workingDir"/>
+            </workingDirectory>
+           <xsl:comment>values of new global variables</xsl:comment>
+            <originalFile>
+                <xsl:value-of select="$original_filename"/>
+            </originalFile>
+            <workingDirectory>
+                <xsl:value-of select="$working_dir"/>
             </workingDirectory>
         </extension>
     </xsl:template>

@@ -2,6 +2,7 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+    xmlns:saxon="http://saxon.sf.net/"
     exclude-result-prefixes="xs xd"
     version="2.0">
     <xd:doc scope="stylesheet">
@@ -32,8 +33,14 @@
         (e.g.  href="{$workingDir}A-{$archiveFile}_{position()}.xml"). The final differentiating naming value beign position, and finally adding .xml to the 
          end creates C:\$workingDir\$archiveFile_position.xml</xd:p>
 </xd:doc>
+    <!--original params-->
     <xsl:param name="vendorName"/>
-    <xsl:param name="archiveFile" select="replace(tokenize(base-uri(), '/')[last()],'(.*)(\.xml)', '$1')"/>
-    <xsl:param name="originalFilename" select="base-uri()"/>
-    <xsl:param name="workingDir" select="substring-before($originalFilename, $archiveFile)"/>
+    <xsl:param name="archiveFile"/> 
+    <xsl:param name="originalFilename" select="saxon:system-id()"/>
+    <xsl:param name="workingDir"/>
+    <!--suggested changes-->
+    <xsl:param name="vendor_name"/>
+    <xsl:param name="archive_file" select="tokenize(document-uri(.), '/'[last()])"/>
+    <xsl:variable name="original_filename" select="replace(base-uri(),'(.*/.)(.*)(\.{{3,4}})','$1')"/>
+    <xsl:variable name="working_dir" select="substring-before(base-uri(), $original_filename)"/>
 </xsl:stylesheet>

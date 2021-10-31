@@ -19,11 +19,22 @@
     <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
     <!-- saxon:next-in-chain="fix_characters.xsl"/>-->
     
-    <xsl:include href="commons/common.xsl"/>
-    <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/params.xsl"/>
+    <xsl:include href="../commons/common.xsl"/>
+    <xsl:include href="../commons/functions.xsl"/>
+    <xsl:include href="../commons/usfs_naming_functions.xsl"/>
+    <xsl:include href="../commons/params-cm.xsl"/>
 
     <xsl:strip-space elements="*"/>
+    
+    <xsl:param name="tree_series" select="('Forest Insect and Disease Leaflet (FIDL)'
+        'General Technical Report (GTR)'
+        'General Technical Report - Proceedings'
+        'Information Forestry'
+        'Proceedings (P)'
+        'Resource Bulletin (RB)'
+        'Research Map (RMAP)'
+        'Research Note (RN)'
+        'Research Paper (RP)')"/>
     <xd:doc>
         <xd:desc/>
     </xd:doc>
@@ -64,14 +75,14 @@
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
             href="{$workingDir}N-{$archiveFile}.xml"
             format="original">
-            <mods>
-                <xsl:namespace name="mods">http://www.loc.gov/mods/v3<nk</xsl/xsl:namespace>
-                <xsl:namespace name="xlink">http://www.w3.org/1999/xli:namespace>
+            <mods xmlns="http://www.loc.gov/mods/v3">
+                <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
                 <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
                 <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
                 <xsl:attribute name="version">3.7</xsl:attribute>
                 <xsl:apply-templates select="json-to-xml(.)"/>
             </mods>
+            
         </xsl:result-document>
     </xsl:template>
     
@@ -173,8 +184,8 @@
         <name type="corporate">
             <namePart>
                 <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
-                <xsl:value-of select="f:acronymToName(map/string[@key = 'primary_station'])"/>
-                <xsl:value-of select="f:acronymToAddress(map/string[@key = 'primary_station'])"/>
+                <xsl:value-of select="local:acronymToName(map/string[@key = 'primary_station'])"/>
+                <xsl:value-of select="local:acronymToAddress(map/string[@key = 'primary_station'])"/>
             </namePart>
         </name>
     </xsl:template>
@@ -210,13 +221,13 @@
             <xsl:if test="./string[@key = 'station_id'] != ''">
                 <affiliation>
                     <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
-                    <xsl:value-of select="f:acronymToName($acronym)"/>
+                    <xsl:value-of select="local:acronymToName($acronym)"/>
                     <xsl:text>, </xsl:text>
                     <xsl:if test="./string[@key = 'unit_id'] != ''">
                         <xsl:value-of select="f:unitNumToName($unitNum)"/>
                         <xsl:text>, </xsl:text>
                     </xsl:if>
-                    <xsl:value-of select="f:acronymToAddress($acronym)"/>
+                    <xsl:value-of select="local:acronymToAddress($acronym)"/>
                 </affiliation>
             </xsl:if>
             <role>
@@ -332,26 +343,23 @@
             </subject>
         </xsl:for-each>
     </xsl:template>
-
-    <xsl:template match="map/string[@key='pub_desc_type'] | map/string[@key='pub_publication'] |map/string[@key='citation']">
-    <xsl:if test="text()=('Forest Insect &#x26; Disease Leaflet',
-        'General Technical Report (GTR)',
-        'General Technical Report &#x2013; Proceedings',
-        'Information Forestry',
-        'Proceeding (Rocky Mountain Research Station Publications)',
-        'Resource Bulletin (RB)',
-        'Research Map (RMAP)',
-        'Research Note (RN)',
-        'Research Paper (RP)',
-        'Resource Update (RU)')">
+    
+    <xd:doc>
+        <xd:desc>When the array for national research taxonomy elements is not present, the keywords
+            listed are used for the subject/topic</xd:desc>
+    </xd:doc>
+    <xsl:template match="map/string[@key=('pub_desc_type','pub_publication','citation')]">
+        <xsl:param name="publication_name"/>
+       
+<xsl:if test="contains($tree_series, $publicaton_name)"/>
         <relatedItem type="series">
             <titleInfo type="abbreviated">
                 <title>
-                    <xsl:value-of select="f:pub_type_desc(map/string[@key='pub_desc_type'])"
+                    <xsl:value-of select="f:pub_type_desc(map/string[@key='pub_desc_type'])"/>
                 </title>
             </titleInfo>             
         </relatedItem>
-    </xsl:if>
+    </xsl:param>
     </xsl:template>
     <xd:doc>
         <xd:desc>
@@ -415,7 +423,7 @@
            <xsl:attribute name="host">
                     <titleInfo>
                         <title>
-                            <xsl:apply-templates select="substring-before(./text(),'.')" mode="relatedItem<!--_-->title"/>
+                            <xsl:apply-templates select="substring-before(./text(),'.')" mode="relatedItem_title"/>
                         </title>
                     </titleInfo>
            </xsl:attribute>

@@ -20,10 +20,10 @@
 
     <xsl:include href="../commons/common.xsl"/>
     <xsl:include href="../commons/functions-addedparam.xsl"/>
-    <xsl:include href="../commons/params.xsl"/>
+    <xsl:include href="../commons/params-cm.xsl"/>
 
     <xsl:strip-space elements="*"/>
-    <xsl:key name="series_publications" match="string[@key = 'pub_type_desc']" use="document('../USFS_Research.xml')/usfs:research/../usfs:seriesPub[@type='series']"/>
+    <xsl:key name="series_publications" match="map/string[@key = 'pub_type_desc']" use="document('../commons/usfs_treesearch.xml')/usfs:research/../usfs:treePub[@type='series']"/>
     <xd:doc>
         <xd:desc/>
     </xd:doc>
@@ -41,7 +41,7 @@
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
             href="file:///{$workingDir}N-{replace($originalFilename, '(.*/)(.*)(\.json)','$2')}_{position()}.xml"
             format="original">
-            <mods xmlns="http://www.loc.gov/mods/v3" version="3.7">
+            <mods>
                 <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
                 <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
                 <xsl:attribute name="xsi:schemaLocation"
@@ -171,14 +171,45 @@
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-    
-    
+    <xd:doc>
+        <xd:desc/>        
+    </xd:doc>
+    <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:variable name="acronym" select="map[position()]/array[@key='pub_authors']/map/string[@key='station_id']"/>
+        <xsl:variable name="unitNum" select="map[position()]/array[@key='pub_authors']/map/string[@key='unit_id']"/>" 
+        <xsl:for-each select="./map[position()]">
+        <xsl:if test="string[@key = 'name']">
+            <namePart type="given">
+                <xsl:value-of select="substring-after(normalize-space(.), ', ')"/>
+            </namePart>
+            <namePart type="family">
+                <xsl:value-of select="substring-before(normalize-space(.), ', ')"/>
+            </namePart>
+            <displayName>
+                <xsl:value-of select="string[@key = 'name']"/>
+            </displayName>
+            <xsl:if test="contains($acronym, text()) and .!=''">
+                <affiliation>
+                    <xsl:text>U.S. Department of Agriculture, Forest Service,</xsl:text>
+                    <xsl:value-of select="f:acronymToName($acronym)"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="f:unitNumToName($unitNum)"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:value-of select="f:acronymToAddress($acronym)"/>
+                </affiliation>
+            </xsl:if>
+            <role>
+                <roleTerm type="text">author</roleTerm>
+            </role>
+        </xsl:if>
+        </xsl:for-each>
+    </xsl:template>
     <xd:doc>
         <xd:desc/>
     </xd:doc>
-    <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <xsl:for-each select="map[position()]">
-            <xsl:if test="./string[@key = 'name']">
+   <!-- <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <xsl:for-each select="map[position()]/string">
+            <xsl:if test="@key = 'name'">
                 <namePart type="given">
                     <xsl:value-of select="substring-after(normalize-space(./string[@key = 'name']), ', ')"/>
                 </namePart>
@@ -188,48 +219,43 @@
                     />
                 </namePart>
                 <displayName>
-                    <xsl:value-of select="./string[@key = 'name']"/>
+                    <xsl:value-of select="@key = 'name'"/>
                 </displayName>
        
-            <xsl:choose>
-                <xsl:when test="(./string[@key = 'station_id'] != '')">
+            
+                <xsl:if test="@key = 'station_id' and .!=''">
                     <affiliation>
                         <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
-                        <xsl:value-of select="f:acronymToName(./string[@key = 'station_id'])"/>
+                        <xsl:value-of select="f:acronymToName(@key = 'station_id')"/>
                         <xsl:text>, </xsl:text>
                         <xsl:choose>
-                            <xsl:when test="./string[@key = 'unit_id'] != ''">
+                            <xsl:when test="@key = 'unit_id' and .!= ''">
                                 <xsl:text>, </xsl:text>
-                                <xsl:value-of select="f:unitNumToName(./string[@key = 'unit_id'])"/>
+                                <xsl:value-of select="f:unitNumToName(@key = 'unit_id')"/>
                             </xsl:when>
                             <xsl:otherwise>   
                             <xsl:text>, </xsl:text>
-                                <xsl:value-of select="f:unitAcronymToName(./string[@key = 'unit_id'])"/>
+                                <xsl:value-of select="f:unitAcronymToName(@key = 'unit_id')"/>
                             </xsl:otherwise>
                         </xsl:choose>
                         <xsl:text>, </xsl:text>
                         <xsl:value-of select="f:acronymToAddress(./string[@key = 'station_id'])"/>
                     </affiliation>
-                </xsl:when>                
-                <xsl:when test="(./string[@key = 'station_id'] != '') and (./string[@key = 'unit_id'] = '')"> 
+                </xsl:if>                
+              <!-\-  <xsl:when test="(./string[@key = 'station_id'] != '') and (./string[@key = 'unit_id'] = '')"> 
                     <affiliation>
                         <xsl:text>United States Department of Agriculture,</xsl:text>
                         <xsl:text>Forest Service,</xsl:text>
                         <xsl:value-of select="f:acronymToName(./string[@key = 'station_id'])"/>
                         <xsl:text>,</xsl:text>
                         <xsl:value-of select="f:acronymToAddress(./string[@key = 'station_id'])"/>
-                    </affiliation>
-                </xsl:when>
-                <xsl:otherwise>
-                    <xsl:if test="(./string[@key = 'station_id'] = '') and (./string[@key = 'unit_id'] = '')"/>
-                </xsl:otherwise>
-            </xsl:choose>
+                    </affiliation>-\->
             <role>
                 <roleTerm type="text">author</roleTerm>
             </role>
             </xsl:if>
         </xsl:for-each>
-    </xsl:template>
+    </xsl:template>-->
     
 
     <xd:doc>
@@ -403,8 +429,8 @@
                     <relatedItem type="series">
                         <titleInfo type="abbreviated">
                             <title>
-<!--                                <xsl:value-of select="key('series_publications', $pub_type)"/>-->
-                                <xsl:apply-templates select="$pub_type_desc mode="relatedItem_title"/>
+                                <xsl:value-of select="key('series_publications', $pub_type_desc)"/>
+<!--                                <xsl:apply-templates select="$pub_type_desc" mode="relatedItem_title"/>-->
                             </title>
                         </titleInfo>
                     </relatedItem>
@@ -427,14 +453,12 @@
 
     <xd:doc>
         <xd:desc/>
-        <xd:param name="typeOfTitle"/>
     </xd:doc>
     <xsl:template match="map/string[@key = 'pub_desc_type']"
-        xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="get_value">
-        <xsl:param name="typeOfTitle"/>
+        xpath-default-namespace="http://www.w3.org/2005/xpath-functions" mode="get_value">        
         <titleInfo type="abbreviated">
             <title>
-                <xsl:value-of select="f:seriesToAbbrv($typeOfTitle, $seriesTitle)"/>
+                <xsl:value-of select="."/>
             </title>
         </titleInfo>
     </xsl:template>
