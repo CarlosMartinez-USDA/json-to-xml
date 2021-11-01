@@ -39,7 +39,7 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 *Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element.
 
 ## JSON to MODS Transformation Flowchart
-
+```mermaid
 flowchart LR
 A[JSON] --> B((XSLT3.0))
 B-->B.1((XPath 3.1))-->C
@@ -50,8 +50,8 @@ style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style B.1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style C fill:#9fc5e8, stroke:#f66, stroke-dasharray: 5 5
 style D fill:#9fc5e8,stroke:#333,stroke-width:4px 
-
-*If the UML does not render, the image below is how the code above would render using Mermaid.
+```
+ ###### *If the UML does not render, the image below is how the code above would render using Mermaid.
 
 # Preparing JSON Files for XSLT Transformation
 
@@ -372,5 +372,5 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5OTY5NjQxNl19
+eyJoaXN0b3J5IjpbNjE3OTQ4ODg5XX0=
 -->
