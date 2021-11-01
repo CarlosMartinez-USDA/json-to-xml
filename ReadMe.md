@@ -14,7 +14,7 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 
 
 ## JSON to MODS Transformation Flowchart
-![enter image description here](<a href="https://ibb.co/bbkKx8n%22%3E%3Cimg%20src=%22https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png%22%20alt=%22json-to-mods-transformation-flowchart%22%20border=%220%22%3E%3C/a%3E)
+![enter image description here](<a href="https://ibb.co/bbkKx8n"><img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0"</a>)
 ```mermaid
 flowchart LR
 A[JSON] --> B((XSLT3.0))
@@ -168,5 +168,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MTc5MjA1MSwtMjE1MTkxMTcwXX0=
+eyJoaXN0b3J5IjpbMTgzNDIxMzQwOCwtMjE1MTkxMTcwXX0=
 -->
