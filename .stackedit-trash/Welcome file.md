@@ -79,7 +79,9 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 		-  **pub_end_page**
 		-  or the **pub_page**
 	(b) No issues are present with page numbers
-	(c) When they are not, they must be derived from the pub_publicaton or citation key values
+	(c ) When they are not, they must be derived from the **pub_publicaton** or **citation** key values.
+		- These are strings of text with inconsistent formatting. 
+		- It is difficult to get the correct data from them each time.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzYxMzY2MDg1XX0=
+eyJoaXN0b3J5IjpbMTgxNzYxNTA5N119
 -->
