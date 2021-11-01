@@ -26,7 +26,7 @@ style B.1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 
 style C fill:#9fc5e8, stroke:#f66, stroke-dasharray: 5 5
 style D fill:#9fc5e8,stroke:#333,stroke-width:4px 
 ```
-######   *If the UML does not  render,  the image below is how the code  is the rendering of Mermaid
+######   *If the UML does not  render,  the image below is how the code above would render using Mermaid. 
 
 <a href="https://ibb.co/bbkKx8n"><img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0"></a>
 
@@ -169,5 +169,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3OTY4ODMzNywtMjE1MTkxMTcwXX0=
+eyJoaXN0b3J5IjpbMTM5MTAzMjM3OSwtMjE1MTkxMTcwXX0=
 -->
