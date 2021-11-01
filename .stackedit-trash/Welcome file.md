@@ -63,9 +63,9 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 	 (b) data_amp_add.sh
 3.  Run the merge_json.sh
 4.  Run the data_amp_add.sh
-5. Double click on a JSON file and select Oxygen as uyp
-
+5.  Open a JSON file in Oxygen
+6. Verify it contains the`<data>  </data>`at the beggining of the file and at he
 ## C
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE4NDg3NDg4XX0=
+eyJoaXN0b3J5IjpbLTE2OTAxMzIyNTZdfQ==
 -->
