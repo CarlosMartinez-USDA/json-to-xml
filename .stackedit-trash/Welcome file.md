@@ -74,10 +74,12 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
 ## Current Issues
 1) Page numbers are not consistently correct.
-	(a) When JSON key values:
-		-  pub_start_page, and 
-		-  pub_end_page
-		-  or the pub_page
+	(a) When JSON key values are present:
+		-  **pub_start_page**, and 
+		-  **pub_end_page**
+		-  or the **pub_page**
+	(b) No issues are present with page numbers
+	(c) When they are not, they must be derived from the pub_publicaton or citation key values
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyMjUwNTQyM119
+eyJoaXN0b3J5IjpbNzYxMzY2MDg1XX0=
 -->
