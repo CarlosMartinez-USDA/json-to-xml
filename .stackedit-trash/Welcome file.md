@@ -73,7 +73,11 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 4) Run the scenario or choose the debugging button to transform JSON to MODS
 
 ## Current Issues
-1) Page number
+1) Page numbers are not consistently correct.
+	(a) When JSON key values:
+		-  pub_start_page, and 
+		-  pub_end_page
+		-  or the pub_page
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkzMjU2NTgxNV19
+eyJoaXN0b3J5IjpbMTUyMjUwNTQyM119
 -->
