@@ -67,9 +67,13 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 6. Verify it contains the`<data>  </data>`at the beginning of the file and at the end of the file. 
 
 ## Create a Transformation Scenario or Select the Debugging Layout
-1) Choose the json-to-mods.xsl as the transfromation stylesheet. 
+1) Choose the json-to-mods.xsl as the transformation stylesheet. 
 2) If you're creating a scenario, set the output page as desired. 
 3) DO NOT set any parameters. This is taken care of by the new testing parameters added to the params-cm.xsl file. 
+4) Run the scenario or choose the debugging button to transform JSON to MODS
+
+## Current Issues
+1) Page number
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1MTk5MzE0MV19
+eyJoaXN0b3J5IjpbMTkzMjU2NTgxNV19
 -->
