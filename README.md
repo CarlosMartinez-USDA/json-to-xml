@@ -26,8 +26,11 @@ B-->B.1((XPath 3.1))-->C
 B --transforms_to--> C{XML}
 C --maps to--> D[MODS 3.7]
 style A fill:#f9f,stroke:#333,stroke-width:4px 
+style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+style B.1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
+style C fill:#9fc5e8, stroke:#333, stroke-dasharray: 5 5
+style D fill:#9fc5e8,stroke:#333,stroke-width:4px 
 
-style C fill:#9fc5e8, stroke:#333, stroke-width:4px
 ```
 
 # Files
@@ -169,7 +172,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc1MDQ2NTQ3NCwxMDM2NTgzNTA2LDExOD
-YzOTExNjcsMTMzMDg3OTY5Miw4ODgwODc3MTcsNTEwMTgxNDE1
-LDEzNTUyMzE0Ml19
+eyJoaXN0b3J5IjpbLTIwNzk2OTA3MDgsMTAzNjU4MzUwNiwxMT
+g2MzkxMTY3LDEzMzA4Nzk2OTIsODg4MDg3NzE3LDUxMDE4MTQx
+NSwxMzU1MjMxNDJdfQ==
 -->
