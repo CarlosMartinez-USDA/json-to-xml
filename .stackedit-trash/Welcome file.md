@@ -64,8 +64,10 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 3.  Run the merge_json.sh
 4.  Run the data_amp_add.sh
 5.  Open a JSON file in Oxygen
-6. Verify it contains the`<data>  </data>`at the beggining of the file and at he
-## C
+6. Verify it contains the`<data>  </data>`at the beginning of the file and at the end of the file. 
+
+## Create a Transformation Scenario or Select the Debugging Layout
+1) Choose the json-to-mods.xsl as the transfromation stylesheet.
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTAxMzIyNTZdfQ==
+eyJoaXN0b3J5IjpbLTI5OTIxNjgzNF19
 -->
