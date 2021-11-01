@@ -72,7 +72,7 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 3) DO NOT set any parameters. This is taken care of by the new testing parameters added to the params-cm.xsl file. 
 4) Run the scenario or choose the debugging button to transform JSON to MODS
 
-## Current Issues
+## Issues
 1) Page numbers are not consistently correct.
 	(a) When JSON key values are present:
 		-  **pub_start_page**, and 
@@ -82,6 +82,8 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 	(c ) When they are not, they must be derived from the **pub_publicaton** or **citation** key values.
 		- These are strings of text with inconsistent formatting. 
 		- It is difficult to get the correct data from them each time.
+	
+(2) Random station_id appearing at the end of the author names section. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzYxNTA5N119
+eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
