@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Comparison of multiple gene assembly methods for metabolic engineering</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Chenfeng</namePart>
+      <namePart type="family">Lu</namePart>
+      <displayForm>Lu, Chenfeng</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Karen</namePart>
+      <namePart type="family">Mansoorabadi</namePart>
+      <displayForm>Mansoorabadi, Karen</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Thomas</namePart>
+      <namePart type="family">Jeffries</namePart>
+      <displayForm>Jeffries, Thomas</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Institute for Microbial and Biochemical Technology, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>A universal, rapid DNA assembly method for efficient multigene plasmid construction is important for biological research and for optimizing gene expression in industrial microbes. Three different approaches to achieve this goal were evaluated. These included creating long complementary extensions using a uracil-DNA glycosylase technique, overlap extension polymerase chain reaction, and a SfiI-based ligation method. SfiI ligation was the only successful approach for assembling large DNA fragments that contained repeated homologous regions. In addition, the SfiI method has been improved over a similar, previous published technique so that it is more flexible and does not require polymerase chain reaction to incorporate adaptors. In the present study, Saccharomyces cerevisiae genes TAL1, TKL1, and PYK1 under control of the 6- phosphogluconate dehydrogenase promoter were successfully ligated together using multiple unique SfiI restriction sites. The desired construct was obtained 65% of the time during vector construction using four-piece ligations. The SfiI method consists of three steps: first a SfiI linker vector is constructed, whose multiple cloning site is flanked by two three-base linkers matching the neighboring SfiI linkers on SfiI digestion; second, the linkers are attached to the desired genes by cloning them into SfiI linker vectors; third, the genes flanked by the three-base linkers, are released by SfiI digestion. In the final step, genes of interest are joined together in a simple one-step ligation.</abstract>
+   <subject>
+      <topic>Cloning</topic>
+   </subject>
+   <subject>
+      <topic>alcohol</topic>
+   </subject>
+   <subject>
+      <topic>fermentation</topic>
+   </subject>
+   <subject>
+      <topic>yeast</topic>
+   </subject>
+   <subject>
+      <topic>genetics</topic>
+   </subject>
+   <subject>
+      <topic>microbial metabolism</topic>
+   </subject>
+   <subject>
+      <topic>fungi</topic>
+   </subject>
+   <subject>
+      <topic>industrial applications</topic>
+   </subject>
+   <subject>
+      <topic>biotechnology</topic>
+   </subject>
+   <subject>
+      <topic>genetic engineering</topic>
+   </subject>
+   <subject>
+      <topic>yeast fungi</topic>
+   </subject>
+   <subject>
+      <topic>gene expression</topic>
+   </subject>
+   <subject>
+      <topic>multigene plasmid construction</topic>
+   </subject>
+   <subject>
+      <topic>gene assembly</topic>
+   </subject>
+   <subject>
+      <topic>xylose</topic>
+   </subject>
+   <subject>
+      <topic>decay fungi</topic>
+   </subject>
+   <subject>
+      <topic>Saccharomyces cerevisiae</topic>
+   </subject>
+   <subject>
+      <topic>ligation</topic>
+   </subject>
+   <subject>
+      <topic>optimization</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Applied biochemistry and biotechnology</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>64013</start>
+            <end>64013</end>
+            <total>64013</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">3017</identifier>
+   <identifer type="treesearch-pub">29231</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29231</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29231.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29231</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

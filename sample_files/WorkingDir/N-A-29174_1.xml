@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Design, development, and testing of a hybrid in situ testing device for building joint sealant</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">C.</namePart>
+      <namePart type="family">White</namePart>
+      <displayForm>White, C.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">N.</namePart>
+      <namePart type="family">Embree</namePart>
+      <displayForm>Embree, N.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">C.</namePart>
+      <namePart type="family">Buch</namePart>
+      <displayForm>Buch, C.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">R.S.</namePart>
+      <namePart type="family">Williams</namePart>
+      <displayForm>Williams, R.S.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-12-18</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The testing of sealant samples has been restricted to devices that either focus on fatiguing multiple samples or quantifying the mechanical properties of a single sample. This manuscript describes a device that combines these two instrumental designs: the ability to both fatigue and characterize multiple sealant samples at the same time. This device employs precise movement capability combined with a stiff loading frame and accurate force measurement for the characterization of five ASTM C719 sealant samples. The performance of this device is demonstrated by monitoring the changes in mechanical properties of silicone sealant during the first 90 h of cure. A complete description of the apparatus, results from the study of curing and analysis is included.</abstract>
+   <subject>
+      <topic>Testing-machines</topic>
+   </subject>
+   <subject>
+      <topic>fatigue testing machines</topic>
+   </subject>
+   <subject>
+      <topic>design and construction</topic>
+   </subject>
+   <subject>
+      <topic>sealing compounds</topic>
+   </subject>
+   <subject>
+      <topic>mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>timber joints</topic>
+   </subject>
+   <subject>
+      <topic>testing</topic>
+   </subject>
+   <subject>
+      <topic>fatigue</topic>
+   </subject>
+   <subject>
+      <topic>joints</topic>
+   </subject>
+   <subject>
+      <topic>silicanes</topic>
+   </subject>
+   <subject>
+      <topic>failure</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Review of scientific instruments</title>
+      </titleInfo>
+      <part>
+         <text type="year">2007</text>
+         <text type="month">12</text>
+         <text type="day">18</text>
+         <extent unit="pages">
+            <start>.004</start>
+            <end>.004</end>
+            <total>.004</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">2281</identifier>
+   <identifer type="treesearch-pub">29174</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29174</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29174.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29174</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

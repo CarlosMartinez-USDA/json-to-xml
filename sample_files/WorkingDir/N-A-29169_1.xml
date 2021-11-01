@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Lignin modification in the initial phase of softwood kraft pulp delignification with polyoxometalates (POMs)</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Biljana</namePart>
+      <namePart type="family">Bujanovic</namePart>
+      <displayForm>Bujanovic, Biljana</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Sally A.</namePart>
+      <namePart type="family">Ralph</namePart>
+      <displayForm>Ralph, Sally A.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Richard S.</namePart>
+      <namePart type="family">Reiner</namePart>
+      <displayForm>Reiner, Richard S.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Rajai H.</namePart>
+      <namePart type="family">Atalla</namePart>
+      <displayForm>Atalla, Rajai H.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-12-18</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Commercial softwood kraft pulp with kappa number 30.5 (KP30.5) was delignified with polyoxometalates (POM, Na5(+2)[SiV1(-0.1)MoW10(+0.1)O40]), and POM-treated kraft pulp of kappa number 23.6 was obtained (KPPOM,23.6). Residual lignin from pulps was isolated by mild acid hydrolysis and characterized by analytical and spectral methods to gain insight into lignin reactions taking place during the initial delignification phase. Lignin from POM-delignified pulp was isolated in lower yield. Comparative analysis of residual lignins (RL-KP30.5, RL-KPPOM,23.6) showed that POM leads to products enriched in carbonyl/carboxyl groups and carbohydrates. POM lignins have a lower molecular mass and a lower content of phenolic hydroxyl and methoxyl groups. Based on these results and FTIR spectra, we suggest that aromatic ring cleavage and quinine formation occur during POM delignification. The degree of lignin-cellulose association increases after POM delignification. Lignin-cellulose association was found to be partially unstable under mild alkaline conditions, as residual lignin isolated after alkaline extraction of KPPOM,23.6 pulp (RL-KPPOM/NaOH) exhibited lower glucose content, higher Klason lignin content, and less extraneous material.</abstract>
+   <subject>
+      <topic>Hydrolysis</topic>
+   </subject>
+   <subject>
+      <topic>chemical reactions</topic>
+   </subject>
+   <subject>
+      <topic>bleaching</topic>
+   </subject>
+   <subject>
+      <topic>pulping</topic>
+   </subject>
+   <subject>
+      <topic>sulphate pulping process</topic>
+   </subject>
+   <subject>
+      <topic>polyoxometalates</topic>
+   </subject>
+   <subject>
+      <topic>spectrum analysis</topic>
+   </subject>
+   <subject>
+      <topic>carbonyl compounds</topic>
+   </subject>
+   <subject>
+      <topic>lignin</topic>
+   </subject>
+   <subject>
+      <topic>pulp</topic>
+   </subject>
+   <subject>
+      <topic>pulp and paper processes</topic>
+   </subject>
+   <subject>
+      <topic>delignification</topic>
+   </subject>
+   <subject>
+      <topic>softwoods</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Holzforschung</title>
+      </titleInfo>
+      <part>
+         <text type="year">2007</text>
+         <text type="month">12</text>
+         <text type="day">18</text>
+         <extent unit="pages">
+            <start>128014</start>
+            <end>128014</end>
+            <total>128014</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">2254</identifier>
+   <identifer type="treesearch-pub">29169</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29169</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29169.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29169</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

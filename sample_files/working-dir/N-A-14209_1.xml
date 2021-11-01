@@ -2,7 +2,6 @@
 <mods xmlns:mods="http://www.loc.gov/mods/v3"
       xmlns:xlink="http://www.w3.org/1999/xlink"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xpath-default-namespace="http://www.loc.gov/mods/v3"
       xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
       version="3.7">
    <titleInfo>
@@ -15,6 +14,8 @@
       <role>
          <roleTerm type="text">author</roleTerm>
       </role>
+   </name>
+   <name type="personal">
       <namePart type="given">Gary W.</namePart>
       <namePart type="family">Miller</namePart>
       <displayForm>Miller, Gary W.</displayForm>
@@ -22,12 +23,16 @@
       <role>
          <roleTerm type="text">author</roleTerm>
       </role>
+   </name>
+   <name type="personal">
       <namePart type="given">John E.</namePart>
       <namePart type="family">Baumgras</namePart>
       <displayForm>Baumgras, John E.</displayForm>
       <role>
          <roleTerm type="text">author</roleTerm>
       </role>
+   </name>
+   <name type="personal">
       <namePart type="given">Cynthia D.</namePart>
       <namePart type="family">West</namePart>
       <displayForm>West, Cynthia D.</displayForm>
@@ -75,7 +80,7 @@
       <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/A-14209.json</originalFile>
       <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\result-files\</workingDirectory>
       <!--values of new global variables-->
-      <originalFile>A-14209</originalFile>
-      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/</workingDirectory>
+      <original_file>A-14209</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/</working_directory>
    </extension>
 </mods>

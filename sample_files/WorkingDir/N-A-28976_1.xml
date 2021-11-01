@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>U.S. forest products annual market review and prospects, 2004–2008</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James L.</namePart>
+      <namePart type="family">Howard</namePart>
+      <displayForm>Howard, James L.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Rebecca</namePart>
+      <namePart type="family">Westby</namePart>
+      <displayForm>Westby, Rebecca</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-11-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This report provides general and statistical information on forest products markets in terms of production, trade, consumption, and prices. The current state of the U.S. economy is described. Market developments are described for sawn softwood, sawn hardwood, softwood log trade, wood-based panels, paper and paperboard, fuelwood, and forest product prices. Policy initiatives that can affect domestic markets and international trade in wood products are also discussed in some detail. Estimates are made through the end of the year 2007.</abstract>
+   <subject>
+      <topic>Production</topic>
+   </subject>
+   <subject>
+      <topic>trade</topic>
+   </subject>
+   <subject>
+      <topic>prices</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>Research Note (RN)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>305</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2007</text>
+         <text type="month">11</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>191002</start>
+            <end>191002</end>
+            <total>191002</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RN-305</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RN-305</url>
+   </location>
+   <identifier type="treesearch">589</identifier>
+   <identifer type="treesearch-pub">28976</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/28976</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-28976.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-28976</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Determination of microstickies in recycled whitewater by headspace gas chromatography</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">X.-S.</namePart>
+      <namePart type="family">Chai</namePart>
+      <displayForm>Chai, X.-S.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">J.C.</namePart>
+      <namePart type="family">Samp</namePart>
+      <displayForm>Samp, J.C.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Q.F.</namePart>
+      <namePart type="family">Yang</namePart>
+      <displayForm>Yang, Q.F.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">H.N.</namePart>
+      <namePart type="family">Song</namePart>
+      <displayForm>Song, H.N.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">J.Y.</namePart>
+      <namePart type="family">Zhu</namePart>
+      <displayForm>Zhu, J.Y.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This study proposed a novel headspace gas chromatographic (HS-GC) method for determination of adhesive contaminants (microstickies) in recycled whitewater, a fiber containing process stream, in the paper mill. It is based on the adsorption behavior of toluene (as a tracer) on the hydrophobic surface of microstickies, which affects the apparent vapor-liquid equilibration partitioning of toluene. It was found that the equilibrium concentration of toluene in the vapor phase is inversely proportional to the apparent effective surface area of microstickies that remain in the corresponding solution. Thus, the amount of microsticky materials in the recycled whitewater can be quantified by HS-GC via indirect measurement of the toluene content in the vapor phase of the sample without any pretreatment. The presented method is simple, rapid and automated.</abstract>
+   <subject>
+      <topic>Toluene</topic>
+   </subject>
+   <subject>
+      <topic>adsorption</topic>
+   </subject>
+   <subject>
+      <topic>chromatographic analysis</topic>
+   </subject>
+   <subject>
+      <topic>waste paper</topic>
+   </subject>
+   <subject>
+      <topic>recycling</topic>
+   </subject>
+   <subject>
+      <topic>pulping</topic>
+   </subject>
+   <subject>
+      <topic>papermaking</topic>
+   </subject>
+   <subject>
+      <topic>adhesives</topic>
+   </subject>
+   <subject>
+      <topic>gas charomatography</topic>
+   </subject>
+   <subject>
+      <topic>contamination</topic>
+   </subject>
+   <subject>
+      <topic>water reuse</topic>
+   </subject>
+   <subject>
+      <topic>stickies</topic>
+   </subject>
+   <subject>
+      <topic>microstickies</topic>
+   </subject>
+   <subject>
+      <topic>pulp and paper processes</topic>
+   </subject>
+   <subject>
+      <topic>vapor phase</topic>
+   </subject>
+   <subject>
+      <topic>headspace</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Progress in paper recycling</title>
+      </titleInfo>
+      <part>
+         <extent unit="pages">
+            <start>.005</start>
+            <end>.005</end>
+            <total>.005</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">2273</identifier>
+   <identifer type="treesearch-pub">29173</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29173</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29173.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29173</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

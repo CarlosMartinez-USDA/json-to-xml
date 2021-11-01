@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Assessment of Residual Stand Quality and Regeneration Following Shelterwood Cutting in Central Appalachian Hardwoods</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James E.</namePart>
+      <namePart type="family">Johnson</namePart>
+      <displayForm>Johnson, James E.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Gary W.</namePart>
+      <namePart type="family">Miller</namePart>
+      <displayForm>Miller, Gary W.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, Ecology and Management of Invasive Species and Forest Ecosystems Forestry and Range Sciences Laboratory (La Grande), One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">John E.</namePart>
+      <namePart type="family">Baumgras</namePart>
+      <displayForm>Baumgras, John E.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, Ecology and Management of Invasive Species and Forest Ecosystems Forestry and Range Sciences Laboratory (La Grande), One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Cynthia D.</namePart>
+      <namePart type="family">West</namePart>
+      <displayForm>West, Cynthia D.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, , 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>NRS<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2016-09-15</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Partial cutting to develop two-age stands is a relatively new practice in the central Appalachian region, and forest managers need quantitative information in order to evaluate how well it meets management objectives. Typically, this practice leaves a residual overstory of 10 to 40 ft2 per ac of basal area and leads to regeneration of desirable shade-intolerant species which comprise the second age class. 1n this study we evaluated residual tree quality and regeneration 2 to 5 yr after cutting in 20 stands on the Monongahela National Forest in West Virginia. Tree grades were not significantly affected by the cutting. The largest grade reductions, due primarily to epicormic branching and logging wounds, occurred with large white oak sawtimber (11%) and white ash small sawtimber (10%). Epicormic branching following the cut was greatest for white oaks in the suppressed and intermediate crown classes. Across all species, the trees in the lower crown classes produced the greatest number of epicormic branches. Overall, epicormicbranching on the 16ft butt logs of dominant and codominant trees was low. For white oak (Quercus alba), 64% of these trees produced no epicormic branches. But 75% of yellow-poplars (Liriodendron tulipifera), 82% of black cherries (Prunus serotina), 78% of northern red oaks (Quercus rubra), and 89% of white ashes (Fraxinus americana) produced no epicormic branches on butt logs. Logging wounds occurred on 45% of the residual trees across the 20 stands, but 21% had large, wounds over 100 in2. Regeneration of both shade- intolerant and tolerant species was prolific following the cutting. Total numbers of tree seedlings and sprouts ranged from 8,217 stems/ac in the mixed oak stands of the Ridge and Valley Province to 30,845 stems/ac in the beech-cherry-maple stands in the Allegheny Mountains. The birches, primarily sweet birch (Betula lenta), comprised the most abundant species across the study area, but speciescomposition varied depending on forest cover type. Regeneration numbers were lowest in the mixed oak stands in the Ridge and Valley Province.</abstract>
+   <subject>
+      <topic>Timber</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Northern Journal of Applied Forestry</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>15</number>
+            <caption>v.</caption>
+         </detail>
+         <detail type="issue">
+            <number>4</number>
+            <caption>no.</caption>
+         </detail>
+         <text type="year">2016</text>
+         <text type="month">09</text>
+         <text type="day">15</text>
+         <extent unit="pages">
+            <start>203</start>
+            <end>210</end>
+            <total>8</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1752</identifier>
+   <identifer type="treesearch-pub">22184</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/22184</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-22184.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-22184</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

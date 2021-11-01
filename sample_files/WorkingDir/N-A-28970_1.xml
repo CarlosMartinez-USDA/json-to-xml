@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Review of in-service moisture and temperature conditions in wood-frame buildings</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Samuel V.</namePart>
+      <namePart type="family">Glass</namePart>
+      <displayForm>Glass, Samuel V.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Building and Fire Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Anton</namePart>
+      <namePart type="family">TenWolde</namePart>
+      <displayForm>TenWolde, Anton</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2016-01-28</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This literature review reports in-service moisture and temperature conditions of floor, wall, and roof members of wood-frame buildings and exposed wood decks and permanent wood foundations. A wide variation exists in reported wood moisture content, spanning a range from as low as 2% to well above 30%. Relevant studies are summarized, and measured values of wood moisture content and temperature are tabulated. Trends are discussed that relate moisture conditions to climate and season, moisture sources and transport mechanisms, and building design and construction.</abstract>
+   <subject>
+      <topic>moisture content</topic>
+   </subject>
+   <subject>
+      <topic>temperature</topic>
+   </subject>
+   <subject>
+      <topic>wood-frame buildings</topic>
+   </subject>
+   <subject>
+      <topic>humidity</topic>
+   </subject>
+   <subject>
+      <topic>crawlspace</topic>
+   </subject>
+   <subject>
+      <topic>foundation</topic>
+   </subject>
+   <subject>
+      <topic>floor</topic>
+   </subject>
+   <subject>
+      <topic>wall</topic>
+   </subject>
+   <subject>
+      <topic>roof</topic>
+   </subject>
+   <subject>
+      <topic>attic</topic>
+   </subject>
+   <subject>
+      <topic>deck</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>General Technical Report (GTR)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>174</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2016</text>
+         <text type="month">01</text>
+         <text type="day">28</text>
+         <extent unit="pages"/>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-GTR-174</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-GTR-174</url>
+   </location>
+   <identifier type="treesearch">554</identifier>
+   <identifer type="treesearch-pub">28970</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/28970</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-28970.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-28970</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

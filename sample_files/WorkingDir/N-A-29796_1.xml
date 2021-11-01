@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Moisture performance of a contemporary wood-frame house operated at design indoor humidity levels</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Charles</namePart>
+      <namePart type="family">Carll</namePart>
+      <displayForm>Carll, Charles</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Durability and Wood Protection, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Anton</namePart>
+      <namePart type="family">TenWolde</namePart>
+      <displayForm>TenWolde, Anton</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Robert</namePart>
+      <namePart type="family">Munson</namePart>
+      <displayForm>Munson, Robert</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Building and Fire Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-11-19</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <relatedItem type="host">
+      <titleInfo>
+         <title/>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">11</text>
+         <text type="day">19</text>

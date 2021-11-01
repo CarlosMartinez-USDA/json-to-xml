@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Shuffling of promoters for multiple genes to optimize xylose fermentation in an engineered Saccharomyces cerevisiae strain</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Chengfeng</namePart>
+      <namePart type="family">Lu</namePart>
+      <displayForm>Lu, Chengfeng</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Thomas</namePart>
+      <namePart type="family">Jeffries</namePart>
+      <displayForm>Jeffries, Thomas</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Institute for Microbial and Biochemical Technology, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-12-31</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <relatedItem type="host">
+      <titleInfo>
+         <title/>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">12</text>
+         <text type="day">31</text>

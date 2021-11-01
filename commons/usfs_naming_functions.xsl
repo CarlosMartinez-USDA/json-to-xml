@@ -74,7 +74,7 @@
     <xd:param name="unitNum">four-digit number code to match against</xd:param>
 </xd:doc>      
 <xsl:function name="local:unitNumToName" as="xs:string?" xmlns:local="http://local_functions">
-    <xsl:param name="unitNum"/>
+    <xsl:param name="unitNum"/>    
     <xsl:if test="$unitNum != ''"/>
     <xsl:sequence select="$tree_nodes/usfs:treesearch/usfs:researchStations/usfs:station/usfs:researchUnits/usfs:researchUnit[usfs:unitNumber=$unitNum]/usfs:unitName"/>
 </xsl:function>
@@ -87,10 +87,10 @@
     </xd:desc>
     <xd:param name="unitAcronym"/>
 </xd:doc>      
-<xsl:function name="local:unitAcronymToName" as="xs:string" xmlns:local="http://local_functions">
+<xsl:function name="local:unitAcronymToName" as="xs:string?" xmlns:local="http://local_functions">
     <xsl:param name="unitAcronym"/>
-    <xsl:if test="$unitAcronym != ''"/>
-     <xsl:sequence select="$tree_nodes/usfs:treesearch/usfs:stations/usfs:station/usfs:researchUnits/usfs:researchUnit[usfs:unitAcronym= $unitAcronym]/usfs:unitName"/>
+    <xsl:if test="$unitAcronym != ''">
+    </xsl:if>
 </xsl:function>
 
 
@@ -102,11 +102,11 @@
     </xd:desc>
     <xd:param name="typeOfTitle"/>
 </xd:doc>
-<xsl:function name="local:seriesToAbbrv" as="xs:string*" xmlns:local="http://local_functions">
+<xsl:function name="local:seriesToAbbrv" as="xs:string?" xmlns:local="http://local_functions">
     <xsl:param name="typeOfTitle"/>
     <xsl:if test="$typeOfTitle != ''"/>
-    [<xsl:value-of select="$tree_nodes/usfs:treesearch/usfs:treesearchPublications/usfs:treePub[usfs:pubTitle = $typeOfTitle]/usfs:abbrv"/>  
-   <!-- <xsl:value-of select="if ($tree_nodes/usfs:treesearch/../usfs:seriesPub/usfs:treePub[@series])  
+    <xsl:sequence select="$tree_nodes/usfs:treesearch/usfs:treesearchPublications/usfs:treePub[usfs:pubTitle = $typeOfTitle]/usfs:abbrv"/>
+    <!--xsl:value-of select="if ($tree_nodes/usfs:treesearch/../usfs:seriesPub/usfs:treePub[@series])  
         then ($tree_nodes/usfs:treesearch/usfs:treesearchPublications/usfs:treePub[usfs:pubTitle = $typeOfTitle]/usfs:abbrv)    
         else ($typeOfTitle)"/>-->
 </xsl:function>

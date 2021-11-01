@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfs_treesearch" xmlns:ns1="http://usfsresearch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <xs:import namespace="http://usfs_treesearch" schemaLocation="usfs.xsd"/>
-  <xs:import namespace="http://usfsresearch" schemaLocation="usfs_treesearch.xsd"/>
-  <xs:attribute name="schemaLocation" type="xs:anyURI"/>
-</xs:schema>

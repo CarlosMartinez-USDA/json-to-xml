@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Papermaking properties of aspen ultrahigh-yield mechanical pulps</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">J. N.</namePart>
+      <namePart type="family">McGovern</namePart>
+      <displayForm>McGovern, J. N.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">T. H.</namePart>
+      <namePart type="family">Wegner</namePart>
+      <displayForm>Wegner, T. H.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-07-17</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Eleven types of aspen ultra-high-yield (90% and above) mechanical pubs were evaluated for their chemical compositions (including sulfur), handsheet strength, and optical properties, fiber length indices, and fiberizing energies. The pulping processes were stone groundwood, pressurized stone groundwood, refiner mechanical, thermomechanical, chemimechanical (alkaline sulfite), chemithermomechanical, bleached chemithermomechanical, peroxide chemimechanical, steam explosion, and biomechanical. Data were obtained from USDA Forest Service reports and other literature. Pulps made using chemical pretreatments of the chips gave considerably higher handsheet strength properties than those produced from the groundwood types. This difference was not explained by chemical compositions. Chemical Sulfonation composition changed little, except for sulfonation of those pubs pretreated with sulfur-containing compounds. The light-scattering coefficients and fiberizing energies were reduced in the pulps from chemically pretreated pubs. The biomechanical pubs showed lignin loss with improved handsheet strength properties.</abstract>
+   <subject>
+      <topic>Chemical analysis</topic>
+   </subject>
+   <subject>
+      <topic>mechanical pulping</topic>
+   </subject>
+   <subject>
+      <topic>optical properties</topic>
+   </subject>
+   <subject>
+      <topic>pulping</topic>
+   </subject>
+   <subject>
+      <topic>refining</topic>
+   </subject>
+   <subject>
+      <topic>strength</topic>
+   </subject>
+   <subject>
+      <topic>sulfonation</topic>
+   </subject>
+   <subject>
+      <topic>Populus</topic>
+   </subject>
+   <subject>
+      <topic>paper</topic>
+   </subject>
+   <subject>
+      <topic>wood pulp</topic>
+   </subject>
+   <subject>
+      <topic>sheet strength</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Tappi journal</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">07</text>
+         <text type="day">17</text>
+         <extent unit="pages">
+            <start>.002</start>
+            <end>.002</end>
+            <total>.002</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">3058</identifier>
+   <identifer type="treesearch-pub">30531</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/30531</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-30531.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-30531</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

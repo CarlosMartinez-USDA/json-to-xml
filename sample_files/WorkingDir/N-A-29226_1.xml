@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Alternative silvicultural practices in Appalachian forest ecosystems: implications for species diversity, ecosystem resilience, and commercial timber production</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Thomas R.</namePart>
+      <namePart type="family">Fox</namePart>
+      <displayForm>Fox, Thomas R.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Carola A.</namePart>
+      <namePart type="family">Haas</namePart>
+      <displayForm>Haas, Carola A.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David W.</namePart>
+      <namePart type="family">Smith</namePart>
+      <displayForm>Smith, David W.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David L.</namePart>
+      <namePart type="family">Loftis</namePart>
+      <displayForm>Loftis, David L.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, Upland Hardwood Ecology and Management , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Shepard M.</namePart>
+      <namePart type="family">Zedaker</namePart>
+      <displayForm>Zedaker, Shepard M.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Robert H.</namePart>
+      <namePart type="family">Jones</namePart>
+      <displayForm>Jones, Robert H.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">A.L.</namePart>
+      <namePart type="family">Hammett</namePart>
+      <displayForm>Hammett, A.L.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>SRS<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Increasing demands for timber and non-timber forest products often conflict with demands to maintain biodiversity and ecosystem processes. To examine tradeoffs between these goals, we implemented six alternative management systems using a stand-level, replicated experiment. The treatments included four silvicultural regeneration methods designed to sustain timber production, one commercial harvest without regard for future stand values, and a no harvest control. Our goal was to determine effects of management alternatives on multiple system components, including biodiversity, medicinal plants, timber production, terrestrial amphibians, soil disturbance, invasive exotic plants, soil and leaf litter invertebrates, leaf litter decomposition rates and nutrient flux. Plant species richness increased with increasing canopy disturbance, through colonization both by shade-intolerant native species and by exotic species. We detected several species of medicinal plants. Oak regeneration depended more on site quality than treatment. Terrestrial salamander populations declined precipitously on all treatments subjected to canopy disturbance. Although initial soil loss was reduced by using treatments that retained higher levels of basal area in the stand, over a complete rotation, the effects of repeated entries are likely to cause greater soil loss than a clearcut and greater impacts on salamanders.</abstract>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>General Technical Report (GTR)</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>.007</start>
+            <end>.007</end>
+            <total>.007</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">2898</identifier>
+   <identifer type="treesearch-pub">29226</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29226</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29226.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29226</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Physical, mechanical, and fire properties of oriented strandboard with fire retardant treated veneers</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Nadir</namePart>
+      <namePart type="family">Ayrilmis</namePart>
+      <displayForm>Ayrilmis, Nadir</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Zeki</namePart>
+      <namePart type="family">Candan</namePart>
+      <displayForm>Candan, Zeki</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Robert</namePart>
+      <namePart type="family">White</namePart>
+      <displayForm>White, Robert</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-03-25</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This study evaluated physical, mechanical and fire properties of oriented strand boards (OSB) covered with fire retardant treated veneers. The beech (Fagus orientalis Lipsky) veneers were treated with either monoammonium phosphate, diammonium phosphate, lime water or a borax/boric acid (1 : 1 by weight) mixture. Physical and mechanical properties of the specimens were performed according to EN and DIN standards. A cone calorimeter was used to determine their combustion characteristics. The physical and mechanical properties of the specimens were adversely affected by the treatments. The specimens treated with lime water had the best physical performance while the specimens treated with borax/boric acid had the highest mechanical properties. The fire retardant treatments of the face veneers were effective in reducing the initial contribution of heat release to potential fire growth. In particular, the lime water treatment was an effective fire retardant treatment in that it reduced both the effective heat of combustion and the mass loss rate. It also delayed the times for sustained ignition.</abstract>
+   <subject>
+      <topic>Beech</topic>
+   </subject>
+   <subject>
+      <topic>Fagus orientalis</topic>
+   </subject>
+   <subject>
+      <topic>veneers</topic>
+   </subject>
+   <subject>
+      <topic>veneering</topic>
+   </subject>
+   <subject>
+      <topic>calcium hydroxide</topic>
+   </subject>
+   <subject>
+      <topic>borax</topic>
+   </subject>
+   <subject>
+      <topic>particle board</topic>
+   </subject>
+   <subject>
+      <topic>fire testing</topic>
+   </subject>
+   <subject>
+      <topic>mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>fireproofing agents</topic>
+   </subject>
+   <subject>
+      <topic>deterioration</topic>
+   </subject>
+   <subject>
+      <topic>fire testing</topic>
+   </subject>
+   <subject>
+      <topic>boric acid</topic>
+   </subject>
+   <subject>
+      <topic>monoammonium phosphate</topic>
+   </subject>
+   <subject>
+      <topic>diammonium phosphate</topic>
+   </subject>
+   <subject>
+      <topic>heat release rate</topic>
+   </subject>
+   <subject>
+      <topic>FRT oriented strandboard</topic>
+   </subject>
+   <subject>
+      <topic>fire hazard</topic>
+   </subject>
+   <subject>
+      <topic>cone calorimetry</topic>
+   </subject>
+   <subject>
+      <topic>flammability</topic>
+   </subject>
+   <subject>
+      <topic>behavior in fire</topic>
+   </subject>
+   <subject>
+      <topic>oriented strandboard</topic>
+   </subject>
+   <subject>
+      <topic>physical properties</topic>
+   </subject>
+   <subject>
+      <topic>OSB</topic>
+   </subject>
+   <subject>
+      <topic>fire retardants</topic>
+   </subject>
+   <subject>
+      <topic>ignition</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Holz als Roh- und Werkstoff</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">03</text>
+         <text type="day">25</text>
+         <extent unit="pages">
+            <start>24013</start>
+            <end>24013</end>
+            <total>24013</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">129</identifier>
+   <identifer type="treesearch-pub">29553</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29553</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29553.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29553</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

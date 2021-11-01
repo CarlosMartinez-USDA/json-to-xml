@@ -11,7 +11,7 @@
       <namePart type="given">Kenneth E.</namePart>
       <namePart type="family">Skog</namePart>
       <displayForm>Skog, Kenneth E.</displayForm>
-      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
       <role>
          <roleTerm type="text">author</roleTerm>
       </role>
@@ -76,7 +76,7 @@
       <vendorName/>
       <archiveFile/>
       <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-13977.json</originalFile>
-      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\result-files\</workingDirectory>
+      <workingDirectory/>
       <!--values of new global variables-->
       <originalFile>A-13977</originalFile>
       <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>

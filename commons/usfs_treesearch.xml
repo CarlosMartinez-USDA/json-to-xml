@@ -8,13 +8,13 @@
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>Northern Research Station</name>
             <researchUnits>
-                <researchUnit acronym="NRS">
+                <researchUnit stationAcronym="NRS">
                     <unitAcronym type="station_unit">EESAFEG</unitAcronym>
                     <unitName>Ecological and Economic Sustainability of the Appalachian Forest in an
                         Era of Globalization</unitName>
                     <projectLeader>Janice (Jan) Wiedenbeck</projectLeader>
                 </researchUnit>
-                <researchUnit acronym="NRS">
+                <researchUnit stationAcronym="NRS">
                     <unitAcronym type="station_unit">SFCE</unitAcronym>
                     <unitNumber>2</unitNumber>
                     <unitName>Sustaining Forests in a Changing Environment</unitName>
@@ -23,8 +23,7 @@
                 <researchUnit stationAcronym="NRS">
                     <unitAcronym type="station_unit">EMISFE</unitAcronym>
                     <unitNumber>3</unitNumber>
-                    <unitName>Ecology and Management of Invasive Species and Forest
-                        Ecosystems</unitName>
+                    <unitName>Ecology and Management of Invasive Species and Forest Ecosystems</unitName>
                     <projectLeader>Therese Poland</projectLeader>
                 </researchUnit>
                 <researchUnit stationAcronym="NRS">
@@ -89,6 +88,11 @@
                     <unitNumber>16</unitNumber>
                     <unitName>Restoration and Conservation of Rural and Urban Forests</unitName>
                     <projectLeader>Daniel Lindner</projectLeader>
+                </researchUnit>
+                <researchUnit stationAcronym="NRS">
+                    <unitAcronym type="station_unit">DIR</unitAcronym>                    
+                    <unitName>Director's Office</unitName>
+                    <projectLeader>Cythnia West</projectLeader>
                 </researchUnit>
             </researchUnits>
             <address>One Gifford Pinchot Drive, Madison, WI 53726</address>
@@ -166,11 +170,16 @@
                     <unitNumber>11</unitNumber>
                     <unitName>Western Wildland Environmental Threat Assessment Center</unitName>
                     <unitAcronym>WETAC</unitAcronym>
-                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754,
-                        US</unitAddress>
+                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754, US</unitAddress>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>12</unitNumber>
+                    <unitName>Station Director</unitName>
+                    <unitAcronym>SD</unitAcronym>
+                    <unitAddress>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</unitAddress>
                 </researchUnit>
             </researchUnits>
-            <address>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </address>
+            <address>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</address>
         </station>      
         <!--Pacific Southwest Research Station-->
         <station>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Censoring Data for Resistance Factor Calculations in Load and Resistance Factor Design: A Preliminary Study</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James W.</namePart>
+      <namePart type="family">Evans</namePart>
+      <displayForm>Evans, James W.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David W.</namePart>
+      <namePart type="family">Green</namePart>
+      <displayForm>Green, David W.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2016-01-28</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Reliability estimates for the resistance distribution of wood product properties may be made from test data where all specimens are broken (full data sets) or by using data sets where information is obtained only from the weaker pieces in the distribution (censored data). Whereas considerable information exists on property estimation from full data sets, much less information is available on property estimation using censored data. To assess the need for a more rigorous study, a small simulation study was conducted to identify potential problems that could be associated with censoring effects on property estimates from an assumed Weibull distribution for use in reliability-based standards such as ASTM D 5457. Results suggest that reasonable estimates of property percentiles may be obtained when the censoring point is above the percentile needed. However, censoring also affects the estimate of the Weibull shape parameter, and therefore the coefficient of variation. This is important because the coefficient of variation is used to estimate the data confidence factor and the normalization factor also used in determining the data resistance factor. The simulation suggests that for a given sample size, the estimate of Weibull-shape parameter gets better as more of the distribution is included. Further studies are recommended to provide guidance on use of censored data with both the two- and three-parameter Wiebull distributions.</abstract>
+   <subject>
+      <topic>Weibull distribution</topic>
+   </subject>
+   <subject>
+      <topic>reliability-based design</topic>
+   </subject>
+   <subject>
+      <topic>censored data</topic>
+   </subject>
+   <subject>
+      <topic>Weibull distribution</topic>
+   </subject>
+   <subject>
+      <topic>censored data</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>Research Note (RN)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>0304</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2016</text>
+         <text type="month">01</text>
+         <text type="day">28</text>
+         <extent unit="pages"/>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RN-304</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RN-304</url>
+   </location>
+   <identifier type="treesearch">2194</identifier>
+   <identifer type="treesearch-pub">29844</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29844</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29844.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29844</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

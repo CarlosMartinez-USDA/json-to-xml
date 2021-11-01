@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Thermal degradation of wood fibers during hot-pressing of MDF composites.  Part I, Relative effects and benefits of thermal exposure</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Jerrold E.</namePart>
+      <namePart type="family">Winandy</namePart>
+      <displayForm>Winandy, Jerrold E.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Andrzej M.</namePart>
+      <namePart type="family">Krzysik</namePart>
+      <displayForm>Krzysik, Andrzej M.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This research evaluated the potential of wood fiber to chemically decompose during hot-pressing. We evaluated changes in carbohydrate composition and structure as a function of multiple press temperatures (180°, 200°, and 220°C) and an array of hot-pressing durations from 180 to 2500 s. Results show how this thermal degradation in chemical composition directly results in changes in moisture sorption characteristics, physical and mechanical properties, and aboveground durability. For most mechanical properties, it appears that very little degrade occurs until mat temperatures exceed 150°C. Changes in the chemistry of medium density fiberboard seem to result in measurable changes in hygroscopicity, decay, strength, and stiffness. Control of hot-press temperature and duration appears a potential method to heat-treat medium density fiberboard and enhance its serviceability. This heat-treatment effect appears to be related to cumulative thermal load/exposure; subsequent analysis and computational modeling is currently underway.</abstract>
+   <subject>
+      <topic>Medium density fiberboard</topic>
+   </subject>
+   <subject>
+      <topic>thermal degradation</topic>
+   </subject>
+   <subject>
+      <topic>process conditions</topic>
+   </subject>
+   <subject>
+      <topic>compositional changes</topic>
+   </subject>
+   <subject>
+      <topic>carbohydrate structure</topic>
+   </subject>
+   <subject>
+      <topic>physical properties</topic>
+   </subject>
+   <subject>
+      <topic>mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>profile density</topic>
+   </subject>
+   <subject>
+      <topic>fiberboard</topic>
+   </subject>
+   <subject>
+      <topic>heat treatment</topic>
+   </subject>
+   <subject>
+      <topic>carbohydrates</topic>
+   </subject>
+   <subject>
+      <topic>thermal properties</topic>
+   </subject>
+   <subject>
+      <topic>composite materials</topic>
+   </subject>
+   <subject>
+      <topic>temperature</topic>
+   </subject>
+   <subject>
+      <topic>absorption</topic>
+   </subject>
+   <subject>
+      <topic>testing</topic>
+   </subject>
+   <subject>
+      <topic>strength</topic>
+   </subject>
+   <subject>
+      <topic>stiffness</topic>
+   </subject>
+   <subject>
+      <topic>swelling</topic>
+   </subject>
+   <subject>
+      <topic>hygroscopicity</topic>
+   </subject>
+   <subject>
+      <topic>moisture content</topic>
+   </subject>
+   <subject>
+      <topic>MDF</topic>
+   </subject>
+   <subject>
+      <topic>hot pressing</topic>
+   </subject>
+   <subject>
+      <topic>durability</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Wood and fiber science</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>.002</start>
+            <end>.002</end>
+            <total>.002</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">3139</identifier>
+   <identifer type="treesearch-pub">29254</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29254</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29254.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29254</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

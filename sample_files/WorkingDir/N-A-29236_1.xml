@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Preparation and properties of recycled HDPE/clay hybrids</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Yong</namePart>
+      <namePart type="family">Lei</namePart>
+      <displayForm>Lei, Yong</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Qinglin</namePart>
+      <namePart type="family">Wu</namePart>
+      <displayForm>Wu, Qinglin</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Craig M.</namePart>
+      <namePart type="family">Clemons</namePart>
+      <displayForm>Clemons, Craig M.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Hybrids based on recycled high density polyethylene (RHDPE) and organic clay were made by melt compounding. The influence of blending method, compatibilizers, and clay content on clay intercalation and exfoliation, RHDPE crystallization behavior, and the mechanical properties of RHDPE/clay hybrids were investigated. Both maleated polyethylene (MAPE) and titanate could improve the compatibilization of RHDPE and clay. RHDPE/clay hybrids containing completely exfoliated clay were obtained using a two-step blending method. Without compatibilizers, the clay could not be exfoliated, and it lowered the crystallization peak temperature, crystallinity level, and the long period of RHDPE. MAPE and clay layers could act as heterogeneous nucleating agents for RHDPE. The titanate had a little influence on crystallization behavior of RHDPE. Adding clay to RHDPE reduced the impact strength but had little influence on the tensile strength. Both the storage and loss moduli increased with up to 5% of clay in hybrids containing CAPS, and there was an about 44% increase in impact strength of RHDPE/clay hybrid containing 5% MAPE compared with that of the hybrid containing no MAPE. The clay presence lowered the thermal stability of RHDPE.</abstract>
+   <subject>
+      <topic>Thermal conductivity</topic>
+   </subject>
+   <subject>
+      <topic>crystallization</topic>
+   </subject>
+   <subject>
+      <topic>recycled products</topic>
+   </subject>
+   <subject>
+      <topic>recycling</topic>
+   </subject>
+   <subject>
+      <topic>thermoplastic composites</topic>
+   </subject>
+   <subject>
+      <topic>mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>composite materials</topic>
+   </subject>
+   <subject>
+      <topic>polyethylene</topic>
+   </subject>
+   <subject>
+      <topic>processing</topic>
+   </subject>
+   <subject>
+      <topic>wood plastic composites</topic>
+   </subject>
+   <subject>
+      <topic>testing</topic>
+   </subject>
+   <subject>
+      <topic>clay</topic>
+   </subject>
+   <subject>
+      <topic>exfoliation</topic>
+   </subject>
+   <subject>
+      <topic>titanate</topic>
+   </subject>
+   <subject>
+      <topic>strength</topic>
+   </subject>
+   <subject>
+      <topic>wood plastic materials</topic>
+   </subject>
+   <subject>
+      <topic>HDPE</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Journal of applied polymer science</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>31113</start>
+            <end>31113</end>
+            <total>31113</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">3043</identifier>
+   <identifer type="treesearch-pub">29236</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29236</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29236.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29236</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>

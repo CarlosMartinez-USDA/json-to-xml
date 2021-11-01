@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://usfs_treesearch" xmlns:usfs="http://usfs_treesearch">
+    <xs:element name="treesearch">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="usfs:researchStations"/>
+                <xs:element ref="usfs:treesearchPublications"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="researchStations">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="usfs:station"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="station">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="usfs:acronym"/>
+                <xs:element ref="usfs:agency"/>
+                <xs:element ref="usfs:name"/>
+                <xs:element ref="usfs:researchUnits"/>
+                <xs:element ref="usfs:address"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="acronym">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:NCName">
+                    <xs:attribute name="type" use="required" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="agency" type="xs:string"/>
+    <xs:element name="name" type="xs:string"/>
+    <xs:element name="researchUnits">
+        <xs:complexType>
+            <xs:choice>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element ref="usfs:isPartOf"/>
+                    <xs:element ref="usfs:researchUnit"/>
+                </xs:choice>
+                <xs:element maxOccurs="unbounded" ref="usfs:reseachUnit"/>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="researchUnit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element ref="usfs:unitName"/>
+                    <xs:element ref="usfs:unitNumber"/>
+                    <xs:element ref="usfs:unitAcronym"/>
+                </xs:choice>
+                <xs:choice minOccurs="0">
+                    <xs:element ref="usfs:unitURL"/>
+                    <xs:element ref="usfs:projectLeader"/>
+                    <xs:element ref="usfs:unitAddress"/>
+                </xs:choice>
+                <xs:element minOccurs="0" ref="usfs:subUnits"/>
+                <xs:element minOccurs="0" ref="usfs:subUnit"/>
+                <xs:element minOccurs="0" ref="usfs:isPartOf"/>
+            </xs:sequence>
+            <xs:attribute name="acronym" type="xs:NCName"/>
+            <xs:attribute name="stationAcronym" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="unitAcronym">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:anyURI">
+                    <xs:attribute name="type" type="xs:NCName"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="projectLeader" type="xs:string"/>
+    <xs:element name="unitAddress" type="xs:string"/>
+    <xs:element name="subUnits">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element minOccurs="0" ref="usfs:unitName"/>
+                <xs:element maxOccurs="unbounded" ref="usfs:subUnit"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="reseachUnit">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="usfs:unitNumber"/>
+                <xs:element ref="usfs:unitName"/>
+                <xs:element ref="usfs:unitURL"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="address" type="xs:string"/>
+    <xs:element name="treesearchPublications">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" ref="usfs:treePub"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="treePub">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="usfs:abbrv"/>
+                <xs:element ref="usfs:pubTitle"/>
+            </xs:sequence>
+            <xs:attribute name="type" use="required" type="xs:NCName"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="abbrv" type="xs:string"/>
+    <xs:element name="pubTitle" type="xs:string"/>
+    <xs:element name="unitNumber" type="xs:integer"/>
+    <xs:element name="unitName" type="xs:string"/>
+    <xs:element name="unitURL" type="xs:anyURI"/>
+    <xs:element name="subUnit" type="xs:string"/>
+    <xs:element name="isPartOf" type="xs:string"/>
+</xs:schema>

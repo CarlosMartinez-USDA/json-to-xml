@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Forest products research and development organizations : organization, governance, and measures of performance in a worldwide setting</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Paul V.</namePart>
+      <namePart type="family">Ellefson</namePart>
+      <displayForm>Ellefson, Paul V.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">M.A.</namePart>
+      <namePart type="family">Kilgore</namePart>
+      <displayForm>Kilgore, M.A.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Kenneth E.</namePart>
+      <namePart type="family">Skog</namePart>
+      <displayForm>Skog, Kenneth E.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Christopher D.</namePart>
+      <namePart type="family">Risbrudt</namePart>
+      <displayForm>Risbrudt, Christopher D.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-21</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The ability of forest products research and development organizations to contribute to a nation’s well-being requires that they be well organized, effectively managed, and held to high standards of performance. In order to obtain a better understanding of how such organizations are structured and administered, and how they judge organizational performance, a review of forest products and related research organizations beyond the boundaries of the United States was undertaken in 2004-2005. Ninety-three research organizations were initially identified for review, 40 of which were selected for in-depth examination (located in 23 countries) (Table 1). They were selected in order to: (a) provide a sampling of organizations operating in various countries worldwide, (b) enable review of publicly and privately sponsored organizations, and (c) permit access to a diversity of organizational structures and administrative procedures. The lead administrator of each organization was given an opportunity to review the draft narrative describing the organization. In addition, each lead administrator was asked to provide advice about structural, managerial, and performance conditions that are considered necessary if a forest products research and development organization is to accomplish its mission. Thirty administrators of the 40 organizations reviewed willingly provided commentaries.</abstract>
+   <subject>
+      <topic>Research projects</topic>
+   </subject>
+   <subject>
+      <topic>commercial products</topic>
+   </subject>
+   <subject>
+      <topic>testing</topic>
+   </subject>
+   <subject>
+      <topic>forest products</topic>
+   </subject>
+   <subject>
+      <topic>research</topic>
+   </subject>
+   <subject>
+      <topic>research institutes</topic>
+   </subject>
+   <subject>
+      <topic>directories</topic>
+   </subject>
+   <subject>
+      <topic>performance standards</topic>
+   </subject>
+   <subject>
+      <topic>review article</topic>
+   </subject>
+   <subject>
+      <topic>management</topic>
+   </subject>
+   <subject>
+      <topic>policies</topic>
+   </subject>
+   <subject>
+      <topic>programs</topic>
+   </subject>
+   <subject>
+      <topic>forest products laboratories</topic>
+   </subject>
+   <subject>
+      <topic>product testing</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Forest products journal</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">21</text>
+         <extent unit="pages">
+            <start>.004</start>
+            <end>.004</end>
+            <total>.004</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1999</identifier>
+   <identifer type="treesearch-pub">29785</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29785</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/A-29785.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29785</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/WorkingDir/</workingDirectory>
+   </extension>
+</mods>
