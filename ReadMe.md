@@ -14,7 +14,6 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 
 
 ## JSON to MODS Transformation Flowchart
-<a href="https://ibb.co/bbkKx8n"><img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0"></a>
 ```mermaid
 flowchart LR
 A[JSON] --> B((XSLT3.0))
@@ -26,9 +25,9 @@ style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style B.1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style C fill:#9fc5e8, stroke:#f66, stroke-dasharray: 5 5
 style D fill:#9fc5e8,stroke:#333,stroke-width:4px 
-
 ```
 
+<a href="https://ibb.co/bbkKx8n"><img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0"></a>
 # Files
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
@@ -168,5 +167,5 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyMDY5ODQxLC0yMTUxOTExNzBdfQ==
+eyJoaXN0b3J5IjpbLTIxMDc3NjQ2NDMsLTIxNTE5MTE3MF19
 -->
