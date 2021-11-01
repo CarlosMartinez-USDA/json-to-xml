@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://usfs_treeresearch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfs_treeresearch">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" targetNamespace="http://usfs_treesearch" xmlns:usfs="http://usfs_treesearch" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <xs:import namespace="http://www.w3.org/2001/XMLSchema-instance" schemaLocation="xsi.xsd"/>
   <xs:element name="treesearch">
     <xs:complexType>
@@ -42,40 +42,30 @@
   <xs:element name="researchUnits">
     <xs:complexType>
       <xs:choice>
-        <xs:element maxOccurs="unbounded" ref="usfs:reseachUnit"/>
         <xs:choice maxOccurs="unbounded">
           <xs:element ref="usfs:isPartOf"/>
           <xs:element ref="usfs:researchUnit"/>
         </xs:choice>
+        <xs:element maxOccurs="unbounded" ref="usfs:reseachUnit"/>
       </xs:choice>
-    </xs:complexType>
-  </xs:element>
-  <xs:element name="reseachUnit">
-    <xs:complexType>
-      <xs:sequence>
-        <xs:element ref="usfs:unitNum"/>
-        <xs:element ref="usfs:unitName"/>
-        <xs:element ref="usfs:unitURL"/>
-      </xs:sequence>
     </xs:complexType>
   </xs:element>
   <xs:element name="researchUnit">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" ref="usfs:unitNum"/>
-        <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:choice maxOccurs="unbounded">
           <xs:element ref="usfs:unitName"/>
-          <xs:element ref="usfs:unitAcronym"/>
           <xs:element ref="usfs:unitNumber"/>
+          <xs:element ref="usfs:unitAcronym"/>
         </xs:choice>
-        <xs:choice minOccurs="0">
-          <xs:element ref="usfs:unitURL"/>
-          <xs:element ref="usfs:projectLeader"/>
-          <xs:element ref="usfs:unitAddress"/>
-        </xs:choice>
+        <xs:element minOccurs="0" ref="usfs:unitAddress"/>
         <xs:element minOccurs="0" ref="usfs:subUnits"/>
         <xs:element minOccurs="0" ref="usfs:subUnit"/>
-        <xs:element minOccurs="0" ref="usfs:isPartOf"/>
+        <xs:choice minOccurs="0">
+          <xs:element ref="usfs:isPartOf"/>
+          <xs:element ref="usfs:unitURL"/>
+          <xs:element ref="usfs:projectLeader"/>
+        </xs:choice>
       </xs:sequence>
       <xs:attribute name="acronym" type="xs:NCName"/>
       <xs:attribute name="stationAcronym" type="xs:NCName"/>
@@ -90,14 +80,22 @@
       </xs:simpleContent>
     </xs:complexType>
   </xs:element>
-  <xs:element name="unitNumber" type="xs:integer"/>
-  <xs:element name="projectLeader" type="xs:string"/>
   <xs:element name="unitAddress" type="xs:string"/>
   <xs:element name="subUnits">
     <xs:complexType>
       <xs:sequence>
         <xs:element minOccurs="0" ref="usfs:unitName"/>
         <xs:element maxOccurs="unbounded" ref="usfs:subUnit"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="projectLeader" type="xs:string"/>
+  <xs:element name="reseachUnit">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="usfs:unitNumber"/>
+        <xs:element ref="usfs:unitName"/>
+        <xs:element ref="usfs:unitURL"/>
       </xs:sequence>
     </xs:complexType>
   </xs:element>
@@ -120,9 +118,9 @@
   </xs:element>
   <xs:element name="abbrv" type="xs:string"/>
   <xs:element name="pubTitle" type="xs:string"/>
-  <xs:element name="unitNum" type="xs:integer"/>
+  <xs:element name="unitNumber" type="xs:integer"/>
   <xs:element name="unitName" type="xs:string"/>
-  <xs:element name="unitURL" type="xs:anyURI"/>
   <xs:element name="subUnit" type="xs:string"/>
+  <xs:element name="unitURL" type="xs:anyURI"/>
   <xs:element name="isPartOf" type="xs:string"/>
 </xs:schema>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Estimating Janka hardness from specific gravity for tropical and temperate species</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Michael C.</namePart>
+      <namePart type="family">Wiemann</namePart>
+      <displayForm>Wiemann, Michael C.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and
+                        Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David W.</namePart>
+      <namePart type="family">Green</namePart>
+      <displayForm>Green, David W.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-11-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Using mean values for basic (green) specific gravity and Janka side hardness for individual species obtained from the world literature, regression equations were developed to predict side hardness from specific gravity. Statistical and graphical methods showed that the hardness–specific gravity relationship is the same for tropical and temperate hardwoods, but that the relationship for softwoods is different from that for hardwoods. As expected, the relationship for green wood is different from that for wood at 12% moisture content.</abstract>
+   <subject>
+      <topic>Janka hardness</topic>
+   </subject>
+   <subject>
+      <topic>specific gravity</topic>
+   </subject>
+   <subject>
+      <topic>temperate hardwoods</topic>
+   </subject>
+   <subject>
+      <topic>tropical hardwoods</topic>
+   </subject>
+   <subject>
+      <topic>softwoods</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>Research Paper (RP)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>643</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2007</text>
+         <text type="month">11</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>.002</start>
+            <end>.002</end>
+            <total>.002</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RP-643</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RP-643</url>
+   </location>
+   <identifier type="treesearch">584</identifier>
+   <identifer type="treesearch-pub">28975</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/28975</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-28975.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-28975</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

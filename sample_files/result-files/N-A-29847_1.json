@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Profile 2007: Softwood sawmills in the United States and Canada</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Henry</namePart>
+      <namePart type="family">Spelter</namePart>
+      <displayForm>Spelter, Henry</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David</namePart>
+      <namePart type="family">McKeever</namePart>
+      <displayForm>McKeever, David</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Matthew</namePart>
+      <namePart type="family">Alderman</namePart>
+      <displayForm>Alderman, Matthew</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2012-09-05</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The number of larger, permanent softwood lumber mills in the United States and Canada has shrunk from 1,311 in 1995 to 990 as of June 2007. These mills had a combined capacity of 190.2 million m3 (80.6 × 109 board feet), slightly down from the 2005 value. In 2006, they produced 171 million (nominal) m3 (72.3 × 109 board feet) of lumber, and in the process, generated approximately 0.56 oven-dried metric tons of chips and 0.23 tons of saw-dust and shavings for every 2.36 m3 (1,000 board feet) of lumber produced. Of the chips, 95% were used for pulp and the contribution of this product stream to sawmill economics was approximately $2.1 billion (109) U.S. dollars. Of the sawdust and shavings, 59% were used for boards, 25% for fuel, 7% for animal bedding, 4% for pellets, and about 5% were unused or unaccounted for. Employment dropped to about 93,000 people, down from 99,000 in 2005 and 115,000 in 1995. Economic prospects for the industry are clouded by overcapacity because of weakness in demand caused by a cyclical downturn in housing. Longer term influences include the ongoing mountain pine beetle (Dendroctonus ponderosae) epidemic in British Columbia that threatens to cut timber supplies over the next 5 to 10 years and the 2006 Softwood Lumber Agreement affecting the terms under which lumber is imported from Canada into the United States.</abstract>
+   <subject>
+      <topic>Softwood sawmill capacity</topic>
+   </subject>
+   <subject>
+      <topic>softwood lumber production</topic>
+   </subject>
+   <subject>
+      <topic>residues</topic>
+   </subject>
+   <subject>
+      <topic>chips</topic>
+   </subject>
+   <subject>
+      <topic>sawdust</topic>
+   </subject>
+   <subject>
+      <topic>shavings</topic>
+   </subject>
+   <subject>
+      <topic>employment</topic>
+   </subject>
+   <subject>
+      <topic>softwood</topic>
+   </subject>
+   <subject>
+      <topic>inventories</topic>
+   </subject>
+   <subject>
+      <topic>Canada</topic>
+   </subject>
+   <subject>
+      <topic>United States</topic>
+   </subject>
+   <subject>
+      <topic>statistics</topic>
+   </subject>
+   <subject>
+      <topic>forest products industry</topic>
+   </subject>
+   <subject>
+      <topic>timber</topic>
+   </subject>
+   <subject>
+      <topic>sawmills</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>Research Paper (RP)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>644</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2012</text>
+         <text type="month">09</text>
+         <text type="day">05</text>
+         <extent unit="pages">test2</extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RP-644</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RP-644</url>
+   </location>
+   <identifier type="treesearch">2207</identifier>
+   <identifer type="treesearch-pub">29847</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29847</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29847.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29847</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

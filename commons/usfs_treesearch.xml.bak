@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usfs:treesearch xmlns="http://usfs_treeresearch" xmlns:usfs="http://usfs_treeresearch"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/usfs_treesearch.xsd">
+<?xml-model href="usfs_treesearch.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<usfs:treesearch xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://usfs_treesearch usfs_treesearch.xsd" xmlns="http://usfs_treesearch"
+ xmlns:usfs="http://usfs_treesearch">
     <researchStations>
         <!--Northern Reserach Station-->
         <station>
@@ -214,47 +215,47 @@
             <name>Rocky Mountain Research Station</name>
             <researchUnits>
                 <reseachUnit>
-                    <unitNum>4354</unitNum>
+                    <unitNumber>4354</unitNumber>
                     <unitName>Air, Water and Aquatic Environments</unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/air-water-and-aquatic-environments</unitURL>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4901</unitNum>
+                    <unitNumber>4901</unitNumber>
                     <unitName>Aldo Leopold Wilderness Research Institute</unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/aldo-leopold-wilderness-research-institute</unitURL>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4405</unitNum>
+                    <unitNumber>4405</unitNumber>
                     <unitName>Fire, Fuel and Smoke</unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/fire-fuel-and-smoke</unitURL>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4157</unitNum>
+                    <unitNumber>4157</unitNumber>
                     <unitName>Forest and Woodland Ecosystems </unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/forest-and-woodland-ecosystems</unitURL>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4255</unitNum>
+                    <unitNumber>4255</unitNumber>
                     <unitName>Grassland, Shrubland and Desert Ecosystems</unitName>
                     <unitURL/>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4853</unitNum>
+                    <unitNumber>4853</unitNumber>
                     <unitName>Human Dimensions</unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/human-dimensions</unitURL>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4801</unitNum>
+                    <unitNumber>4801</unitNumber>
                     <unitName>Inventory and Monitoring</unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/inventory-and-monitoring</unitURL>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4255</unitNum>
+                    <unitNumber>4255</unitNumber>
                     <unitName>Science Application and Communication</unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/science-application-and-communication</unitURL>
                 </reseachUnit>
                 <reseachUnit>
-                    <unitNum>4256</unitNum>
+                    <unitNumber>4256</unitNumber>
                     <unitName>Wildlife and Terrestrial Ecosystems</unitName>
                     <unitURL>https://www.fs.usda.gov/rmrs/science-program-areas/wildlife-and-terrestrial-ecosystems"</unitURL>                   
                 </reseachUnit>                
@@ -268,7 +269,7 @@
             <name>Southern Research Station</name>
             <researchUnits>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4353</unitNum>
+                    <unitNumber>4353</unitNumber>
                     <unitName>Center for Forest Watershed Research</unitName>
                     <subUnits>
                         <subUnit>Coweeta Hydrologic Laboratory </subUnit>
@@ -279,22 +280,22 @@
                     <isPartOf>Forest Assessment and Synthesis</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4804</unitNum>
+                    <unitNumber>4804</unitNumber>
                     <unitName>Forest Economics and Policy </unitName>
                     <isPartOf>Forest Assessment and Synthesis</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4854</unitNum>
+                    <unitNumber>4854</unitNumber>
                     <unitName>Eastern Forest Environmental Threat Assessment Center </unitName>
                     <isPartOf>Forest Assessment and Synthesis</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4855</unitNum>
+                    <unitNumber>4855</unitNumber>
                     <unitName>Center for Integrated Forest Science </unitName>
                     <isPartOf>Forest Assessment and Synthesis</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4952</unitNum>
+                    <unitNumber>4952</unitNumber>
                     <subUnits>
                         <unitName>Integrating Human and Natural Systems </unitName>
                         <subUnit>Urban Forestry South </subUnit>
@@ -303,52 +304,52 @@
                     <isPartOf>Forest Assessment and Synthesis</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4156</unitNum>
+                    <unitNumber>4156</unitNumber>
                     <unitName>Center for Forest Disturbance Science </unitName>
                     <isPartOf>Forest Health</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4160</unitNum>
+                    <unitNumber>4160</unitNumber>
                     <unitName>Forest Genetics and Ecosystems Biology </unitName>
                     <isPartOf>Forest Health</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4552</unitNum>
+                    <unitNumber>4552</unitNumber>
                     <unitName>Insects, Diseases and Invasive Plants of Southern Forests </unitName>
                 </researchUnit>
                 <isPartOf>Forest Health</isPartOf>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4801</unitNum>
+                    <unitNumber>4801</unitNumber>
                     <unitName>Forest Inventory and Analysis </unitName>
                     <isPartOf>Forest Inventory and Analysis</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4155</unitNum>
+                    <unitNumber>4155</unitNumber>
                     <unitName>Center for Bottomland Hardwoods Research </unitName>
                     <isPartOf>Forest Health</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4157</unitNum>
+                    <unitNumber>4157</unitNumber>
                     <unitName>Upland Hardwood Ecology and Management </unitName>
                     <isPartOf>Forest Restoration and Management</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4158</unitNum>
+                    <unitNumber>4158</unitNumber>
                     <unitName>Restoring and Managing Longleaf Pine Ecosystems </unitName>
                     <isPartOf>Forest Restoration and Management</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4159</unitNum>
+                    <unitNumber>4159</unitNumber>
                     <unitName>Southern Pine Ecology and Management </unitName>
                     <isPartOf>Forest Restoration and Management</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4703</unitNum>
+                    <unitNumber>4703</unitNumber>
                     <unitName>Forest Operations </unitName>
                     <isPartOf>Forest Restoration and Management</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
-                    <unitNum>4704</unitNum>
+                    <unitNumber>4704</unitNumber>
                     <unitName>Utilization of Southern Forest Resources </unitName>
                     <isPartOf>Forest Restoration and Management</isPartOf>
                 </researchUnit>
@@ -418,11 +419,11 @@
             <pubTitle>Forest Insect &amp; Disease Leaflet</pubTitle>
         </treePub>
         <treePub type="series">
-            <abbrv>Gen. Tech. Rep. (GTR)</abbrv>
+            <abbrv>Gen. Tech. Rep.</abbrv>
             <pubTitle>General Technical Report (GTR)</pubTitle>
         </treePub>
         <treePub type="series">
-            <abbrv>Gen. Tech. Rep. -P (GTR</abbrv>
+            <abbrv>Gen. Tech. Rep. -P (GTR)</abbrv>
             <pubTitle>General Technical Report - Proceedings</pubTitle>
         </treePub>
         <treePub type="series">
@@ -431,7 +432,7 @@
         </treePub>
         <treePub type="series">
             <abbrv>P</abbrv>
-            <pubTitle>Proceeding Rocky Mountain Research Station Publications</pubTitle>
+            <pubTitle>Proceedings (P)</pubTitle>
         </treePub>
         <treePub type="series">
             <abbrv>Resour. Bull.</abbrv>

@@ -12,7 +12,7 @@
       <namePart type="given">Richard</namePart>
       <namePart type="family">Birdsey</namePart>
       <displayForm>Birdsey, Richard </displayForm>
-      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, The Strategic Foresight Group, </affiliation>
+      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, The Strategic Foresight Group, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
       <role>
          <roleTerm type="text">author</roleTerm>
       </role>
@@ -51,27 +51,28 @@
    <originInfo>
       <dateIssued encoding="w3cdtf" keyDate="yes">2019-06-25</dateIssued>
    </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
    <language>
       <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
       <languageTerm type="text">English</languageTerm>
    </language>
    <abstract>Summarizes research findings of the USDA Forest Service's Global Change Research Program. Research highlights are presented at national and regional scales within the following topic areas: atmosphere/biosphere gas and energy exchange; ecosystem dynamics; disturbance ecology; and human activities and natural resource interactions. Selected topics are reviewed in depth with individual papers covering the global carbon cycle, climate scenarios, multiple stress studies, changes in vegetation distribution, the United States carbon budget, and the human dimensions of global change. Also included is a progress report on development of an integrated national model of the effects of global change on forests and people.</abstract>
-   <relatedItem>
-      <relatedItem type="series">
-         <titleInfo type="abbreviated">
-            <title/>
-         </titleInfo>
-         <part>
-            <extent unit="pages">
-               <start>1</start>
-               <end>122</end>
-               <total>121</total>
-            </extent>
-         </part>
-      </relatedItem>
-   </relatedItem>10.2737/NE-GTR-237<identifier type="doi">31371NRSNEPublished to Web1Publication2Informally Refereed (Peer-Reviewed)3General Technical Report (GTR)USDA Forest Service Global Change Research Program Highlights: 1991-1995 1997Summarizes research findings of the USDA Forest Service's Global Change Research Program. Research highlights are presented at national and regional scales within the following topic areas: atmosphere/biosphere gas and energy exchange; ecosystem dynamics; disturbance ecology; and human activities and natural resource interactions. Selected topics are reviewed in depth with individual papers covering the global carbon cycle, climate scenarios, multiple stress studies, changes in vegetation distribution, the United States carbon budget, and the human dimensions of global change. Also included is a progress report on development of an integrated national model of the effects of global change on forests and people.Birdsey, Richard; Mickler, Robert; Sandberg, David; Tinus, Richard; Zerbe, John; O'Brian, Kelly, eds. 1997. USDA Forest Service Global Change Research Program Highlights: 1991-1995. Gen. Tech. Rep. NE-237. Radnor, PA: U.S. Department of Agriculture, Forest Service, Northeastern Forest Experiment Station. 122 p. https://doi.org/10.2737/NE-GTR-237.10.2737/NE-GTR-237https://www.fs.fed.us/nrs/pubs/gtr/gtr_ne237.pdf15.0 MBhttps://www.fs.usda.gov/treesearch/pubs/443144311Gen. Tech. Rep. NE-237. Radnor, PA: U.S. Department of Agriculture, Forest Service, Northeastern Forest Experiment Station. 122 p.02371221122T025-JUN-2019 10:04:17AY3903340119144431Models of regeneration, tree growth, and current and potential ranges of tree and mammal species in the Eastern U.S.Birdsey, Richard NRS15Birdsey328011Mickler, Robert 002Sandberg, David 003Tinus, Richard 004Zerbe, John jzerbe5800015O'Brian, Kelly  eds.006Birdsey, Richard NRS15Birdsey328011Mickler, Robert 002Sandberg, David 003Tinus, Richard 004Zerbe, John FPLTMUjzerbe5800015O'Brian, Kelly  eds.006</identifier>
+   <relatedItem type="series">
+      <titleInfo type="abbreviated">
+         <title>
+    [ </title>
+      </titleInfo>
+      <part>
+         <extent unit="pages">
+            <start>1</start>
+            <end>122</end>
+            <total>122</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/NE-GTR-237</identifier>
    <location>
-      <url>http://dx.doi.org/31371NRSNEPublished to Web1Publication2Informally Refereed (Peer-Reviewed)3General Technical Report (GTR)USDA Forest Service Global Change Research Program Highlights: 1991-1995 1997Summarizes research findings of the USDA Forest Service's Global Change Research Program. Research highlights are presented at national and regional scales within the following topic areas: atmosphere/biosphere gas and energy exchange; ecosystem dynamics; disturbance ecology; and human activities and natural resource interactions. Selected topics are reviewed in depth with individual papers covering the global carbon cycle, climate scenarios, multiple stress studies, changes in vegetation distribution, the United States carbon budget, and the human dimensions of global change. Also included is a progress report on development of an integrated national model of the effects of global change on forests and people.Birdsey, Richard; Mickler, Robert; Sandberg, David; Tinus, Richard; Zerbe, John; O'Brian, Kelly, eds. 1997. USDA Forest Service Global Change Research Program Highlights: 1991-1995. Gen. Tech. Rep. NE-237. Radnor, PA: U.S. Department of Agriculture, Forest Service, Northeastern Forest Experiment Station. 122 p. https://doi.org/10.2737/NE-GTR-237.10.2737/NE-GTR-237https://www.fs.fed.us/nrs/pubs/gtr/gtr_ne237.pdf15.0 MBhttps://www.fs.usda.gov/treesearch/pubs/443144311Gen. Tech. Rep. NE-237. Radnor, PA: U.S. Department of Agriculture, Forest Service, Northeastern Forest Experiment Station. 122 p.02371221122T025-JUN-2019 10:04:17AY3903340119144431Models of regeneration, tree growth, and current and potential ranges of tree and mammal species in the Eastern U.S.Birdsey, Richard NRS15Birdsey328011Mickler, Robert 002Sandberg, David 003Tinus, Richard 004Zerbe, John jzerbe5800015O'Brian, Kelly eds.006Birdsey, Richard NRS15Birdsey328011Mickler, Robert 002Sandberg, David 003Tinus, Richard 004Zerbe, John FPLTMUjzerbe5800015O'Brian, Kelly eds.006</url>
+      <url>http://dx.doi.org/10.2737/NE-GTR-237</url>
    </location>
    <identifier type="treesearch">3137</identifier>
    <identifer type="treesearch-pub">4431</identifer>

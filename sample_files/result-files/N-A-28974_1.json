@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Acoustic tomography for decay detection in red oak trees</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Xiping</namePart>
+      <namePart type="family">Wang</namePart>
+      <displayForm>Wang, Xiping</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and
+                        Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">R. Bruce</namePart>
+      <namePart type="family">Allison</namePart>
+      <displayForm>Allison, R. Bruce</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Lihai</namePart>
+      <namePart type="family">Wang</namePart>
+      <displayForm>Wang, Lihai</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Robert J.</namePart>
+      <namePart type="family">Ross</namePart>
+      <displayForm>Ross, Robert J.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and
+                        Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-11-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The science of tree stability analysis uses both biological and engineering principles in attempting to rate a tree’s structural soundness and make reasonable predictions of potential for failure. In such analysis, arborists are often challenged by internal structural defects hidden from view within the trunks. This paper reports the results of an investigation using acoustic tomography to detect internal decay in park trees. Two century- old red oak (Quercus rubra) trees located at the Capitol Park in Madison, Wisconsin, were nondestructively evaluated using an acoustic tomography technique. The trees were subsequently felled, and a disk at each test location was obtained and examined. We found that the light-colored zones in the tomograms were larger than the true decay present in the disks. The oversized light-colored areas were the composite effects of both decay and large internal cracks. The results of this study demonstrated that acoustic tomograhy cannot distinguish between large internal cracks and heartwood decay. To make a better assessment of internal condition for urban trees, resistance microdrilling should also be used prior to tree removal.</abstract>
+   <subject>
+      <topic>Acoustic tomography</topic>
+   </subject>
+   <subject>
+      <topic>crack</topic>
+   </subject>
+   <subject>
+      <topic>decay</topic>
+   </subject>
+   <subject>
+      <topic>tree stability</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>Research Paper (RP)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>642</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2007</text>
+         <text type="month">11</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>132114</start>
+            <end>132114</end>
+            <total>132114</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RP-642</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RP-642</url>
+   </location>
+   <identifier type="treesearch">579</identifier>
+   <identifer type="treesearch-pub">28974</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/28974</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-28974.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-28974</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

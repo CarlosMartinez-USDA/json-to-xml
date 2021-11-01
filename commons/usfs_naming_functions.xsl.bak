@@ -62,6 +62,7 @@
 <xsl:function name="local:acronymToAddress" as="xs:string?" xmlns:local="http://local_functions">
     <xsl:param name="acronym"/>
     <xsl:if test="$acronym != ''"/>
+    <xsl:value-of select="$tree_nodes/usfs:treesearch/usfs:researchStations/usfs:station[usfs:acronym = $acronym]/usfs:address"/>
 </xsl:function>
 
 <xd:doc scope="component">

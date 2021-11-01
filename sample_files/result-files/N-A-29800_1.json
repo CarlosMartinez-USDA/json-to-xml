@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Wood</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">David W.</namePart>
+      <namePart type="family">Green</namePart>
+      <displayForm>Green, David W.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Robert H.</namePart>
+      <namePart type="family">White</namePart>
+      <displayForm>White, Robert H.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Antoni</namePart>
+      <namePart type="family">TenWolde</namePart>
+      <displayForm>TenWolde, Antoni</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">William</namePart>
+      <namePart type="family">Simpson</namePart>
+      <displayForm>Simpson, William</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Joseph</namePart>
+      <namePart type="family">Murphy</namePart>
+      <displayForm>Murphy, Joseph</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, 

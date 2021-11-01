@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Selected mechanical and physical properties of Chinese tallow tree juvenile wood</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Todd F.</namePart>
+      <namePart type="family">Shupe</namePart>
+      <displayForm>Shupe, Todd F.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">LEslie H.</namePart>
+      <namePart type="family">Groom</namePart>
+      <displayForm>Groom, LEslie H.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Thomas L.</namePart>
+      <namePart type="family">Eberhardt</namePart>
+      <displayForm>Eberhardt, Thomas L.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, Utilization of Southern Forest Resources , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Thomas C.</namePart>
+      <namePart type="family">Pesacreta</namePart>
+      <displayForm>Pesacreta, Thomas C.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Timothy G.</namePart>
+      <namePart type="family">Rials</namePart>
+      <displayForm>Rials, Timothy G.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>SRS<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-06-03</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Chinese tallow tree is a noxious, invasive plant in the Southeastern United States. It is generally considered a nuisance and has no current commercial use. The objective of this research was to determine the moduli of rupture (MOR) and elasticity (MOE) of the stem wood of this species at different vertical sampling locations. Three Chinese tallow trees were felled and cut into bolts before sampling along the east and west radial directions. It was found that Chinese tallow tree has sufficient bending strength for low to medium structural uses. Tree, bolt, and sampling direction were all found to be significant sources of variation for the MOR and MOE data.</abstract>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Forest Products Journal, 59(4): 90-93</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">06</text>
+         <text type="day">03</text>
+         <extent unit="pages">
+            <start>.005</start>
+            <end>.005</end>
+            <total>.005</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi"/>
+   <location>
+      <url>http://dx.doi.org/</url>
+   </location>
+   <identifier type="treesearch">280</identifier>
+   <identifer type="treesearch-pub">29856</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29856</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29856.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29856</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

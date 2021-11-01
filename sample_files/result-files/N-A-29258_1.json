@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Determining moisture gradient profile using X-Ray technique</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Zhiyong</namePart>
+      <namePart type="family">Cai</namePart>
+      <displayForm>Cai, Zhiyong</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Moisture gradients in wood are known to affect the internal stresses that could cause dimensional changes and defects. Severe deformation of finished products has the potential to damage a manufacturer’s reputation and significantly increase the cost of manufacturing. An innovative approach to nondestructively examine the moisture gradients of different wood species using vertical density profiles from a commercial X-ray based density profiler was described and illustrated. The results indicate that the estimated moisture gradients by the X-ray technique matched well with the actual moisture gradients. It is expected that the new method will provide accurate and prompt information about moisture transfer/movement that will help optimize manufacturing processes.</abstract>
+   <subject>
+      <topic>Nondestructive</topic>
+   </subject>
+   <subject>
+      <topic>moisture gradient</topic>
+   </subject>
+   <subject>
+      <topic>wood composite</topic>
+   </subject>
+   <subject>
+      <topic>wood density</topic>
+   </subject>
+   <subject>
+      <topic>wood defects</topic>
+   </subject>
+   <subject>
+      <topic>drying</topic>
+   </subject>
+   <subject>
+      <topic>wood moisture</topic>
+   </subject>
+   <subject>
+      <topic>composite materials</topic>
+   </subject>
+   <subject>
+      <topic>moisture</topic>
+   </subject>
+   <subject>
+      <topic>x-rays</topic>
+   </subject>
+   <subject>
+      <topic>nondestructive testing</topic>
+   </subject>
+   <subject>
+      <topic>wood drying</topic>
+   </subject>
+   <subject>
+      <topic>moisture content</topic>
+   </subject>
+   <subject>
+      <topic>hygroscopicity</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Proceedings of 15th International Symposium on Nondestructive Testing of Wood, Sept. 10-13, 2007, Duluth, MN.  [S.l. : s.n.], 2007.</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>174111</start>
+            <end>174111</end>
+            <total>174111</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi"/>
+   <location>
+      <url>http://dx.doi.org/</url>
+   </location>
+   <identifier type="treesearch">3163</identifier>
+   <identifer type="treesearch-pub">29258</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29258</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29258.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29258</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

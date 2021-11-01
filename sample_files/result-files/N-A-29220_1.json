@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Guide to the siricid woodwasps of North America</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Nathan M.</namePart>
+      <namePart type="family">Schiff</namePart>
+      <displayForm>Schiff, Nathan M.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, Center for Bottomland Hardwoods Research , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Steven A.</namePart>
+      <namePart type="family">Valley</namePart>
+      <displayForm>Valley, Steven A.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">James R.</namePart>
+      <namePart type="family">LaBonte</namePart>
+      <displayForm>LaBonte, James R.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">David R.</namePart>
+      <namePart type="family">Smith</namePart>
+      <displayForm>Smith, David R.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, 

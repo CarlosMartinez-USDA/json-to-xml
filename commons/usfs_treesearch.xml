@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<usfs:treesearch xmlns="http://usfs_treeresearch" xmlns:usfs="http://usfs_treeresearch"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="file:/C:/Users/carlos.martinez/Desktop/json-to-xml/commons/usfs_treesearch.xsd">
+<?xml-model href="usfs_treesearch.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<usfs:treesearch xmlns="http://usfs_treesearch" xmlns:usfs="http://usfs_treesearch">
     <researchStations>
         <!--Northern Reserach Station-->
         <station>
@@ -418,11 +417,11 @@
             <pubTitle>Forest Insect &amp; Disease Leaflet</pubTitle>
         </treePub>
         <treePub type="series">
-            <abbrv>Gen. Tech. Rep. (GTR)</abbrv>
+            <abbrv>Gen. Tech. Rep.</abbrv>
             <pubTitle>General Technical Report (GTR)</pubTitle>
         </treePub>
         <treePub type="series">
-            <abbrv>Gen. Tech. Rep. -P (GTR</abbrv>
+            <abbrv>Gen. Tech. Rep. -P (GTR)</abbrv>
             <pubTitle>General Technical Report - Proceedings</pubTitle>
         </treePub>
         <treePub type="series">
@@ -431,7 +430,7 @@
         </treePub>
         <treePub type="series">
             <abbrv>P</abbrv>
-            <pubTitle>Proceeding Rocky Mountain Research Station Publications</pubTitle>
+            <pubTitle>Proceedings (P)</pubTitle>
         </treePub>
         <treePub type="series">
             <abbrv>Resour. Bull.</abbrv>

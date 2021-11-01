@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Cornstalk as a source of fiber and energy</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Aziz</namePart>
+      <namePart type="family">Ahmed</namePart>
+      <displayForm>Ahmed, Aziz</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">J. Y.</namePart>
+      <namePart type="family">Zhu</namePart>
+      <displayForm>Zhu, J. Y.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Wood is the major source of fiber supply. Non-wood fibers are mainly used in papermaking where there is a lack of forest resource such as in China and India. Cornstalk, among the agricultural residues and other non-wood fiber, is the most promising source of fiber. However, The usage of cornstalks is very limited in pulp and paper industry, although nearly 284 million tons/year are available worldwide, including 150 million tons/year in the United States. Cornstalk contains about 27% hemicelluloses, which is higher than most of the hardwoods and non-wood fiber materials. Preservation of hemicelluloses in papermaking fiber is important for increased fiber-to-fiber bonding and pulp yield. Unfortunately, in conventional pulping process, most of the hemicelluloses are degraded and ends up in pulping liquor. The calorific value of hemicelluloses derivatives in black liquor is very low compare to lignin derivatives. A value added alternative is to partially extract hemicellulose in cornstalk prior to pulping by dilute acid hydrolysis in the form of sugar suitable for fermentation into ethanol without reducing fiber quality. Dilute acid hydrolysis process under various conditions has been applied for partial removal of hemicelluloses. The residual materials were pulped using soda-AQ process. The separation of hemicelluloses is optimized to protect the paper strength properties.</abstract>
+   <subject>
+      <topic>Alcohol</topic>
+   </subject>
+   <subject>
+      <topic>hydrolysis</topic>
+   </subject>
+   <subject>
+      <topic>agricultural wastes</topic>
+   </subject>
+   <subject>
+      <topic>utilization</topic>
+   </subject>
+   <subject>
+      <topic>plant fibers</topic>
+   </subject>
+   <subject>
+      <topic>papermaking</topic>
+   </subject>
+   <subject>
+      <topic>cornstalks</topic>
+   </subject>
+   <subject>
+      <topic>fibers</topic>
+   </subject>
+   <subject>
+      <topic>hemicellulose</topic>
+   </subject>
+   <subject>
+      <topic>pulping</topic>
+   </subject>
+   <subject>
+      <topic>biomass energy</topic>
+   </subject>
+   <subject>
+      <topic>plant extracts</topic>
+   </subject>
+   <subject>
+      <topic>fermentation</topic>
+   </subject>
+   <subject>
+      <topic>renewable energy sources</topic>
+   </subject>
+   <subject>
+      <topic>pulp and paper processes</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Proceedings of 3rd International Symposium on Emerging Technology of Pulping and Papermaking, 2006 November 8-10, Guangzhou, China.  Guangzhou, China : South China University of Technology Press, 2006.  New technologies in non-wood fiber pulping and papermaking: pages 1-4.</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <start>.002</start>
+            <end>.002</end>
+            <total>.002</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi"/>
+   <location>
+      <url>http://dx.doi.org/</url>
+   </location>
+   <identifier type="treesearch">3178</identifier>
+   <identifer type="treesearch-pub">29261</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29261</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29261.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29261</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

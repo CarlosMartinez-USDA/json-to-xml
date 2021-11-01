@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Prehydrolysis of aspen wood with water and with dilute aqueous sulfuric acid</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Edward L.</namePart>
+      <namePart type="family">Springer</namePart>
+      <displayForm>Springer, Edward L.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">John F.</namePart>
+      <namePart type="family">Harris</namePart>
+      <displayForm>Harris, John F.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-07-18</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Water prehydrolysis of aspen wood was compared with 0.40% sulfuric acid prehydrolysis at a reaction temperature of 170°C. Acid prehydrolysis gave much higher yields of total anhydroxylose units in the prehydrolyzate and removed significantly less anhydroglucose from the wood than did the water treatment. At maximum yields of total anhydroxylose units in the prehydrolyzates, much more monomeric xylose was present in the acid prehydrolyzate than in the water prehydrolyzate.</abstract>
+   <subject>
+      <topic>Populus tremuloides</topic>
+   </subject>
+   <subject>
+      <topic>sulfuric acid</topic>
+   </subject>
+   <subject>
+      <topic>xylan</topic>
+   </subject>
+   <subject>
+      <topic>xylose</topic>
+   </subject>
+   <subject>
+      <topic>glucans</topic>
+   </subject>
+   <subject>
+      <topic>lignin</topic>
+   </subject>
+   <subject>
+      <topic>water</topic>
+   </subject>
+   <subject>
+      <topic>kraft pulping</topic>
+   </subject>
+   <subject>
+      <topic>anhydroxylose,</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Svensk papperstidning.  Vol. 85, no. 15 (Oct 1982): pages R152-R154.</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">07</text>
+         <text type="day">18</text>
+         <extent unit="pages">
+            <start>.002</start>
+            <end>.002</end>
+            <total>.002</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi"/>
+   <location>
+      <url>http://dx.doi.org/</url>
+   </location>
+   <identifier type="treesearch">1351</identifier>
+   <identifer type="treesearch-pub">30546</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/30546</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-30546.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-30546</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

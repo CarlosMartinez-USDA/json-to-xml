@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>An assessment of residual stand conditions following shelterwood-with-reserves cuts in Appalachian hardwoods</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James E.</namePart>
+      <namePart type="family">Johnson</namePart>
+      <displayForm>Johnson, James E.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Gary W.</namePart>
+      <namePart type="family">Miller</namePart>
+      <displayForm>Miller, Gary W.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, Ecology and Management of Invasive Species and Forest
+                        Ecosystems Forestry and Range Sciences Laboratory (La Grande), One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">John E.</namePart>
+      <namePart type="family">Baumgras</namePart>
+      <displayForm>Baumgras, John E.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Cynthia D.</namePart>
+      <namePart type="family">West</namePart>
+      <displayForm>West, Cynthia D.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, , 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>NRS<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-17</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>In recent years foresters managing hardwoods in the Southern Appalachians have been investigating a variety of regeneration methods that lead to the development of a two-aged stand. The reserved trees that make up the older age class usually meet a variety of objectives such as timber, wildlife food and cover, and aesthetic values. A series of 20 operational cuts in Appalachian hardwood stands was evaluated 2 to 5 years post-logging. Residual stand characteristics such as species composition, density, volume, grade, and damage were investigated to determine the early fate of the reserve trees. Residual stand density across the 20 stands averaged 39 plat, the number of residual trees per acre averaged 47, and the residual stand volume averaged 3,210 bd. ft./ac (Int. 1/4"). Most of the residual stands were classified as low-risk (69 percent), and only 8 percent of the trees per ac were either standing dead or blown down 2 to 5 years following the harvest.</abstract>
+   <subject>
+      <topic>Timber</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>In: Haywood, James D</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">17</text>
+         <extent unit="pages">
+            <start>28</start>
+            <end>33</end>
+            <total>6</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi"/>
+   <location>
+      <url>http://dx.doi.org/</url>
+   </location>
+   <identifier type="treesearch">1777</identifier>
+   <identifer type="treesearch-pub">14209</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/14209</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/A-14209.json</originalFile>
+      <workingDirectory>C:\Users\carlos.martinez\Desktop\json-to-xml\workingDir\result-files\</workingDirectory>
+      <!--values of new global variables-->
+      <originalFile>A-14209</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/working-dir/</workingDirectory>
+   </extension>
+</mods>

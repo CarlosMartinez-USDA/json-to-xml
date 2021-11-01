@@ -1,0 +1,215 @@
+<data>
+{
+    "product_id": "2737",
+    "ac22_approved_for_public": "1",
+    "primary_station": "FPL",
+    "historical_station": "FPL",
+    "entrystatus": "Published to Web",
+    "product_type_id": "1",
+    "product_type_desc": "Publication",
+    "product_subtype_id": null,
+    "product_subtype_desc": null,
+    "referee_status_id": "2",
+    "status_name": "Informally Refereed (Peer-Reviewed)",
+    "pub_type_id": "7",
+    "pub_type_desc": "Research Paper (RP)",
+    "title": "The Colville Study: wood utilization for ecosystem management: preliminary results of study of product potential from small-diameter stands.",
+    "product_year": " 1996",
+    "abstract": "The Colville Study was developed in 1994 to identify and evaluate a series of management options for achieving ecosystem objectives in dense stands of small-diameter trees while also producing wood products. The Colville National Forest selected the Rocky II Timber Sale as an example of this type of stand that needed management to achieve the following goals: (1) create late successional forest structure, (2) decrease forest health risk from fire, insects, and disease, (3) improve wildlife habitat by providing large green trees and snags, and (4) improve stand aesthetics by decreasing  stand density. The Colville Study was divided into four technical focus areas:  Silviculture and Ecology, Forest Operations, Timber Conversion, and Economics.  Results of each technical focus area indicate that (1) vegetative management activities are necessary to achieve the ecosystem goals, (2) there are alternative  harvesting systems for removing the timber in an ecologically sound manner but costs need to be considered, (3) both species and material size are important in  the recovery of wood products, and (4) financial analysis needs to incorporate all of these factors and many more to effectively evaluate the relative merchantability of different types of treatments.",
+    "citation": "Willits, S.; Barbour, R. J.; McNeel, J.; Fight, R. D.; Myers, G. C.; Mason, A.  The Colville Study: wood utilization for ecosystem management: preliminary results of study of product potential from small-diameter stands.  (Research paper FPL ; RP-559):11 p. : ill. ; 28 cm.",
+    "keywords": "Wood utilization, Forest management, Smallwood, Colville National Forest",
+    "doi": "10.2737/FPL-RP-559",
+    "url_binary_file": "https://www.fpl.fs.fed.us/documnts/fplrp/fplrp559.pdf",
+    "binary_filesize": "400.0 KB",
+    "url_landing_page": "https://www.fs.usda.gov/treesearch/pubs/5992",
+    "treesearch_pub_id": "5992",
+    "pub_parent_id": null,
+    "pub_child_number": null,
+    "pub_parent_ind": "0",
+    "pub_publication": "Research Paper FPL-RP-559. 11 p. : ill. ; 28 cm.",
+    "proceedings_ind": "0",
+    "pub_volume": "559",
+    "pub_issue": null,
+    "pub_page": null,
+    "pub_page_start": null,
+    "pub_page_end": null,
+    "pub_source": "T",
+    "geographic_terms": null,
+    "issn_id": null,
+    "is_early_release": "0",
+    "created_on": null,
+    "modified_on": "12-AUG-2020 14:32:48",
+    "send_to_reviewer_ind": "A",
+    "publish_to_web_ind": "Y",
+    "send_to_reviewer": null,
+    "child_publications": "",
+    "national_research_taxonomy_elements": [
+        {
+            "nrt_id": "21",
+            "nrt_title": "Insects"
+        },
+        {
+            "nrt_id": "29",
+            "nrt_title": "Ecology"
+        },
+        {
+            "nrt_id": "53",
+            "nrt_title": "Economics"
+        },
+        {
+            "nrt_id": "56",
+            "nrt_title": "Forest management"
+        },
+        {
+            "nrt_id": "62",
+            "nrt_title": "Timber"
+        },
+        {
+            "nrt_id": "88",
+            "nrt_title": "Wood utilization"
+        }
+    ],
+    "pub_authors": [
+        {
+            "name": "Willits, S.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "1"
+        },
+        {
+            "name": "Barbour, R. J.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "2"
+        },
+        {
+            "name": "McNeel, J.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "3"
+        },
+        {
+            "name": "Fight, R. D.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "4"
+        },
+        {
+            "name": "Myers, G. C.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "5"
+        },
+        {
+            "name": "Mason, A.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "6"
+        }
+    ],
+    "current_organizational_memberships": [
+        {
+            "name": "Willits, S.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "1"
+        },
+        {
+            "name": "Barbour, R. J.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "2"
+        },
+        {
+            "name": "McNeel, J.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "3"
+        },
+        {
+            "name": "Fight, R. D.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "4"
+        },
+        {
+            "name": "Myers, G. C.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "5"
+        },
+        {
+            "name": "Mason, A.",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "6"
+        }
+    ],
+    "strategic_program_areas": "",
+    "cris_projects": "",
+    "experimental_forests": "",
+    "eco_regions": "",
+    "latlongs": "",
+    "usnatforests": "",
+    "countystates": ""
+}</data>

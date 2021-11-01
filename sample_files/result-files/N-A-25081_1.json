@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Incidence of decay fungi in stumps of two thinned western larch stands in northeastern Oregon.</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Gregory M.</namePart>
+      <namePart type="family">Filip</namePart>
+      <displayForm>Filip, Gregory M.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Catherine A.</namePart>
+      <namePart type="family">Parks</namePart>
+      <displayForm>Parks, Catherine A.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, , 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204 </affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Kenneth W.</namePart>
+      <namePart type="family">Seidel</namePart>
+      <displayForm>Seidel, Kenneth W.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Frances F.</namePart>
+      <namePart type="family">Lombard</namePart>
+      <displayForm>Lombard, Frances F.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>PNW<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2012-07-05</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Incidence of decay fungi was measured in stumps from two thinned western larch (Larix occidentalis Nutt.) stands (9 and 15 years after thinning), one precommercially thinned and one commercially thinned, in northeastern Oregon. Ten species of decay fungi were positively identified from 180 stumps. Two root pathogenic species, Heterobasidion annosum (Fr.) Bref. and Armillaria obscura (Pers.) Herink Roll-Hansen, were found at relatively low frequencies. Most of the decay in the stumps was caused by either Fomitopsis pinicola (Swartz ex Fr.) Karst. or Trichaptum abietinum (Dicks, ex Fr.) Ryv., which normally are saprophytic wood decomposers.</abstract>
+   <subject>
+      <topic>Mycology</topic>
+   </subject>
+   <subject>
+      <topic>Plant diseases</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>Research Note (RN)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>468</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2012</text>
+         <text type="month">07</text>
+         <text type="day">05</text>
+         <extent unit="pages">
+            <start>004</start>
+            <end>004</end>
+            <total>004</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/PNW-RN-468</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/PNW-RN-468</url>
+   </location>
+   <identifier type="treesearch">1287</identifier>
+   <identifer type="treesearch-pub">25081</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/25081</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-25081.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-25081</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

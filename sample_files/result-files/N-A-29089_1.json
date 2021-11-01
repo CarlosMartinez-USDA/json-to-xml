@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Analysis of ethanol-soluble extractives in southern pine wood by low-field proton NMR</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Thomas L.</namePart>
+      <namePart type="family">Eberhardt</namePart>
+      <displayForm>Eberhardt, Thomas L.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, Utilization of Southern Forest Resources , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Thomas</namePart>
+      <namePart type="family">Elder</namePart>
+      <displayForm>Elder, Thomas</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, Utilization of Southern Forest Resources , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Nicole</namePart>
+      <namePart type="family">Labbe</namePart>
+      <displayForm>Labbe, Nicole</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>SRS<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-12-04</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Low-field portion NMR was evaluated as a nondestructive and rapid technique for measuring ethanol-soluble extractives in southern pine wood. Matchstick-sized wood specimens were steeped in extractive-containing solutions to generate extractive-enriched samples for analysis. decay curves obtained by the Carr-Purcell-Meiboom-gill (CPMG) pulse sequence were analyzed with Contin, a constrained regularization program used to generate continuous distributions of transverse (spin-spin) relaxation times. Air-dry wood samples gave maximum signal amplitudes that did not clearly reflect differences in extractives content. Oven drying removed signals for bound water that were superposed with those for extractives. Relaxation times and the corresponding amplitudes were then positively correlated with the added extractives. Treatment of air-dry samples with dichloromethane-d2 prior to analysis increased the mobility of the extractives, thereby resulting in a shift of the corresponding signals to longer relaxation times. this provided the opportunity to quantify the added extractives in presence of bound water.</abstract>
+   <subject>
+      <topic>Extractives</topic>
+   </subject>
+   <subject>
+      <topic>low-field proton NMR</topic>
+   </subject>
+   <subject>
+      <topic>relaxation time</topic>
+   </subject>
+   <subject>
+      <topic>southern pine</topic>
+   </subject>
+   <subject>
+      <topic>wood</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Journal of Wood Chemistry and Technology, Vol. 27: 35-47</title>
+      </titleInfo>
+      <part>
+         <text type="year">2007</text>
+         <text type="month">12</text>
+         <text type="day">04</text>
+         <extent unit="pages">
+            <start>003</start>
+            <end>003</end>
+            <total>003</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi"/>
+   <location>
+      <url>http://dx.doi.org/</url>
+   </location>
+   <identifier type="treesearch">1354</identifier>
+   <identifer type="treesearch-pub">29089</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29089</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29089.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29089</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

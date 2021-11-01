@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>A method countries can use to estimate changes in carbon stored in harvested wood products and the uncertainty of such estimates</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Kenneth E.</namePart>
+      <namePart type="family">Skog</namePart>
+      <displayForm>Skog, Kenneth E.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Kim</namePart>
+      <namePart type="family">Pingoud</namePart>
+      <displayForm>Pingoud, Kim</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">James E.</namePart>
+      <namePart type="family">Smith</namePart>
+      <displayForm>Smith, James E.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, 

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Forest products research and development organizations in a worldwide setting: A review of structure, governance, and measures of performance of organizations outside the United States</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Paul V.</namePart>
+      <namePart type="family">Ellefson</namePart>
+      <displayForm>Ellefson, Paul V.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Michael A.</namePart>
+      <namePart type="family">Kilgore</namePart>
+      <displayForm>Kilgore, Michael A.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Kenneth E.</namePart>
+      <namePart type="family">Skog</namePart>
+      <displayForm>Skog, Kenneth E.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Christopher D.</namePart>
+      <namePart type="family">Risbrudt</namePart>
+      <displayForm>Risbrudt, Christopher D.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-25</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Located in 23 countries, 40 forest-products research and development organizations outside the United States were reviewed in 2004 and 2005. The intent was to obtain a better understanding of how such organizations are structured and administered and their performance judged. Investing over $600 million annually, the 40 organizations employed 7,000 to 7,500 scientists and supporting staff. Especially noteworthy about the organizations are the many ways in which they identify themselves (such as institutes, laboratories, centers); their long history of sustained involvement in forest products research; and their movement from public to private ownership (whole or in part). The distinction between public and private sector responsibility for research is blurry with these organizations, as often they have public sponsorship, yet private operation and management. They offer a wide range of services to clients yet have complex ownership and partnering arrangements. Their organizational structures are seemingly scrambled with forest product research subunits located within larger parent organizations (with broad multisector research responsibilities) and specialized services to a single major group of clients. These organizations have an intense desire to meet the needs of clients, and feature the following: synthesis of existing information as an important service; fees charged for services provided; strategic interest in clients located throughout the world; educational and degree-granting activities; multiple sources of income and revenue; diverse tandards for measuring performance; adept response to broad economic-social changes; multiple location of physical facilities; and differing degrees of publicly available information describing mission and operation of organizations.</abstract>
+   <subject>
+      <topic>forest products research</topic>
+   </subject>
+   <subject>
+      <topic>research organizations</topic>
+   </subject>
+   <subject>
+      <topic>organization structure</topic>
+   </subject>
+   <subject>
+      <topic>conduct and performance</topic>
+   </subject>
+   <subject>
+      <topic>research institutes</topic>
+   </subject>
+   <subject>
+      <topic>management</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>General Technical Report (GTR)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>172</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">25</text>
+         <extent unit="pages">
+            <start>.004</start>
+            <end>.004</end>
+            <total>.004</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-GTR-172</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-GTR-172</url>
+   </location>
+   <identifier type="treesearch">2189</identifier>
+   <identifer type="treesearch-pub">29843</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29843</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29843.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29843</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

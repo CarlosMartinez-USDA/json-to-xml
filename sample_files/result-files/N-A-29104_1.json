@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>Rapid analysis of inner and outer bark composition of southern yellow pine bark from industrial sources</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Chi-Leung</namePart>
+      <namePart type="family">So</namePart>
+      <displayForm>So, Chi-Leung</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">Thomas L.</namePart>
+      <namePart type="family">Eberhardt</namePart>
+      <displayForm>Eberhardt, Thomas L.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Southern Research Station, Utilization of Southern Forest Resources , 200 W.T. Weaver Blvd. Asheville, NC 28804-3454</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>SRS<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-12-10</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Differences in bark chemistry between inner and outer bark are well known and may affect the suitability of various bark supplies for a particular application. Accordingly, there is a need for quality control protocols to assess variability and predict product yields. Southern yellow pine bark samples from two industrial sources were separated into inner and outer bark tissues and used to prepare both predetermined and random bark compositions for analysis. Near infrared (NIR) spectroscopy, coupled with multivariate analysis, was successfully used to develop models to predict relative amounts of inner bark. Application of mathematical treatments to the NIR data improved the calibration performance leading to improved predictions for the test samples. Results presented here show promise for the further development of this technique as a means to provide rapid and accurate predictions of the quality of bark obtainable from industrial sources.</abstract>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Holz Als Roh- und Werkstoff, Vol. 64: 463-467</title>
+      </titleInfo>
+      <part>
+         <text type="year">2007</text>
+         <text type="month">12</text>
+         <text type="day">10</text>
+         <extent unit="pages">
+            <start>2723112</start>
+            <end>2723112</end>
+            <total>2723112</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi"/>
+   <location>
+      <url>http://dx.doi.org/</url>
+   </location>
+   <identifier type="treesearch">1521</identifier>
+   <identifer type="treesearch-pub">29104</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29104</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-29104.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-29104</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>

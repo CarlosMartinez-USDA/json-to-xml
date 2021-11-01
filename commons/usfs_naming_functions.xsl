@@ -12,7 +12,7 @@
     xmlns="http://www.loc.gov/mods/v3"
     xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
     xmlns:local="http://local_functions"
-    xmlns:usfs="http://usfs_treeresearch"
+    xmlns:usfs="http://usfs_treesearch"
     exclude-result-prefixes="xs xd local usfs"
     version="2.0">
     
@@ -102,12 +102,13 @@
     </xd:desc>
     <xd:param name="typeOfTitle"/>
 </xd:doc>
-<xsl:function name="local:seriesToAbbrv" as="xs:string" xmlns:local="http://local_functions">
+<xsl:function name="local:seriesToAbbrv" as="xs:string*" xmlns:local="http://local_functions">
     <xsl:param name="typeOfTitle"/>
     <xsl:if test="$typeOfTitle != ''"/>
-    <xsl:value-of select="if ($tree_nodes/usfs:treesearch/../usfs:seriesPub/usfs:treePub[@series])  
+    [<xsl:value-of select="$tree_nodes/usfs:treesearch/usfs:treesearchPublications/usfs:treePub[usfs:pubTitle = $typeOfTitle]/usfs:abbrv"/>  
+   <!-- <xsl:value-of select="if ($tree_nodes/usfs:treesearch/../usfs:seriesPub/usfs:treePub[@series])  
         then ($tree_nodes/usfs:treesearch/usfs:treesearchPublications/usfs:treePub[usfs:pubTitle = $typeOfTitle]/usfs:abbrv)    
-        else ($typeOfTitle)"/>
+        else ($typeOfTitle)"/>-->
 </xsl:function>
 
 <xd:doc scope="component">

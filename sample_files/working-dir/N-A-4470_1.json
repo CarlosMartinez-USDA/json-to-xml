@@ -21,6 +21,7 @@
    <originInfo>
       <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-23</dateIssued>
    </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
    <language>
       <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
       <languageTerm type="text">English</languageTerm>
@@ -29,19 +30,24 @@
    <subject>
       <topic>Timber</topic>
    </subject>
-   <relatedItem>
-      <relatedItem type="series">
-         <titleInfo type="abbreviated">
-            <title/>
-         </titleInfo>
-         <part>
-            <extent unit="pages">
-               <start/>
-               <end/>
-               <total/>
-            </extent>
-         </part>
-      </relatedItem>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>General Technical Report (GTR)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>524</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">23</text>
+         <extent unit="pages">
+            <start>12011</start>
+            <end>12011</end>
+            <total>12011</total>
+         </extent>
+      </part>
    </relatedItem>
    <identifier type="doi">10.2737/PNW-GTR-524</identifier>
    <location>

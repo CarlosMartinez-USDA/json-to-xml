@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:mods="http://www.loc.gov/mods/v3"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xpath-default-namespace="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd"
+      version="3.7">
+   <titleInfo>
+      <title>The Colville Study: wood utilization for ecosystem management: preliminary results of study of product potential from small-diameter stands.</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">S.</namePart>
+      <namePart type="family">Willits</namePart>
+      <displayForm>Willits, S.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">R. J.</namePart>
+      <namePart type="family">Barbour</namePart>
+      <displayForm>Barbour, R. J.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">J.</namePart>
+      <namePart type="family">McNeel</namePart>
+      <displayForm>McNeel, J.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">R. D.</namePart>
+      <namePart type="family">Fight</namePart>
+      <displayForm>Fight, R. D.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">G. C.</namePart>
+      <namePart type="family">Myers</namePart>
+      <displayForm>Myers, G. C.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+      <namePart type="given">A.</namePart>
+      <namePart type="family">Mason</namePart>
+      <displayForm>Mason, A.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>FPL<typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2020-08-12</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The Colville Study was developed in 1994 to identify and evaluate a series of management options for achieving ecosystem objectives in dense stands of small-diameter trees while also producing wood products. The Colville National Forest selected the Rocky II Timber Sale as an example of this type of stand that needed management to achieve the following goals: (1) create late successional forest structure, (2) decrease forest health risk from fire, insects, and disease, (3) improve wildlife habitat by providing large green trees and snags, and (4) improve stand aesthetics by decreasing stand density. The Colville Study was divided into four technical focus areas: Silviculture and Ecology, Forest Operations, Timber Conversion, and Economics. Results of each technical focus area indicate that (1) vegetative management activities are necessary to achieve the ecosystem goals, (2) there are alternative harvesting systems for removing the timber in an ecologically sound manner but costs need to be considered, (3) both species and material size are important in the recovery of wood products, and (4) financial analysis needs to incorporate all of these factors and many more to effectively evaluate the relative merchantability of different types of treatments.</abstract>
+   <subject>
+      <topic>Insects</topic>
+   </subject>
+   <subject>
+      <topic>Ecology</topic>
+   </subject>
+   <subject>
+      <topic>Economics</topic>
+   </subject>
+   <subject>
+      <topic>Forest management</topic>
+   </subject>
+   <subject>
+      <topic>Timber</topic>
+   </subject>
+   <subject>
+      <topic>Wood utilization</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo>
+         <title>Research Paper (RP)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>559</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2020</text>
+         <text type="month">08</text>
+         <text type="day">12</text>
+         <extent unit="pages">
+            <start>.006</start>
+            <end>.006</end>
+            <total>.006</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RP-559</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RP-559</url>
+   </location>
+   <identifier type="treesearch">2737</identifier>
+   <identifer type="treesearch-pub">5992</identifer>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/5992</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/A-5992.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <originalFile>A-5992</originalFile>
+      <workingDirectory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/sample_files/result-files/</workingDirectory>
+   </extension>
+</mods>
