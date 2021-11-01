@@ -53,12 +53,15 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 ```
  ###### *If the UML does not render, the image below is how the code above would render using Mermaid.
 
-# Preparing JSON Files for XSLT Transformation
+<a href="https://ibb.co/bbkKx8n"><img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0" /></a>
 
-1.  Open the source files folder
-2.  Locate the following shell scripts (a)merge_json.sh (b)data_amp_add.sh
-3.  Run the merge_json.sh
-4.  Run the data_amp_add.sh
+ ## Preparing JSON Files for XSLT Transformation
+
+1.  Open the source_files folder
+2.  Locate the following shell scripts (a)merge_json.sh 
+ (b)data_amp_add.sh
+4.  Run the merge_json.sh
+5.  Run the data_amp_add.sh
 
 StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
 
@@ -372,5 +375,5 @@ A --> C(Round Rect)
 B --> D{Rhombus}
 C --> D
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjE3OTQ4ODg5XX0=
+eyJoaXN0b3J5IjpbLTQzOTA2ODA0M119
 -->
