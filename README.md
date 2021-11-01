@@ -11,8 +11,7 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 - [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd) : (Metadata Object Description Schema)
  ######  *Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element. 
 
-### f Transformation
-
+### JSON to MODS Transformation Flowchart
 ```mermaid
 flowchart LR
 A[JSON] --> B((XSLT3.0))
@@ -166,7 +165,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODQ1MzgwNTksLTIwNzk2OTA3MDgsMT
-AzNjU4MzUwNiwxMTg2MzkxMTY3LDEzMzA4Nzk2OTIsODg4MDg3
-NzE3LDUxMDE4MTQxNSwxMzU1MjMxNDJdfQ==
+eyJoaXN0b3J5IjpbMTEwMTk0MzIwMywtMjA3OTY5MDcwOCwxMD
+M2NTgzNTA2LDExODYzOTExNjcsMTMzMDg3OTY5Miw4ODgwODc3
+MTcsNTEwMTgxNDE1LDEzNTUyMzE0Ml19
 -->
