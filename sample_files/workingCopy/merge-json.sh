@@ -1,1 +1,0 @@
-cat *.json > merged_`date +%d%m%Y%H%M`.json

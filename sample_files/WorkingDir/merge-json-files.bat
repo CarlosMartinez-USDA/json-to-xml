@@ -1,1 +1,0 @@
-type *.json > merged.json

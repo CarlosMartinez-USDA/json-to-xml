@@ -2,7 +2,7 @@
 <!DOCTYPE transform [
           <!ENTITY % predefined PUBLIC
          "-//W3C//ENTITIES Predefined XML//EN///XML"
-         "C:/Users/carlos.martinez/Desktop/json-to-xml/ent/predefined.ent"
+         "https://www.w3.org/2003/entities/2007/predefined.ent"
        >
        %predefined;
 ]>
@@ -16,22 +16,34 @@
     exclude-result-prefixes="f fn local math mods saxon usfs xd xs xsi">
 
     <xsl:output method="json" name="archive"/>
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/> <!--saxon:next-in-chain="fix_characters.xsl"/>
+    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/> 
+    <!--saxon:next-in-chain="fix_characters.xsl"/> -->
 
-    --><xsl:include href="commons/common.xsl"/>
+    <!--includes-->
+    <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
     <xsl:include href="commons/usfs_naming_functions.xsl"/>
     <xsl:include href="commons/params-cm.xsl"/>
     <xsl:strip-space elements="*"/>
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
-   
+    
    <!--Root template for local testing-->
     <xd:doc>
         <xd:desc>
-            <xd:p><xd:b>For local testing in Oxygen</xd:b></xd:p>
-                <xd:p>Comment this template or remove entirely before putting into production</xd:p>
+            <xd:p><xd:b>Root template for local testing</xd:b></xd:p>
+            <xd:ul>
+                <xd:p>This stylesheet may be run without presetting any parameters.</xd:p>
+                <xd:li>
+                    <xd:p><xd:b>Step 1:</xd:b>Choose the JSON file you wish to transform.</xd:p>
+                </xd:li>
+                <xd:li>
+                    <xd:p><xd:b>Step 2:</xd:b> Apply the transformation scenario or select a
+                        debugging button to begin.</xd:p>
+                </xd:li>                                
+                <xd:li>
+                    <xd:p><xd:b>Step 3:</xd:b>Comment out this template or remove entirely before
+                        putting into production.</xd:p>
+                </xd:li>
+            </xd:ul>
         </xd:desc>
     </xd:doc>
     <xsl:template match="data">
