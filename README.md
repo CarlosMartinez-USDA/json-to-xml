@@ -13,14 +13,9 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 ####  Te 
 
 ### This flowchart illustrates the workflow of the transformation
+
 ```mermaid
-flowchart LR 
-id1(Start)-->id2(Stop) 
-style id1 fill:#f9f,stroke:#333,stroke-width:4px 
-style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
-```
-```mermaid
-graph LR
+flowchart LR
 A[JSON] --> B((XSLT3.0))
 B-->B.1((XPath 3.1))-->C
 B --transforms_to--> C{XML}
@@ -28,7 +23,7 @@ C --maps to--> D[MODS 3.7]
 style A fill:#f9f,stroke:#333,stroke-width:4px 
 style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style B.1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
-style C fill:#9fc5e8, stroke:#333, stroke-dasharray: 5 5
+style C fill:#9fc5e8, stroke:#f66, stroke-dasharray: 5 5
 style D fill:#9fc5e8,stroke:#333,stroke-width:4px 
 
 ```
@@ -172,7 +167,7 @@ B --> D{Rhombus}
 C --> D
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzk2OTA3MDgsMTAzNjU4MzUwNiwxMT
-g2MzkxMTY3LDEzMzA4Nzk2OTIsODg4MDg3NzE3LDUxMDE4MTQx
-NSwxMzU1MjMxNDJdfQ==
+eyJoaXN0b3J5IjpbMTg1ODA1ODMzMiwtMjA3OTY5MDcwOCwxMD
+M2NTgzNTA2LDExODYzOTExNjcsMTMzMDg3OTY5Miw4ODgwODc3
+MTcsNTEwMTgxNDE1LDEzNTUyMzE0Ml19
 -->
