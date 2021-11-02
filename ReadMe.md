@@ -76,8 +76,8 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 ## Issues
 
 ##### ISSUE #1: Page Numbering
-1.	Page numbers are not consistently correct.
-a.	When the following JSON string key values are present: 
+#### 1.	Page numbers are not consistently correct.	
+ - When the following JSON string key values are present: 
 	-	pub_start_page and, 
 	-	pub_end_page,
 	-	pub_page. 
@@ -87,7 +87,7 @@ a.	When the following JSON string key values are present:
 	-  While they mostly do contain some pagination information
 	- It is difficult to get the correct data from a string of text
 ------
-#### ISSUE #2
+##### ISSUE #2
 2.	Extraneous “station_id” acronym appearing just outside the last author name tag. 
  -  Have not been able to determine it’s origin. 
  -  See screenshot below
@@ -96,6 +96,6 @@ a.	When the following JSON string key values are present:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTE1OTUxNTYyLDc0MzM0NDkzMywxOTExOT
-c1NjQ1XX0=
+eyJoaXN0b3J5IjpbLTE4MTE2MjE4OTcsNzQzMzQ0OTMzLDE5MT
+E5NzU2NDVdfQ==
 -->
