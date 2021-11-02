@@ -87,8 +87,8 @@ Page numbers are not consistently correct.
 	-  While they mostly do contain some pagination information
 	- It is difficult to get the correct data from a string of text
 ------
-##### ISSUE #2
-2.	Extraneous “station_id” acronym appearing just outside the last author name tag. 
+# ISSUE #2: random "station_id" acronym
+Extraneous “station_id” acronym appearing just outside the last author name tag. 
  -  Have not been able to determine it’s origin. 
  -  See screenshot below
 
@@ -96,6 +96,6 @@ Page numbers are not consistently correct.
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMDQ3NTQ0NTQsNzQzMzQ0OTMzLDE5MT
-E5NzU2NDVdfQ==
+eyJoaXN0b3J5IjpbMTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMT
+k3NTY0NV19
 -->
