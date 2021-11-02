@@ -33,7 +33,8 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 *Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element.
 
 ## JSON to MODS Transformation Flowchart
-mrmadflowchart LR
+```mermaid
+flowchart LR
 A[JSON] --> B((XSLT3.0))
 B-->B.1((XPath 3.1))-->C
 B --transforms_to--> C{XML}
@@ -78,5 +79,5 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 	
 (2) Random station_id appearing at the end of the author names section. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzAxNzAwNjldfQ==
+eyJoaXN0b3J5IjpbMTkxMTk3NTY0NV19
 -->
