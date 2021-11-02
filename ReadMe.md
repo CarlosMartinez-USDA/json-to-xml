@@ -15,12 +15,6 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 
 ###### * Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element.
 
-
-flowchart LR 
-id1(Start)-->id2(Stop) 
-style id1 fill:#f9f,stroke:#333,stroke-width:4px 
-style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5 
-
 # JSON-to-MODS XSLT Transformation
 
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for ingest into Unified Repository.
