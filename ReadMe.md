@@ -82,18 +82,18 @@ a.	When the following JSON string key values are present:
 	-	pub_end_page,
 	-	pub_page. 
 2.	No issues are present with page numbers.
-2.	When they are not, they must be derived from the “pub_publicaton” or “citation” key values. 
-i.	Both of these files are long strings of text, with inconsistent formatting.
-ii.	While they mostly do contain some pagination information,
-iii.	It is difficult to get the correct data from a string of text that contains .
-2.	Extraneous “station_id” acronym appearing just outside the last author name tag. 
-a.	Have not been able to determine it’s origin. 
-b.	See screenshot below
+3.	When they are not, they must be derived from the “pub_publicaton” or “citation” key values. 
+	- Both of these files are long strings of text, with inconsistent formatting.
+	-  While they mostly do contain some pagination information
+	- It is difficult to get the correct data from a string of text that contains .
+4.	Extraneous “station_id” acronym appearing just outside the last author name tag. 
+ -  Have not been able to determine it’s origin. 
+ -  See screenshot below
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEwNTExNzY2NCw3NDMzNDQ5MzMsMTkxMT
-k3NTY0NV19
+eyJoaXN0b3J5IjpbNjA3MDMzMzUzLDc0MzM0NDkzMywxOTExOT
+c1NjQ1XX0=
 -->
