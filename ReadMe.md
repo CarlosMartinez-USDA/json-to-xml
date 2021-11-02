@@ -91,11 +91,12 @@ Page numbers are not consistently correct.
 Extraneous “station_id” acronym appearing just outside the last author name tag. 
  -  Have not been able to determine it’s origin. 
  -  See screenshot below
+<a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMT
-k3NTY0NV19
+eyJoaXN0b3J5IjpbLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDc0Mz
+M0NDkzMywxOTExOTc1NjQ1XX0=
 -->
