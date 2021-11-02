@@ -73,10 +73,10 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 3) DO NOT set any parameters. This is taken care of by the new testing parameters added to the params-cm.xsl file. 
 4) Run the scenario or choose the debugging button to transform JSON to MODS
 
-## Issues
+# Issues
 
-##### ISSUE #1: Page Numbering
-#### 1.	Page numbers are not consistently correct.	
+## ISSUE #1: Page Numbering
+Page numbers are not consistently correct.	
  - When the following JSON string key values are present: 
 	-	pub_start_page and, 
 	-	pub_end_page,
@@ -96,6 +96,6 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTE2MjE4OTcsNzQzMzQ0OTMzLDE5MT
+eyJoaXN0b3J5IjpbLTIwMDQ3NTQ0NTQsNzQzMzQ0OTMzLDE5MT
 E5NzU2NDVdfQ==
 -->
