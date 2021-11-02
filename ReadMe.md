@@ -74,16 +74,16 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 		i.	pub_start_page and, 
 		ii.	pub_end_page,
 		iii.	pub_page. 
-b.	No issues are present with page numbers.
-c.	When they are not, they must be derived from the “pub_publicaton” or “citation” key values. 
-i.	Both of these files are long strings of text, with inconsistent formatting.
-ii.	While they mostly do contain some pagination information,
-iii.	It is difficult to get the correct data from a string of text that contains .
+	b.	No issues are present with page numbers.
+	c.	When they are not, they must be derived from the “pub_publicaton” or “citation” key values. 
+		i.	Both of these files are long strings of text, with inconsistent formatting.
+		ii.	While they mostly do contain some pagination information,
+		iii.	It is difficult to get the correct data from a string of text that contains .
 2.	Extraneous “station_id” acronym appearing just outside the last author name tag. 
-a.	Have not been able to determine it’s origin. 
-b.	See screenshot below: 
+	a.	Have not been able to determine it’s origin. 
+	b.	See screenshot below: 
  
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxNzI3ODU2OSwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbMTE5MzAzNDg1NywxOTExOTc1NjQ1XX0=
 -->
