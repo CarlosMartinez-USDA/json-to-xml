@@ -11,10 +11,8 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 -   [XPath 3.1](https://www.w3.org/TR/xpath-31/): (XML Path Language)
 -   [XSLT 3.0](https://www.w3.org/TR/xslt-30/): (Extensible Stylesheet Language Transformations)
 -   [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd) : (Metadata Object Description Schema)
-######* Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element.
+######*Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element.
 
-
-flowchart  i(Stat)--(Sto) style  filstroke:#333,stroke-widtheh le i fistroe,troeidtpclorftohar
 # JSON-to-MODS XSLT Transformation
 
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for ingest into Unified Repository.
@@ -47,7 +45,8 @@ style C fill:#9fc5e8, stroke:#f66, stroke-dasharray: 5 5
 style D fill:#9fc5e8,stroke:#333,stroke-width:4px```
 
  ###### *If the UML does not render, the image below is how the code above would render using Mermaid.<ahref="https://ibb.co/bbkKx8n">
- <img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0" /></a> ## Preparing JSON Files for XSLT Transformation1.  Open the source_files folder2.  Locate the following shell scripts	 (a) merge_json.sh 	 (b) data_amp_add.sh3.  Run the merge_json.sh4.  Run the data_amp_add.sh5.  Open a JSON file in Oxygen
+ <img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0"/
+ ></a> ## Preparing JSON Files for XSLT Transformation1.  Open the source_files folder2.  Locate the following shell scripts	 (a) merge_json.sh 	 (b) data_amp_add.sh3.  Run the merge_json.sh4.  Run the data_amp_add.sh5.  Open a JSON file in Oxygen
 
 
 
@@ -79,5 +78,5 @@ pub_start_page**, and 		-  **pub_end_page**		-  or the **pub_page**	(b) No issue
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NjUxMzE5NTMsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbNzQzMzQ0OTMzLDE5MTE5NzU2NDVdfQ==
 -->
