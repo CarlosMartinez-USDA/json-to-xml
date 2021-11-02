@@ -75,8 +75,7 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
 ## Issues
 
-##### ISSUE
-I am working on correcting the issues I outlined in the ReadMe.md file yesterday. 
+##### ISSUE #1: Page Numbering
 1.	Page numbers are not consistently correct.
 a.	When the following JSON string key values are present: 
 	-	pub_start_page and, 
@@ -87,7 +86,8 @@ a.	When the following JSON string key values are present:
 	- Both of these files are long strings of text, with inconsistent formatting.
 	-  While they mostly do contain some pagination information
 	- It is difficult to get the correct data from a string of text
--------
+------
+#### ISSUE #2
 2.	Extraneous “station_id” acronym appearing just outside the last author name tag. 
  -  Have not been able to determine it’s origin. 
  -  See screenshot below
@@ -96,6 +96,6 @@ a.	When the following JSON string key values are present:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU0OTkyMTk0NSw3NDMzNDQ5MzMsMTkxMT
-k3NTY0NV19
+eyJoaXN0b3J5IjpbNTE1OTUxNTYyLDc0MzM0NDkzMywxOTExOT
+c1NjQ1XX0=
 -->
