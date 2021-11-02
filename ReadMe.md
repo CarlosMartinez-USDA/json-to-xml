@@ -68,13 +68,13 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
 ## Issues
 1) Page numbers are not consistently correct.
-	(a) When JSON key values are present:
+	a) When JSON key values are present:
 		-  **pub_start_page**, and 
 		-  **pub_end_page**
 		-  or the **pub_page**
-	(b) No issues are present with page numbers
-	(c ) When they are not, they must be derived from the **pub_publicaton** or **citation** key values.
+	b) No issues are present with page numbers
+	c) When they are not, they must be derived from the **pub_publicaton** or **citation** key values.
 		- These are strings of text with inconsistent formatting. 
 		- It is difficult to get the correct data from them each time.
 	
-(2) Random station_id appearing at the end of the author names section. 
+2) Random station_id appearing at the end of the author names section. 
