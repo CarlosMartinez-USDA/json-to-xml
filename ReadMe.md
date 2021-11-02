@@ -33,7 +33,8 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 *Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element.
 
 ## JSON to MODS Transformation Flowchart
-```mermad
+
+```mermaid
 flowchart LR
 A[JSON] --> B((XSLT3.0))
 B-->B.1((XPath 3.1))-->C
@@ -43,11 +44,10 @@ style A fill:#f9f,stro33stro:4px
 style B fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style B.1 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5
 style C fill:#9fc5e8, stroke:#f66, stroke-dasharray: 5 5
-style D fill:#9fc5e8,stroke:#333,stroke-width:4px ``` ###### *If the UML does not render, the image below is how the code above would render using Mermaid.<ahref="
+style D fill:#9fc5e8,stroke:#333,stroke-width:4px```
 
-
-
- https://ibb.co/bbkKx8n"><img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0" /></a> ## Preparing JSON Files for XSLT Transformation1.  Open the source_files folder2.  Locate the following shell scripts	 (a) merge_json.sh 	 (b) data_amp_add.sh3.  Run the merge_json.sh4.  Run the data_amp_add.sh5.  Open a JSON file in Oxygen
+ ###### *If the UML does not render, the image below is how the code above would render using Mermaid.<ahref="https://ibb.co/bbkKx8n">
+ <img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0" /></a> ## Preparing JSON Files for XSLT Transformation1.  Open the source_files folder2.  Locate the following shell scripts	 (a) merge_json.sh 	 (b) data_amp_add.sh3.  Run the merge_json.sh4.  Run the data_amp_add.sh5.  Open a JSON file in Oxygen
 
 
 
@@ -79,5 +79,5 @@ pub_start_page**, and 		-  **pub_end_page**		-  or the **pub_page**	(b) No issue
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjk2NDI3Njc4LDE5MTE5NzU2NDVdfQ==
+eyJoaXN0b3J5IjpbLTE2NjUxMzE5NTMsMTkxMTk3NTY0NV19
 -->
