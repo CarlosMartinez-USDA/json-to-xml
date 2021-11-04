@@ -77,14 +77,13 @@ The primary identifiers found in the Treesearch metadata are: doi, product_id, a
 ### MODS Location tag contains information on providing url  access[*](https://www.loc.gov/standards/mods/userguide/location.html#url)
 
 **Definition** - Indicates the type of resource that the user will access when following the URL link.
-Application
-####### *This attribute is particularly useful to provide a flag in the context of OAI service providers harvesting metadata.*
+**Application** 
+(_This attribute is particularly useful to provide a flag in the context of OAI service providers harvesting metadata._)
  #### The following values may be used with the access attribute:
  - **preview** – Indicates a link to a thumbnail or snippet of text.
  - **raw object** – Indicates a direct link to the object described (e.g., a jpg or pdf document). Used only when the object is represented by a single file.
 - **object in context** – Indicates a link to the object within the context of its environment (with associated metadata, navigation, etc.)
-access
-https://www.loc.gov/standards/mods/userguide/location.html#url
+######  Information related to urhttps://www.loc.gov/standards/mods/userguide/location.html#url
 # Issues
 
 ## ISSUE #1: Page Numbering
@@ -110,6 +109,6 @@ Extraneous “station_id” acronym appearing just outside the last author name 
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMyMjc2NjM4OSwtNDY3MzUwNTY3LDE3OT
+eyJoaXN0b3J5IjpbMTIzMTcxNzc0NiwtNDY3MzUwNTY3LDE3OT
 czNTkzNzAsNzQzMzQ0OTMzLDE5MTE5NzU2NDVdfQ==
 -->
