@@ -93,8 +93,8 @@ Extraneous “station_id” acronym appearing just outside the last author name 
  -  See screenshot below
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 # Usage of Identifiers
-The primary identifiers found in the Treesearch metadata are: 
-access
+The primary identifiers found in the Treesearch metadata are: doi, product_id, and treesearch_pub_id. From these location elements to the surrogate record and the resource itself are built to provide access. 
+## access
 https://www.loc.gov/standards/mods/userguide/location.html#url
 
 Definition - Indicates the type of resource that the user will access when following the URL link.
@@ -118,6 +118,6 @@ object in context – Indicates a link to the object within the context of its e
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzU4NTk2MTI2LC00NjczNTA1NjcsMTc5Nz
-M1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbLTk1OTY3NDksLTQ2NzM1MDU2NywxNzk3Mz
+U5MzcwLDc0MzM0NDkzMywxOTExOTc1NjQ1XX0=
 -->
