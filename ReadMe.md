@@ -73,8 +73,12 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 3) DO NOT set any parameters. This is taken care of by the new testing parameters added to the params-cm.xsl file. 
 4) Run the scenario or choose the debugging button to transform JSON to MODS
 # MODS: Identifier and Location 
-The primary identifiers found in the Treesearch metadata are: doi, product_id, and treesearch_pub_id. From these location elements to the surrogate record and the resource itself are built to provide access. 
-## MODS Location tag contains information on providing url  access[*](https://www.loc.gov/standards/mods/userguide/location.html#url)
+
+The primary identifiers found in the Treesearch metadata are: ***doi, product_id, and treesearch_pub_id.*** 
+
+From these **location** elements to the surrogate record and the resource itself are built to provide access. 
+
+## MODS:location and url access[*](https://www.loc.gov/standards/mods/userguide/location.html#url)
 
 **Definition** - Indicates the type of resource that the user will access when following the URL link.
 **Application** 
@@ -109,6 +113,6 @@ Extraneous “station_id” acronym appearing just outside the last author name 
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNzAyMzA2NiwtNDY3MzUwNTY3LDE3OT
-czNTkzNzAsNzQzMzQ0OTMzLDE5MTE5NzU2NDVdfQ==
+eyJoaXN0b3J5IjpbNzg3OTQ1MDksLTQ2NzM1MDU2NywxNzk3Mz
+U5MzcwLDc0MzM0NDkzMywxOTExOTc1NjQ1XX0=
 -->
