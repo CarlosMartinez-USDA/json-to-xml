@@ -64,7 +64,7 @@
     </xd:desc>
     <xd:param name="unitNum">four-digit number code to match against</xd:param>    
 </xd:doc>      
-<xsl:function name="local:unitNumToName" as="xs:string?" xmlns:local="http://local_functions">
+<xsl:function name="local:unitNumberToName" as="xs:string?" xmlns:local="http://local_functions">
     <xsl:param name="unitNum"/>    
     <xsl:if test="$unitNum != ''"/>
     <xsl:value-of select="$tree_nodes/usfs:treesearch/usfs:researchStations/usfs:station/usfs:researchUnits/usfs:researchUnit[usfs:unitNumber=$unitNum]/usfs:unitName"/> 

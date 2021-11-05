@@ -7,19 +7,15 @@
        %predefined;
 ]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="3.0"
-    xmlns:mods="http://www.loc.gov/mods/v3" xmlns:f="http://functions"
-    xmlns:fn="http://www.w3.org/2005/xpath-functions"
-    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:local="http://local_functions"
-    xmlns:saxon="http://saxon.sf.net/" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfs_treeresearch"
-    exclude-result-prefixes="f fn local math mods saxon usfs xd xs xsi">
+    xmlns:mods="http://www.loc.gov/mods/v3" xmlns:f="http://functions" xmlns:fn="http://www.w3.org/2005/xpath-functions"
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:local="http://local_functions" xmlns:saxon="http://saxon.sf.net/"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xd="http://www.oxygenxml.com/ns/doc/xsl"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:usfs="http://usfsreseaerch" 
+    exclude-result-prefixes="f fn math mods saxon local usfs xd xs xsi">
 
-    <xsl:output method="json" name="archive"/>
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/> 
-    <!--saxon:next-in-chain="fix_characters.xsl"/> -->
-
-    <!--includes-->
+    <xsl:output method="json" indent="yes" encoding="UTF-8" name="archive"/>
+    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original" saxon:next-in-chain="fix_characters.xsl"/>
+    
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
     <xsl:include href="commons/usfs_naming_functions.xsl"/>
@@ -54,11 +50,9 @@
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" media-type="text/xml"
             href="{$working_dir}N-{$original_filename}_{position()}.xml" format="original">
             <mods>
-                <xsl:namespace name="mods">http://www.loc.gov/mods/v3</xsl:namespace>
-                <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
+<!--                <xsl:attribute name="{'xmlns'}">http://www.loc.gov/mods/v3</xsl:attribute>-->
                 <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
-                <xsl:attribute name="xsi:schemaLocation"
-                    select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
+                <xsl:attribute name="xsi:schemaLocation" select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
                 <xsl:attribute name="version">3.7</xsl:attribute>
                 <xsl:apply-templates select="json-to-xml(.)"/>
             </mods>
@@ -99,8 +93,7 @@
     <xsl:template match="map" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <!-- titleInfo/title and author tags  -->
         <xsl:apply-templates select="./string[@key = 'title']"/>
-        <xsl:apply-templates select="./array[@key = 'pub_authors']"/>
-        <xsl:apply-templates select="./string[@key = 'primary_station']" mode="#default"/>
+        <xsl:apply-templates select="./array[@key = 'pub_authors'] | ./array[@key = 'primary_station']"/>
 
         <!--default values-->
         <typeOfResource>text</typeOfResource>
@@ -163,16 +156,27 @@
             <xd:p><xd:b>usage</xd:b> with a value of "primary."</xd:p>
         </xd:desc>
     </xd:doc>
-    <xsl:template match="map/array[@key = 'pub_authors']"
+    <xsl:template match="map/array[@key = 'pub_authors'] | map/array[@key = 'primary_station']"
         xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <!-- map/string[@key = 'primary_station']" mode="#default"-->
         <xsl:choose>
-            <xsl:when test="count(map/string[@key = 'name']) = 0">
-                <xsl:call-template name="corporate"/>
+            <xsl:when test="map/string[@key = 'primary_station']">
+                <name type="corporate">
+                    <namePart>
+                        <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
+                        <xsl:value-of select="local:acronymToName(.)"/>
+                        <xsl:value-of select="local:acronymToAddress(.)"/>
+                    </namePart>
+                </name>
             </xsl:when>
             <xsl:otherwise>
-                                 
+                <xsl:for-each select="map[position()]">
+                <name type="personal">
+                    <xsl:if test="position() = 1 and count(map/preceding-sibling::string[@key = 'name']) = 0">
+                        <xsl:attribute name="usage">primary</xsl:attribute>
+                    </xsl:if>
                     <xsl:call-template name="name-info"/>
+                </name>
+                </xsl:for-each>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -199,15 +203,7 @@
         </xd:desc>
     </xd:doc>
     <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <xsl:variable name="acronym" select="map[position()]/string[@key = 'station_id']"/>
-        <xsl:variable name="unitNum" select="map[position()]/string[@key = 'unit_id']"/>
-        <xsl:variable name="unitAcronym" select="map[position()]/string[@key = 'unit_id']"/>
         <!--author given and family names-->
-        <xsl:for-each select="map[position()]">
-            <name type="personal">
-                <xsl:if test="position() = 1 and count(map/preceding-sibling::string[@key = 'name']) = 0">   
-                    <xsl:attribute name="usage">primary</xsl:attribute>
-                </xsl:if>     
             <xsl:if test="./string[@key = 'name']">
                 <namePart type="given">
                     <xsl:value-of
@@ -224,31 +220,29 @@
             <!--affiliation-->
             <xsl:if test="./string[@key = 'station_id'] != ''">
                 <affiliation>
-                    <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
+                    <xsl:text>United States Department of Agriculture, </xsl:text>
+                    <xsl:text>Forest Service, </xsl:text>
                     <xsl:value-of select="local:acronymToName(./string[@key = 'station_id'])"/>
-                    <xsl:text>, </xsl:text>
+                   <xsl:text>, </xsl:text>
                     <xsl:choose>
-                        <xsl:when test="number(./string[@key = 'unit_id']) > 0">
-                            <xsl:value-of select="local:unitNumToName(./string[@key = 'unit_id'])"/>
-                            <xsl:text>, </xsl:text>
-                        </xsl:when>
+                    <xsl:when test="./string[@key='unit_id']!=''">
+                        <xsl:value-of select="local:unitNumberToName(./string[@key = 'unit_id'])"/>
+                        <xsl:text>, </xsl:text>                        
+                    </xsl:when>
                         <xsl:otherwise>
-                            <xsl:if test="string(./string[@key = 'unit_id'] !='')">
-                            <xsl:value-of
-                                select="local:unitAcronymToName(./string[@key = 'unit_id'])"/>
-                            <xsl:text>, </xsl:text>
-                            </xsl:if>
+                    <!--<xsl:when test="./string[@key='unit_id']!=''">-->
+                        <xsl:value-of select="local:unitAcronymToName(./string[@key = 'unit_id'])"/>
+                        <xsl:text>, </xsl:text>
                         </xsl:otherwise>
-                        
+                    <!--</xsl:when>-->
                     </xsl:choose>
+                    
                     <xsl:value-of select="local:acronymToAddress(./string[@key = 'station_id'])"/>
-                </affiliation>
+                 </affiliation>
             </xsl:if>
             <role>
                 <roleTerm type="text">author</roleTerm>
             </role>
-            </name>
-        </xsl:for-each>
     </xsl:template>
 
 
@@ -494,15 +488,72 @@
             <xsl:if test="(./string[@key = 'modified_on'] != ' ')">
                 <xsl:apply-templates select="./string[@key = 'modified_on']" mode="part"/>
             </xsl:if>
-            <extent unit="pages">
-                <xsl:call-template name="pages"/>
-            </extent>
+          <xsl:call-template name="pages"/>           
         </part>
 
     </xsl:template>
 
 
     <xd:doc>
+        <xd:desc>
+            <xd:p>Matches "pub_page_start" and "pub_page_end" stiing key values</xd:p>
+            <xd:p>If not, looks for a hyphenated value within the "pub_page" field, and performs the math</xd:p>
+            <xd:p>When none of these fields used, no page numbers appear within the output</xd:p>
+            <xd:p>Below a commmented out template runs through six conditions in an attempt to capture fields</xd:p>
+            <xd:p>If all page numbers are desired, the citation field or th e</xd:p>
+        </xd:desc>
+        <xd:param name="start_page"/>
+        <xd:param name="end_page"/>
+    </xd:doc>
+    <xsl:template name="pages" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <xsl:param name="start_page" select="/fn:map/fn:string[@key = 'pub_page_start']"/>
+    <xsl:param name="end_page" select="/fn:map/fn:string[@key = 'pub_page_end']"/>
+      
+        <xsl:choose>
+        <xsl:when test="$start_page and $end_page">
+    <xsl:sequence>
+        <extent unit="pages">
+        <start>
+            <xsl:value-of select="$start_page"/>
+        </start>
+        <end>
+            <xsl:value-of select="$end_page"/>
+        </end>
+        <total>
+            <xsl:value-of select="f:calculateTotalPgs($start_page, $end_page)"/>
+        </total>
+        </extent>
+    </xsl:sequence>          
+        </xsl:when>            
+            <xsl:when test="contains(/map/string[@key = 'pub_page'], '-')">
+                <extent unit="pages">
+                <xsl:analyze-string select="/map/string[@key = 'pub_page']" regex="(\d+)(\-)(\d+)">
+                    <xsl:matching-substring>
+                        <start>
+                        <xsl:number value="regex-group(1)"/>
+                        </start>
+                        <end>
+                        <xsl:number value="regex-group(3)"/>
+                        </end>
+                        <total>
+                        <xsl:value-of select="f:calculateTotalPgs(regex-group(1),regex-group(3))"/>
+                        </total>   
+                    </xsl:matching-substring>                       
+                    <xsl:non-matching-substring>
+                        
+                    </xsl:non-matching-substring>                  
+                </xsl:analyze-string>
+                </extent>
+            </xsl:when>
+        </xsl:choose>
+        
+</xsl:template>
+    
+   <!-- 
+       Metadata withing Treesearch rarely uses the page numbering fields:
+       "pub_page_start, pub_page_end, or pub_page". 
+       If further development for this XSLT is allowed the following template is where to start-->
+   <!--<xd:doc>
         <xd:desc/>
         <xd:param name="start_page"/>
         <xd:param name="end_page"/>
@@ -522,7 +573,7 @@
             select="substring-before(substring-after(./string[@key = 'pub_publication'], '\:'), '\.&#x22;,')"/>
         <xsl:choose>
             <xsl:when test="$start_page and $end_page">
-                <!--<xsl:text>test 1<xsl:text>-->
+                <xsl:text>test 1<xsl:text>
                 <xsl:sequence>
                     <start>
                         <xsl:value-of select="$start_page"/>
@@ -536,7 +587,7 @@
                 </xsl:sequence>
             </xsl:when>
             <xsl:when test="string[@key = 'pub_page'] except *[($start_page) or ($end_page)]">
-                <!--<xsl:text>test 2 <xsl:text>-->
+                <xsl:text>test 2 <xsl:text>
                 <xsl:if test="contains(string[@key = 'pub_page'], '-')">
                     <start>
                         <xsl:value-of select="substring-before(string[@key = 'pub_page'], '-')"/>
@@ -555,7 +606,7 @@
                 </xsl:if>
             </xsl:when>
             <xsl:when test="$start_page and $end_page">
-                <!--<xsl:text>test 3<xsl:text>-->
+                <xsl:text>test 3<xsl:text>
                 <xsl:sequence>
                     <start>
                         <xsl:value-of select="$start_page"/>
@@ -568,8 +619,8 @@
                     </total>
                 </xsl:sequence>
             </xsl:when>
-            <xsl:when test="contains($Pages, text())">
-                <!--<xsl:text>test 4<xsl:text>-->
+           <xsl:when test="contains($Pages, text())">
+                <!-\-<xsl:text>test 4<xsl:text>-\->
                 <start>
                     <xsl:value-of select="replace(., '.*[^.\d](\d*\.?\d+)$', '$1')"/>
                 </start>
@@ -577,11 +628,11 @@
                     <xsl:value-of select="replace(., '.*[^.\d](\d*\.?\d+)$', '$1')"/>
                 </end>
                 <total>
-                    <xsl:value-of select="replace(., '.*[^.\d](\d*\.?\d+)$', '$1')"/>
+                    
                 </total>
             </xsl:when>
             <xsl:when test="$pages">
-                <!--<xsl:text>test 5a<xsl:text>-->
+           <xsl:text>test 5a<xsl:text>
                 <xsl:analyze-string select="$pages"
                     regex="(\d{{1,4}})(\s\w{{1,4}})|(\S{{1,4}})\-\S{{1,4}}">
                     <xsl:matching-substring>
@@ -600,7 +651,7 @@
                         </xsl:if>
                     </xsl:matching-substring>
                     <xsl:non-matching-substring>
-                        <!--<xsl:text>test 5b<xsl:text>-->
+                        <xsl:text>test 5b<xsl:text>
                         <start>
                             <xsl:value-of
                                 select="substring-after(substring-before($pub_publication, '.'[last()]), '\d{{2}}')"
@@ -619,7 +670,7 @@
                     </xsl:non-matching-substring>
                 </xsl:analyze-string>
             </xsl:when>
-            <!--<xsl:text>test 6 <xsl:text>-->
+            <xsl:text>test 6 <xsl:text>
             <xsl:when test="$pages">
                 <xsl:for-each select="$pages">
                     <start>
@@ -639,7 +690,7 @@
                 <start>
                     <xsl:value-of
                         select="substring-before(tokenize(./string[@key = 'pub_publication'], '\-')[last()], '\-')"/>
-                    <!--replace($pub_publication,'(.)','(?&lt;!\d):[^\s\r\n]*$')"/>-->
+                    replace($pub_publication,'(.)','(?&lt;!\d):[^\s\r\n]*$')"/>
                 </start>
                 <end>
                     <xsl:value-of
@@ -655,7 +706,7 @@
                 <xsl:text>test6</xsl:text>
             </xsl:otherwise>
         </xsl:choose>
-    </xsl:template>
+     </xsl:template>-->
 
     <xd:doc>
         <xd:desc/>
@@ -684,25 +735,7 @@
             </xsl:matching-substring>
         </xsl:analyze-string>
     </xsl:template>
-    <!--
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
-    <xsl:template match="map/string[@key = 'doi']"
-        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
-        <xsl:if test="@key = 'doi'">
-            <identifier type="doi">
-                <xsl:value-of select="."/>
-            </identifier>
-            <location>
-                <url>
-                    <xsl:text>http://dx.doi.org/</xsl:text>
-                    <xsl:value-of select="normalize-space(.)"/>
-                </url>
-            </location>
-        </xsl:if>
-    </xsl:template>
--->
+
 
     <xd:doc>
         <xd:desc>
@@ -723,8 +756,7 @@
             </xd:ul>
         </xd:desc>
     </xd:doc>
-    <xsl:template name="identifiers"
-        xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+    <xsl:template name="identifiers" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
         <!--doi-->
         <xsl:if test="/map/string[@key = 'doi']">
             <identifier type="doi">
@@ -745,15 +777,21 @@
             </identifier>
         </xsl:if>
 
-        <!--treesearch_pub_id-->
+        <!--treesearch_pub_id -->
         <xsl:if test="/map/string[@key = 'treesearch_pub_id']">
-            <identifer type="treesearch-pub">
+            <identifier type="treesearch-pub">
                 <xsl:value-of select="/map/string[@key = 'treesearch_pub_id']"/>
-            </identifer>
+            </identifier>
             <location>
                 <url access="object in context">
                     <xsl:text>https://www.fs.usda.gov/treesearch/pubs/</xsl:text>
                     <xsl:value-of select="normalize-space(/map/string[@key = 'treesearch_pub_id'])"
+                    />
+                </url>
+            </location>
+            <location>
+                <url access="raw object">                    
+                    <xsl:value-of select="normalize-space(/map/string[@key = 'url_binary_file'])"
                     />
                 </url>
             </location>
