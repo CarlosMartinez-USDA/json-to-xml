@@ -121,10 +121,10 @@ The following error message is rendered:
 *"The entity name must immediately follow the '&' in the entity reference."*
  - [ ] A-26207.json
  - [ ] A-26377.json 
- - A-29760.json 
- - A-29788.json
- - A-29790.json
- - A-29793.json
+ - [ ] A-29760.json 
+ - [ ] A-29788.json
+ - [ ] A-29790.json
+ - [ ] A-29793.json
 
 The shell script responsible for adding `<data></data>` to the beginning and end of each file, also contains a sed command that attempts to correct this issue.
 Below is the entire shell script:
@@ -152,8 +152,8 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNjI0MjUzNywxOTMzMzYzNjg5LDEzMz
-E4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NTY2MzI1
-LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00Nj
-czNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbLTEzMTI4MDg0ODcsMTkzMzM2MzY4OSwxMz
+MxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMy
+NSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtND
+Y3MzUwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0NV19
 -->
