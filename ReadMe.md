@@ -89,9 +89,10 @@ From these **location** elements to the surrogate record and the resource itself
 - **object in context** – Indicates a link to the object within the context of its environment (with associated metadata, navigation, etc.)
 ######  Information related to url access may ben found at: https://www.loc.gov/standards/mods/userguide/location.html#url
 # Issues
--[] 
+
 ## ISSUE #1: Page Numbering
- Page numbers are not consistently correct.	
+
+  - [X] Page numbers are not consistently correct.	
 - When the following JSON string key values are present: 
 	-	pub_start_page and, 
 	-	pub_end_page,
@@ -113,7 +114,7 @@ Extraneous “station_id” acronym appearing just outside the last author name 
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNT
-AwODU2NDQsLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDc0MzM0NDkz
-MywxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbOTI4NjkxMzc3LC02ODg0OTQzOTMsLTY5MT
+YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
+MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
 -->
