@@ -105,7 +105,9 @@ From these **location** elements to the surrogate record and the resource itself
 	- It is difficult to get the correct data from a string of text
 ------
 # ISSUE #2: random "station_id" acronym
-Extraneous “station_id” acronym appearing just outside the last author name tag. 
+
+  - [X] Task Complete?  
+  - Extraneous “station_id” acronym appearing just outside the last author name tag. 
  -  Have not been able to determine it’s origin. 
  -  See screenshot below
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
@@ -115,7 +117,7 @@ Extraneous “station_id” acronym appearing just outside the last author name 
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc5MzY2NTA2LC02ODg0OTQzOTMsLTY5MT
+eyJoaXN0b3J5IjpbODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MT
 YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
 MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
 -->
