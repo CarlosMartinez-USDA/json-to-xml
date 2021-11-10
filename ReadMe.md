@@ -124,11 +124,13 @@ Several TreeSearch files contain an "&" listed within the relatedItem field.
   - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29790.json
   - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29793.json
 
+The shell script responsible for adding `<data></data>` to the beginning and end of each file, also contains a sed command that attempts to correct this issue.
+Below is the 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc4NTY1NDI1Miw4NzU1NjYzMjUsLTY4OD
-Q5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2NDQsLTQ2NzM1MDU2
-NywxNzk3MzU5MzcwLDc0MzM0NDkzMywxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbMTczMzYxNTkxLDg3NTU2NjMyNSwtNjg4ND
+k0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3
+LDE3OTczNTkzNzAsNzQzMzQ0OTMzLDE5MTE5NzU2NDVdfQ==
 -->
