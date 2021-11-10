@@ -92,15 +92,15 @@ From these **location** elements to the surrogate record and the resource itself
 
 ## ISSUE #1: Page Numbering
 Page numbers are not consistently correct.	
-- When the following JSON string key values are present:~~ 
-	~~-	pub_start_page and, 
+- When the following JSON string key values are present: 
+	-	pub_start_page and, 
 	-	pub_end_page,
-	-	pub_page.~~ 
-~~- No issues are present with page numbers.~~
+	-	pub_page. 
+ - No issues are present with page numbers.
  - When they are not, they must be derived from the “pub_publicaton” or “citation” key values. 
 	- Both of these files are long strings of text, with inconsistent formatting.
 	-  While they mostly do contain some pagination information
-	~~- It is difficult to get the correct data from a string of text~~
+	- It is difficult to get the correct data from a string of text
 ------
 # ISSUE #2: random "station_id" acronym
 Extraneous “station_id” acronym appearing just outside the last author name tag. 
@@ -113,7 +113,7 @@ Extraneous “station_id” acronym appearing just outside the last author name 
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTY5OTIyMzIsMTE1MDA4NTY0NCwtND
-Y3MzUwNTY3LDE3OTczNTkzNzAsNzQzMzQ0OTMzLDE5MTE5NzU2
-NDVdfQ==
+eyJoaXN0b3J5IjpbLTEwMTM1NDgwNCwxMTUwMDg1NjQ0LC00Nj
+czNTA1NjcsMTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0
+NV19
 -->
