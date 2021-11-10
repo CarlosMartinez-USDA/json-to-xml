@@ -125,12 +125,28 @@ Several TreeSearch files contain an "&" listed within the relatedItem field.
   - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29793.json
 
 The shell script responsible for adding `<data></data>` to the beginning and end of each file, also contains a sed command that attempts to correct this issue.
-Below is the 
+Below is the entire shell script:
+
+    for file in *.json; do
+      sed -i '1i <data>' "$file" &&
+      sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
+      echo '</data>' >> "$file" &&
+      ls "$file" >> `date +%m-%d-%Y_T%H:%M`.txt
+    done
+
+The second segment "
+for file in *.json; do
+  sed -i '1i <data>' "$file" &&
+  sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
+  echo '</data>' >> "$file" &&
+  ls "$file" >> `date +%m-%d-%Y_T%H:%M`.txt
+done
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTczMzYxNTkxLDg3NTU2NjMyNSwtNjg4ND
-k0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3
-LDE3OTczNTkzNzAsNzQzMzQ0OTMzLDE5MTE5NzU2NDVdfQ==
+eyJoaXN0b3J5IjpbMTk0OTY1MjMxMSw4NzU1NjYzMjUsLTY4OD
+Q5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2NDQsLTQ2NzM1MDU2
+NywxNzk3MzU5MzcwLDc0MzM0NDkzMywxOTExOTc1NjQ1XX0=
 -->
