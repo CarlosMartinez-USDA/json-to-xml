@@ -120,7 +120,6 @@ From these **location** elements to the surrogate record and the resource itself
 The following error message is rendered:*"The entity name must immediately follow the '&' in the entity reference."*
 	- A-26207.json
 	- A-26377.json	
-	- A-29760.json
 	- A-29788.json
 	- A-29790.json
 	- A-29793.json
@@ -143,17 +142,17 @@ The second segment attempts to correct this with a sed command but is currently 
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 --> 		- It is difficult to get the correct data from them each time.(2) Random station_id appearing at the end of the author names section. 
 
-
-
+**Description:** The content of elements must consist of well-formed character data or markup.
+- [ ]  A-29760.json
 
 
 
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMz
-YzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUs
-ODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMD
-g1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1
-XX0=
+eyJoaXN0b3J5IjpbLTE1ODY1ODkzMTgsMzY0MDAzOTc5LC0zMj
+Q4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEw
+MywxNzU5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MT
+YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
+MCwxOTExOTc1NjQ1XX0=
 -->
