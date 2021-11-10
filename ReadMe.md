@@ -106,7 +106,7 @@ From these **location** elements to the surrogate record and the resource itself
 ------
 # ISSUE #2: random "station_id" acronym
 
-  - [X] Task Complete?  
+  - [X] Task Complete?  Yes
   - Extraneous “station_id” acronym appearing just outside the last author name tag. 
  -  Have not been able to determine it’s origin. 
  -  See screenshot below
@@ -151,7 +151,8 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NT
-Y2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0
-LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbNTQ5OTEwNTE2LDE0MDIwNDQxMDMsMTc1OT
+gzNjU1LDg3NTU2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYs
+MTE1MDA4NTY0NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMT
+k3NTY0NV19
 -->
