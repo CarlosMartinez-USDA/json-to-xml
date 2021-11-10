@@ -115,6 +115,8 @@ From these **location** elements to the surrogate record and the resource itself
 
 # Issue  3 
 Several TreeSearch files contain an "&" listed within the relatedItem field. 
+#### **The following error message is rendered:** 
+*"The entity name must immediately follow the '&' in the entity reference."*
  - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-26207.json
  - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-26377.json
  -  C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29760.json
@@ -126,7 +128,7 @@ Several TreeSearch files contain an "&" listed within the relatedItem field.
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzQ5MjE2MjAsODc1NTY2MzI1LC02OD
-g0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1
-NjcsMTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbMTc4NTY1NDI1Miw4NzU1NjYzMjUsLTY4OD
+Q5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2NDQsLTQ2NzM1MDU2
+NywxNzk3MzU5MzcwLDc0MzM0NDkzMywxOTExOTc1NjQ1XX0=
 -->
