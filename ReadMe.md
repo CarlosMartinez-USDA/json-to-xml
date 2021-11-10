@@ -93,7 +93,8 @@ From these **location** elements to the surrogate record and the resource itself
 
 ## ISSUE #1: Page Numbering
 
-  - [X] Task Complete?  
+
+  - [X] Task Complete?  **Yes. Resolved.**
  ***Page numbers are not consistently correct.***	
 - When the following JSON string key values are present: 
 	-	pub_start_page andpub_end_page,
@@ -106,7 +107,7 @@ From these **location** elements to the surrogate record and the resource itself
 ------
 # ISSUE #2: random "station_id" acronym
 
-  - [X] Task Complete?  Yes
+  - [X] Task Complete?  **Yes. Resolved.**
   - Extraneous “station_id” acronym appearing just outside the last author name tag. 
  -  Have not been able to determine it’s origin. 
  -  See screenshot below
@@ -115,8 +116,8 @@ From these **location** elements to the surrogate record and the resource itself
 
 # Issue  3
  - [ ] Task Complete?  **Won't Fix**
-Several TreeSearch files contain an "&" listed within the relatedItem field. 
-#### **The following error message is rendered:** 
+***Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
+The following error message is rendered:
 *"The entity name must immediately follow the '&' in the entity reference."*
  - A-26207.json
  - A-26377.json 
@@ -151,8 +152,8 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ5OTEwNTE2LDE0MDIwNDQxMDMsMTc1OT
-gzNjU1LDg3NTU2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYs
-MTE1MDA4NTY0NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMT
-k3NTY0NV19
+eyJoaXN0b3J5IjpbMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NT
+k4MzY1NSw4NzU1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2
+LDExNTAwODU2NDQsLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDE5MT
+E5NzU2NDVdfQ==
 -->
