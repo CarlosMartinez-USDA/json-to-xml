@@ -114,7 +114,7 @@ From these **location** elements to the surrogate record and the resource itself
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
-# Issue  3
+# Issue  3: Ampersand
  - [ ] Task Complete?  **Won't Fix**
 ***Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
 The following error message is rendered:
@@ -152,8 +152,8 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NT
-k4MzY1NSw4NzU1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2
-LDExNTAwODU2NDQsLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDE5MT
-E5NzU2NDVdfQ==
+eyJoaXN0b3J5IjpbMzA3NjAxOTk4LDEzMzE4NDExNTcsMTQwMj
+A0NDEwMywxNzU5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMs
+LTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5Nz
+M1OTM3MCwxOTExOTc1NjQ1XX0=
 -->
