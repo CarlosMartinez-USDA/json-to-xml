@@ -113,7 +113,8 @@ From these **location** elements to the surrogate record and the resource itself
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
-# Issue  3 
+# Issue  3
+  - [X] Task Complete?  
 Several TreeSearch files contain an "&" listed within the relatedItem field. 
 #### **The following error message is rendered:** 
 *"The entity name must immediately follow the '&' in the entity reference."*
@@ -134,19 +135,16 @@ Below is the entire shell script:
       ls "$file" >> `date +%m-%d-%Y_T%H:%M`.txt
     done
 
-The second segment "
-for file in *.json; do
-  sed -i '1i <data>' "$file" &&
-  sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
-  echo '</data>' >> "$file" &&
-  ls "$file" >> `date +%m-%d-%Y_T%H:%M`.txt
-done
+The second segment attempts to correct this with a sed command but is currently failing to accomplish this task. 
+
+      sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0OTY1MjMxMSw4NzU1NjYzMjUsLTY4OD
-Q5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2NDQsLTQ2NzM1MDU2
-NywxNzk3MzU5MzcwLDc0MzM0NDkzMywxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbNzcwMTYwMzcsODc1NTY2MzI1LC02ODg0OT
+QzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1Njcs
+MTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
 -->
