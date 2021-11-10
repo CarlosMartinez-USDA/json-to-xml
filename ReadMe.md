@@ -92,7 +92,8 @@ From these **location** elements to the surrogate record and the resource itself
 
 ## ISSUE #1: Page Numbering
 
-  - [X] Page numbers are not consistently correct.	
+  - [X] Task Complete?  
+ ***Page numbers are not consistently correct.***	
 - When the following JSON string key values are present: 
 	-	pub_start_page and, 
 	-	pub_end_page,
@@ -114,7 +115,7 @@ Extraneous “station_id” acronym appearing just outside the last author name 
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI4NjkxMzc3LC02ODg0OTQzOTMsLTY5MT
+eyJoaXN0b3J5IjpbODc5MzY2NTA2LC02ODg0OTQzOTMsLTY5MT
 YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
 MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
 -->
