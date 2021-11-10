@@ -114,7 +114,7 @@ From these **location** elements to the surrogate record and the resource itself
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
-# Issue  3: &
+# Issue  3a: invalid characters "&"
  - [ ] **Task Complete?**  No. Won't Fix
  **Description:** Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
 The following error message is rendered:*"The entity name must immediately follow the '&' in the entity reference."*
@@ -137,22 +137,24 @@ Below is the entire shell script:
 The second segment attempts to correct this with a sed command but is currently failing to accomplish this task. 
 
       sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
+# Issue 3b      
+**Description:** The content of elements must consist of well-formed character data or markup.
+- [ ]  A-29760.json
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 --> 		- It is difficult to get the correct data from them each time.(2) Random station_id appearing at the end of the author names section. 
 
-**Description:** The content of elements must consist of well-formed character data or markup.
-- [ ]  A-29760.json
+
 
 
 
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1ODY1ODkzMTgsMzY0MDAzOTc5LC0zMj
-Q4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEw
-MywxNzU5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MT
-YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
-MCwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbLTg1Nzg1NjAzLDM2NDAwMzk3OSwtMzI0OD
+cwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMs
+MTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4NDk0MzkzLC02OTE2MD
+A3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAs
+MTkxMTk3NTY0NV19
 -->
