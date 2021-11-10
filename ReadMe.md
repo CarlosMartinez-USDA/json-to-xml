@@ -142,7 +142,7 @@ The second segment attempts to correct this with a sed command but is currently 
    - [ ] **Task Complete?**  No. Won't Fix
 **Description:** The content of elements must consist of well-formed character data or markup.
 - [ ]  A-29760.json
--The file contains the "<" symbol within the abstra
+- The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
@@ -153,7 +153,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyMTg5Njk3OSwzNjQwMDM5NzksLTMyND
+eyJoaXN0b3J5IjpbMTE4NzQwNTkwNSwzNjQwMDM5NzksLTMyND
 g3MDcyLDE5MzMzNjM2ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAz
 LDE3NTk4MzY1NSw4NzU1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNj
 AwNzQ2LDExNTAwODU2NDQsLTQ2NzM1MDU2NywxNzk3MzU5Mzcw
