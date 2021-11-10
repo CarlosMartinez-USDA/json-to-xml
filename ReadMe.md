@@ -108,9 +108,9 @@ From these **location** elements to the surrogate record and the resource itself
 # ISSUE #2: random "station_id" acronym
 
   - [X] Task Complete?  **Yes. Resolved.**
-Description: Extraneous “station_id” acronym appearing just outside the last author name tag. 
- -  Have not been able to determine it’s origin. 
- -  See screenshot below
+**Description:** Extraneous “station_id” acronym appearing just outside the last author name tag. 
+	 -  Have not been able to determine it’s origin. 
+	 -  See screenshot below
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
@@ -152,8 +152,8 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NzkwNzIzMiwxOTMzMzYzNjg5LDEzMz
-E4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NTY2MzI1
-LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00Nj
-czNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbLTMyNDg3MDcyLDE5MzMzNjM2ODksMTMzMT
+g0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4NzU1NjYzMjUs
+LTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2NDQsLTQ2Nz
+M1MDU2NywxNzk3MzU5MzcwLDE5MTE5NzU2NDVdfQ==
 -->
