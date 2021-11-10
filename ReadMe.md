@@ -58,7 +58,8 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
  ## Preparing JSON Files for XSLT Transformation
 
-1.  Open the source_files folder
+
+ >n1.  Open the source_files folder
 2.  Locate the following shell scripts
 	 (a) merge_json.sh 
 	 (b) data_amp_add.sh
@@ -67,7 +68,7 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 5.  Open a JSON file in Oxygen
 6. Verify it contains the`<data>  </data>`at the beginning of the file and at the end of the file. 
 
-## Create a Transformation Scenario or Select the Debugging Layout
+## Create a Transformatio Scenario or Select the Debugging Layout
 1) Choose the json-to-mods.xsl as the transformation stylesheet. 
 2) If you're creating a scenario, set the output page as desired. 
 3) DO NOT set any parameters. This is taken care of by the new testing parameters added to the params-cm.xsl file. 
@@ -95,12 +96,11 @@ From these **location** elements to the surrogate record and the resource itself
   - [X] Task Complete?  
  ***Page numbers are not consistently correct.***	
 - When the following JSON string key values are present: 
-	-	pub_start_page and, 
-	-	pub_end_page,
+	-	pub_start_page andpub_end_page,
 	-	pub_page. 
  - No issues are present with page numbers.
- - When they are not, they must be derived from the “pub_publicaton” or “citation” key values. 
-	- Both of these files are long strings of text, with inconsistent formatting.
+ - When they are not, they must be derived from the “pub_publicaton” or citation” key values. 
+		- Both of these files aree strings of text, with inconsistent formatting.
 	-  While they mostly do contain some pagination information
 	- It is difficult to get the correct data from a string of text
 ------
@@ -141,10 +141,17 @@ The second segment attempts to correct this with a sed command but is currently 
 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
--->
+--> 		- It is difficult to get the correct data from them each time.(2) Random station_id appearing at the end of the author names section. 
+
+
+
+
+
+
+	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4ND
-k0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3
-LDE3OTczNTkzNzAsNzQzMzQ0OTMzLDE5MTE5NzU2NDVdfQ==
+eyJoaXN0b3J5IjpbLTE1MjM4MjQzNDEsMTc1OTgzNjU1LDg3NT
+U2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0
+NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0NV19
 -->
