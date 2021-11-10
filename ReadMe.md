@@ -114,7 +114,7 @@ From these **location** elements to the surrogate record and the resource itself
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
-# Issue  3: Unescaped &
+# Issue  3: &
  - [ ] **Task Complete?**  No. Won't Fix
  **Description:** Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
 The following error message is rendered:*"The entity name must immediately follow the '&' in the entity reference."*
@@ -151,9 +151,9 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTM3MzU2MTUsLTMyNDg3MDcyLDE5Mz
-MzNjM2ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1
-NSw4NzU1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNT
-AwODU2NDQsLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDE5MTE5NzU2
-NDVdfQ==
+eyJoaXN0b3J5IjpbMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMz
+YzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUs
+ODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMD
+g1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1
+XX0=
 -->
