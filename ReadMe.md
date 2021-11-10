@@ -113,7 +113,9 @@ From these **location** elements to the surrogate record and the resource itself
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
-# Issue  #3  C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-26207.json
+# Issue  3 
+Several TreeSearch files contain an "&" listed within the relatedItem field. 
+ - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-26207.json
  - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-26377.json
  -  C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29760.json
   - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29788.json
@@ -124,7 +126,7 @@ From these **location** elements to the surrogate record and the resource itself
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE0NTYxOTUsODc1NTY2MzI1LC02ODg0OT
-QzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1Njcs
-MTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbLTExMzQ5MjE2MjAsODc1NTY2MzI1LC02OD
+g0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1
+NjcsMTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
 -->
