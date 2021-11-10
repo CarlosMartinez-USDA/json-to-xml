@@ -113,11 +113,18 @@ From these **location** elements to the surrogate record and the resource itself
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
+# Issue  #3  C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-26207.json
+ - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-26377.json
+ -  C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29760.json
+  - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29788.json
+  - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29790.json
+  - C:\\Users\carlos.martinez\Desktop\json-to-xml\source_files\A-29793.json
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MT
-YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
-MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbMzE0NTYxOTUsODc1NTY2MzI1LC02ODg0OT
+QzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1Njcs
+MTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
 -->
