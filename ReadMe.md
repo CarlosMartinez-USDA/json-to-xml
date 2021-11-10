@@ -114,7 +114,7 @@ From these **location** elements to the surrogate record and the resource itself
 
 
 # Issue  3
-  - [X] Task Complete?  
+  - [ ] Task Complete?  **Won't Fix**
 Several TreeSearch files contain an "&" listed within the relatedItem field. 
 #### **The following error message is rendered:** 
 *"The entity name must immediately follow the '&' in the entity reference."*
@@ -144,7 +144,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzcwMTYwMzcsODc1NTY2MzI1LC02ODg0OT
-QzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1Njcs
-MTc5NzM1OTM3MCw3NDMzNDQ5MzMsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4ND
+k0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3
+LDE3OTczNTkzNzAsNzQzMzQ0OTMzLDE5MTE5NzU2NDVdfQ==
 -->
