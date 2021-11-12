@@ -118,7 +118,9 @@ From these **location** elements to the surrogate record and the resource itself
 **Issue**: Several TreeSearch files contain an invalid characters that will render invalid when the XML processor attempts to transform them
 The filenames containing the issues are listed below. Some files contain more than one issue so they are listed twice. 
 
-Resolution: The shell script provided to add `<data></data>` tags to the beginning and end of each document, c The following error message is rendered:
+**Resolution:** The shell script provided to add `<data></data>` tags to the beginning and end of each document, adds a second statement and has resolved 3a. With more time, issues 3b, and 3c can also be resolved. 
+
+ The following error message is rendered:
 ## Issue 3a:  "&"
 
 **Filenames:** 
@@ -173,7 +175,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU2Nzg1ODQ0LC0xMjUyMDU4MzA0LDExOD
+eyJoaXN0b3J5IjpbNTcwNTc2NTg4LC0xMjUyMDU4MzA0LDExOD
 c0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5
 LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NT
 Y2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0
