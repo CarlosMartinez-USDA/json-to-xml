@@ -13,21 +13,49 @@
             <xd:p><xd:b>Created on:</xd:b> September 21, 2021</xd:p>
             <xd:p><xd:b>Author:</xd:b>Carlos Martinez</xd:p>
             <xd:p><xd:b>Edited by:</xd:b>Carlos Martinez </xd:p>  
-            <xd:p><xd:b>Last Edited on:</xd:b>Sept 21, 2021</xd:p> 
+            <xd:p><xd:b>Last Edited on:</xd:b>November 8, 2021</xd:p> 
             <xd:p><xd:b>Purpose:</xd:b>This stylesheet matches a research station's abbreviation and supplies it with the proper name.</xd:p>
             <xd:p>The purpose is to provide more meaningful search results to researchers.</xd:p>     
         </xd:desc>
     </xd:doc>    
    
     <!--Global Variables-->
-    <xsl:variable name="seriesTitle" select="text()=('Forest Insect &amp; Disease Leaflet', 'General Technical Report (GTR)', 'General Technical Report - Proceedings', 'Information Forestry', 'Prsoceeding (Rocky Mountain Research Station Publications)',
+    <xsl:variable name="seriesTitle" select="('Forest Insect &amp; Disease Leaflet', 'General Technical Report (GTR)',
+        'General Technical Report - Proceedings', 'Information Forestry', 'Prsoceeding (Rocky Mountain Research Station Publications)',
         'Resource Bulletin (RB)', 'Research Map (RMAP)', 'Research Note (RN)', 'Research Paper (RP)', 'Resource Update (RU)')"/>
     
     <xsl:variable name="tree_nodes">
         <xsl:copy-of select="document('./usfs_treesearch.xml')"/>
     </xsl:variable>  
-
+    
+ <!--non-naming functions-->   
+    <xd:doc>
+        <xd:desc/>
+        <xd:param name="specialChars"/>
+    </xd:doc>
+    <xsl:function name="local:escapedSpecialChars" as="xs:string" xmlns:local="http://local_functions">
+        <xsl:param name="specialChars" as="xs:string?"/>
+        <xsl:sequence select="
+            replace($specialChars,
+            '(\.|\[|\]|\\|\||\-|\^|\$|\?|\*|\+|\{|\}|\(|\))', '\\$1')
+            "/>
+    </xsl:function>
+   
+    <xd:doc>
+        <xd:desc/>
+        <xd:param name="pub_info"/>
+    </xd:doc>
+    <xsl:function name="local:reverse-string" as="xs:string">
+    <xsl:param name="pub_info" as="xs:string?"/>
+    <xsl:sequence select="
+        codepoints-to-string(reverse(string-to-codepoints($pub_info)))
+        "/>
+    
+    </xsl:function>
+    
+    
 <!--USFS Station, Research Unit, and Publication naming functions-->
+    
 <xd:doc scope="component">
     <xd:desc>
         <xd:p><xd:b>Function: </xd:b>f:acronymToName</xd:p>
@@ -46,7 +74,7 @@
     <xd:desc>
         <xd:p><xd:b>Function: </xd:b>usfs:acronymToAddress</xd:p>
         <xd:p><xd:b>Usage: </xd:b>usfs:acronyToAddress(string[@key = 'station_id'])</xd:p>
-        <xd:p><xd:b>Purpose: </xd:b>Convert ISO 639-2b three-letter codes into ISO 639-1 two-letter codes.</xd:p>            
+        <xd:p><xd:b>Purpose: </xd:b>The acronym identifies the research station by matching </xd:p>            
     </xd:desc>
     <xd:param name="acronym">three-letter language code to match against</xd:param>
 </xd:doc>      
@@ -58,8 +86,8 @@
 
 <xd:doc scope="component">
     <xd:desc>
-        <xd:p><xd:b>Function: </xd:b>usfs:unitNumToName</xd:p>
-        <xd:p><xd:b>Usage: </xd:b>usfs:unitNumToName(string[@key = 'unit_id'])</xd:p>
+        <xd:p><xd:b>Function: </xd:b>usfs:unitNumberToName</xd:p>
+        <xd:p><xd:b>Usage: </xd:b>usfs:unitNumberoName(string[@key = 'unit_id'])</xd:p>
         <xd:p><xd:b>Purpose: </xd:b>Convert ISO 639-2b three-letter codes into ISO 639-1 two-letter codes.</xd:p>            
     </xd:desc>
     <xd:param name="unitNum">four-digit number code to match against</xd:param>    

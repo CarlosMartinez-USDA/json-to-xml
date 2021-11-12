@@ -54,8 +54,8 @@
         <xsl:if test="(string(number($fpage)) != 'NaN' and string(number($lpage)) != 'NaN')">
             <total>
                 <xsl:value-of select="if (number($lpage) - number($fpage) = 0)
-                                      then +1     
-                                      else (number($lpage) - number($fpage) +1 )"/>
+                                      then +1
+                                      else (number($lpage) - number($fpage) +1)"/>
             </total>
         </xsl:if>
     </xsl:function>
