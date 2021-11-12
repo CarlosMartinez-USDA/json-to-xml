@@ -116,14 +116,13 @@ From these **location** elements to the surrogate record and the resource itself
 
 # Issue  3: invalid characters usage
 ## Issue 3a:  "&"
- - [x] **Task Complete?**  No. Won't Fix
- **Description:** Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
+
+Filenames
+ - [x] **Task Complete?**
+**Description:** Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
 The following error message is rendered:*"The entity name must immediately follow the '&' in the entity reference."*
 	
-	- A-26377.json	
-	- A-29788.json
-	- A-29790.json
-	- A-29793.json
+ 
 
 The shell script responsible for adding `<data></data>` to the beginning and end of each file, also contains a sed command that attempts to correct this issue.
 Below is the entire shell script:
@@ -163,9 +162,10 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1MjU4MTU4LC0xMjUyMDU4MzA0LDExOD
-c0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5
-LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NT
-Y2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0
-LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbLTEwMTE5ODY3ODEsLTEyNTIwNTgzMDQsMT
+E4NzQwNTkwNSwzNjQwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2
+ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4Nz
+U1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2
+NDQsLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDE5MTE5NzU2NDVdfQ
+==
 -->
