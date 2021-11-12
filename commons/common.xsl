@@ -19,9 +19,6 @@
         />
     </xsl:template>
 
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
     <xsl:template match="sup | superscript | ce:sup">
         <xsl:value-of
             select="
@@ -58,9 +55,6 @@
         </xsl:element>
     </xsl:template>
     
-    <xd:doc>
-        <xd:desc/>
-    </xd:doc>
     <xsl:template match="comment()| processing-instruction()" mode="copy-no-namespaces">
         <xsl:copy/>
     </xsl:template>

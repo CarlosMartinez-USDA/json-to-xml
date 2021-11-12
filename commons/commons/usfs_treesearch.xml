@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="usfs_treesearch.xsd" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <usfs:treesearch xmlns="http://usfs_treesearch" xmlns:usfs="http://usfs_treesearch">
     <researchStations>
         <!--Northern Reserach Station-->
@@ -106,8 +107,8 @@
                 <researchUnit stationAcronym="PNW">
                     <unitNumber>1</unitNumber>
                     <unitName>Alaska Wood Utilization Research and Development Center</unitName>
-                    <unitAcronym>AWURDC</unitAcronym>
-                    <unitAddress>11175 Auke Lake Way, Juneau, AK, 99801, US</unitAddress>
+                    <unitAcronym>AWURDC</unitAcronym>/usfs:treesearch/usfs:researchStations/usfs:station/usfs:researchUnits/usfs:researchUnit/usfs:unitNumber
+                        <unitAddress>11175 Auke Lake Way, Juneau, AK, 99801, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
                     <unitNumber>2</unitNumber>
@@ -126,7 +127,8 @@
                     <unitNumber>4</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Anchorage)</unitName>
                     <unitAcronym>FSL (Anchorage)</unitAcronym>
-                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501, US</unitAddress>
+                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501,
+                        US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
                     <unitNumber>5</unitNumber>
@@ -150,7 +152,8 @@
                     <unitNumber>8</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Portland)</unitName>
                     <unitAcronym>FSL (Portland)</unitAcronym>
-                    <unitAddress>620 SW Main Street, Suite 502, Portland, OR, 97205, US</unitAddress>
+                    <unitAddress>620 SW Main Street, Suite 502, Portland, OR, 97205,
+                        US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
                     <unitNumber>9</unitNumber>
@@ -168,7 +171,8 @@
                     <unitNumber>11</unitNumber>
                     <unitName>Western Wildland Environmental Threat Assessment Center</unitName>
                     <unitAcronym>WETAC</unitAcronym>
-                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754, US</unitAddress>
+                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754,
+                        US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
                     <unitNumber>12</unitNumber>
