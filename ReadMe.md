@@ -119,7 +119,7 @@ From these **location** elements to the surrogate record and the resource itself
  - [x] **Task Complete?**  No. Won't Fix
  **Description:** Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
 The following error message is rendered:*"The entity name must immediately follow the '&' in the entity reference."*
-	- A-26207.json
+	
 	- A-26377.json	
 	- A-29788.json
 	- A-29790.json
@@ -141,8 +141,11 @@ The second segment attempts to correct this with a sed command but is currently 
 ## Issue 3b: "<"    
    - [ ] **Task Complete?**  No. Won't Fix
 **Description:** The content of elements must consist of well-formed character data or markup.
-- [ ]  A-29760.json
+- [x]  A-29760.json
 - The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
+
+
+## Issue 3c: "<br>"
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
@@ -153,7 +156,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU0Mjk1Njc5MywxMTg3NDA1OTA1LDM2ND
+eyJoaXN0b3J5IjpbMjA1MjQxNDA0NCwxMTg3NDA1OTA1LDM2ND
 AwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3
 LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4ND
 k0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3
