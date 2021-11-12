@@ -138,16 +138,17 @@ Below is the entire shell script:
 The second segment attempts to correct this with a sed command but is currently failing to accomplish this task. 
 
       sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
-## Issue 3b: "<"    
-   - [ ] **Task Complete?**  No. Possible to fix shell script. 
+## Issue 3b: "<"   
+**Filename:** A-29760.json 
+- [ ] **Task Complete?**  No. Possible to fix shell script. 
 **Description:** The content of elements must consist of well-formed character data or markup.
-- [ ]  A-29760.json
+
 	- The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
 
 > abstract: ...(diameter at breast height <6 in) with suppressed> growth...
 
 Once the problem is corrected manually, it produces valid MODS metadata, and a valid JSON archival replica. 
-This issue can be resolved if the shell script is improved to handle preprocess th
+This issue can be resolved if the shell script is improved to handle preprocess this bad character prior to transformation. 
 
 ## Issue 3c: "`<br>`"
 <!--stackedit_data:
@@ -162,7 +163,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Nzc4OTgwLC0xMjUyMDU4MzA0LDExOD
+eyJoaXN0b3J5IjpbNjQ1MjU4MTU4LC0xMjUyMDU4MzA0LDExOD
 c0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5
 LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NT
 Y2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0
