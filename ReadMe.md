@@ -115,7 +115,9 @@ From these **location** elements to the surrogate record and the resource itself
 
 
 # Issue  3: invalid characters usage
-Issue: Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
+**Issue**: Several TreeSearch files contain an invalid characters that will render invalid when the XML processor attempts to transform them
+The filenames containing the issues are listed below. Some files contain more than one issue so they are listed twice. 
+T 
 The following error message is rendered:
 ## Issue 3a:  "&"
 
@@ -171,7 +173,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMjAxOTcwMjgsLTEyNTIwNTgzMDQsMT
+eyJoaXN0b3J5IjpbLTEzNDg3MTYzMzIsLTEyNTIwNTgzMDQsMT
 E4NzQwNTkwNSwzNjQwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2
 ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4Nz
 U1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2
