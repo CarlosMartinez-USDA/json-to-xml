@@ -131,18 +131,16 @@ The filenames containing the issues are listed below. Some files contain more th
  - [x] A-29793.json
 
 **Description:** *"The entity name must immediately follow the '&' in the entity reference."*
-
-
- - [x] **Task Complete?**
+- [x] **Task Complete?** Yes
 	
  
 
-The shell script responsible for adding `<data></data>` to the beginning and end of each file, also contains a sed command that attempts to correct this issue.
-Below is the entire shell script:
+The shell script responsible for adding `<data></data>` to the beginning and end of each file, also contains a **sed** corrects this issue
+*Below is the entire shell script:*
 
     for file in *.json; do
       sed -i '1i <data>' "$file" &&
-      sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
+      sed -i 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
       echo '</data>' >> "$file" &&
       ls "$file" >> `date +%m-%d-%Y_T%H:%M`.txt
     done
@@ -175,9 +173,9 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTcwNTc2NTg4LC0xMjUyMDU4MzA0LDExOD
-c0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5
-LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NT
-Y2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0
-LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbMjA4NTI0Mjg3MSwtMTI1MjA1ODMwNCwxMT
+g3NDA1OTA1LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4
+OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NT
+U2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0
+NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0NV19
 -->
