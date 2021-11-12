@@ -115,12 +115,21 @@ From these **location** elements to the surrogate record and the resource itself
 
 
 # Issue  3: invalid characters usage
+Issue: Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
+The following error message is rendered:
 ## Issue 3a:  "&"
 
-Filenames
+**Filenames:** 
+ - [x] A-26207.json
+ - [x] A-26377.json
+ - [x] A-29788.json
+ - [x] A-29790.json
+ - [x] A-29793.json
+
+**Description:** *"The entity name must immediately follow the '&' in the entity reference."*
+
+
  - [x] **Task Complete?**
-**Description:** Several TreeSearch files contain an "&" listed within the relatedItem field.*** 
-The following error message is rendered:*"The entity name must immediately follow the '&' in the entity reference."*
 	
  
 
@@ -162,7 +171,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTE5ODY3ODEsLTEyNTIwNTgzMDQsMT
+eyJoaXN0b3J5IjpbLTEyMjAxOTcwMjgsLTEyNTIwNTgzMDQsMT
 E4NzQwNTkwNSwzNjQwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2
 ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4Nz
 U1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2
