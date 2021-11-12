@@ -144,7 +144,10 @@ The second segment attempts to correct this with a sed command but is currently 
 - [ ]  A-29760.json
 	- The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
 
-> abstract: ...(diameter at breast height <6 in) with suppressed> growth....
+> abstract: ...(diameter at breast height <6 in) with suppressed> growth...
+
+Once the problem is corrected manually, it produces valid MODS metadata, and a valid JSON archival replica. 
+This issue can be resolved if the shell script is improved to handle preprocess th
 
 ## Issue 3c: "`<br>`"
 <!--stackedit_data:
@@ -159,7 +162,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTIzOTkzNDIzLC0xMjUyMDU4MzA0LDExOD
+eyJoaXN0b3J5IjpbLTQ4Nzc4OTgwLC0xMjUyMDU4MzA0LDExOD
 c0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5
 LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NT
 Y2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0
