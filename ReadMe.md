@@ -139,10 +139,14 @@ The second segment attempts to correct this with a sed command but is currently 
 
       sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
 ## Issue 3b: "<"    
-   - [ ] **Task Complete?**  No
+   - [ ] **Task Complete?**  No. Possible to fix shell script. 
 **Description:** The content of elements must consist of well-formed character data or markup.
-- [ ]  A-29760.json
-- The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
+- [ ]  A-29760.jsonThe file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
+   
+
+ for file in *.json; do
+      sed -i '1i <data>' "$file" &&
+      sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
 
     abstract": ...(diameter at breast height <6 in) with suppressed growth....
 
@@ -157,11 +161,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 	
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODc0OTQ2NDEsLTEyNTIwNTgzMDQsMT
-E4NzQwNTkwNSwzNjQwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2
-ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4Nz
-U1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2
-NDQsLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDE5MTE5NzU2NDVdfQ
-==
+eyJoaXN0b3J5IjpbMTYzODMyNzUzMywtMTI1MjA1ODMwNCwxMT
+g3NDA1OTA1LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4
+OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NT
+U2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0
+NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0NV19
 -->
