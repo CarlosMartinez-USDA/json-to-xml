@@ -140,7 +140,7 @@ The shell script responsible for adding `<data></data>` to the beginning and end
   
       sed -i 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "
 
-## Issue 3b: "<"   
+## Issue 3b: "<" usage of less-than  
 **Filename:** A-29760.json 
 - [ ] **Task Complete?**  No. Possible to fix shell script. 
 **Description:** The content of elements must consist of well-formed character data or markup.
@@ -153,6 +153,7 @@ Once the problem is corrected manually, it produces valid MODS metadata, and a v
 This issue can be resolved if the shell script is improved to handle preprocess this bad character prior to transformation. 
 
 ## Issue 3c: "`<br>`"
+
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
@@ -165,7 +166,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk2MDM1NTMwNywtMTI1MjA1ODMwNCwxMT
+eyJoaXN0b3J5IjpbMTQyNTkxMDg2MiwtMTI1MjA1ODMwNCwxMT
 g3NDA1OTA1LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4
 OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NT
 U2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0
