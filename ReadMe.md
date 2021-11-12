@@ -136,18 +136,10 @@ The filenames containing the issues are listed below. Some files contain more th
  
 
 The shell script responsible for adding `<data></data>` to the beginning and end of each file, also contains a **sed** corrects this issue
-*Below is the entire shell script:*
+*The statement below corrects the invalid ampersand*
+  
+      sed -i 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "
 
-    for file in *.json; do
-      sed -i '1i <data>' "$file" &&
-      sed -i 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
-      echo '</data>' >> "$file" &&
-      ls "$file" >> `date +%m-%d-%Y_T%H:%M`.txt
-    done
-
-The second segment attempts to correct this with a sed command but is currently failing to accomplish this task. 
-
-      sed -e 's/\&[^amp;|^apos;|^quot;|^lt;|^gt;]/\&amp;/gi' "$file"  &&
 ## Issue 3b: "<"   
 **Filename:** A-29760.json 
 - [ ] **Task Complete?**  No. Possible to fix shell script. 
@@ -173,7 +165,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTI0Mjg3MSwtMTI1MjA1ODMwNCwxMT
+eyJoaXN0b3J5IjpbMTk2MDM1NTMwNywtMTI1MjA1ODMwNCwxMT
 g3NDA1OTA1LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4
 OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NT
 U2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0
