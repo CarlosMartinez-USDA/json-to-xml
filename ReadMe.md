@@ -145,7 +145,7 @@ The second segment attempts to correct this with a sed command but is currently 
 - The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
 
 
-## Issue 3c: "<br>"
+## Issue 3c: "`<br>`"
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
@@ -156,9 +156,9 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 	
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1MjQxNDA0NCwxMTg3NDA1OTA1LDM2ND
-AwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3
-LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4ND
-k0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3
-LDE3OTczNTkzNzAsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbLTEyNTIwNTgzMDQsMTE4NzQwNTkwNSwzNj
+QwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2ODksMTMzMTg0MTE1
+NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4NzU1NjYzMjUsLTY4OD
+Q5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2NDQsLTQ2NzM1MDU2
+NywxNzk3MzU5MzcwLDE5MTE5NzU2NDVdfQ==
 -->
