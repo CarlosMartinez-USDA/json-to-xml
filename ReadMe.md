@@ -1,27 +1,3 @@
-
-# JSON-to-MODS XSLT Transformation
-
-**Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for ingest into Unified Repository.
-
-**Materials**: Treesearch metadata in JSON format from the [United States Forest Service (USFS)](https://www.fs.usda.gov/).
-
-## Transformation process
-
-The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/json-to-mods.xsl)_ utilizes the following formats and schema to transform the JSON format into MODS.
-
--   [JSON](https://www.json.org/json-en.html): (JavaScript Object Notation)
--   [XPath 3.1](https://www.w3.org/TR/xpath-31/): (XML Path Language)
--   [XSLT 3.0](https://www.w3.org/TR/xslt-30/): (Extensible Stylesheet Language Transformations)
--   [MODS 3.7](https://www.loc.gov/standards/mods/v3/mods-3-7.xsd) : (Metadata Object Description Schema)
-
-###### * Each JSON file is first transformed to XML, upon which the XML produced is mapped its respective MODS element.
-
-
-flowchart LR 
-id1(Start)-->id2(Stop) 
-style id1 fill:#f9f,stroke:#333,stroke-width:4px 
-style id2 fill:#bbf,stroke:#f66,stroke-width:2px,color:#fff,stroke-dasharray: 5 5 
-
 # JSON-to-MODS XSLT Transformation
 
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for ingest into Unified Repository.
@@ -166,9 +142,10 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyNTkxMDg2MiwtMTI1MjA1ODMwNCwxMT
-g3NDA1OTA1LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4
-OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NT
-U2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0
-NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0NV19
+eyJoaXN0b3J5IjpbMTQ2MDA1MTA4MywxNDI1OTEwODYyLC0xMj
+UyMDU4MzA0LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3
+MiwxOTMzMzYzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNz
+U5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0
+NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOT
+ExOTc1NjQ1XX0=
 -->
