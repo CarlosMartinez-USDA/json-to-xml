@@ -62,10 +62,11 @@ From these **location** elements to the surrogate record and the resource itself
 (_This attribute is particularly useful to provide a flag in the context of OAI service providers harvesting metadata._)
  #### The following values may be used with the access attribute:
  - **preview** – Indicates a link to a thumbnail or snippet of text.
- - **raw object** – Indicates a direct link to the object described (e.g., a jpg or pdf document). Used only when the object is represented by a single file.
+ - **raw object** – Indicates a direct link to the object described (e.g., a jpg or pdf document). Used only when the object is represented by a single file. 
+ #### * 
 - **object in context** – Indicates a link to the object within the context of its environment (with associated metadata, navigation, etc.)
 ######  Information related to url access may ben found at: https://www.loc.gov/standards/mods/userguide/location.html#url
-#### raw object=
+#### 
 # Issues
 
 ## ISSUE #1: Page Numbering
@@ -143,7 +144,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMyODQxODQxLDE0NjAwNTEwODMsMTQyNT
+eyJoaXN0b3J5IjpbNDc5MzU3MTY3LDE0NjAwNTEwODMsMTQyNT
 kxMDg2MiwtMTI1MjA1ODMwNCwxMTg3NDA1OTA1LDM2NDAwMzk3
 OSwtMzI0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3LDE0MD
 IwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4NDk0Mzkz
