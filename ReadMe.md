@@ -37,8 +37,8 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
 1.  Open the source_files folder
 2.  Locate the following shell scripts
-	 (a) merge_json.sh 
-	 (b) data_amp_add.sh
+	-  (a) merge_json.sh 
+	 - (b) data_amp_add.sh
 3.  Run the merge_json.sh
 4.  Run the data_amp_add.sh
 5.  Open a JSON file in Oxygen
@@ -65,6 +65,7 @@ From these **location** elements to the surrogate record and the resource itself
  - **raw object** – Indicates a direct link to the object described (e.g., a jpg or pdf document). Used only when the object is represented by a single file.
 - **object in context** – Indicates a link to the object within the context of its environment (with associated metadata, navigation, etc.)
 ######  Information related to url access may ben found at: https://www.loc.gov/standards/mods/userguide/location.html#url
+#### raw object=
 # Issues
 
 ## ISSUE #1: Page Numbering
@@ -142,10 +143,10 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2MDA1MTA4MywxNDI1OTEwODYyLC0xMj
-UyMDU4MzA0LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3
-MiwxOTMzMzYzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNz
-U5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0
-NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOT
-ExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbODMyODQxODQxLDE0NjAwNTEwODMsMTQyNT
+kxMDg2MiwtMTI1MjA1ODMwNCwxMTg3NDA1OTA1LDM2NDAwMzk3
+OSwtMzI0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3LDE0MD
+IwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4NDk0Mzkz
+LC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3LDE3OT
+czNTkzNzAsMTkxMTk3NTY0NV19
 -->
