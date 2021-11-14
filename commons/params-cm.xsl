@@ -40,7 +40,7 @@
     <xsl:param name="workingDir"/>
     <!--suggested changes-->
     <xsl:param name="vendor_name"/>
-    <xsl:variable name="archive_file" select="tokenize(document-uri(.), '/'[last()])"/>
+    <xsl:variable name="archive_file" select="tokenize(document-uri(.), '/')[last()]"/>
     <xsl:variable name="original_filename" select="replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$2')"/>
     <xsl:variable name="working_dir" select="substring-before(base-uri(), $original_filename)"/>
 </xsl:stylesheet>

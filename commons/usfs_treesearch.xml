@@ -9,6 +9,7 @@
             <researchUnits>
                 <researchUnit stationAcronym="NRS">
                     <unitAcronym type="station_unit">EESAFEG</unitAcronym>
+                    <unitNumber>1</unitNumber>
                     <unitName>Ecological and Economic Sustainability of the Appalachian Forest in an
                         Era of Globalization</unitName>
                     <projectLeader>Janice (Jan) Wiedenbeck</projectLeader>
@@ -104,77 +105,116 @@
             <name>Pacific Northwest Research Station</name>
             <researchUnits>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>1</unitNumber>
+                    <unitNumber>17</unitNumber>
                     <unitName>Alaska Wood Utilization Research and Development Center</unitName>
                     <unitAcronym>AWURDC</unitAcronym>
                     <unitAddress>11175 Auke Lake Way, Juneau, AK, 99801, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>2</unitNumber>
+                    <unitNumber>18</unitNumber>
                     <unitName>Boreal Ecology Cooperative Research Unit</unitName>
                     <unitAcronym>BECRU</unitAcronym>
                     <unitAddress>University of Alaska Fairbanks, P.O. Box 756780, Fairbanks, AK,
                         99775-6780, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>3</unitNumber>
+                    <unitNumber>19</unitNumber>
                     <unitName>Forestry and Range Sciences Laboratory (La Grande)</unitName>
                     <unitAcronym>FRSL (LaGrande)</unitAcronym>
                     <unitAddress>1401 Gekeler Lane, La Grande, OR, 97850, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>4</unitNumber>
+                    <unitNumber>20</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Anchorage)</unitName>
                     <unitAcronym>FSL (Anchorage)</unitAcronym>
-                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501, US</unitAddress>
+                    <unitAddress>161 East 1st Avenue, Door #8, Anchorage, AK, 99501,
+                        US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>5</unitNumber>
+                    <unitNumber>21</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Corvallis)</unitName>
                     <unitAcronym>FSL (Corvallis)</unitAcronym>
                     <unitAddress>3200 SW Jefferson Way, Corvallis, OR, 97331, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>6</unitNumber>
+                    <unitNumber>22</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Juneau)</unitName>
                     <unitAcronym>FSL (Juneau)</unitAcronym>
                     <unitAddress>11175 Auke Lake Way, Juneau, AK, 99801, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>7</unitNumber>
+                    <unitNumber>23</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Olympia)</unitName>
                     <unitAcronym>FSL (Olympia)</unitAcronym>
                     <unitAddress>3625 93rd Ave. SW, Olympia, WA, 98512, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>8</unitNumber>
+                    <unitNumber>24</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Portland)</unitName>
                     <unitAcronym>FSL (Portland)</unitAcronym>
-                    <unitAddress>620 SW Main Street, Suite 502, Portland, OR, 97205, US</unitAddress>
+                    <unitAddress>620 SW Main Street, Suite 502, Portland, OR, 97205,
+                        US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>9</unitNumber>
+                    <unitNumber>25</unitNumber>
                     <unitName>Forestry Sciences Laboratory (Wenatchee)</unitName>
                     <unitAcronym>FSL (Wenatchee)</unitAcronym>
                     <unitAddress>1133 N Western Avenue, Wenatchee, WA, 98801, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>10</unitNumber>
+                    <unitNumber>26</unitNumber>
                     <unitName>Pacific Wildland Fire Sciences Laboratory (Seattle)</unitName>
                     <unitAcronym>WFSL (Seattle)</unitAcronym>
                     <unitAddress>400 N 34th St., Suite 201, Seattle, WA, 98103, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>11</unitNumber>
+                    <unitNumber>27</unitNumber>
                     <unitName>Western Wildland Environmental Threat Assessment Center</unitName>
                     <unitAcronym>WETAC</unitAcronym>
-                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754, US</unitAddress>
+                    <unitAddress>3160 NE Third St, PO Box 490, Prineville, OR, 97754,
+                        US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
-                    <unitNumber>12</unitNumber>
+                    <unitNumber>28</unitNumber>
                     <unitName>Station Director</unitName>
                     <unitAcronym>SD</unitAcronym>
                     <unitAddress>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</unitAddress>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2662</unitNumber>
+                    <unitName>Ecological Process and Function</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2665</unitNumber>
+                    <unitName>Goods, Services, and Values</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2663</unitNumber>
+                    <unitName>Land and Watershed Management</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2669</unitNumber>
+                    <unitName>Resource Monitoring and Assessment</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2677</unitNumber>
+                    <unitName>Threat Characterization and Management</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2667</unitNumber>
+                    <unitName>Western Wildland Environmental Threat Assessment</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitAcronym>ADMIN</unitAcronym>
+                    <unitName>Administrative</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>CAP</unitNumber>
+                    <unitName>Communications and Applications</unitName>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2600</unitNumber>
+                    <unitName>Station Director Office</unitName>
                 </researchUnit>
             </researchUnits>
             <address>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</address>
@@ -401,45 +441,39 @@
                 </researchUnit>
                 <researchUnit acronym="FPL">
                     <unitAcronym>LIB</unitAcronym>
-                    <unitName/>
+                    <unitName>National Forest Service Library</unitName>
                 </researchUnit>
                 <researchUnit acronym="FPL">
                     <unitAcronym>ACML</unitAcronym>
                     <unitName>Analytical Chemistry and Microscopy Laboratory</unitName>
                 </researchUnit>
-                <researchUnit>
+                <researchUnit acronym="FPL">
                     <unitAcronym>OC</unitAcronym>
                     <unitName>Communications &amp; Science Delivery</unitName>
                 </researchUnit>
-                <researchUnit>
+                <researchUnit acronym="FPL">
                     <unitAcronym>DO</unitAcronym>
                     <unitName>Director's Office</unitName>
                 </researchUnit>
-                <researchUnit>
+                <researchUnit acronym="FPL">
                     <unitAcronym>EMRS</unitAcronym>
                     <unitName>Engineering Mechanics and Remote Sensing Laboratory</unitName>
                 </researchUnit>
-                <researchUnit>
+                <researchUnit acronym="FPL">
                     <unitAcronym>FRM</unitAcronym>
                     <unitName>Financial Resources Management</unitName>
                 </researchUnit>
-                <researchUnit>
+                <researchUnit acronym="FPL">
                     <unitAcronym>TMU</unitAcronym>
                     <unitName>Forest Products Marketing Unit</unitName>
-                </researchUnit>
-                <researchUnit>
-                    <unitAcronym>LIB</unitAcronym>
-                    <unitName>National Forest Service Library</unitName>
-                </researchUnit>
-                <researchUnit>
+                </researchUnit>                <researchUnit acronym="FPL">
                     <unitAcronym>PTL</unitAcronym>
                     <unitName>Paper Test Laboratory</unitName>
                 </researchUnit>
-                <researchUnit>
+                <researchUnit acronym="FPL">
                     <unitAcronym>RFE</unitAcronym>
                     <unitName>Research Facilities Engineering</unitName>
                 </researchUnit>
-
             </researchUnits>
             <address>One Gifford Pinchot Drive, Madison, WI 53726</address>
         </station>
@@ -449,7 +483,7 @@
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>International Institute of Tropical Forestry</name>
             <researchUnits>
-                <researchUnit>
+                <researchUnit acronym="FPL">
                     <unitNumber>4151</unitNumber>
                     <unitName>International Institute of Tropical Forestry</unitName>
                 </researchUnit>
