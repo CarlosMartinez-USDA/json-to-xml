@@ -32,8 +32,8 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
 <a href="https://ibb.co/bbkKx8n"><img src="https://i.ibb.co/QD4KZ1G/json-to-mods-transformation-flowchart.png" alt="json-to-mods-transformation-flowchart" border="0" /></a>
 
+ 
  ## Preparing JSON Files for XSLT Transformation
-
 
 1.  Open the source_files folder
 2.  Locate the following shell scripts
@@ -44,7 +44,7 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 5.  Open a JSON file in Oxygen
 6. Verify it contains the`<data>  </data>`at the beginning of the file and at the end of the file. 
 
-## Creating the Transformation Scenario in oXyGen
+## Creating the Transformation Scenario in Oxygen
 1) Choose the json-to-mods.xsl as the transformation stylesheet. 
 2) If you're creating a scenario, set the output page as desired. 
 3) DO NOT set any parameters. This is taken care of by the new testing parameters added to the params-cm.xsl file. 
@@ -144,10 +144,10 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMzc1ODMxMSw0NzkzNTcxNjcsMTQ2MD
-A1MTA4MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0LDExODc0MDU5
-MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5LDEzMz
-E4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NTY2MzI1
-LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00Nj
-czNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1XX0=
+eyJoaXN0b3J5IjpbMjEyODY1MTEsNDc5MzU3MTY3LDE0NjAwNT
+EwODMsMTQyNTkxMDg2MiwtMTI1MjA1ODMwNCwxMTg3NDA1OTA1
+LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMzM2MzY4OSwxMzMxOD
+QxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwt
+Njg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MDA4NTY0NCwtNDY3Mz
+UwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0NV19
 -->
