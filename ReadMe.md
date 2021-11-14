@@ -35,7 +35,7 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
  ## Preparing JSON Files for XSLT Transformation
 
 
- >n1.  Open the source_files folder
+1.  Open the source_files folder
 2.  Locate the following shell scripts
 	 (a) merge_json.sh 
 	 (b) data_amp_add.sh
