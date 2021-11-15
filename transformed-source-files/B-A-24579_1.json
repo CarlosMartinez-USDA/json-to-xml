@@ -1,0 +1,155 @@
+
+{
+    "product_id": "2362",
+    "ac22_approved_for_public": "1",
+    "primary_station": "PNW",
+    "historical_station": "OTHER",
+    "entrystatus": "Published to Web",
+    "product_type_id": "1",
+    "product_type_desc": "Publication",
+    "product_subtype_id": null,
+    "product_subtype_desc": null,
+    "referee_status_id": "2",
+    "status_name": "Informally Refereed (Peer-Reviewed)",
+    "pub_type_id": "1",
+    "pub_type_desc": "Scientific Journal (JRNL)",
+    "title": "Fuel to burn: economics of converting forest thinnings to energy using BioMax in southern Oregon.",
+    "product_year": " 2005",
+    "abstract": "Small-scale gasification plants that generate electrical energy from forest health thinnings may have the potential to deliver substantial amounts of electricity to the national grid. We evaluated the economic feasibility of two sizes of BioMax, a generator manufactured by the Community Power Corporation of Littleton, Colorado. At current avoided-cost electricity prices in Oregon, it would not be economical to operate a small-scale (100-kW) BioMax without a subsidy or tax credit, even if fuel were delivered to the plant at a forest landing at no cost. Given a tax credit, a 1,000-kW system could be operated profitably. If it were possible to sell merchantable logs (removed as part of forest health treatments) for an average of $175/thousand board feet, most acres on gentle slopes in southern Oregon would provide net operating surpluses. Most steeply sloped acres would generate operating deficits. If merchantable timber were sold separately, biomass from forest health thinnings on timberland in 15 western states could potentially provide from 2.3 to 14.3 billion kWh of electricity to the national grid. Our results suggest that if a forest landing is located near an existing power line, distributed energy generation is an option that may be worth considering.",
+    "citation": "Bilek, E.M. (Ted); Skog, Kenneth E.; Fried, Jeremy; Christensen, Glenn. 2005. Fuel to burn: economics of converting forest thinnings to energy using BioMax in southern Oregon.  Gen. Tech. Rep. FPL-GTR-157. Madison, W1: U.S. Department of Agriculture, Forest Service, Forest Products Laboratory. 27 p",
+    "keywords": "break-even analysis, wood gasification, small-diameter timber, forest health treatment, economic evaluation",
+    "doi": null,
+    "url_binary_file": "https://www.fs.fed.us/pnw/pubs/journals/pnw_2005_bilek001.pdf",
+    "binary_filesize": "3.8 MB",
+    "url_landing_page": "https://www.fs.usda.gov/treesearch/pubs/24579",
+    "treesearch_pub_id": "24579",
+    "pub_parent_id": null,
+    "pub_child_number": null,
+    "pub_parent_ind": "0",
+    "pub_publication": "Gen. Tech. Rep. FPL-GTR-157. Madison, W1: U.S. Department of Agriculture, Forest Service, Forest Products Laboratory. 27 p",
+    "proceedings_ind": "0",
+    "pub_volume": null,
+    "pub_issue": null,
+    "pub_page": null,
+    "pub_page_start": null,
+    "pub_page_end": null,
+    "pub_source": "T",
+    "geographic_terms": null,
+    "issn_id": null,
+    "is_early_release": "0",
+    "created_on": "28-SEP-2006 15:14:27",
+    "modified_on": "28-APR-2008 14:48:10",
+    "send_to_reviewer_ind": "A",
+    "publish_to_web_ind": "Y",
+    "send_to_reviewer": null,
+    "child_publications": "",
+    "national_research_taxonomy_elements": [
+        {
+            "nrt_id": "53",
+            "nrt_title": "Economics"
+        },
+        {
+            "nrt_id": "62",
+            "nrt_title": "Timber"
+        }
+    ],
+    "pub_authors": [
+        {
+            "name": "Bilek, E.M. (Ted)",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "1"
+        },
+        {
+            "name": "Skog, Kenneth E.",
+            "station_id": "FPL",
+            "unit_id": "4851",
+            "team_id": "",
+            "alias": "kskog",
+            "user_id": "33",
+            "is_employee_active": "0",
+            "is_researcher": "1",
+            "author_order": "2"
+        },
+        {
+            "name": "Fried, Jeremy",
+            "station_id": "PNW",
+            "unit_id": "4869",
+            "team_id": "",
+            "alias": "jsfried",
+            "user_id": "886",
+            "is_employee_active": "1",
+            "is_researcher": "1",
+            "author_order": "3"
+        },
+        {
+            "name": "Christensen, Glenn",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "4"
+        }
+    ],
+    "current_organizational_memberships": [
+        {
+            "name": "Bilek, E.M. (Ted)",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "1"
+        },
+        {
+            "name": "Skog, Kenneth E.",
+            "station_id": "FPL",
+            "unit_id": "4851",
+            "team_id": "",
+            "alias": "kskog",
+            "user_id": "33",
+            "is_employee_active": "0",
+            "is_researcher": "1",
+            "author_order": "2"
+        },
+        {
+            "name": "Fried, Jeremy",
+            "station_id": "PNW",
+            "unit_id": "2669",
+            "team_id": "52",
+            "alias": "jsfried",
+            "user_id": "886",
+            "is_employee_active": "1",
+            "is_researcher": "1",
+            "author_order": "3"
+        },
+        {
+            "name": "Christensen, Glenn",
+            "station_id": "",
+            "unit_id": "",
+            "team_id": "",
+            "alias": "",
+            "user_id": "",
+            "is_employee_active": "0",
+            "is_researcher": "0",
+            "author_order": "4"
+        }
+    ],
+    "strategic_program_areas": "",
+    "cris_projects": "",
+    "experimental_forests": "",
+    "eco_regions": "",
+    "latlongs": "",
+    "usnatforests": "",
+    "countystates": ""
+}

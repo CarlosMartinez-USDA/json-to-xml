@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Fire-retardant-treated strandboard : properties and fire performance</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Jerrold</namePart>
+      <namePart type="family">Winandy</namePart>
+      <displayForm>Winandy, Jerrold</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Qingwen</namePart>
+      <namePart type="family">Wang</namePart>
+      <displayForm>Wang, Qingwen</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Robert H.</namePart>
+      <namePart type="family">White</namePart>
+      <displayForm>White, Robert H.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, , One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-11-19</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This study evaluated a series of single-layer, randomly oriented strandboard panels made with one resin type, a single resin loading level, and four fire-retardant-treatment levels. The fire retardant (FR) evaluated was a pH-buffered combination of boric acid and organic phosphate. Siberian larch strands were separated into five batches. One batch of strands served as the untreated control group and was not treated with water or FR; the four other batches were individually treated using a vacuum–pressure–soak process of the strands in water or three progressively higher concentrations of FR solutions. Targeted water-or FR-loading levels were no FR (0% FR-weight gain, water-treated control), 32 kg/m3 FR (&amp;8764;5% weight gain), 64 kg/m3 FR (&amp;8764;10% weight gain), and 96 kg/m3 FR (&amp;8764;15% weight gain). All water-or FR-treated strands were redried to less than 8% moisture content prior to diphenylmethane diisocyanate (MDI) resin application in rotary blenders using an aerosol sprayer. Three replicate specimens for each treatment level of 12.5-mm-thick, randomly oriented strandboard at a density of 650 kg/m3 were evaluated. FR-treated strandboard had higher dry-and wet-internal bond strength and lower flexural strength than matched untreated strandboard. A Class B flame-spread rating was achieved near 10% FR-loading. These results suggest that better ratings seem possible at higher loadings.</abstract>
+   <subject>
+      <topic>Flame spread</topic>
+   </subject>
+   <subject>
+      <topic>flexure</topic>
+   </subject>
+   <subject>
+      <topic>Siberian larch</topic>
+   </subject>
+   <subject>
+      <topic>particle board</topic>
+   </subject>
+   <subject>
+      <topic>mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>fire testing</topic>
+   </subject>
+   <subject>
+      <topic>fireproofing agents</topic>
+   </subject>
+   <subject>
+      <topic>composite materials</topic>
+   </subject>
+   <subject>
+      <topic>fire testing</topic>
+   </subject>
+   <subject>
+      <topic>phosphates</topic>
+   </subject>
+   <subject>
+      <topic>boric acid</topic>
+   </subject>
+   <subject>
+      <topic>bond strength</topic>
+   </subject>
+   <subject>
+      <topic>diphenylmethane diisocyanate</topic>
+   </subject>
+   <subject>
+      <topic>fire hazard</topic>
+   </subject>
+   <subject>
+      <topic>FRT oriented strandboard</topic>
+   </subject>
+   <subject>
+      <topic>behavior in fire</topic>
+   </subject>
+   <subject>
+      <topic>oriented strandboard</topic>
+   </subject>
+   <subject>
+      <topic>physical properties</topic>
+   </subject>
+   <subject>
+      <topic>OSB</topic>
+   </subject>
+   <subject>
+      <topic>fire retardants</topic>
+   </subject>
+   <subject>
+      <topic>strandboard</topic>
+   </subject>
+   <subject>
+      <topic>composites</topic>
+   </subject>
+   <subject>
+      <topic>treatment</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Wood and fiber science</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">11</text>
+         <text type="day">19</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">117</identifier>
+   <identifier type="treesearch-pub">29554</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29554</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2008/fpl_2008_winandy001.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29554.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29554.json</archive_file>
+      <original_file>A-29554</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Acoustic assessment of wood quality of raw forest materials : a path to increased profitability</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Xiping</namePart>
+      <namePart type="family">Wang</namePart>
+      <displayForm>Wang, Xiping</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Peter</namePart>
+      <namePart type="family">Carter</namePart>
+      <displayForm>Carter, Peter</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Robert J.</namePart>
+      <namePart type="family">Ross</namePart>
+      <displayForm>Ross, Robert J.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Brian K.</namePart>
+      <namePart type="family">Brashaw</namePart>
+      <displayForm>Brashaw, Brian K.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-12-18</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Assessment of the quality of raw wood materials has become a crucial issue in the operational value chain as forestry and the wood processing industry are increasingly under economic pressure to maximize extracted value. A significant effort has been devoted toward developing robust nondestructive evaluation (NDE) technologies capable of predicting the intrinsic wood properties of individual trees, stems, and logs, and assessing the value of stands and forests. Such technologies can help foresters make wise management decisions, grow higher quality wood, and lead to greater profitability for the forest industry.</abstract>
+   <subject>
+      <topic>Mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>acoustic properties</topic>
+   </subject>
+   <subject>
+      <topic>raw materials</topic>
+   </subject>
+   <subject>
+      <topic>valuation</topic>
+   </subject>
+   <subject>
+      <topic>forestry</topic>
+   </subject>
+   <subject>
+      <topic>wood quality</topic>
+   </subject>
+   <subject>
+      <topic>grading</topic>
+   </subject>
+   <subject>
+      <topic>acoustic properties</topic>
+   </subject>
+   <subject>
+      <topic>nondestructive testing</topic>
+   </subject>
+   <subject>
+      <topic>tree quality</topic>
+   </subject>
+   <subject>
+      <topic>logs</topic>
+   </subject>
+   <subject>
+      <topic>standing trees</topic>
+   </subject>
+   <subject>
+      <topic>log quality</topic>
+   </subject>
+   <subject>
+      <topic>profitability</topic>
+   </subject>
+   <subject>
+      <topic>acoustic velocity</topic>
+   </subject>
+   <subject>
+      <topic>acoustic testing</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Forest products journal</title>
+      </titleInfo>
+      <part>
+         <text type="year">2007</text>
+         <text type="month">12</text>
+         <text type="day">18</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">2238</identifier>
+   <identifier type="treesearch-pub">29166</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29166</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_wang003.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29166.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29166.json</archive_file>
+      <original_file>A-29166</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

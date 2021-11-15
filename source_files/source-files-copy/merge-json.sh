@@ -1,0 +1,1 @@
+cat *.json > merged_`date +%m-%d-%Y_T%H:%M`.json

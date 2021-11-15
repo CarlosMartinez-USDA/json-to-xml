@@ -1,3 +1,4 @@
+<data>
 {
     "product_id": "1703",
     "ac22_approved_for_public": "1",
@@ -45,7 +46,7 @@
     "national_research_taxonomy_elements": [
         {
             "nrt_id": "27",
-            "nrt_title": "Ecology, Ecosystems, & Environment"
+            "nrt_title": "Ecology, Ecosystems, &amp;Environment"
         },
         {
             "nrt_id": "36",
@@ -89,4 +90,4 @@
     "latlongs": "",
     "usnatforests": "",
     "countystates": ""
-}
+}</data>

@@ -1,0 +1,92 @@
+{
+    "product_id": "905",
+    "ac22_approved_for_public": "1",
+    "primary_station": "PNW",
+    "historical_station": "PNW",
+    "entrystatus": "Published to Web",
+    "product_type_id": "1",
+    "product_type_desc": "Publication",
+    "product_subtype_id": null,
+    "product_subtype_desc": null,
+    "referee_status_id": "2",
+    "status_name": "Informally Refereed (Peer-Reviewed)",
+    "pub_type_id": "8",
+    "pub_type_desc": "Research Note (RN)",
+    "title": "Volume of logging residues in Oregon, Washington, and California&#151;initial results from a 1969-70 study.",
+    "product_year": " 1971",
+    "abstract": "A study conducted during 1969-70 in Oregon, Washington, and California indicates that the average net volume of logging residues ranged from 325 to 3,156 cubic feet per acre. The highest volume was on National Forests in the Douglas-fir region, which averaged 2.5 times greater than private lands. The lowest volumes of residue were found in the ponderosa pine region where both private and public lands averaged between 325 and 375 cubic feet per acre. Private lands in California averaged 1,558 cubic feet per acre, while National Forests averaged 1,206 cubic feet per acre. The total net volume of logging residues for all regions was 908 million cubic feet, about 26 percent of the reported 1969 log harvest. In the Douglas-fir region total net volume was 465 million cubic feet, which amounted to 50 percent of the wood consumption by the pulp and board industries in western Oregon and western Washington for 1961.",
+    "citation": "Howard, James O. 1971. Volume of logging residues in Oregon, Washington, and California&#151;initial results from a 1969-70 study.  Res. Note PNW-RN-163. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 8 p",
+    "keywords": "logging slash, wood waste, waste utilization",
+    "doi": null,
+    "url_binary_file": "https://www.fs.fed.us/pnw/pubs/pnw_rn163.pdf",
+    "binary_filesize": "370 KB",
+    "url_landing_page": "https://www.fs.usda.gov/treesearch/pubs/26377",
+    "treesearch_pub_id": "26377",
+    "pub_parent_id": null,
+    "pub_child_number": null,
+    "pub_parent_ind": "0",
+    "pub_publication": "Res. Note PNW-RN-163. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 8 p",
+    "proceedings_ind": "0",
+    "pub_volume": "163",
+    "pub_issue": null,
+    "pub_page": null,
+    "pub_page_start": null,
+    "pub_page_end": null,
+    "pub_source": "T",
+    "geographic_terms": null,
+    "issn_id": null,
+    "is_early_release": "0",
+    "created_on": "01-MAR-2007 15:22:34",
+    "modified_on": "06-MAY-2008 16:30:40",
+    "send_to_reviewer_ind": "A",
+    "publish_to_web_ind": "Y",
+    "send_to_reviewer": null,
+    "child_publications": "",
+    "national_research_taxonomy_elements": [
+        {
+            "nrt_id": "27",
+            "nrt_title": "Ecology, Ecosystems, & Environment"
+        },
+        {
+            "nrt_id": "36",
+            "nrt_title": "Wildlife  (or Fauna)"
+        },
+        {
+            "nrt_id": "76",
+            "nrt_title": "Forest Products"
+        }
+    ],
+    "pub_authors": [
+        {
+            "name": "Howard, James O.",
+            "station_id": "FPL",
+            "unit_id": "4851",
+            "team_id": "",
+            "alias": "jlhoward",
+            "user_id": "157",
+            "is_employee_active": "0",
+            "is_researcher": "1",
+            "author_order": "1"
+        }
+    ],
+    "current_organizational_memberships": [
+        {
+            "name": "Howard, James O.",
+            "station_id": "FPL",
+            "unit_id": "4851",
+            "team_id": "",
+            "alias": "jlhoward",
+            "user_id": "157",
+            "is_employee_active": "0",
+            "is_researcher": "1",
+            "author_order": "1"
+        }
+    ],
+    "strategic_program_areas": "",
+    "cris_projects": "",
+    "experimental_forests": "",
+    "eco_regions": "",
+    "latlongs": "",
+    "usnatforests": "",
+    "countystates": ""
+}

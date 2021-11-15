@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Forest Products Laboratory : supporting the nation's armed forces with valuable wood research for 90 years</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Christopher D.</namePart>
+      <namePart type="family">Risbrudt</namePart>
+      <displayForm>Risbrudt, Christopher D.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Robert J.</namePart>
+      <namePart type="family">Ross</namePart>
+      <displayForm>Ross, Robert J.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Julie J.</namePart>
+      <namePart type="family">Blankenburg</namePart>
+      <displayForm>Blankenburg, Julie J.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, National Forest Service Library, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Charles A.</namePart>
+      <namePart type="family">Nelson</namePart>
+      <displayForm>Nelson, Charles A.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Founded in 1910 by the U.S. Forest Service to serve as a centralized, national wood research laboratory, the USDA Forest Products Laboratory (FPL) has a long history of providing technical services to other government agencies, including those within the Defense (DoD). A recent search of FPL’s library and correspondence files revealed that approximately 10,000 articles, reports, manuals, other technical publications, and communications have been generated and provided to the DoD since 1910. FPL has provided support on a broad array of technical questions—from designing lightweight packaging systems for transporting materiel to Europe and the South Pacific during World War II to assisting in the design and repair of motor mounts for minesweepers used in Desert Storm. This article offers a brief review of some of the contributions FPL has made in support of the United States’ military.</abstract>
+   <subject>
+      <topic>Forest products</topic>
+   </subject>
+   <subject>
+      <topic>military aspects</topic>
+   </subject>
+   <subject>
+      <topic>United States</topic>
+   </subject>
+   <subject>
+      <topic>wood</topic>
+   </subject>
+   <subject>
+      <topic>history</topic>
+   </subject>
+   <subject>
+      <topic>research institutes</topic>
+   </subject>
+   <subject>
+      <topic>Dept. of Defense</topic>
+   </subject>
+   <subject>
+      <topic>Forest Products Laboratory</topic>
+   </subject>
+   <subject>
+      <topic>utilization</topic>
+   </subject>
+   <subject>
+      <topic>research</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Forest products journal</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">3029</identifier>
+   <identifier type="treesearch-pub">29233</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29233</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_risbrudt001.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29233.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29233.json</archive_file>
+      <original_file>A-29233</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

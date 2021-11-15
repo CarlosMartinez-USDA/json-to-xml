@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Chlorination of lignin by ubiquitous fungi has a likely role in global organochlorine production</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Patricia</namePart>
+      <namePart type="family">Ortiz-Bermudez</namePart>
+      <displayForm>Ortiz-Bermudez, Patricia</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Kolby C.</namePart>
+      <namePart type="family">Hirth</namePart>
+      <displayForm>Hirth, Kolby C.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Analytical Chemistry and Microscopy Laboratory, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Ewald</namePart>
+      <namePart type="family">Srebotnik</namePart>
+      <displayForm>Srebotnik, Ewald</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Kenneth E.</namePart>
+      <namePart type="family">Hammel</namePart>
+      <displayForm>Hammel, Kenneth E.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Institute for Microbial and Biochemical Technology, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-16</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Soils and decayed plant litter contain significant quantities of chlorinated aromatic polymers that have a natural but largely unknown origin. We used cupric oxide ligninolysis coupled with gas chromatography/mass spectrometry to show that Curvularia inaequalis, a widely distributed litter ascomycete, chlorinated the aromatic rings of lignin in wood that it was degrading. In aspen wood decayed for 24 weeks, two chlorolignin fragments, 5-chlorovanillin and 2-chlorosyringaldehyde, were each found at 10 [mu]g/g of wood (dry weight). These levels resemble those of similar structures generally found in unpolluted environmental samples. Fractionation of the extractable proteins followed by wood contained a previously described C. inaequalis chloroperoxidase that very likely catalyzed lignin chlorination. Chlorolignin produced by this route and humus derived from it are probably significant components of the global chlorine cycle because chloroperoxidase-producing fungi are ubiquitous in decaying lignocellulose and lignin is the earth’s most abundant aromatic substance.</abstract>
+   <subject>
+      <topic>Enzymes</topic>
+   </subject>
+   <subject>
+      <topic>industrial applications</topic>
+   </subject>
+   <subject>
+      <topic>fungal enzymes</topic>
+   </subject>
+   <subject>
+      <topic>gas chromatography</topic>
+   </subject>
+   <subject>
+      <topic>organochlorine compounds</topic>
+   </subject>
+   <subject>
+      <topic>chlorination</topic>
+   </subject>
+   <subject>
+      <topic>fungi</topic>
+   </subject>
+   <subject>
+      <topic>industrial applications</topic>
+   </subject>
+   <subject>
+      <topic>lignin</topic>
+   </subject>
+   <subject>
+      <topic>mass spectrometry</topic>
+   </subject>
+   <subject>
+      <topic>fractionation</topic>
+   </subject>
+   <subject>
+      <topic>cupric oxide ligninolysis</topic>
+   </subject>
+   <subject>
+      <topic>aromatic rings</topic>
+   </subject>
+   <subject>
+      <topic>chloroperoxidases</topic>
+   </subject>
+   <subject>
+      <topic>CPO</topic>
+   </subject>
+   <subject>
+      <topic>analysis</topic>
+   </subject>
+   <subject>
+      <topic>chemistry</topic>
+   </subject>
+   <subject>
+      <topic>Curvularia inaequalis</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Proceedings of the National Academy of Sciences of the United States of America</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">16</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1687</identifier>
+   <identifier type="treesearch-pub">29791</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29791</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_ortiz-bermudez001.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29791.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29791.json</archive_file>
+      <original_file>A-29791</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

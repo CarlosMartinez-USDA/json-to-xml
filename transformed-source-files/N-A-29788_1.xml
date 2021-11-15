@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Possible mechanism for anthraquinone species diffusion in alkaline pulping</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">X.-S.</namePart>
+      <namePart type="family">Chai</namePart>
+      <displayForm>Chai, X.-S.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">J.</namePart>
+      <namePart type="family">Samp</namePart>
+      <displayForm>Samp, J.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Q.X.</namePart>
+      <namePart type="family">Hou</namePart>
+      <displayForm>Hou, Q.X.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">S.-H</namePart>
+      <namePart type="family">Yoon</namePart>
+      <displayForm>Yoon, S.-H</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">J.Y.</namePart>
+      <namePart type="family">Zhu</namePart>
+      <displayForm>Zhu, J.Y.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-12-31</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>An analysis of the effectiveness of anthraquinone (AQ) in kraft-AQ pulping in terms of its mechanism of transport has been conducted. Our previous work showed that caustic solutions of wood lignin can decrease the membrane exclusion for anthraquinones, i.e., the presence of wood lignin enhances the ability of AQ to pass through a membrane when a reducing agent is present in the acceptor stream. This work seeks to demonstrate that a similar behavior may occur during pulping. The adsorption behavior of AQ species was analyzed, and it was shown that anthraquinone-2-sulfonic acid (AQ-S), a water soluble derivative of AQ, selectively adsorbed on wood. The adsorption of AQ dispersed in a caustic lignin solution also showed selective adsorption on wood, to an even greater extent than the AQ-S. This adsorption behavior, along with the membrane penetration behavior described in our previous work, leads to a mechanism for the transport of AQ into wood chips during kraft pulping.</abstract>
+   <subject>
+      <topic>Membranes</topic>
+   </subject>
+   <subject>
+      <topic>sulphate pulping process</topic>
+   </subject>
+   <subject>
+      <topic>anthraquinones</topic>
+   </subject>
+   <subject>
+      <topic>lignin</topic>
+   </subject>
+   <subject>
+      <topic>adsorption</topic>
+   </subject>
+   <subject>
+      <topic>pine</topic>
+   </subject>
+   <subject>
+      <topic>pulping</topic>
+   </subject>
+   <subject>
+      <topic>chips</topic>
+   </subject>
+   <subject>
+      <topic>maple</topic>
+   </subject>
+   <subject>
+      <topic>sulfonic acid</topic>
+   </subject>
+   <subject>
+      <topic>pulp and paper processes</topic>
+   </subject>
+   <subject>
+      <topic>AHQ</topic>
+   </subject>
+   <subject>
+      <topic>delignification</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Industrial &amp;engineering chemistry research</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">12</text>
+         <text type="day">31</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1642</identifier>
+   <identifier type="treesearch-pub">29788</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29788</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_chai003.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29788.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29788.json</archive_file>
+      <original_file>A-29788</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

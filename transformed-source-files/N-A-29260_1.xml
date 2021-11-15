@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Evaluating weather factors and material response during outdoor exposure to determine accelerated test protocols for predicting service life</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">R. Sam</namePart>
+      <namePart type="family">Williams</namePart>
+      <displayForm>Williams, R. Sam</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Steven</namePart>
+      <namePart type="family">Lacher</namePart>
+      <displayForm>Lacher, Steven</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Forest Biopolymer Science and Engineering, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Corey</namePart>
+      <namePart type="family">Halpin</namePart>
+      <displayForm>Halpin, Corey</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Christopher</namePart>
+      <namePart type="family">White</namePart>
+      <displayForm>White, Christopher</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-01-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>To develop service life prediction methods for the study of sealants, a fully instrumented weather station was installed at an outdoor test site near Madison, WI. Temperature, relative humidiy, rainfall, ultraviolet (UV) radiation at 18 wavelengths, and wind speed and direction are being continuously measured and stored. The weather data can be integrated over time to calculate the dose of the weathering factors. In the study reported here, sealant test specimens were installed in a specially designed apparatus that subjected them to weather-induced cyclic movement that forced a response. Load-deflection information and weather were correlated to yield information on critical factors affecting the sealant performance. The results showed a clear link between the sealant response during weathering and the weather conditions causing this response. Instrumentation of the outdoor test facility and the data collection system ore briefly described and methods for analyzing data are evaluated.</abstract>
+   <subject>
+      <topic>Calking</topic>
+   </subject>
+   <subject>
+      <topic>deterioration</topic>
+   </subject>
+   <subject>
+      <topic>sealing compounds</topic>
+   </subject>
+   <subject>
+      <topic>testing</topic>
+   </subject>
+   <subject>
+      <topic>accelerated life testing</topic>
+   </subject>
+   <subject>
+      <topic>weathering</topic>
+   </subject>
+   <subject>
+      <topic>adhesives</topic>
+   </subject>
+   <subject>
+      <topic>exposure</topic>
+   </subject>
+   <subject>
+      <topic>testing methods</topic>
+   </subject>
+   <subject>
+      <topic>exposure tests</topic>
+   </subject>
+   <subject>
+      <topic>accelerated testing</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Service life prediction : challenging the status quo</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">01</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">3174</identifier>
+   <identifier type="treesearch-pub">29260</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29260</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2005/fpl_2005_williams004.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29260.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29260.json</archive_file>
+      <original_file>A-29260</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

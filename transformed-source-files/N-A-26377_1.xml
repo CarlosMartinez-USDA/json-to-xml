@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Volume of logging residues in Oregon, Washington, and California&amp;151;initial results from a 1969-70 study.</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James O.</namePart>
+      <namePart type="family">Howard</namePart>
+      <displayForm>Howard, James O.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-05-06</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>A study conducted during 1969-70 in Oregon, Washington, and California indicates that the average net volume of logging residues ranged from 325 to 3,156 cubic feet per acre. The highest volume was on National Forests in the Douglas-fir region, which averaged 2.5 times greater than private lands. The lowest volumes of residue were found in the ponderosa pine region where both private and public lands averaged between 325 and 375 cubic feet per acre. Private lands in California averaged 1,558 cubic feet per acre, while National Forests averaged 1,206 cubic feet per acre. The total net volume of logging residues for all regions was 908 million cubic feet, about 26 percent of the reported 1969 log harvest. In the Douglas-fir region total net volume was 465 million cubic feet, which amounted to 50 percent of the wood consumption by the pulp and board industries in western Oregon and western Washington for 1961.</abstract>
+   <subject>
+      <topic>Ecology, Ecosystems, &amp;Environment</topic>
+   </subject>
+   <subject>
+      <topic>Wildlife  (or Fauna)</topic>
+   </subject>
+   <subject>
+      <topic>Forest Products</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo type="abbreviated">
+         <title>Res. Note </title>
+      </titleInfo>
+      <titleInfo type="uniform">
+         <title>Research Note (RN)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>163</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">05</text>
+         <text type="day">06</text>
+         <extent unit="pages">
+            <extent unit="pages">
+               <total>NaN</total>
+            </extent>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">905</identifier>
+   <identifier type="treesearch-pub">26377</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/26377</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fs.fed.us/pnw/pubs/pnw_rn163.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-26377.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-26377.json</archive_file>
+      <original_file>A-26377</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

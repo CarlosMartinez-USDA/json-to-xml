@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Surface characterization of weathered wood-plastic composites produced from modified wood flour</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James S.</namePart>
+      <namePart type="family">Fabiyi</namePart>
+      <displayForm>Fabiyi, James S.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Armando G.</namePart>
+      <namePart type="family">McDonald</namePart>
+      <displayForm>McDonald, Armando G.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Nicole M.</namePart>
+      <namePart type="family">Stark</namePart>
+      <displayForm>Stark, Nicole M.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-12-30</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The effects of weathering on the surface properties of wood-plastic composites (WPC) were examined. High-density polyethylene (HDPE) based WPCs made from modified wood flour (untreated, extractives free, and holocellulose (delignified) fibers) were subjected to accelerated (xenon-arc) weathering. Colorimetry and Fourier-transform infrared spectroscopy were employed to monitor the color change and surface chemistries of the weathered WPC surface. The compositional change that occurred on the WPC surface was determined using pyrolysis GC-MS analysis. The study showed that longer exposure time caused higher oxidation, lower wood lignin and higher plastic content of the weathered WPC surface. From this study, the use of holocellulose fibers improved the weathering performance (color) of WPCs.</abstract>
+   <subject>
+      <topic>Fourier transform infrared spectroscopy</topic>
+   </subject>
+   <subject>
+      <topic>colorimetry</topic>
+   </subject>
+   <subject>
+      <topic>accelerated life testing</topic>
+   </subject>
+   <subject>
+      <topic>composite materials</topic>
+   </subject>
+   <subject>
+      <topic>deterioration</topic>
+   </subject>
+   <subject>
+      <topic>wood plastic composites</topic>
+   </subject>
+   <subject>
+      <topic>wood flour</topic>
+   </subject>
+   <subject>
+      <topic>color fading</topic>
+   </subject>
+   <subject>
+      <topic>mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>polyethylene</topic>
+   </subject>
+   <subject>
+      <topic>weathering</topic>
+   </subject>
+   <subject>
+      <topic>pyrolysis</topic>
+   </subject>
+   <subject>
+      <topic>high density polyethylene</topic>
+   </subject>
+   <subject>
+      <topic>photodegradation</topic>
+   </subject>
+   <subject>
+      <topic>accelerated testing</topic>
+   </subject>
+   <subject>
+      <topic>discoloration</topic>
+   </subject>
+   <subject>
+      <topic>wood-plastic materials</topic>
+   </subject>
+   <subject>
+      <topic>surface properties</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>9th International Conference on Wood &amp;Biofiber Plastic Composites : May 21-23, 2007 </title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">12</text>
+         <text type="day">30</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1697</identifier>
+   <identifier type="treesearch-pub">29793</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29793</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_fabiyi001.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29793.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29793.json</archive_file>
+      <original_file>A-29793</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

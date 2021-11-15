@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Reduction of Oxidative Stain in Ochoó (Hura crepitans L.) = Reducción de la Mancha de Oxidación en Ochoó (Hura crepitans L.)</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Michael C.</namePart>
+      <namePart type="family">Wiemann</namePart>
+      <displayForm>Wiemann, Michael C.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Mark</namePart>
+      <namePart type="family">Knaebe</namePart>
+      <displayForm>Knaebe, Mark</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-11-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>The sapwood of ochoó (Hura crepitans) suffers from an oxidative stain that results in substantial loss in value, making it one of the most important utilization problems encountered among Bolivian timber species. Initiating kiln drying within 6 days of felling did not reduce staining of ochoó, although many boards with extensive interior stain had bright surfaces, so it is possible that immediate drying might reduce or eliminate discoloration. Shock treatments did not reduce staining either, except for the localized effects of surface hammering. Eighteen-hour treatment with a 5% solution of sodium metabisulfite reduced stain, although penetration was limited in many samples.</abstract>
+   <subject>
+      <topic>Ocho </topic>
+   </subject>
+   <subject>
+      <topic>Hura crepitans</topic>
+   </subject>
+   <subject>
+      <topic>oxidative stain</topic>
+   </subject>
+   <subject>
+      <topic>discoloration</topic>
+   </subject>
+   <subject>
+      <topic>compression</topic>
+   </subject>
+   <subject>
+      <topic>vibration</topic>
+   </subject>
+   <subject>
+      <topic>shock treatment</topic>
+   </subject>
+   <subject>
+      <topic>sodium metabisulfite</topic>
+   </subject>
+   <subject>
+      <topic>sulfite</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo type="abbreviated">
+         <title>Res. Note </title>
+      </titleInfo>
+      <titleInfo type="uniform">
+         <title>Research Note (RN)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>306</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2007</text>
+         <text type="month">11</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <extent unit="pages">
+               <total>NaN</total>
+            </extent>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RN-306</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RN-306</url>
+   </location>
+   <identifier type="treesearch">596</identifier>
+   <identifier type="treesearch-pub">28977</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/28977</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/fplrn/fpl_rn306.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-28977.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-28977.json</archive_file>
+      <original_file>A-28977</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

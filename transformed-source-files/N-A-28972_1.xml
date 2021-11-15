@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>U.S. timber production, trade, consumption, and price statistics 1965 to 2005</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James L.</namePart>
+      <namePart type="family">Howard</namePart>
+      <displayForm>Howard, James L.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2007-11-08</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This report presents annual data but is published every 2 years. The data present current and historical information on the production, trade, consumption, and prices of timber products in the United States. The report focuses on national statistics, but includes some data for individual States and regions and for Canada. The data were collected from industry trade associations and government agencies. They are intended for use by forest land managers, forest industries, trade associations, forestry schools, renewable resource organizations, individuals in the major timber producing and consuming countries of the world, and the general public. A major use of the data is tracking industry production and consumption trends over time. One of the major shifts occurring in the wood using industry over the last 2 years is that both production and consumption of roundwood per capita have been increasing. The consumption of products per capita also increased over the last 2 years. Because of increased paper recycling and increased processing efficiency, the consumption per capita in roundwood equivalent has decreased since about 1987 from 83 ft3 to 72 ft3 per capita. In the 1960s and 1970s, consumption averaged 65 ft3 per capita. Per capita consumption in 2004 increased to 71 ft3 per capita before increasing further in 2005 to 72 ft3 per capita. Another shift occurring during 2005 is increased emphasis on wood energy use, which has shown wide fluctuations over the last decade into 2005.</abstract>
+   <subject>
+      <topic>production</topic>
+   </subject>
+   <subject>
+      <topic>consumption</topic>
+   </subject>
+   <subject>
+      <topic>import</topic>
+   </subject>
+   <subject>
+      <topic>export</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo type="abbreviated">
+         <title>Res. Paper</title>
+      </titleInfo>
+      <titleInfo type="uniform">
+         <title>Research Paper (RP)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>637</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2007</text>
+         <text type="month">11</text>
+         <text type="day">08</text>
+         <extent unit="pages">
+            <extent unit="pages">
+               <total>NaN</total>
+            </extent>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="doi">10.2737/FPL-RP-637</identifier>
+   <location>
+      <url>http://dx.doi.org/10.2737/FPL-RP-637</url>
+   </location>
+   <identifier type="treesearch">566</identifier>
+   <identifier type="treesearch-pub">28972</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/28972</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/fplrp/fpl_rp637.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-28972.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-28972.json</archive_file>
+      <original_file>A-28972</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

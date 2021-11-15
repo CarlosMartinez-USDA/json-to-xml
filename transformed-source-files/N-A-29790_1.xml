@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Vision of the U.S. biofuel future: a case for hydrogen-enriched biomass gasification</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">Mark A.</namePart>
+      <namePart type="family">Dietenberger</namePart>
+      <displayForm>Dietenberger, Mark A.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Building and Fire Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">Mark</namePart>
+      <namePart type="family">Anderson</namePart>
+      <displayForm>Anderson, Mark</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2018-07-30</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Researchers at the Forest Product Laboratory (FPL) and the University of Wisconsin-Madison (UW) envision a future for biofuels based on biomass gasification with hydrogen enrichment. Synergisms between hydrogen production and biomass gasification technologies will be necessary to avoid being marginalized in the biofuel marketplace. Five feasible engineering solutions have been suggested for this synergism. We are researching one solution to investigate cleaner and more-efficient wood gasification via high-temperature liquid metal as a carrier fluid and making use of hydrogen, power, and waste heat from future nuclear reactors. The enrichment of syngas with nuclear, windmill, or solar hydrogen permits full conversion of all carbon from biomass to produce competitive synthetic gasoline, diesel, or other liquid hydrocarbon or alcohol fuels.</abstract>
+   <subject>
+      <topic>Carbon</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Industrial &amp;engineering chemistry research</title>
+      </titleInfo>
+      <part>
+         <text type="year">2018</text>
+         <text type="month">07</text>
+         <text type="day">30</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1667</identifier>
+   <identifier type="treesearch-pub">29790</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29790</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_dietenberger001.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29790.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29790.json</archive_file>
+      <original_file>A-29790</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

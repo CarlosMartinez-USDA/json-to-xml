@@ -1,0 +1,1 @@
+cat *.xml > merged_`date +%m-%d-%Y_T%H:%M`.xml

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Full-field local displacement analysis of two-sided paperboard</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">J.M.</namePart>
+      <namePart type="family">Considine</namePart>
+      <displayForm>Considine, J.M.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">D.W.</namePart>
+      <namePart type="family">Vahey</namePart>
+      <displayForm>Vahey, D.W.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-16</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This report describes a method to examine full-field displacements of both sides of paperboard during tensile testing. Analysis showed out-of-plane shear behavior near the failures zones. The method was reliably used to examine out-of-plane shear in double notch shear specimens. Differences in shear behavior of machine direction and cross-machine direction specimens are described.</abstract>
+   <subject>
+      <topic>Fiberboard</topic>
+   </subject>
+   <subject>
+      <topic>mechanical properties</topic>
+   </subject>
+   <subject>
+      <topic>paperboard</topic>
+   </subject>
+   <subject>
+      <topic>testing</topic>
+   </subject>
+   <subject>
+      <topic>shear</topic>
+   </subject>
+   <subject>
+      <topic>papermaking</topic>
+   </subject>
+   <subject>
+      <topic>z-toughness</topic>
+   </subject>
+   <subject>
+      <topic>displacement</topic>
+   </subject>
+   <subject>
+      <topic>failure</topic>
+   </subject>
+   <subject>
+      <topic>shear strength</topic>
+   </subject>
+   <subject>
+      <topic>tensile strength</topic>
+   </subject>
+   <subject>
+      <topic>bending strength</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>61st Appita Annual Conference and Exhibition : Gold Coast, Australia, 6-9 May 2007 : proceedings</title>
+      </titleInfo>
+      <part>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">16</text>
+         <extent unit="pages">
+            <extent unit="pages"/>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1727</identifier>
+   <identifier type="treesearch-pub">29798</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/29798</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_considine001.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-29798.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-29798.json</archive_file>
+      <original_file>A-29798</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xmlns="http://www.loc.gov/mods/v3"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Logging residue in Washington, Oregon, California: volume and characteristics.</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">James O.</namePart>
+      <namePart type="family">Howard</namePart>
+      <displayForm>Howard, James O.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Economics, Statistics and Life Cycle Analysis Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2008-04-17</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>This report makes available data on the volume and characteristics of logging residue resulting from 1969 logging operations in Oregon, Washington, and California. The results indicate highest volumes of logging residue are found in the Douglas-fir region of western Oregon and western Washington. Average gross volume of residue in this region ranged from 4,548 cubic feet per acre on National Forest land to 1,491 cubic feet per acre on private land; net volume averaged 3,127 and 1,328 cubic feet per acre, respectively. Total net volume for all owners in this region was estimated to be about 460 million cubic feet for 1969. The lowest average volume of logging residue was found in the ponderosa pine region of eastern Oregon and eastern Washington--gross aver aged between 350 and 400 cubic feet per acre for all owners. In California, gross volume averaged 1,905 cubic feet per acre for private lands and 1,460 cubic feet per acre for National Forests. Additional information is provided concerning the average and total volume of residue by diameter class, length class, soundness, and type of material.</abstract>
+   <subject>
+      <topic>Ecology, Ecosystems, &amp;Environment</topic>
+   </subject>
+   <subject>
+      <topic>Wildlife  (or Fauna)</topic>
+   </subject>
+   <subject>
+      <topic>Forest Products</topic>
+   </subject>
+   <relatedItem type="series">
+      <titleInfo type="abbreviated">
+         <title>Resour. Bull.</title>
+      </titleInfo>
+      <titleInfo type="uniform">
+         <title>Resource Bulletin (RB)</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>044</number>
+            <caption>v.</caption>
+         </detail>
+         <text type="year">2008</text>
+         <text type="month">04</text>
+         <text type="day">17</text>
+         <extent unit="pages">
+            <extent unit="pages">
+               <total>NaN</total>
+            </extent>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1703</identifier>
+   <identifier type="treesearch-pub">26207</identifier>
+   <location>
+      <url access="object in context">https://www.fs.usda.gov/treesearch/pubs/26207</url>
+   </location>
+   <location>
+      <url access="raw object">https://www.fs.fed.us/pnw/pubs/pnw_rb044.pdf</url>
+   </location>
+   <extension>
+      <vendorName/>
+      <archiveFile/>
+      <originalFile>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/A-26207.json</originalFile>
+      <workingDirectory/>
+      <!--values of new global variables-->
+      <archive_file>A-26207.json</archive_file>
+      <original_file>A-26207</original_file>
+      <working_directory>file:/C:/Users/carlos.martinez/Desktop/json-to-xml/transformed-source-files/</working_directory>
+   </extension>
+</mods>
