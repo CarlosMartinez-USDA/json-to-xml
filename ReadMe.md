@@ -60,9 +60,9 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
 1.  Open the source_files folder
 2.  Locate the following shell scripts
-	 (a) merge_json.sh 
-	 (b) data_amp_add.sh
-3.  Run the merge_json.sh
+	- (a) (merge-json.sh)[https://github.com/CarlosMtz3/json-to-xml/edit/master/merge-json.sh]
+	- (b) (data_amp_add.sh)[https://github.com/CarlosMtz3/json-to-xml/edit/master/transformed-source-files/data_amp_add.sh]
+3.  Run the merge_json.sh - file merges *.json __
 4.  Run the data_amp_add.sh
 5.  Open a JSON file in Oxygen
 6. Verify it contains the`<data>  </data>`at the beginning of the file and at the end of the file. 
