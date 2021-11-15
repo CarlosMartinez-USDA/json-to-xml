@@ -1,0 +1,59 @@
+
+    <xd:doc>
+        <xd:desc>
+            <xd:p>An author's given and family name are parsed from the JSON map/array/map/string[@key='name'] string key value</xd:p>
+            <xd:p>displayName matches on the 'name' string key value.</xd:p>
+            <xd:p>affiliation uses two external stylesheets to match abbreviated station and unit
+                numbers and names with their respective whole name and address</xd:p>
+            <xd:p>roleTerm is hardcoded to "author"</xd:p>
+        </xd:desc>
+    </xd:doc>
+    <xsl:template name="name-info" xpath-default-namespace="http://www.w3.org/2005/xpath-functions">
+        <!--author given and family names-->
+             
+            <xsl:if test="./string[@key = 'name']">
+                <namePart type="given">
+                    <xsl:value-of
+                        select="substring-after(normalize-space(./string[@key = 'name']), ', ')"/>
+                </namePart>
+                <namePart type="family">
+                    <xsl:value-of
+                        select="substring-before(normalize-space(./string[@key = 'name']), ', ')"/>
+                </namePart>
+                <displayForm>
+                    <xsl:value-of select="./string[@key = 'name']"/>
+                </displayForm>
+            </xsl:if>
+            <!--affiliation-->
+            <xsl:if test="./string[@key = 'station_id'] != ''">
+                <affiliation>
+                    <xsl:text>United States Department of Agriculture, Forest Service, </xsl:text>
+                    <xsl:value-of select="local:acronymToName(./string[@key = 'station_id'])"/>
+                    <xsl:text>, </xsl:text>
+                    <xsl:choose>
+                        <xsl:when test="number(./string[@key = 'unit_id']) > 0">
+                            <xsl:value-of select="local:unitNumToName(./string[@key = 'unit_id'])"/>
+                            <xsl:text>, </xsl:text>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:if test="string(./string[@key = 'unit_id'] !='')">
+                            <xsl:value-of select="local:unitAcronymToName(./string[@key = 'unit_id'])"/>
+                            <xsl:text>, </xsl:text>
+                            </xsl:if>
+                        </xsl:otherwise>
+                        
+                    </xsl:choose>
+<!--                    <xsl:choose>-->
+                        <!--<xsl:when test="number(./string[@key = 'unit_id']) > 0">
+                            <xsl:value-of select="local:unitNumberToAddress(./string[@key = 'unit_id'])"/>
+                        </xsl:when>
+                       <xsl:otherwise>-->
+                       <xsl:value-of select="local:acronymToAddress(./string[@key = 'station_id'])"/>
+                       <!--</xsl:otherwise>-->
+                    <!--</xsl:choose>-->
+                </affiliation>
+            </xsl:if>
+            <role>
+                <roleTerm type="text">author</roleTerm>
+            </role>
+    </xsl:template>

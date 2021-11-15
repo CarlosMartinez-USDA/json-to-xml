@@ -341,11 +341,11 @@
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
                     <unitNumber>4952</unitNumber>
+                    <unitName>Integrating Human and Natural Systems</unitName>
                     <subUnits>
-                        <unitName>Integrating Human and Natural Systems </unitName>
-                        <subUnit>Urban Forestry South </subUnit>
+                        <subUnit>Urban Forestry South</subUnit>
+                        <subUnit>InterfaceSouth</subUnit>
                     </subUnits>
-                    <subUnit>InterfaceSouth </subUnit>
                     <isPartOf>Forest Assessment and Synthesis</isPartOf>
                 </researchUnit>
                 <researchUnit stationAcronym="SRS">
@@ -483,7 +483,7 @@
             <agency>U.S. Department of Agriculture, Forest Service,</agency>
             <name>International Institute of Tropical Forestry</name>
             <researchUnits>
-                <researchUnit acronym="FPL">
+                <researchUnit acronym="IITF">
                     <unitNumber>4151</unitNumber>
                     <unitName>International Institute of Tropical Forestry</unitName>
                 </researchUnit>
