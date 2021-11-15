@@ -62,9 +62,14 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 2.  Locate the following shell scripts
 	- (a) (merge-json.sh)[https://github.com/CarlosMtz3/json-to-xml/edit/master/merge-json.sh]
 	- (b) (data_amp_add.sh)[https://github.com/CarlosMtz3/json-to-xml/edit/master/transformed-source-files/data_amp_add.sh]
-3.  Run the merge_json.sh - file merges *.json __
-4.  Run the data_amp_add.sh
-5.  Open a JSON file in Oxygen
+3.  Run the merge_json.sh - file merges *.json files are merged into one file containing all the .json objects contained in the directory.
+4.  Run the data_amp_add.sh - this file adds the <data> </data> tags, corrects invalid XML charaters (i.e. otherwise an invalid result is rendered).  
+ - Chacters fixed
+  	- & --> &amp;
+  	- <br> --> <br/>
+  - Characters still needing work 
+ 	- < --> &lt; | Needs Resolution: The "working draft" (i.e. NOT the one used in this procedure) attempts to fix file A-29760.json by changing "..(diameter at breast height ***<***6 in) with suppressed growth... 
+ 5.  Open a JSON file in Oxygen
 6. Verify it contains the`<data>  </data>`at the beginning of the file and at the end of the file. 
 
 ## Create a Transformation Scenario or Select the Debugging Layout
