@@ -89,12 +89,21 @@ From these **location** elements to the surrogate record and the resource itself
 **Description:** Extraneous “station_id” acronym appearing just outside the last author name tag. 
 	 -  Have not been able to determine it’s origin. 
 	 -  See screenshot below
+	 <br>
 <a href="https://ibb.co/BrZ0kQ5"><img src="https://i.ibb.co/fnpjJyz/random-station-id.png" alt="random-station-id" border="0"></a>
 
 
 # Issue  3: invalid characters usage
 **Issue**: Several TreeSearch files contain an invalid characters that will render invalid when the XML processor attempts to transform them
 The filenames containing the issues are listed below. Some files contain more than one issue so they are listed twice. 
+
+ - Chacters fixed
+  	- & &rarr; `&amp;`
+	 - `<br>` &rarr; `<br/>`
+  - Characters still needing work 
+ 	- `< `&rarr;` &lt;` | Needs Resolution: The "working draft" (i.e. NOT the one used in this procedure) attempts to fix file A-29760.json by changing "..(diameter at breast height ***<***6 in) with suppressed growth... 
+ 	- The less than symbol `<` should be written as  `&lt;` in order to be transformed by the XSLT Processor. 
+ 	- The shell script does not do this without changing other valid html tags (e.g.      \&lt;i>\</i>) thus rendering the rest of the JSON document invalid. 
 
 **Resolution:** The shell script provided to add `<data></data>` tags to the beginning and end of each document, adds a second statement and has resolved 3a. With more time, issues 3b, and 3c can also be resolved. 
 
@@ -131,7 +140,7 @@ Once the problem is corrected manually, it produces valid MODS metadata, and a v
 This issue can be resolved if the shell script is improved to handle preprocess this bad character prior to transformation. 
 
 ## Issue 3c: "`<br>`"
-
+ - `<br>` &rarr; `<br/>`
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
