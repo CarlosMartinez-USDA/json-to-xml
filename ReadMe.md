@@ -101,10 +101,9 @@ The filenames containing the issues are listed below. Some files contain more th
   	- & &rarr; `&amp;`
 	 - `<br>` &rarr; `<br/>`
   - Characters still needing work 
- 	- `< `&rarr;` &lt;` | Needs Resolution: The "working draft" (i.e. NOT the one used in this procedure) attempts to fix file A-29760.json by changing 
- 	..(diameter at breast height `<`6 bin) with suppressed growth... 
-
- 	- The less than symbol `<` should be written as  `&lt;` in order to be transformed by the XSLT Processor. 
+ 	- `< `&rarr;` &lt;` | Needs Resolution: The "working draft" (i.e. NOT the one used in this procedure) attempts to fix file A-29760.json by changing.. 
+	`..(diameter at breast height `<`6 bin) with suppressed growth...`
+ 	- The less than symbol `<` should be written as `&lt;` in order to be transformed by the XSLT Processor. 
  	- The shell script does not do this without changing other valid html tags (e.g.      \&lt;i>\</i>) thus rendering the rest of the JSON document invalid. 
 
 **Resolution:** The shell script provided to add `<data></data>` tags to the beginning and end of each document, adds a second statement and has resolved 3a. With more time, issues 3b, and 3c can also be resolved. 
@@ -155,7 +154,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMyNjAzNDI5NiwyMTI4NjUxMSw0NzkzNT
+eyJoaXN0b3J5IjpbMTI1MTIxOTM3MiwyMTI4NjUxMSw0NzkzNT
 cxNjcsMTQ2MDA1MTA4MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0
 LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMz
 YzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUs
