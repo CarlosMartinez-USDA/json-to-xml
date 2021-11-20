@@ -97,7 +97,7 @@ From these **location** elements to the surrogate record and the resource itself
 **Issue**: Several TreeSearch files contain an invalid characters that will render invalid when the XML processor attempts to transform them
 The filenames containing the issues are listed below. Some files contain more than one issue so they are listed twice. 
 
- - Chacters fixed
+ - Characters fixed
   	- & &rarr; `&amp;`
 	 - `<br>` &rarr; `<br/>`
   - Characters still needing work 
@@ -154,11 +154,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI1MTIxOTM3MiwyMTI4NjUxMSw0NzkzNT
-cxNjcsMTQ2MDA1MTA4MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0
-LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMz
-YzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUs
-ODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMD
-g1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1
-XX0=
+eyJoaXN0b3J5IjpbMzQyMjA4Nzk1LDIxMjg2NTExLDQ3OTM1Nz
+E2NywxNDYwMDUxMDgzLDE0MjU5MTA4NjIsLTEyNTIwNTgzMDQs
+MTE4NzQwNTkwNSwzNjQwMDM5NzksLTMyNDg3MDcyLDE5MzMzNj
+M2ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4
+NzU1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwOD
+U2NDQsLTQ2NzM1MDU2NywxNzk3MzU5MzcwLDE5MTE5NzU2NDVd
+fQ==
 -->
