@@ -63,7 +63,6 @@ From these **location** elements to the surrogate record and the resource itself
  #### The following values may be used with the access attribute:
  - **preview** – Indicates a link to a thumbnail or snippet of text.
  - **raw object** – Indicates a direct link to the object described (e.g., a jpg or pdf document). Used only when the object is represented by a single file. 
-
 - **object in context** – Indicates a link to the object within the context of its environment (with associated metadata, navigation, etc.)
 ######  Information related to url access may ben found at: https://www.loc.gov/standards/mods/userguide/location.html#url
 #### 
@@ -154,11 +153,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMDg3NDY3OCwyMTI4NjUxMSw0NzkzNT
-cxNjcsMTQ2MDA1MTA4MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0
-LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMz
-YzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUs
-ODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMD
-g1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3MCwxOTExOTc1NjQ1
-XX0=
+eyJoaXN0b3J5IjpbLTExODc5Mzc2MjgsMjEyODY1MTEsNDc5Mz
+U3MTY3LDE0NjAwNTEwODMsMTQyNTkxMDg2MiwtMTI1MjA1ODMw
+NCwxMTg3NDA1OTA1LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMz
+M2MzY4OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1
+LDg3NTU2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MD
+A4NTY0NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0
+NV19
 -->
