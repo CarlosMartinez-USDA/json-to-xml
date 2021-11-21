@@ -129,7 +129,7 @@ The shell script responsible for adding `<data></data>` to the beginning and end
 
 ## Issue 3b: "<" usage of less-than  
 **Filename:** A-29760.json 
-- [ ] **Task Complete?**  No. Possible to fix shell script. 
+- [x] **Task Complete?**  No. Possible to fix shell script. 
 **Description:** The content of elements must consist of well-formed character data or markup.
 
 	- The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
@@ -153,11 +153,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODc5Mzc2MjgsMjEyODY1MTEsNDc5Mz
-U3MTY3LDE0NjAwNTEwODMsMTQyNTkxMDg2MiwtMTI1MjA1ODMw
-NCwxMTg3NDA1OTA1LDM2NDAwMzk3OSwtMzI0ODcwNzIsMTkzMz
-M2MzY4OSwxMzMxODQxMTU3LDE0MDIwNDQxMDMsMTc1OTgzNjU1
-LDg3NTU2NjMyNSwtNjg4NDk0MzkzLC02OTE2MDA3NDYsMTE1MD
-A4NTY0NCwtNDY3MzUwNTY3LDE3OTczNTkzNzAsMTkxMTk3NTY0
-NV19
+eyJoaXN0b3J5IjpbLTMzNTc5MzQxMiwtMTE4NzkzNzYyOCwyMT
+I4NjUxMSw0NzkzNTcxNjcsMTQ2MDA1MTA4MywxNDI1OTEwODYy
+LC0xMjUyMDU4MzA0LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMj
+Q4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEw
+MywxNzU5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MT
+YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
+MF19
 -->
