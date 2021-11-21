@@ -129,7 +129,7 @@ The shell script responsible for adding `<data></data>` to the beginning and end
 
 ## Issue 3b: "<" usage of less-than  
 **Filename:** A-29760.json 
-- [x] **Task Complete?**  No. Possible to fix shell script. 
+- [ ] **Task Complete?**  No. Possible to fix shell script. 
 **Description:** The content of elements must consist of well-formed character data or markup.
 
 	- The file contains the "<" symbol within the abstract. This is treated as an invalid character and thus renders and error.
@@ -140,7 +140,8 @@ Once the problem is corrected manually, it produces valid MODS metadata, and a v
 This issue can be resolved if the shell script is improved to handle preprocess this bad character prior to transformation. 
 
 ## Issue 3c: "`<br>`"
- - `<br>` &rarr; `<br/>`
+- `<br>` &rarr; `<br/>`
+- 
 <!--stackedit_data:
 eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 -->
@@ -153,11 +154,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMzNTc5MzQxMiwtMTE4NzkzNzYyOCwyMT
-I4NjUxMSw0NzkzNTcxNjcsMTQ2MDA1MTA4MywxNDI1OTEwODYy
-LC0xMjUyMDU4MzA0LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMj
-Q4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEw
-MywxNzU5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MT
-YwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1NjcsMTc5NzM1OTM3
-MF19
+eyJoaXN0b3J5IjpbLTIwNTgzODcwMTEsLTExODc5Mzc2MjgsMj
+EyODY1MTEsNDc5MzU3MTY3LDE0NjAwNTEwODMsMTQyNTkxMDg2
+MiwtMTI1MjA1ODMwNCwxMTg3NDA1OTA1LDM2NDAwMzk3OSwtMz
+I0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3LDE0MDIwNDQx
+MDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4NDk0MzkzLC02OT
+E2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3LDE3OTczNTkz
+NzBdfQ==
 -->
