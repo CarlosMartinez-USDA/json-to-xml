@@ -1,6 +1,7 @@
 # JSON-to-MODS XSLT Transformation
 
-**File information:** This file contains information about transforming JSON to XML.  Once converted to XML, the metadata is mapped into the MODS 3.7 schea 
+**File:** This file contains information about transforming JSON to XML.  Once converted to XML, the metadata is mapped into the [MODS 3.7 schema](http://www.loc.gov/mods/v3).  
+
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for ingest into Unified Repository.
 
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service (USFS)](https://www.fs.usda.gov/).
@@ -150,11 +151,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4MDA0MjQ3MiwtMjA1ODM4NzAxMSwtMT
-E4NzkzNzYyOCwyMTI4NjUxMSw0NzkzNTcxNjcsMTQ2MDA1MTA4
-MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0LDExODc0MDU5MDUsMz
-Y0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDEx
-NTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NTY2MzI1LC02OD
-g0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1
-NjddfQ==
+eyJoaXN0b3J5IjpbNzI3ODY0NDgzLC0yMDU4Mzg3MDExLC0xMT
+g3OTM3NjI4LDIxMjg2NTExLDQ3OTM1NzE2NywxNDYwMDUxMDgz
+LDE0MjU5MTA4NjIsLTEyNTIwNTgzMDQsMTE4NzQwNTkwNSwzNj
+QwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2ODksMTMzMTg0MTE1
+NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4NzU1NjYzMjUsLTY4OD
+Q5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2NDQsLTQ2NzM1MDU2
+N119
 -->
