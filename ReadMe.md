@@ -1,6 +1,6 @@
 # JSON-to-MODS XSLT Transformation
 
-**File information:** This file contains information about the 
+**File information:** This file contains information about transforming JSON to XML.  MODS is the XML schema that the JSON is converis converted from 
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for ingest into Unified Repository.
 
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service (USFS)](https://www.fs.usda.gov/).
@@ -150,7 +150,7 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0OTUxNjEwOSwtMjA1ODM4NzAxMSwtMT
+eyJoaXN0b3J5IjpbLTIwMDMxMDM3MywtMjA1ODM4NzAxMSwtMT
 E4NzkzNzYyOCwyMTI4NjUxMSw0NzkzNTcxNjcsMTQ2MDA1MTA4
 MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0LDExODc0MDU5MDUsMz
 Y0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDEx
