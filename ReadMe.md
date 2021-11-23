@@ -1,5 +1,6 @@
 # JSON-to-MODS XSLT Transformation
 
+**File information:** This file contains information about the 
 **Task:** Transform [Treesearch](https://www.fs.usda.gov/treesearch/) JSON files to MODS XML records for ingest into Unified Repository.
 
 **Materials**: Treesearch metadata in JSON format from the [United States Forest Service (USFS)](https://www.fs.usda.gov/).
@@ -44,11 +45,6 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 5.  Open a JSON file in Oxygen
 6. Verify it contains the`<data>  </data>`at the beginning of the file and at the end of the file. 
 
-## Creating the Transformation Scenario in Oxygen
-1) Choose the json-to-mods.xsl as the transformation stylesheet. 
-2) If you're creating a scenario, set the output page as desired. 
-3) DO NOT set any parameters. This is taken care of by the new testing parameters added to the params-cm.xsl file. 
-4) Run the scenario or choose the debugging button to transform JSON to MODS
 # MODS: Identifier and Location 
 ## MODS:Identifiers 
 The primary identifiers found in the Treesearch metadata are: ***doi, product_id, and treesearch_pub_id.*** 
@@ -154,11 +150,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTgzODcwMTEsLTExODc5Mzc2MjgsMj
-EyODY1MTEsNDc5MzU3MTY3LDE0NjAwNTEwODMsMTQyNTkxMDg2
-MiwtMTI1MjA1ODMwNCwxMTg3NDA1OTA1LDM2NDAwMzk3OSwtMz
-I0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3LDE0MDIwNDQx
-MDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4NDk0MzkzLC02OT
-E2MDA3NDYsMTE1MDA4NTY0NCwtNDY3MzUwNTY3LDE3OTczNTkz
-NzBdfQ==
+eyJoaXN0b3J5IjpbMTE0OTUxNjEwOSwtMjA1ODM4NzAxMSwtMT
+E4NzkzNzYyOCwyMTI4NjUxMSw0NzkzNTcxNjcsMTQ2MDA1MTA4
+MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0LDExODc0MDU5MDUsMz
+Y0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDEx
+NTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NTY2MzI1LC02OD
+g0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1
+NjddfQ==
 -->
