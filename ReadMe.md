@@ -48,7 +48,7 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 
 # MODS: Identifier and Location 
 ## MODS:Identifiers 
-The primary identifiers found in the Treesearch metadata are: ***doi, product_id, and treesearch_pub_id.*** 
+The primary identifiers found in the Treesearch metadata are: ***doi, product_id,***  and ***treesearch_pub_id.*** 
 
 From these **location** elements to the surrogate record and the resource itself are built to provide access. 
 
@@ -151,11 +151,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDQ2MjI4NCwtMjA1ODM4NzAxMSwtMT
-E4NzkzNzYyOCwyMTI4NjUxMSw0NzkzNTcxNjcsMTQ2MDA1MTA4
-MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0LDExODc0MDU5MDUsMz
-Y0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYzNjg5LDEzMzE4NDEx
-NTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsODc1NTY2MzI1LC02OD
-g0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1NjQ0LC00NjczNTA1
-NjddfQ==
+eyJoaXN0b3J5IjpbMTMzNTUzOTY4OCwtNjgwNDYyMjg0LC0yMD
+U4Mzg3MDExLC0xMTg3OTM3NjI4LDIxMjg2NTExLDQ3OTM1NzE2
+NywxNDYwMDUxMDgzLDE0MjU5MTA4NjIsLTEyNTIwNTgzMDQsMT
+E4NzQwNTkwNSwzNjQwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2
+ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4Nz
+U1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2
+NDRdfQ==
 -->
