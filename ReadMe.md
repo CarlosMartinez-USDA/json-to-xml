@@ -50,6 +50,52 @@ style D fill:#9fc5e8,stroke:#333,stroke-width:4px
 ## MODS:Identifiers 
 The primary identifiers found in the Treesearch metadata are: ***doi, product_id,***  and ***treesearch_pub_id.*** 
 
+    {
+        "product_id": "1703",
+        "ac22_approved_for_public": "1",
+        "primary_station": "PNW",
+        "historical_station": "PNW",
+        "entrystatus": "Published to Web",
+        "product_type_id": "1",
+        "product_type_desc": "Publication",
+        "product_subtype_id": null,
+        "product_subtype_desc": null,
+        "referee_status_id": "2",
+        "status_name": "Informally Refereed (Peer-Reviewed)",
+        "pub_type_id": "5",
+        "pub_type_desc": "Resource Bulletin (RB)",
+        "title": "Logging residue in Washington, Oregon, California: volume and characteristics.",
+        "product_year": " 1973",
+        "abstract": "This report makes available data on the volume and characteristics of logging residue resulting from 1969 logging operations in Oregon, Washington, and California.<br/><br/> The results indicate highest volumes of logging residue are found in the Douglas-fir region of western Oregon and western Washington. Average gross volume of residue in this region ranged from 4,548 cubic feet per acre on National Forest land to 1,491 cubic feet per acre on private land; net volume averaged 3,127 and 1,328 cubic feet per acre, respectively. Total net volume for all owners in this region was estimated to be about 460 million cubic feet for 1969. The lowest average volume of logging residue was found in the ponderosa pine region of eastern Oregon and eastern Washington--gross aver aged between 350 and 400 cubic feet per acre for all owners. In California, gross volume averaged 1,905 cubic feet per acre for private lands and 1,460 cubic feet per acre for National Forests.<br/><br/> Additional information is provided concerning the average and total volume of residue by diameter class, length class, soundness, and type of material.",
+        "citation": "Howard, James O. 1973. Logging residue in Washington, Oregon, California: volume and characteristics.  Res. Bull. PNW-RB-044. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 31 p",
+        "keywords": "slash, logging, wood waste, Oregon, Washington, California",
+        "doi": null,
+        "url_binary_file": "https://www.fs.fed.us/pnw/pubs/pnw_rb044.pdf",
+        "binary_filesize": "3.76 MB",
+        "url_landing_page": "https://www.fs.usda.gov/treesearch/pubs/26207",
+        "treesearch_pub_id": "26207",
+        "pub_parent_id": null,
+        "pub_child_number": null,
+        "pub_parent_ind": "0",
+        "pub_publication": "Res. Bull. PNW-RB-044. Portland, OR: U.S. Department of Agriculture, Forest Service, Pacific Northwest Research Station. 31 p",
+        "proceedings_ind": "0",
+        "pub_volume": "044",
+        "pub_issue": null,
+        "pub_page": null,
+        "pub_page_start": null,
+        "pub_page_end": null,
+        "pub_source": "T",
+        "geographic_terms": null,
+        "issn_id": null,
+        "is_early_release": "0",
+        "created_on": "20-FEB-2007 12:42:05",
+        "modified_on": "17-APR-2008 10:03:55",
+        "send_to_reviewer_ind": "A",
+        "publish_to_web_ind": "Y",
+        "send_to_reviewer": null,
+        "child_publications": "",
+        "national_research_taxonomy_elements": 
+
 From these **location** elements to the surrogate record and the resource itself are built to provide access. 
 
 ## MODS:location and url access[*](https://www.loc.gov/standards/mods/userguide/location.html#url)
@@ -151,11 +197,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzNTUzOTY4OCwtNjgwNDYyMjg0LC0yMD
-U4Mzg3MDExLC0xMTg3OTM3NjI4LDIxMjg2NTExLDQ3OTM1NzE2
-NywxNDYwMDUxMDgzLDE0MjU5MTA4NjIsLTEyNTIwNTgzMDQsMT
-E4NzQwNTkwNSwzNjQwMDM5NzksLTMyNDg3MDcyLDE5MzMzNjM2
-ODksMTMzMTg0MTE1NywxNDAyMDQ0MTAzLDE3NTk4MzY1NSw4Nz
-U1NjYzMjUsLTY4ODQ5NDM5MywtNjkxNjAwNzQ2LDExNTAwODU2
-NDRdfQ==
+eyJoaXN0b3J5IjpbLTExMTIwMjUzNjksLTY4MDQ2MjI4NCwtMj
+A1ODM4NzAxMSwtMTE4NzkzNzYyOCwyMTI4NjUxMSw0NzkzNTcx
+NjcsMTQ2MDA1MTA4MywxNDI1OTEwODYyLC0xMjUyMDU4MzA0LD
+ExODc0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3MiwxOTMzMzYz
+Njg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNzU5ODM2NTUsOD
+c1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0NiwxMTUwMDg1
+NjQ0XX0=
 -->
