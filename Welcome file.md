@@ -1,7 +1,6 @@
 
 
-
-# JSON-to-MODS XSLT Transformation
+ JSON-to-MODS XSLT Transformation
 
 **Summary:** This file contains information about transforming JSON to XML.  Once converted to XML, the metadata is mapped into the [MODS 3.7 schema](http://www.loc.gov/mods/v3).  
 
@@ -203,5 +202,6 @@ U5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0
 Nl19
 -->
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Mzc3ODUyNDcsMTY5OTY4NzE5MV19
+eyJoaXN0b3J5IjpbMTA1ODczMjI0NCwtMTkzNzc4NTI0NywxNj
+k5Njg3MTkxXX0=
 -->
