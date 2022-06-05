@@ -29,7 +29,7 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 *- These will be run at different times througout the **prepartion** and **procedure**.*
  - *Shell Scripts List*
 	-  (a) [merge_json.sh](https://github.com/CarlosMtz3/json-to-mods/blob/master/working-directory/merge-json.sh) - merges all *.json files within this directory. This is useful for creating  a merged view of the json data for analysis. **Run this file first**
-	-  (b) [merge_xml.sh](https://github.com/CarlosMtz3/json-to-mods/blob/master/working-directory/merge-xml.sh) - merges all *.xml files contained within this directory. This is useful after transformation because it is easier to check if a specific element is available in every file.  **Run this file last**
+	-  (b) [merge_xml.sh](https://github.com/CarlosMtz3/json-to-mods/blob/master/working-directory/merge-xml.sh) - merges all *.xml files contained within this directory. This is useful after transformation because it is easier to check if a specific element is available in every file.  ***Run this file last***
 	 - \(c\) [correct-invalid-chars.sh](https://github.com/CarlosMtz3/json-to-mods/blob/master/workingDir/correct-invalid-chars.sh) - this corrects several of the invalid characters found in the original treesearch metadata. It should  be run after **(a)** and before **(b)**. 
 4.  **Run the merge_json.sh**
 	-	 If data analysis is desired, the generated output from this file may be imported into OpenRefine. 
@@ -193,11 +193,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE2MjA3NTAzLDc5OTY2MzY2Miw0OTc4MT
-g4MTAsLTExMTIwMjUzNjksLTIwNTgzODcwMTEsLTExODc5Mzc2
-MjgsMjEyODY1MTEsNDc5MzU3MTY3LDE0NjAwNTEwODMsMTQyNT
-kxMDg2MiwtMTI1MjA1ODMwNCwxMTg3NDA1OTA1LDM2NDAwMzk3
-OSwtMzI0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3LDE0MD
-IwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4NDk0Mzkz
-XX0=
+eyJoaXN0b3J5IjpbLTUxNzY3NTY5MSw3OTk2NjM2NjIsNDk3OD
+E4ODEwLC0xMTEyMDI1MzY5LC0yMDU4Mzg3MDExLC0xMTg3OTM3
+NjI4LDIxMjg2NTExLDQ3OTM1NzE2NywxNDYwMDUxMDgzLDE0Mj
+U5MTA4NjIsLTEyNTIwNTgzMDQsMTE4NzQwNTkwNSwzNjQwMDM5
+NzksLTMyNDg3MDcyLDE5MzMzNjM2ODksMTMzMTg0MTE1NywxND
+AyMDQ0MTAzLDE3NTk4MzY1NSw4NzU1NjYzMjUsLTY4ODQ5NDM5
+M119
 -->
