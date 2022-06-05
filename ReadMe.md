@@ -33,7 +33,7 @@ The _[json_to_mods.xsl](https://github.com/CarlosMtz3/json-to-xml/blob/master/js
 	 - \(c\) [correct-invalid-chars.sh](https://github.com/CarlosMtz3/json-to-mods/blob/master/workingDir/correct-invalid-chars.sh) - this corrects several of the invalid characters found in the original treesearch metadata. It should  be run after **(a)** and before **(b)**. 
 4.  **Run the merge_json.sh**
 	-	 If data analysis is desired, the generated output from this file may be imported into OpenRefine. 
-5.  **Run the data_amp_add.sh** 
+5.  **Run the correct-invalid-chars.sh** 
 	 - corrects all invalid character usage except for the misuse of the less than symbol (i.e. "<") in  the abstract of file [A-27260.json](https://github.com/CarlosMtz3/json-to-mods/blob/master/workingDir/A-29760.json). 
 6. **The files are now prepared for transformation.**
 	
@@ -193,11 +193,11 @@ eyJoaXN0b3J5IjpbNTY2MTQ2MTE2XX0=
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5NjYzNjYyLDQ5NzgxODgxMCwtMTExMj
-AyNTM2OSwtMjA1ODM4NzAxMSwtMTE4NzkzNzYyOCwyMTI4NjUx
-MSw0NzkzNTcxNjcsMTQ2MDA1MTA4MywxNDI1OTEwODYyLC0xMj
-UyMDU4MzA0LDExODc0MDU5MDUsMzY0MDAzOTc5LC0zMjQ4NzA3
-MiwxOTMzMzYzNjg5LDEzMzE4NDExNTcsMTQwMjA0NDEwMywxNz
-U5ODM2NTUsODc1NTY2MzI1LC02ODg0OTQzOTMsLTY5MTYwMDc0
-Nl19
+eyJoaXN0b3J5IjpbMTE2MjA3NTAzLDc5OTY2MzY2Miw0OTc4MT
+g4MTAsLTExMTIwMjUzNjksLTIwNTgzODcwMTEsLTExODc5Mzc2
+MjgsMjEyODY1MTEsNDc5MzU3MTY3LDE0NjAwNTEwODMsMTQyNT
+kxMDg2MiwtMTI1MjA1ODMwNCwxMTg3NDA1OTA1LDM2NDAwMzk3
+OSwtMzI0ODcwNzIsMTkzMzM2MzY4OSwxMzMxODQxMTU3LDE0MD
+IwNDQxMDMsMTc1OTgzNjU1LDg3NTU2NjMyNSwtNjg4NDk0Mzkz
+XX0=
 -->
