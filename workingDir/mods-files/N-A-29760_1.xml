@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">
+   <titleInfo>
+      <title>Forest thinnings for integrated lumber and paper production</title>
+   </titleInfo>
+   <name type="personal" usage="primary">
+      <namePart type="given">J.Y.</namePart>
+      <namePart type="family">Zhu</namePart>
+      <displayForm>Zhu, J.Y.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">C.T.</namePart>
+      <namePart type="family">Scott</namePart>
+      <displayForm>Scott, C.T.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Northern Research Station, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">R.</namePart>
+      <namePart type="family">Gleisner</namePart>
+      <displayForm>Gleisner, R.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Fiber and Chemical Sciences Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">D.</namePart>
+      <namePart type="family">Mann</namePart>
+      <displayForm>Mann, D.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">D.W.</namePart>
+      <namePart type="family">Vahey</namePart>
+      <displayForm>Vahey, D.W.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">D.P.</namePart>
+      <namePart type="family">Dykstra</namePart>
+      <displayForm>Dykstra, D.P.</displayForm>
+      <affiliation>United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, Station's Goods, Services and Values Program, 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</affiliation>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">G.H.</namePart>
+      <namePart type="family">Quinn</namePart>
+      <displayForm>Quinn, G.H.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <name type="personal">
+      <namePart type="given">L.L.</namePart>
+      <namePart type="family">Edwards</namePart>
+      <displayForm>Edwards, L.L.</displayForm>
+      <role>
+         <roleTerm type="text">author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource>text</typeOfResource>
+   <genre>article</genre>
+   <originInfo>
+      <dateIssued encoding="w3cdtf" keyDate="yes">2011-03-09</dateIssued>
+   </originInfo>
+   <note type="treesearch-status">Informally Refereed (Peer-Reviewed)</note>
+   <language>
+      <languageTerm type="code" authority="iso639-2b">eng</languageTerm>
+      <languageTerm type="text">English</languageTerm>
+   </language>
+   <abstract>Integrated lumber and paper productions using forest thinning materials from U.S. national forests can significantly reduce the cost of prescriptive thinning operations. Many of the trees removed during forest thinnings are in small-diameter classes (diameter at breast height &lt;6 in) with suppressed growth. These trees produce low lumber yield but can produce quality thermomechanical pulps (TMPs) owing to uniformity of wood density and tracheid wall structure and a high mature wood fraction. This was demonstrated in commercial trials conducted at a lumber mill and a newsprint mill in the U.S. Pacific Northwest. Whole log and residual chips from forest thinnings produced at the lumber mill were combined with chips from normal pulping operations to produce newsprint. In all TMP trials, no significant change was found in correlations between the pulp long fraction and the pulp Canadian Standard Freeness.</abstract>
+   <subject>
+      <topic>Timber</topic>
+   </subject>
+   <subject>
+      <topic>Pulp &amp;paper</topic>
+   </subject>
+   <relatedItem type="host">
+      <titleInfo>
+         <title>Forest products journal</title>
+      </titleInfo>
+      <part>
+         <detail type="volume">
+            <number>57</number>
+            <caption>v.</caption>
+         </detail>
+         <detail type="issue">
+            <number>11</number>
+            <caption>no.</caption>
+         </detail>
+         <text type="year">2011</text>
+         <text type="month">03</text>
+         <text type="day">09</text>
+         <extent unit="pages">
+            <start>8</start>
+            <end>13</end>
+            <total>6</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier type="treesearch">1451</identifier>
+   <identifier type="treesearch-pub">29760</identifier>
+   <location>
+      <url displayLabel="Direct access to publisher’s site">https://www.fs.usda.gov/treesearch/pubs/29760</url>
+   </location>
+   <location>
+      <url displayLabel="Full Text in PDF">https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_zhu003.pdf</url>
+   </location>
+   <accessCondition type="use and reproduction" displayLabel="Resource is Open Access">
+      <program xmlns="https://data.crossref.org/schemas/AccessIndicators.xsd">
+         <license_ref>http://purl.org/eprint/accessRights/OpenAccess</license_ref>
+      </program>
+   </accessCondition>
+   <extension>
+      <vendorName>Elsevier</vendorName>
+      <archiveFile>Test.zip</archiveFile>
+      <originalFile>file:/C:/Users/Carlos.Martinez/OneDrive%20-%20USDA/XML_projects/OpenAccess/json-to-xml/workingDir/A-29760.json</originalFile>
+      <workingDirectory/>
+   </extension>
+</mods>

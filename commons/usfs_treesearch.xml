@@ -113,8 +113,7 @@
                     <unitNumber>2</unitNumber>
                     <unitName>Boreal Ecology Cooperative Research Unit</unitName>
                     <unitAcronym>BECRU</unitAcronym>
-                    <unitAddress>University of Alaska Fairbanks, P.O. Box 756780, Fairbanks, AK,
-                        99775-6780, US</unitAddress>
+                    <unitAddress>University of Alaska Fairbanks, P.O. Box 756780, Fairbanks, AK, 99775-6780, US</unitAddress>
                 </researchUnit>
                 <researchUnit stationAcronym="PNW">
                     <unitNumber>3</unitNumber>
@@ -174,7 +173,18 @@
                     <unitNumber>12</unitNumber>
                     <unitName>Station Director</unitName>
                     <unitAcronym>SD</unitAcronym>
-                    <unitAddress>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</unitAddress>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>2665</unitNumber>
+                    <unitName>Station&apos;s Goods, Services and Values Program</unitName>
+                    <unitAcronym>SGSV</unitAcronym>
+                    <unitAddress>Portland Forestry Sciences Laboratory, 620 SW Main Street, Portland, OR 97205</unitAddress>
+                </researchUnit>
+                <researchUnit stationAcronym="PNW">
+                    <unitNumber>4865</unitNumber>
+                    <unitName>Communities &amp; Forest Management Team</unitName>
+                    <unitAcronym>CFMT</unitAcronym>
+                    <unitAddress>Portland Forestry Sciences Laboratory, 620 SW Main Street, Ste 400, Portland, OR 97205</unitAddress>
                 </researchUnit>
             </researchUnits>
             <address>220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</address>

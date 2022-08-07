@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"
+    xmlns:marc="http://www.loc.gov/MARC21/M"
+    xmlns:local="http://local_functions"
+    exclude-result-prefixes="xs"
+    version="2.0">
+    <!-- Local functions -->
+    <!--  
+		Strips punctuation from the last character of a field.
+		To extend add any additional punctuation to the punctuation variable
+		$str: string to be analyzed
+	-->
+    
+	<xsl:function name="local:stripPunctuation"
+	    xmlns:local="http://local_functions">
+		<xsl:param name="str"/>
+		<xsl:variable name="punctuation">.:,;/ </xsl:variable>
+		<!-- isolates end of string -->
+		<xsl:variable name="strEnd">
+			<xsl:value-of select="substring($str, (string-length($str)))"/>
+		</xsl:variable>
+		<!-- isolates last three characters in string tests for initials -->
+		<xsl:variable name="initialTest">
+			<xsl:variable name="lastChars" select="substring($str, (string-length($str)) - 2)"/>
+			<xsl:choose>
+				<xsl:when test="matches($lastChars, '^([.][A-Z][.])')">true</xsl:when>
+				<xsl:when test="matches($lastChars, '^([ ][A-Z][.])')">true</xsl:when>
+				<xsl:when test="matches($lastChars, '^([.][.][.])')">true</xsl:when>
+				<xsl:otherwise>false</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="contains($punctuation, $strEnd)">
+				<xsl:choose>
+					<!-- if ends with initials or ellipse then leave, otherwise remove ending punctuation -->
+					<xsl:when test="$initialTest = 'true'">
+						<xsl:value-of select="$str"/>
+					</xsl:when>
+					<!-- if ends with multiple punctiation -->
+					<xsl:when
+						test="matches(substring($str, (string-length($str)) - 3), '([.:,;/][ ][.:,;/])')">
+						<xsl:value-of select="substring($str, 1, string-length($str) - 3)"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="substring($str, 1, string-length($str) - 1)"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$str"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+
+	<!-- 
+		Strips punctuation from the last character of a field, this version accepts two parameters:
+		 $str: string to be striped
+		 $pcodes: optional punctuation to override the defualt, if empty uses defualts
+	 -->
+	<xsl:function name="local:stripPunctuation"
+	    xmlns:local="http://local_functions">
+		<xsl:param name="str"/>
+		<xsl:param name="pcodes"/>
+		<xsl:variable name="punctuation">
+			<xsl:choose>
+				<xsl:when test="$pcodes = ''">.:,;/ </xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$pcodes"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:variable name="strEnd">
+			<xsl:value-of select="substring($str, (string-length($str)))"/>
+		</xsl:variable>
+		<xsl:variable name="initialTest">
+			<xsl:variable name="lastChars" select="substring($str, (string-length($str)) - 1)"/>
+			<xsl:choose>
+				<xsl:when test="matches($lastChars, '^([.][A-Z][.])')">true</xsl:when>
+				<xsl:when test="matches($lastChars, '^([ ][A-Z][.])')">true</xsl:when>
+				<xsl:when test="matches($lastChars, '^([.][.][.])')">true</xsl:when>
+				<xsl:otherwise>false</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<xsl:choose>
+			<xsl:when test="contains($punctuation, $strEnd)">
+				<xsl:choose>
+					<xsl:when test="$initialTest = 'true'">
+						<xsl:value-of select="$str"/>
+					</xsl:when>
+					<xsl:otherwise>
+						<xsl:value-of select="substring($str, 1, string-length($str) - 1)"/>
+					</xsl:otherwise>
+				</xsl:choose>
+			</xsl:when>
+			<xsl:otherwise>
+				<xsl:value-of select="$str"/>
+			</xsl:otherwise>
+		</xsl:choose>
+	</xsl:function>
+
+	<!-- 
+		Concats specified subfields in order they appear in marc record
+		Two prameters
+		$datafield: marc:datafield node to use for processing
+		$codes: list of subfield codes, no spaces
+	-->
+	<xsl:function name="local:subfieldSelect">
+		<xsl:param name="datafield" as="node()"/>
+		<xsl:param name="codes"/>
+		<!-- Selects and prints out datafield -->
+		<xsl:variable name="str">
+			<xsl:for-each select="$datafield/child::*[contains($codes, @code)]">
+				<xsl:value-of select="concat(., ' ')"/>
+			</xsl:for-each>
+		</xsl:variable>
+		<xsl:value-of select="substring($str, 1, string-length($str) - 1)"/>
+	</xsl:function>
+
+	<!-- 
+		Concats specified subfields in order they appear in marc record with specified delimiter 
+		Three parameters
+		$datafield: marc:datafield node to use for processing
+		$codes: list of subfield codes, no spaces
+		$delimiter: delimiter to use when concating subfields, if empty a space is used
+	-->
+	<xsl:function name="local:subfieldSelect"
+	    xmlns:local="http://local_functions">
+		<xsl:param name="datafield" as="node()"/>
+		<xsl:param name="codes"/>
+		<xsl:param name="delimiter"/>
+		<xsl:variable name="delimStr">
+			<xsl:choose>
+				<xsl:when test="$delimiter = ''">
+					<xsl:value-of select="' '"/>
+				</xsl:when>
+				<xsl:otherwise>
+					<xsl:value-of select="$delimiter"/>
+				</xsl:otherwise>
+			</xsl:choose>
+		</xsl:variable>
+		<!-- Selects and prints out datafield -->
+		<xsl:variable name="str">
+			<xsl:for-each select="$datafield/child::*[contains($codes, @code)]">
+				<xsl:value-of select="concat(., $delimStr)"/>
+			</xsl:for-each>
+		</xsl:variable>
+		<xsl:value-of select="substring($str, 1, string-length($str) - 1)"/>
+	</xsl:function>
+
+	<!-- 
+		Concats specified subfields based on siblings
+		$anyCode: the subfield you want to select on
+		$axis: the that beforeCodes and afterCodes are computed
+		$beforeCodes: subfields that occure before the axis
+		$afterCodes: subfields that occure after the axis
+	-->
+	<xsl:function name="local:specialSubfieldSelect"
+	    xmlns:local="http://local_functions">
+		<xsl:param name="datafield" as="node()"/>
+		<xsl:param name="anyCodes"/>
+		<xsl:param name="axis"/>
+		<xsl:param name="beforeCodes"/>
+		<xsl:param name="afterCodes"/>
+		<xsl:variable name="subfieldStr">
+			<xsl:for-each select="$datafield/marc:subfield">
+				<xsl:if
+					test="contains($anyCodes, @code) or (contains($beforeCodes, @code) and following-sibling::marc:subfield[@code = $axis]) or (contains($afterCodes, @code) and preceding-sibling::marc:subfield[@code = $axis])">
+					<xsl:value-of select="text()"/>
+					<xsl:text> </xsl:text>
+				</xsl:if>
+			</xsl:for-each>
+		</xsl:variable>
+		<xsl:value-of select="substring($subfieldStr, 1, string-length($subfieldStr) - 1)"/>
+	</xsl:function>
+	
+	
+	
+  
+    <xsl:function name="local:substring-before-match" 
+        xmlns:local="http://local_functions">
+        <xsl:param name="arg" as="xs:string?"/>
+        <xsl:param name="regex" as="xs:string"/>
+        
+        <xsl:sequence select="
+            tokenize($arg,$regex)[1]
+            "/>
+        
+    </xsl:function>
+    <xsl:function name="local:nonSort-mods-title" as="item()*"
+        xmlns:local="http://local_functions">
+        <xsl:param name="titles" as="item()"/>
+        
+        <xsl:variable name="wordsToMoveToEnd" as="item()*"
+            select="('A', 'An', 'The')"/>
+        <xsl:for-each select="$titles">
+            <xsl:variable name="title" select="."/>
+            <xsl:variable name="firstWord"
+                select="local:substring-before-match($title,'\W')"/>
+           <xsl:choose>
+               <xsl:when test="$firstWord = $wordsToMoveToEnd">
+               	<xsl:value-of select="replace($title, '(.*?)\W(.*)', '$2')"/>
+                <titleinfo xmlns="http://www.loc.gov/mods/v3">
+                    <title>
+                        <xsl:value-of select="replace($title,'(.*?)\W(.*)', '$2')"/>
+                    </title>
+                    <nonSort>
+                        <xsl:value-of select="replace($title,'(.*?)\W(.*)', '$1')"/>
+                    </nonSort>
+                </titleinfo>
+               </xsl:when>
+               <xsl:otherwise>
+                   <titleinfo xmlns="http://www.loc.gov/mods/v3">
+                       <title>
+                             <xsl:value-of select="$title"/>
+                       </title>
+                   </titleinfo>
+               </xsl:otherwise>
+           </xsl:choose>
+                   
+      <!--      <xsl:sequence select="if ($firstWord = $wordsToMoveToEnd)
+                then $titleChomp
+                else $title"/>-->
+        </xsl:for-each>
+        
+    </xsl:function>
+   <!-- 
+    <xsl:function name="local:createElement"
+        xmlns:local="http://local_functions">
+        <xsl:param name="item"/>
+        <xsl:variable name="node-name" select="{node-name($item)}">
+        <xsl:element inherit-namespaces="yes" name="{$node-name}">
+            <xsl:attribute name="{current(@*)}">  
+                <xsl:copy-of select="@*"/>
+        </xsl:element>
+    </xsl:function>
+    -->
+    
+    
+</xsl:stylesheet>

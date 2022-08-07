@@ -11,6 +11,8 @@
             <xd:p><xd:b>Author:</xd:b> rdonahue</xd:p>
         </xd:desc>
     </xd:doc>
+    <xsl:variable name="months"
+        select="('JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC')"/>
     <xd:doc scope="component">
         <xd:desc>
             <xd:p><xd:b>Function: </xd:b>f:monthNumFromName</xd:p>
@@ -30,8 +32,7 @@
     </xd:doc>
     <xsl:function name="f:monthNumFromName" as="xs:string" xmlns:functx="http://functions">
         <xsl:param name="month-name" as="xs:string"/>
-        <xsl:variable name="months" as="xs:string*"
-            select="'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'"/>
+       
         <xsl:sequence
             select="format-number(index-of($months, lower-case(substring($month-name, 1, 3))), '00')"
         />
