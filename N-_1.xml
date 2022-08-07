@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">&#x1e;&#x1e;&#x1e;
+   <titleInfo xmlns="">&#x1e;&#x1e;&#x1e;</titleInfo>
+   <name xmlns="" type="personal" usage="primary">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;Michael C.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Wiemann</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Wiemann, Michael C.</displayForm>
+      <affiliation>&#x1e;&#x1e;&#x1e;United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineering Properties of Wood, Wood based Materials and Structures, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;Mark</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Knaebe</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Knaebe, Mark</displayForm>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource xmlns="">&#x1e;&#x1e;&#x1e;text</typeOfResource>
+   <genre xmlns="">&#x1e;&#x1e;&#x1e;article</genre>
+   <originInfo xmlns="">&#x1e;&#x1e;&#x1e;
+      <dateIssued encoding="w3cdtf" keyDate="yes">&#x1e;&#x1e;&#x1e;2007-11-08</dateIssued>
+   </originInfo>
+   <note xmlns="" type="treesearch-status">&#x1e;&#x1e;&#x1e;Informally Refereed (Peer-Reviewed)</note>
+   <language xmlns="">&#x1e;&#x1e;&#x1e;
+      <languageTerm type="code" authority="iso639-2b">&#x1e;&#x1e;&#x1e;eng</languageTerm>
+      <languageTerm type="text">&#x1e;&#x1e;&#x1e;English</languageTerm>
+   </language>
+   <abstract xmlns="">&#x1e;&#x1e;&#x1e;The sapwood of ochoó (Hura crepitans) suffers from an oxidative stain that results in substantial loss in value, making it one of the most important utilization problems encountered among Bolivian timber species. Initiating kiln drying within 6 days of felling did not reduce staining of ochoó, although many boards with extensive interior stain had bright surfaces, so it is possible that immediate drying might reduce or eliminate discoloration. Shock treatments did not reduce staining either, except for the localized effects of surface hammering. Eighteen-hour treatment with a 5% solution of sodium metabisulfite reduced stain, although penetration was limited in many samples.</abstract>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;Ocho </topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;Hura crepitans</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;oxidative stain</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;discoloration</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;compression</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;vibration</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;shock treatment</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;sodium metabisulfite</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;sulfite</topic>
+   </subject>
+   <relatedItem xmlns="" type="series">&#x1e;&#x1e;&#x1e;
+      <titleInfo type="abbreviated">&#x1e;&#x1e;&#x1e;
+         <title>&#x1e;&#x1e;&#x1e;Res. Note </title>
+      </titleInfo>
+      <titleInfo>&#x1e;&#x1e;&#x1e;
+         <title>&#x1e;&#x1e;&#x1e;Research Note (RN)</title>
+      </titleInfo>
+      <part>&#x1e;&#x1e;&#x1e;
+         <detail type="volume">&#x1e;&#x1e;&#x1e;
+            <number>&#x1e;&#x1e;&#x1e;306</number>
+            <caption>&#x1e;&#x1e;&#x1e;v.</caption>
+         </detail>
+         <text type="year">&#x1e;&#x1e;&#x1e;2007</text>
+         <text type="month">&#x1e;&#x1e;&#x1e;11</text>
+         <text type="day">&#x1e;&#x1e;&#x1e;08</text>
+         <extent unit="pages">&#x1e;&#x1e;&#x1e;
+            <total>&#x1e;&#x1e;&#x1e;23</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier xmlns="" type="doi">&#x1e;&#x1e;&#x1e;10.2737/FPL-RN-306</identifier>
+   <location xmlns="">&#x1e;&#x1e;&#x1e;
+      <url displayLabel="Direct access to publisher’s site">&#x1e;&#x1e;&#x1e;https://dx.doi.org/10.2737/FPL-RN-306</url>
+   </location>
+   <identifier xmlns="" type="treesearch">&#x1e;&#x1e;&#x1e;596</identifier>
+   <identifier xmlns="" type="treesearch-pub">&#x1e;&#x1e;&#x1e;28977</identifier>
+   <location xmlns="">&#x1e;&#x1e;&#x1e;
+      <url displayLabel="Direct access to publisher’s site">&#x1e;&#x1e;&#x1e;https://www.fs.usda.gov/treesearch/pubs/28977</url>
+   </location>
+   <location xmlns="">&#x1e;&#x1e;&#x1e;
+      <url displayLabel="Full Text in PDF">&#x1e;&#x1e;&#x1e;https://www.fpl.fs.fed.us/documnts/fplrn/fpl_rn306.pdf</url>
+   </location>
+   <accessCondition xmlns=""
+                    type="use and reproduction"
+                    displayLabel="Resource is Open Access">&#x1e;&#x1e;&#x1e;
+      <program xmlns="https://data.crossref.org/schemas/AccessIndicators.xsd">&#x1e;&#x1e;&#x1e;
+         <license_ref>&#x1e;&#x1e;&#x1e;http://purl.org/eprint/accessRights/OpenAccess</license_ref>
+      </program>
+   </accessCondition>
+   <extension xmlns="">&#x1e;&#x1e;&#x1e;
+      <originalFile>&#x1e;&#x1e;&#x1e;file:/C:/Users/Carlos.Martinez/OneDrive%20-%20USDA/XML_projects/json-to-mods/json-to-xml-master/workingDir/A-28977.json</originalFile>
+      <workingDirectory>&#x1e;&#x1e;&#x1e;C:\Users\Carlos.Martinez\OneDrive - USDA\XML_projects\json-to-mods\json-to-xml-master\workingDir\</workingDirectory>
+   </extension>
+</mods>

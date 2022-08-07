@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mods xmlns="http://www.loc.gov/mods/v3"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      version="3.7"
+      xsi:schemaLocation="http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd">&#x1e;&#x1e;&#x1e;
+   <titleInfo xmlns="">&#x1e;&#x1e;&#x1e;</titleInfo>
+   <name xmlns="" type="personal" usage="primary">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;J.Y.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Zhu</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Zhu, J.Y.</displayForm>
+      <affiliation>&#x1e;&#x1e;&#x1e;United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;C.T.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Scott</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Scott, C.T.</displayForm>
+      <affiliation>&#x1e;&#x1e;&#x1e;United States Department of Agriculture, Forest Service, Northern Research Station, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;R.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Gleisner</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Gleisner, R.</displayForm>
+      <affiliation>&#x1e;&#x1e;&#x1e;United States Department of Agriculture, Forest Service, Forest Products Laboratory, Fiber and Chemical Sciences Research, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;D.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Mann</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Mann, D.</displayForm>
+      <affiliation>&#x1e;&#x1e;&#x1e;United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;D.W.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Vahey</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Vahey, D.W.</displayForm>
+      <affiliation>&#x1e;&#x1e;&#x1e;United States Department of Agriculture, Forest Service, Forest Products Laboratory, Engineered Composites Sciences, One Gifford Pinchot Drive, Madison, WI 53726</affiliation>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;D.P.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Dykstra</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Dykstra, D.P.</displayForm>
+      <affiliation>&#x1e;&#x1e;&#x1e;United States Department of Agriculture, Forest Service, Pacific Northwest Research Station, Station's Goods, Services and Values Program, 220 SW 3rd Avenue, Suite 1400, Portland, OR 97204, US</affiliation>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;G.H.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Quinn</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Quinn, G.H.</displayForm>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <name xmlns="" type="personal">&#x1e;&#x1e;&#x1e;
+      <namePart type="given">&#x1e;&#x1e;&#x1e;L.L.</namePart>
+      <namePart type="family">&#x1e;&#x1e;&#x1e;Edwards</namePart>
+      <displayForm>&#x1e;&#x1e;&#x1e;Edwards, L.L.</displayForm>
+      <role>&#x1e;&#x1e;&#x1e;
+         <roleTerm type="text">&#x1e;&#x1e;&#x1e;author</roleTerm>
+      </role>
+   </name>
+   <typeOfResource xmlns="">&#x1e;&#x1e;&#x1e;text</typeOfResource>
+   <genre xmlns="">&#x1e;&#x1e;&#x1e;article</genre>
+   <originInfo xmlns="">&#x1e;&#x1e;&#x1e;
+      <dateIssued encoding="w3cdtf" keyDate="yes">&#x1e;&#x1e;&#x1e;2011-03-09</dateIssued>
+   </originInfo>
+   <note xmlns="" type="treesearch-status">&#x1e;&#x1e;&#x1e;Informally Refereed (Peer-Reviewed)</note>
+   <language xmlns="">&#x1e;&#x1e;&#x1e;
+      <languageTerm type="code" authority="iso639-2b">&#x1e;&#x1e;&#x1e;eng</languageTerm>
+      <languageTerm type="text">&#x1e;&#x1e;&#x1e;English</languageTerm>
+   </language>
+   <abstract xmlns="">&#x1e;&#x1e;&#x1e;An Integrated lumber and paper productions using forest thinning materials from U.S. national forests can significantly reduce the cost of prescriptive thinning operations. Many of the trees removed during forest thinnings are in small-diameter classes (diameter at breast height &lt;6 in) with suppressed growth. These trees produce low lumber yield but can produce quality thermomechanical pulps (TMPs) owing to uniformity of wood density and tracheid wall structure and a high mature wood fraction. This was demonstrated in commercial trials conducted at a lumber mill and a newsprint mill in the U.S. Pacific Northwest. Whole log and residual chips from forest thinnings produced at the lumber mill were combined with chips from normal pulping operations to produce newsprint. In all TMP trials, no significant change was found in correlations between the pulp long fraction and the pulp Canadian Standard Freeness.</abstract>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;Timber</topic>
+   </subject>
+   <subject xmlns="">&#x1e;&#x1e;&#x1e;
+      <topic>&#x1e;&#x1e;&#x1e;Pulp &amp;paper</topic>
+   </subject>
+   <relatedItem xmlns="" type="host">&#x1e;&#x1e;&#x1e;
+      <titleInfo>&#x1e;&#x1e;&#x1e;
+         <title>&#x1e;&#x1e;&#x1e;Forest products journal</title>
+      </titleInfo>
+      <part>&#x1e;&#x1e;&#x1e;
+         <detail type="volume">&#x1e;&#x1e;&#x1e;
+            <number>&#x1e;&#x1e;&#x1e;57</number>
+            <caption>&#x1e;&#x1e;&#x1e;v.</caption>
+         </detail>
+         <detail type="issue">&#x1e;&#x1e;&#x1e;
+            <number>&#x1e;&#x1e;&#x1e;11</number>
+            <caption>&#x1e;&#x1e;&#x1e;no.</caption>
+         </detail>
+         <text type="year">&#x1e;&#x1e;&#x1e;2011</text>
+         <text type="month">&#x1e;&#x1e;&#x1e;03</text>
+         <text type="day">&#x1e;&#x1e;&#x1e;09</text>
+         <extent unit="pages">&#x1e;&#x1e;&#x1e;
+            <start>&#x1e;&#x1e;&#x1e;8</start>
+            <end>&#x1e;&#x1e;&#x1e;13</end>
+            <total>&#x1e;&#x1e;&#x1e;6</total>
+         </extent>
+      </part>
+   </relatedItem>
+   <identifier xmlns="" type="treesearch">&#x1e;&#x1e;&#x1e;1451</identifier>
+   <identifier xmlns="" type="treesearch-pub">&#x1e;&#x1e;&#x1e;29760</identifier>
+   <location xmlns="">&#x1e;&#x1e;&#x1e;
+      <url displayLabel="Direct access to publisher’s site">&#x1e;&#x1e;&#x1e;https://www.fs.usda.gov/treesearch/pubs/29760</url>
+   </location>
+   <location xmlns="">&#x1e;&#x1e;&#x1e;
+      <url displayLabel="Full Text in PDF">&#x1e;&#x1e;&#x1e;https://www.fpl.fs.fed.us/documnts/pdf2007/fpl_2007_zhu003.pdf</url>
+   </location>
+   <accessCondition xmlns=""
+                    type="use and reproduction"
+                    displayLabel="Resource is Open Access">&#x1e;&#x1e;&#x1e;
+      <program xmlns="https://data.crossref.org/schemas/AccessIndicators.xsd">&#x1e;&#x1e;&#x1e;
+         <license_ref>&#x1e;&#x1e;&#x1e;http://purl.org/eprint/accessRights/OpenAccess</license_ref>
+      </program>
+   </accessCondition>
+   <extension xmlns="">&#x1e;&#x1e;&#x1e;
+      <originalFile>&#x1e;&#x1e;&#x1e;file:/C:/Users/Carlos.Martinez/OneDrive%20-%20USDA/XML_projects/OpenAccess/json-to-xml/workingDir/A-29760_1.json</originalFile>
+      <workingDirectory>&#x1e;&#x1e;&#x1e;C:\Users\Carlos.Martinez\OneDrive%20-%20USDA\XML_projects\json-to-mods\json-to-xml-master\workingDir\</workingDirectory>
+   </extension>
+</mods>
