@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="3.0"   
+<xsl:stylesheet version="2.0"   
     xmlns="http://www.loc.gov/mods/v3"
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -7,11 +7,11 @@
     xmlns:xlink="http://www.w3.org/1999/xlink" 
     exclude-result-prefixes="fn xlink"
     >
-    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" media-type="text/xml" name="mods"/>
+    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes" media-type="text/xml"/>
     <xsl:strip-space elements="*"/>
     
-    <xsl:template match="*/node()" xmlns:mods="http://www.loc.gov/mods/v3" xpath-default-namespace="http://www.loc.gov/mods/v3">
-        <xsl:result-document method="xml" encoding="UTF-8" indent="yes" format="mods" href="{resolve-uri(*:workingDirectory)}N-{replace(//*:originalFile, '(.*/)(.*)(\.xml|\.json)', '$2')}_{position()}.xml">
+    <xsl:template match="/">
+        <xsl:result-document method="xml" encoding="UTF-8" indent="yes" href="file:///{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$1')}A-{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$2')}_{position()}.xml">
             <mods version="3.7">
                 <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
                 <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
@@ -24,11 +24,11 @@
     </xsl:template>
     
     
-    <!--<xsl:template match="node()|@*">
+    <xsl:template match="node()|@*">
         <xsl:copy>
             <xsl:apply-templates select="node()[normalize-space()]|@*[normalize-space()]"/>
         </xsl:copy>
-   </xsl:template>-->
+    </xsl:template>
     
     <xsl:template match="text()" priority="3">
         <xsl:variable name="work" select="."/>                               <!-- HEX DUMP       -->

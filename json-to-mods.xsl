@@ -11,8 +11,8 @@
     <!--output-->
     <xsl:output method="json" omit-xml-declaration="yes" indent="yes" encoding="UTF-8"
         name="archive"/>
-    <xsl:output method="xml" indent="yes" encoding="UTF-8" name="original"/>
-    <!--  saxon:next-in-chain="fix_characters.xsl"/> -->
+    <xsl:output method="xml" indent="yes" encoding="UTF-8"
+      saxon:next-in-chain="fix_characters.xsl"/> 
  
     <!--includes-->
     <xsl:include href="commons/common.xsl"/>
@@ -34,14 +34,14 @@
         </xd:desc>
     </xd:doc>
     <xsl:template match="data">
-<!--        <xsl:for-each select="/array[1]/map/string[@key = 'product_id']">-->
+
        
             <xsl:result-document method="xml" omit-xml-declaration="yes" encoding="utf-8" format="archive"
-                href="{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$1')}A-{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$2')}_{position()}.xml">
+                href="{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$1')}A-{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$2')}_{position()}.json">
                 <xsl:value-of select="."/>
             </xsl:result-document>
        
-        <xsl:result-document method="xml" indent="yes" encoding="UTF-8" format="original"
+        <xsl:result-document method="xml" indent="yes" encoding="UTF-8"
             href="{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$1')}N-{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$2')}_{position()}.xml">
             <mods version="3.7">
                 <xsl:namespace name="mods">http://www.loc.gov/mods/v3</xsl:namespace>
@@ -53,7 +53,7 @@
             </mods>
         </xsl:result-document>
        
-        <!--</xsl:for-each>-->
+      
     </xsl:template>
    
 
