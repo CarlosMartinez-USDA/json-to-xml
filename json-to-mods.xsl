@@ -17,7 +17,7 @@
     <!--includes-->
     <xsl:include href="commons/common.xsl"/>
     <xsl:include href="commons/functions.xsl"/>
-    <xsl:include href="commons/usfs_naming_func_temp.xsl"/>
+    <xsl:include href="commons/usfs_naming_functions.xsl"/>
     <xsl:include href="commons/params-cm.xsl"/>
 
     <!--white space control-->
@@ -43,13 +43,10 @@
        
         <xsl:result-document method="xml" indent="yes" encoding="UTF-8" format="original"
             href="{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$1')}N-{replace(base-uri(),'(.*/)(.*)(\.xml|\.json)','$2')}_{position()}.xml">
-            <mods version="3.7">
-                <xsl:namespace name="mods">http://www.loc.gov/mods/v3</xsl:namespace>
-                <xsl:namespace name="xlink">http://www.w3.org/1999/xlink</xsl:namespace>
-                <xsl:namespace name="xsi">http://www.w3.org/2001/XMLSchema-instance</xsl:namespace>
-                <xsl:attribute name="xsi:schemaLocation"
-                    select="normalize-space('http://www.loc.gov/mods/v3 http://www.loc.gov/standards/mods/v3/mods-3-7.xsd')"/>
-            <xsl:apply-templates select="json-to-xml(.)"/>
+            <mods xmlns:xs="http://www.w3.org/2001/XMLSchema"
+                xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                version="3.7">
+                 <xsl:apply-templates select="json-to-xml(.)"/>
             </mods>
         </xsl:result-document>
        
